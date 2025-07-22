@@ -450,11 +450,14 @@ const html = `<!DOCTYPE html>
           
           card.innerHTML = \`
             <h2>Answer for Question \${problem.folderId}</h2>
-            <div class="correct-answer">
-              <p>Answer: \${problem.answer}</p>
+            <div class="problem-content">
+              <p>\${formatProblemText(problem.problem_text)}</p>
             </div>
             <div class="diagram-container">
               <img src="./\${problem.folderId}/img_diagram.png" class="diagram" alt="Problem Diagram">
+            </div>
+            <div class="correct-answer">
+              <p>Answer: \${problem.answer}</p>
             </div>
           \`;
           
