@@ -1,0 +1,164 @@
+const fs = require("fs");
+const path = require("path");
+
+const baseDir = __dirname;
+const folders = fs.readdirSync(baseDir).filter(f => fs.existsSync(path.join(baseDir, f, "data.json")));
+
+const problems = [];
+
+for (const folder of folders) {
+  const dataPath = path.join(baseDir, folder, "data.json");
+  const imgPath = path.join(baseDir, folder, "img_diagram.png");
+
+  if (fs.existsSync(dataPath) && fs.existsSync(imgPath)) {
+    const data = JSON.parse(fs.readFileSync(dataPath, "utf8"));
+    data.folderId = folder;
+    problems.push(data);
+  }
+}
+
+const html = `
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Question & Answer Collection</title>
+  <style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .tabs {
+    display: flex;
+    position: sticky;
+    top: 0;
+    background: #333;
+    z-index: 10;
+  }
+
+  .tab {
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    flex: 1;
+    text-align: center;
+    background: #333;
+    transition: background 0.3s;
+  }
+
+  .tab:hover {
+    background: #444;
+  }
+
+  .tab.active {
+    background: #555;
+  }
+
+  .content {
+    display: none;
+    padding: 20px;
+    padding-top: 30px;
+  }
+
+  .content.active {
+    display: block;
+  }
+
+  .question-block {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px 0;
+    background: #f9f9f9;
+    border-radius: 5px;
+  }
+
+  img.diagram {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+  }
+
+  .choice {
+    margin-left: 20px;
+  }
+</style>
+</head>
+<body>
+  <div class="tabs">
+    <div class="tab active" onclick="showTab('questions')">Questions</div>
+    <div class="tab" onclick="showTab('answers')">Answers</div>
+  </div>
+
+  <div id="questions" class="content active"></div>
+  <div id="answers" class="content"></div>
+
+  <script>
+    const problems = ${JSON.stringify(problems)};
+    let questionIndex = 0, answerIndex = 0;
+    const batchSize = 100;
+
+    function createQuestionHTML(problem) {
+      const choices = problem.choices.map((c, i) =>
+        "<div class='choice'>" + String.fromCharCode(65 + i) + ". " + c + "</div>"
+      ).join("");
+      return \`
+        <div class="question-block">
+          <strong>Question \${problem.folderId}:</strong><br/>
+          <div>Problem: \${problem.problem_text}</div>
+          <img src="./\${problem.folderId}/img_diagram.png" class="diagram" alt="Diagram" />
+          <div><strong>Answer Choices:</strong>\${choices}</div>
+        </div>\`;
+    }
+
+    function createAnswerHTML(problem) {
+      return \`
+        <div class="question-block">
+          <strong>Question \${problem.folderId}:</strong><br/>
+          <div><strong>Answer:</strong> \${problem.answer}</div>
+        </div>\`;
+    }
+
+    function loadMoreQuestions() {
+      const container = document.getElementById("questions");
+      for (let i = 0; i < batchSize && questionIndex < problems.length; i++, questionIndex++) {
+        container.innerHTML += createQuestionHTML(problems[questionIndex]);
+      }
+    }
+
+    function loadMoreAnswers() {
+      const container = document.getElementById("answers");
+      for (let i = 0; i < batchSize && answerIndex < problems.length; i++, answerIndex++) {
+        container.innerHTML += createAnswerHTML(problems[answerIndex]);
+      }
+    }
+
+    function showTab(tabId) {
+      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+      document.querySelectorAll('.content').forEach(c => c.classList.remove('active'));
+      document.querySelector('.tab[onclick="showTab(\\'\'+tabId+\'\\')"]').classList.add('active');
+      document.getElementById(tabId).classList.add('active');
+    }
+
+    window.addEventListener('scroll', () => {
+      const tab = document.querySelector('.content.active').id;
+      const nearBottom = window.innerHeight + window.scrollY >= document.body.offsetHeight - 200;
+      if (nearBottom) {
+        if (tab === 'questions') loadMoreQuestions();
+        if (tab === 'answers') loadMoreAnswers();
+      }
+    });
+
+    // Load initial batch
+    loadMoreQuestions();
+    loadMoreAnswers();
+  </script>
+</body>
+</html>
+`;
+
+// Output HTML
+fs.writeFileSync(path.join(baseDir, "index.html"), html, "utf8");
+console.log("✅ HTML generated: index.html");

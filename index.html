@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solvie App Datasets</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --primary-color: #4a6fa5;
+      --secondary-color: #166d67;
+      --accent-color: #f9a825;
+      --light-bg: #f5f7fa;
+      --dark-bg: #2c3e50;
+      --text-color: #333;
+      --light-text: #f5f5f5;
+      --border-radius: 12px;
+      --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      --transition: all 0.3s ease;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: var(--text-color);
+      background-color: var(--light-bg);
+      padding-bottom: 2rem;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      color: var(--light-text);
+      padding: 2.5rem 2rem;
+      text-align: center;
+      box-shadow: var(--shadow);
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.8rem;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      color: var(--primary-color);
+      margin: 2rem 0 1rem 0;
+      border-bottom: 2px solid var(--light-bg);
+      padding-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      font-size: 1.3rem;
+      opacity: 0.9;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .intro {
+      background-color: white;
+      padding: 2rem;
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow);
+      margin-bottom: 2rem;
+    }
+
+    .datasets-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .dataset-card {
+      background-color: white;
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      transition: var(--transition);
+    }
+
+    .dataset-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .card-header {
+      background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+      color: white;
+      padding: 1.5rem;
+      position: relative;
+    }
+
+    .card-header h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .card-header .icon {
+      position: absolute;
+      top: 1.5rem;
+      right: 1.5rem;
+      font-size: 2rem;
+      opacity: 0.7;
+    }
+
+    .card-body {
+      padding: 1.5rem;
+    }
+
+    .card-body p {
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+
+    .view-btn {
+      display: inline-block;
+      background-color: var(--primary-color);
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: var(--transition);
+    }
+
+    .view-btn:hover {
+      background-color: var(--secondary-color);
+      transform: translateY(-3px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: var(--dark-bg);
+      color: var(--light-text);
+      margin-top: 3rem;
+    }
+
+    footer p {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    footer a {
+      color: var(--accent-color);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .datasets-container {
+        grid-template-columns: 1fr;
+      }
+      
+      h1 {
+        font-size: 2.2rem;
+      }
+      
+      .subtitle {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Dataset For Testing</h1>
+    <p class="subtitle">Dataset Collections for Testing</p>
+  </header>
+  
+  <main>
+    <section class="intro">
+      <h2>About These Datasets</h2>
+      <p>Welcome to the App datasets collection. These datasets are designed for testing various math problem-solving capabilities. Each collection focuses on different aspects of mathematical reasoning and visualization.</p>
+      <p>Select a dataset below to explore the problems and their solutions.</p>
+    </section>
+    
+    <section class="datasets">
+      <h2>Available Datasets</h2>
+      <div class="datasets-container">
+        <!-- Math Problem Dataset -->
+        <div class="dataset-card">
+          <div class="card-header">
+            <h3>Math Problems</h3>
+            <i class="fas fa-calculator icon"></i>
+          </div>
+          <div class="card-body">
+            <p>A collection of mathematical problems focusing on algebra, arithmetic, and other computational challenges. Each problem includes multiple-choice options and detailed solutions.
+           <br/> <a href="https://math-qa.github.io/">Reference</a></p>
+            
+            <a href="./MathQA//math_problems_test.html" class="view-btn">View Dataset</a>
+          </div>
+        </div>
+        
+        <!-- Math Geometry Dataset -->
+        <div class="dataset-card">
+          <div class="card-header">
+            <h3>Math Geometry</h3>
+            <i class="fas fa-shapes icon"></i>
+          </div>
+          <div class="card-body">
+            <p>Geometric problems with visual diagrams. This collection focuses on spatial reasoning, geometric principles, and visual problem-solving techniques. 
+            <br/> <a href="https://lupantech.github.io/inter-gps/">Reference</a></p>
+            <a href="./Geometry3K/index.html" class="view-btn">View Dataset</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <p>Created for testing purposes.</p>
+    <p>© 2025</p>
+  </footer>
+</body>
+</html>
