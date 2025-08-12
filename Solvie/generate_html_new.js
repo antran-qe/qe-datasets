@@ -214,7 +214,7 @@ const htmlContent = `<!DOCTYPE html>
     }
 
     .question-image img {
-      max-width: 100%;
+      max-width: 65%;
       max-height: 350px;
       border: 1px solid #ddd;
       border-radius: var(--border-radius);
@@ -424,7 +424,7 @@ const htmlContent = `<!DOCTYPE html>
   </main>
   
   <footer>
-    <p><i class="fas fa-code"></i> Generated Question Viewer</p>
+    <p></p>
   </footer>
 
   <script>
@@ -617,9 +617,3 @@ fs.writeFileSync(outputPath, htmlContent);
 
 console.log(`HTML file generated successfully at: ${outputPath}`);
 console.log(`Total questions embedded: ${jsonData.length}`);
-console.log('\nTo use this script:');
-console.log('1. Place your JSON file in the same directory as this script');
-console.log('2. Update the jsonFilePath variable to match your JSON filename');
-console.log('3. Run: node generate_copy.js');
-console.log('4. Open the generated question_viewer.html file in your browser');
-console.log('5. Scroll down to browse through all questions');
