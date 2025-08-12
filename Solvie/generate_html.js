@@ -214,8 +214,8 @@ const htmlContent = `<!DOCTYPE html>
     }
 
     .question-image img {
-      max-width: 100%;
-      max-height: 200px;
+      max-width: 65%;
+      max-height: 350px;
       border: 1px solid #ddd;
       border-radius: var(--border-radius);
       box-shadow: var(--shadow);
@@ -424,7 +424,7 @@ const htmlContent = `<!DOCTYPE html>
   </main>
   
   <footer>
-    <p><i class="fas fa-code"></i> Generated Question Viewer</p>
+    <p></p>
   </footer>
 
   <script>
