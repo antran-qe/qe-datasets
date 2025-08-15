@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV to Dataset Converter</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #4a5568;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .upload-area {
+            border: 3px dashed #cbd5e0;
+            border-radius: 12px;
+            padding: 40px;
+            text-align: center;
+            transition: all 0.3s ease;
+            margin-bottom: 30px;
+            background: linear-gradient(45deg, #f7fafc, #edf2f7);
+        }
+        
+        .upload-area:hover {
+            border-color: #667eea;
+            background: linear-gradient(45deg, #edf2f7, #e2e8f0);
+        }
+        
+        .upload-area.dragover {
+            border-color: #4299e1;
+            background: linear-gradient(45deg, #ebf8ff, #bee3f8);
+        }
+        
+        .file-input {
+            display: none;
+        }
+        
+        .upload-button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .upload-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+        }
+        
+        .process-button {
+            background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: 600;
+            width: 100%;
+            margin: 20px 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(72, 187, 120, 0.4);
+        }
+        
+        .process-button:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(72, 187, 120, 0.6);
+        }
+        
+        .process-button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .log-area {
+            background: #1a202c;
+            color: #e2e8f0;
+            padding: 20px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            min-height: 200px;
+            max-height: 400px;
+            overflow-y: auto;
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+        
+        .progress-bar {
+            width: 100%;
+            height: 20px;
+            background: #e2e8f0;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 10px 0;
+            display: none;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+        
+        .download-section {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 2px solid #e2e8f0;
+        }
+        
+        .download-button {
+            background: linear-gradient(135deg, #ed8936 0%, #dd6b20 100%);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            margin: 5px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(237, 137, 54, 0.4);
+        }
+        
+        .download-button:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(237, 137, 54, 0.6);
+        }
+        
+        .download-button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .info-box {
+            background: linear-gradient(135deg, #ebf8ff 0%, #bee3f8 100%);
+            border-left: 4px solid #4299e1;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .success {
+            color: #38a169;
+            font-weight: 600;
+        }
+        
+        .error {
+            color: #e53e3e;
+            font-weight: 600;
+        }
+        
+        .warning {
+            color: #d69e2e;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🍽️ CSV to Dataset Converter</h1>
+        
+        <div class="info-box">
+            <strong>Instructions:</strong>
+            <ol>
+                <li>Upload your CSV file containing food data</li>
+                <li>Click "Process Dataset" to convert and download images</li>
+                <li>Download the generated JSON file and images ZIP</li>
+            </ol>
+        </div>
+        
+        <div class="upload-area" id="uploadArea">
+            <p>📁 Drop your CSV file here or click to select</p>
+            <button class="upload-button" onclick="document.getElementById('fileInput').click()">
+                Choose CSV File
+            </button>
+            <input type="file" id="fileInput" class="file-input" accept=".csv" onchange="handleFileSelect(event)">
+        </div>
+        
+        <button class="process-button" id="processButton" onclick="processDataset()" disabled>
+            🚀 Process Dataset
+        </button>
+        
+        <div class="progress-bar" id="progressBar">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+        
+        <div class="log-area" id="logArea">Ready to process your CSV file...</div>
+        
+        <div class="download-section" id="downloadSection" style="display: none;">
+            <h3>📥 Download Results</h3>
+            <button class="download-button" id="downloadJson" onclick="downloadJsonFile()" disabled>
+                📄 Download JSON File
+            </button>
+            <button class="download-button" id="downloadImages" onclick="downloadImagesZip()" disabled>
+                🖼️ Download Images ZIP
+            </button>
+        </div>
+    </div>
+
+    <script>
+        let csvData = null;
+        let processedData = null;
+        let downloadedImages = new Map();
+        
+        // Drag and drop functionality
+        const uploadArea = document.getElementById('uploadArea');
+        
+        uploadArea.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            uploadArea.classList.add('dragover');
+        });
+        
+        uploadArea.addEventListener('dragleave', () => {
+            uploadArea.classList.remove('dragover');
+        });
+        
+        uploadArea.addEventListener('drop', (e) => {
+            e.preventDefault();
+            uploadArea.classList.remove('dragover');
+            const files = e.dataTransfer.files;
+            if (files.length > 0) {
+                handleFile(files[0]);
+            }
+        });
+        
+        // File selection handler
+        function handleFileSelect(event) {
+            const file = event.target.files[0];
+            if (file) {
+                handleFile(file);
+            }
+        }
+        
+        // Handle uploaded file
+        function handleFile(file) {
+            if (!file.name.toLowerCase().endsWith('.csv')) {
+                logMessage('❌ Please select a CSV file', 'error');
+                return;
+            }
+            
+            logMessage(`📁 File selected: ${file.name}`, 'success');
+            
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const csvContent = e.target.result;
+                parseCSV(csvContent);
+            };
+            reader.readAsText(file);
+        }
+        
+        // Parse CSV content
+        function parseCSV(csvContent) {
+            try {
+                const result = Papa.parse(csvContent, {
+                    header: true,
+                    dynamicTyping: true,
+                    skipEmptyLines: true
+                });
+                
+                if (result.errors.length > 0) {
+                    logMessage('⚠️ CSV parsing warnings found', 'warning');
+                    result.errors.forEach(error => {
+                        logMessage(`  - ${error.message}`, 'warning');
+                    });
+                }
+                
+                csvData = result.data;
+                logMessage(`✅ CSV parsed successfully: ${csvData.length} rows found`, 'success');
+                logMessage(`📊 Columns: ${result.meta.fields.join(', ')}`);
+                
+                document.getElementById('processButton').disabled = false;
+                
+            } catch (error) {
+                logMessage(`❌ Error parsing CSV: ${error.message}`, 'error');
+            }
+        }
+        
+        // Parse nutrients string
+        function parseNutrients(nutrientsString) {
+            if (!nutrientsString) return null;
+            
+            const values = nutrientsString.split(',').map(val => parseFloat(val.trim()));
+            
+            return {
+                calories: values[0] || 0,
+                fat: values[1] || 0,
+                carb: values[5] || 0,
+                protein: values[values.length - 1] || 0
+            };
+        }
+        
+        // Get file extension from URL
+        function getFileExtension(url) {
+            try {
+                const urlObj = new URL(url);
+                const pathname = urlObj.pathname;
+                const match = pathname.match(/\\.[^.]+$/);
+                const ext = match ? match[0].toLowerCase() : '.jpg';
+                
+                const validExts = ['.jpg', '.jpeg', '.png', '.gif', '.webp', '.bmp'];
+                return validExts.includes(ext) ? ext : '.jpg';
+            } catch {
+                return '.jpg';
+            }
+        }
+        
+        // Download image with retry logic
+        async function downloadImage(imageUrl, fileName, retries = 3) {
+            for (let attempt = 0; attempt < retries; attempt++) {
+                try {
+                    const response = await fetch(imageUrl, {
+                        mode: 'cors',
+                        method: 'GET'
+                    });
+                    
+                    if (!response.ok) {
+                        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                    }
+                    
+                    const blob = await response.blob();
+                    downloadedImages.set(fileName, blob);
+                    logMessage(`✅ Downloaded: ${fileName}`);
+                    return true;
+                    
+                } catch (error) {
+                    if (attempt === retries - 1) {
+                        logMessage(`❌ Failed to download ${fileName}: ${error.message}`, 'error');
+                        return false;
+                    } else {
+                        logMessage(`⚠️ Retrying download for ${fileName} (attempt ${attempt + 1}/${retries})`, 'warning');
+                        await new Promise(resolve => setTimeout(resolve, 1000));
+                    }
+                }
+            }
+            return false;
+        }
+        
+        // Process the dataset
+        async function processDataset() {
+            if (!csvData || csvData.length === 0) {
+                logMessage('❌ No CSV data available', 'error');
+                return;
+            }
+            
+            document.getElementById('processButton').disabled = true;
+            document.getElementById('progressBar').style.display = 'block';
+            
+            logMessage('🚀 Starting dataset processing...', 'success');
+            logMessage('📥 Downloading images...');
+            
+            processedData = [];
+            downloadedImages.clear();
+            
+            for (let i = 0; i < csvData.length; i++) {
+                const row = csvData[i];
+                const progress = ((i + 1) / csvData.length) * 100;
+                
+                logMessage(`Processing ${i + 1}/${csvData.length}: ${row.name_food}`);
+                updateProgress(progress);
+                
+                try {
+                    const foodIndex = i + 1;
+                    const itemID = row.itemID;
+                    const imageUrl = row.link_image_food;
+                    
+                    const fileExtension = getFileExtension(imageUrl);
+                    const fileName = `food_${foodIndex}_${itemID}${fileExtension}`;
+                    const imgLocation = `images/${fileName}`;
+                    
+                    // Download image
+                    const downloadSuccess = await downloadImage(imageUrl, fileName);
+                    // const downloadSuccess=true;
+                    // Parse nutrients
+                    const nutrients = parseNutrients(row.nutrients);
+                    
+                    // Create structured data object
+                    const processedRow = {
+                        name_food: row.name_food,
+                        item_id: itemID,
+                        img_location: downloadSuccess ? imgLocation : null,
+                        image_url: imageUrl,
+                        food_url: row.link_food,
+                        ingredients_per_recipe:row.ingredients,
+                        servings_size_per_recipe: 1,
+                        servings_size_in_image: 1,
+                        nutrients_per_serving: nutrients
+                    };
+                    
+                    processedData.push(processedRow);
+                    
+                    // Small delay to be respectful to servers
+                    if (i < csvData.length - 1) {
+                        await new Promise(resolve => setTimeout(resolve, 500));
+                    }
+                    
+                } catch (error) {
+                    logMessage(`❌ Error processing row ${i + 1}: ${error.message}`, 'error');
+                }
+            }
+            
+            updateProgress(100);
+            logMessage('✅ Dataset processing completed!', 'success');
+            logMessage(`📊 Processed: ${processedData.length} items`);
+            logMessage(`🖼️ Downloaded: ${downloadedImages.size} images`);
+            
+            // Enable download buttons
+            document.getElementById('downloadSection').style.display = 'block';
+            document.getElementById('downloadJson').disabled = false;
+            document.getElementById('downloadImages').disabled = false;
+            document.getElementById('processButton').disabled = false;
+        }
+        
+        // Update progress bar
+        function updateProgress(percentage) {
+            document.getElementById('progressFill').style.width = percentage + '%';
+        }
+        
+        // Download JSON file
+        function downloadJsonFile() {
+            if (!processedData) {
+                logMessage('❌ No processed data available', 'error');
+                return;
+            }
+            
+            const jsonString = JSON.stringify(processedData, null, 2);
+            const blob = new Blob([jsonString], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'data_output.json';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+            
+            logMessage('📄 JSON file downloaded: data_output.json', 'success');
+        }
+        
+        // Download images as ZIP
+        async function downloadImagesZip() {
+            if (downloadedImages.size === 0) {
+                logMessage('❌ No images to download', 'error');
+                return;
+            }
+            
+            logMessage('📦 Creating images ZIP file...');
+            
+            const zip = new JSZip();
+            const imagesFolder = zip.folder('images');
+            
+            // Add each image to the ZIP
+            downloadedImages.forEach((blob, fileName) => {
+                imagesFolder.file(fileName, blob);
+            });
+            
+            try {
+                const zipBlob = await zip.generateAsync({ type: 'blob' });
+                const url = URL.createObjectURL(zipBlob);
+                
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'images.zip';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+                
+                logMessage('🖼️ Images ZIP downloaded: images.zip', 'success');
+            } catch (error) {
+                logMessage(`❌ Error creating ZIP: ${error.message}`, 'error');
+            }
+        }
+        
+        // Log message to the log area
+        function logMessage(message, type = 'info') {
+            const logArea = document.getElementById('logArea');
+            const timestamp = new Date().toLocaleTimeString();
+            const className = type === 'success' ? 'success' : type === 'error' ? 'error' : type === 'warning' ? 'warning' : '';
+            
+            logArea.innerHTML += `<div class="${className}">[${timestamp}] ${message}</div>`;
+            logArea.scrollTop = logArea.scrollHeight;
+        }
+        
+        // Clear log area
+        function clearLog() {
+            document.getElementById('logArea').innerHTML = 'Log cleared...';
+        }
+    </script>
+</body>
+</html>
