@@ -1,0 +1,72 @@
+[
+    {
+        "id": "3D_AI_Figurin_01",
+        "description": "Generate 3D AI Figurine from Image",
+        "input": "images/image-to-image/input_01.jpg",
+        "prompting": "Create a 1/6 scale commercialized figurine of the characters in the picture, in a realistic style, in a real environment. The figurine is placed on a computer desk. The figurine has a round transparent acrylic base, with no text on the base. The content on the computer screen is the ZBrush modeling process of this figurine. Next to the computer screen is a BANDAI-style toy packaging box printed with the original artwork. The packaging features two-dimensional flat illustrations.",
+        "result": "images/image-to-image/output_01.png"
+    },
+    {
+        "id": "Map_02",
+        "description": "Generate Ground View from Map Arrow",
+        "input": "images/image-to-image/input_02.png",
+        "prompting": "draw what the red arrow sees/draw the real world view from the red circle in the direction of the arrow.",
+        "result": "images/image-to-image/output_02.png"
+    },
+    {
+        "id": "Map_03",
+        "description": "Generate Ground View from Map Arrow",
+        "input": "images/image-to-image/input_03.jpg",
+        "prompting": "draw what the red arrow sees/draw the real world view from the red circle in the direction of the arrow.",
+        "result": "images/image-to-image/output_03.jpg"
+    },
+    {
+        "id": "AR_04",
+        "description": "Real World AR Information",
+        "input": "images/image-to-image/input_04.png",
+        "prompting": "you are a location-based AR experience generator. highlight [point of interest] in this image and annotate relevant information about it.",
+        "result": "images/image-to-image/output_04.png"
+    },
+    {
+        "id": "Ultra-realistic_05", 
+        "description": "Ultra-realistic product photography, 9:16 ratio",
+        "input": "images/image-to-image/input_05.png",
+        "prompting": "Ultra-realistic product photography, 9:16 ratio. Soft studio lighting with glossy highlights. Foreground: a miniature collectible keychain figure of “John Doe” perfectly identical to the real name in the background. The toy captures name’s exact facial features, hairstyle, skin tone, and outfit details (same shirt, folds, textures, and accessories). Designed as a PVC vinyl toy with stylized miniature proportions, but the painted surfaces, glossy coatings, and matte accents enhance realism. Visible mold seam lines and sculpted details add authenticity of a premium collectible. The keychain strap matches Name’s theme colors, embossed with bold text “John Doe” in sharp focus. Background: a realistic portrait of name himself, holding the miniature with two fingers. The real name and the toy wear the exact same outfit and share the same facial details, creating a mirrored “mini-me” effect. Depth of field keeps the miniature sharply focused while name in the background is softly blurred, reinforcing the connection and premium branded atmosphere.”",
+        "result": "images/image-to-image/output_05.png"
+    },
+    {
+        "id": "Chibi_06",
+        "description": "Chibi Knitted Doll",
+        "input": "images/image-to-image/input_06.png",
+        "prompting": "A close-up, professionally composed photograph showcasing a hand-crocheted yarn doll gently cradled by two hands. The doll has a rounded shape, featuring the cute chibi image of the [upload image] character, with vivid contrasting colors and rich details. The hands holding the doll are natural and gentle, with clearly visible finger postures, and natural skin texture and light/shadow transitions, conveying a warm and realistic touch. The background is slightly blurred, depicting an indoor environment with a warm wooden tabletop and natural light streaming in from a window, creating a comfortable and intimate atmosphere. The overall image conveys a sense of exquisite craftsmanship and cherished warmth.",
+        "result": "images/image-to-image/output_06.png"
+    },
+    {
+        "id": "selfie_07",
+        "description": "iPhone Selfie",
+        "input": "images/image-to-image/input_07.png",
+        "prompting": "Please draw an extremely ordinary and unremarkable iPhone selfie, with no clear subject or sense of composition — just like a random snapshot taken casually. The photo should include slight motion blur, with uneven lighting caused by sunlight or indoor lights resulting in mild overexposure. The angle is awkward, the composition is messy, and the overall aesthetic is deliberately plain — as if it was accidentally taken while pulling the phone out of a pocket. The subjects are John, taken at night, next to the Eiffel.",
+        "result": "images/image-to-image/output_07.png"
+    },
+    {
+        "id": "Text-To-Image_08",
+        "description": "Generate Image from Text",
+        "input": "N/A",
+        "prompting": "A tranquil forest bedroom with natural light filtering through leaves, lush indoor plants surrounding a wooden bed, nature-integrated furniture — biophilic design, ultra-realistic, warm tones",
+        "result": "images/text-to-image/TTI_output_01.png"
+    },
+    {
+        "id": "Text-To-Image_09",
+        "description": "Generate Image from Text",
+        "input": "N/A",
+        "prompting": "dashcam google street view shot | Hobbiton streets | hobbits carrying out daily tasks like gardening and smoking pipes | sunny day",
+        "result": "images/text-to-image/TTI_output_02.png"
+    },
+    {
+        "id": "Text-To-Image_10",
+        "description": "Generate Image from Text",
+        "input": "N/A",
+        "prompting": "Create a cinematic shot of a stylish young woman confidently walking down a bright city street at night. She is wearing a trendy outfit such as a leather jacket, high-waisted jeans, and high heels, carrying a small designer handbag. The camera angle is a low-angle panoramic shot, using a 50mm lens, capturing the light neon lights and reflections on the wet road. Using a soft cinematic light combined with neon blue and pink tones, creating strong contrast and dynamic shadows. The setting is a bustling urban street with car lights, billboards, and shops blurred in the background. The overall look is modern, stylish, energetic, both authentic street fashion and cinematic storytelling",
+        "result": "images/text-to-image/TTI_output_03.png"
+    }
+]
