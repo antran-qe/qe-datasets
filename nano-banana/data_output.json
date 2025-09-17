@@ -49,21 +49,28 @@
         "result": "images/image-to-image/output_07.png"
     },
     {
-        "id": "Text-To-Image_08",
+        "id": "ootd_08",
+        "description": "OOTD Outfit",
+        "input": "images/image-to-image/input_11.png",
+        "prompting": "Choose the person in Image 1 and dress them in all the clothing and accessories from Image 2. Shoot a series of realistic OOTD-style photos outdoors, using natural lighting, a stylish street style, and clear full-body shots. Keep the person's identity and pose from Image 1, but show the complete outfit and accessories from Image 2 in a cohesive, stylish way.",
+        "result": "images/image-to-image/output_11.png"
+    },
+    {
+        "id": "Text-To-Image_09",
         "description": "Generate Image from Text",
         "input": "N/A",
         "prompting": "A tranquil forest bedroom with natural light filtering through leaves, lush indoor plants surrounding a wooden bed, nature-integrated furniture — biophilic design, ultra-realistic, warm tones",
         "result": "images/text-to-image/TTI_output_01.png"
     },
     {
-        "id": "Text-To-Image_09",
+        "id": "Text-To-Image_10",
         "description": "Generate Image from Text",
         "input": "N/A",
         "prompting": "dashcam google street view shot | Hobbiton streets | hobbits carrying out daily tasks like gardening and smoking pipes | sunny day",
         "result": "images/text-to-image/TTI_output_02.png"
     },
     {
-        "id": "Text-To-Image_10",
+        "id": "Text-To-Image_11",
         "description": "Generate Image from Text",
         "input": "N/A",
         "prompting": "Create a cinematic shot of a stylish young woman confidently walking down a bright city street at night. She is wearing a trendy outfit such as a leather jacket, high-waisted jeans, and high heels, carrying a small designer handbag. The camera angle is a low-angle panoramic shot, using a 50mm lens, capturing the light neon lights and reflections on the wet road. Using a soft cinematic light combined with neon blue and pink tones, creating strong contrast and dynamic shadows. The setting is a bustling urban street with car lights, billboards, and shops blurred in the background. The overall look is modern, stylish, energetic, both authentic street fashion and cinematic storytelling",
