@@ -1,0 +1,737 @@
+[
+    {
+        "result": {
+            "generation_id": "24af834a-6c73-4520-9b46-e55a59a75b6c",
+            "image_request_url": "https://stg-static.vulcanlabs.co/smith-nexus/images/20250922/d38dgn920snc73bbq5p0.png",
+            "style": "realistic_figurine",
+            "status": "done",
+            "error_code": "",
+            "error_message": "",
+            "created_at": "2025-09-22 05:02:25",
+            "done_at": "2025-09-22 05:02:38",
+            "image_response_url": "https://stg-static.vulcanlabs.co/smith-nexus/image-generations/20250922/d38dgrj3897c73db073g.jpg",
+            "state": "processing",
+            "model": "gemini-2.5-flash-image-preview"
+        }
+    },
+    {
+        "result": {
+            "generation_id": "2f7283e0-bcd3-4ec4-a20a-d1e047e707b0",
+            "image_request_url": "https://stg-static.vulcanlabs.co/smith-nexus/images/20250922/d38lrsgnu56s73a6vlk0.png",
+            "style": "realistic_figurine",
+            "status": "done",
+            "error_code": "",
+            "error_message": "",
+            "created_at": "2025-09-22 14:32:22",
+            "done_at": "2025-09-22 14:32:35",
+            "image_response_url": "https://stg-static.vulcanlabs.co/smith-nexus/image-generations/20250922/d38ls0l8i8qs73fp18lg.jpg",
+            "state": "processing",
+            "model": "gemini-2.5-flash-image-preview"
+        }
+    },
+    {
+        "result": {
+            "generation_id": "4b8a1e8d-d25b-46af-8bbb-393b1151e349",
+            "image_request_url": "https://stg-static.vulcanlabs.co/smith-nexus/images/20250922/d38lsbgnu56s73a6vlkg.png",
+            "style": "realistic_figurine",
+            "status": "done",
+            "error_code": "",
+            "error_message": "",
+            "created_at": "2025-09-22 14:33:20",
+            "done_at": "2025-09-22 14:33:31",
+            "image_response_url": "https://stg-static.vulcanlabs.co/smith-nexus/image-generations/20250922/d38lseonu56s73a6vll0.jpg",
+            "state": "processing",
+            "model": "gemini-2.5-flash-image-preview"
+        }
+    },
+    {
+        "result": {
+            "generation_id": "72693be1-1119-496e-8bba-e909c5ebffdc",
+            "image_request_url": "https://stg-static.vulcanlabs.co/smith-nexus/images/20250922/d38lsv58i8qs73fp18m0.png",
+            "style": "art_gallery",
+            "status": "done",
+            "error_code": "",
+            "error_message": "",
+            "created_at": "2025-09-22 14:34:40",
+            "done_at": "2025-09-22 14:34:55",
+            "image_response_url": "https://stg-static.vulcanlabs.co/smith-nexus/image-generations/20250922/d38lt3t8i8qs73fp18mg.jpg",
+            "state": "processing",
+            "model": "gemini-2.5-flash-image-preview"
+        }
+    },
+    {
+        "result": {
+            "generation_id": "3203be2c-461c-4648-94b9-c720d672e5eb",
+            "image_request_url": "https://stg-static.vulcanlabs.co/smith-nexus/images/20250922/d38iic8nu56s73a6vkog.png",
+            "style": "art_gallery",
+            "status": "done",
+            "error_code": "",
+            "error_message": "",
+            "created_at": "2025-09-22 10:47:17",
+            "done_at": "2025-09-22 10:47:29",
+            "image_response_url": "https://stg-static.vulcanlabs.co/smith-nexus/image-generations/20250922/d38iig8nu56s73a6vkpg.jpg",
+            "state": "processing",
+            "model": "gemini-2.5-flash-image-preview"
+        }
+    },
+    {
+        "result": {
+            "generation_id": "a7a5f6b0-13a7-4b4b-8942-ea4129407453",
+            "image_request_url": "https://stg-static.vulcanlabs.co/smith-nexus/images/20250922/d38iivd8i8qs73fp17mg.png",
+            "style": "art_gallery",
+            "status": "done",
+            "error_code": "",
+            "error_message": "",
+            "created_at": "2025-09-22 10:48:34",
+            "done_at": "2025-09-22 10:48:43",
+            "image_response_url": "https://stg-static.vulcanlabs.co/smith-nexus/image-generations/20250922/d38ij2onu56s73a6vkr0.jpg",
+            "state": "processing",
+            "model": "gemini-2.5-flash-image-preview"
+        }
+    },
+    {
+        "result": {
+            "generation_id": "d749f41a-49e7-4b4d-a626-79cc51350983",
+            "image_request_url": "https://stg-static.vulcanlabs.co/smith-nexus/images/20250922/d38j3k8nu56s73a6vld0.png",
+            "style": "double_portrait",
+            "status": "done",
+            "error_code": "",
+            "error_message": "",
+            "created_at": "2025-09-22 11:24:05",
+            "done_at": "2025-09-22 11:24:16",
+            "image_response_url": "https://stg-static.vulcanlabs.co/smith-nexus/image-generations/20250922/d38j3o0nu56s73a6vldg.jpg",
+            "state": "processing",
+            "model": "gemini-2.5-flash-image-preview"
+        }
+    },
+    {
+        "result": {
+            "generation_id": "99a0d173-07db-4a6b-b17d-f04e47f18d5a",
+            "image_request_url": "https://stg-static.vulcanlabs.co/smith-nexus/images/20250922/d38j3k8nu56s73a6vld0.png",
+            "style": "double_portrait",
+            "status": "done",
+            "error_code": "",
+            "error_message": "",
+            "created_at": "2025-09-22 11:24:54",
+            "done_at": "2025-09-22 11:25:04",
+            "image_response_url": "https://stg-static.vulcanlabs.co/smith-nexus/image-generations/20250922/d38j43onu56s73a6vleg.jpg",
+            "state": "processing",
+            "model": "gemini-2.5-flash-image-preview"
+        }
+    },
+    {
+        "result": {
+            "generation_id": "7b33fc90-9db5-4e68-afad-802feaf72966",
+            "image_request_url": "https://stg-static.vulcanlabs.co/smith-nexus/images/20250922/d38j4gl8i8qs73fp18hg.png",
+            "style": "double_portrait",
+            "status": "done",
+            "error_code": "",
+            "error_message": "",
+            "created_at": "2025-09-22 11:25:59",
+            "done_at": "2025-09-22 11:26:09",
+            "image_response_url": "https://stg-static.vulcanlabs.co/smith-nexus/image-generations/20250922/d38j4kd8i8qs73fp18i0.jpg",
+            "state": "processing",
+            "model": "gemini-2.5-flash-image-preview"
+        }
+    },
+    {
+        "result": {
+            "generation_id": "ce026ba3-655a-4672-9648-969fe2613e77",
+            "image_request_url": "https://stg-static.vulcanlabs.co/smith-nexus/images/20250922/d38ddegnu56s73a89vu0.png",
+            "style": "double_portrait",
+            "status": "done",
+            "error_code": "",
+            "error_message": "",
+            "created_at": "2025-09-22 04:55:25",
+            "done_at": "2025-09-22 04:55:34",
+            "image_response_url": "https://stg-static.vulcanlabs.co/smith-nexus/image-generations/20250922/d38ddhgnu56s73a89vug.jpg",
+            "state": "processing",
+            "model": "gemini-2.5-flash-image-preview"
+        }
+    },
+    {
+        "result": {
+            "generation_id": "40c18a76-f529-4f83-a219-0d1e5bbeb7f6",
+            "image_request_url": "https://stg-static.vulcanlabs.co/smith-nexus/images/20250922/d38ltg8nu56s73a6vllg.png",
+            "style": "studio_portrait",
+            "status": "done",
+            "error_code": "",
+            "error_message": "",
+            "created_at": "2025-09-22 14:35:47",
+            "done_at": "2025-09-22 14:35:59",
+            "image_response_url": "https://stg-static.vulcanlabs.co/smith-nexus/image-generations/20250922/d38ltjt8i8qs73fp18n0.jpg",
+            "state": "processing",
+            "model": "gemini-2.5-flash-image-preview"
+        }
+    },
+    {
+        "result": {
+            "generation_id": "512b5533-4dc0-4d2f-a6a2-465c1c3a5fc3",
+            "image_request_url": "https://stg-static.vulcanlabs.co/smith-nexus/images/20250922/d38iej8nu56s73a6vkj0.png",
+            "style": "studio_portrait",
+            "status": "done",
+            "error_code": "",
+            "error_message": "",
+            "created_at": "2025-09-22 10:39:12",
+            "done_at": "2025-09-22 10:39:22",
+            "image_response_url": "https://stg-static.vulcanlabs.co/smith-nexus/image-generations/20250922/d38iemgnu56s73a6vkjg.jpg",
+            "state": "processing",
+            "model": "gemini-2.5-flash-image-preview"
+        }
+    },
+    {
+        "result": {
+            "generation_id": "cee057f6-3e57-4bcd-b1a7-f12465e05164",
+            "image_request_url": "https://stg-static.vulcanlabs.co/smith-nexus/images/20250922/d38lunl8i8qs73fp18ng.png",
+            "style": "studio_portrait",
+            "status": "done",
+            "error_code": "",
+            "error_message": "",
+            "created_at": "2025-09-22 14:38:25",
+            "done_at": "2025-09-22 14:38:36",
+            "image_response_url": "https://stg-static.vulcanlabs.co/smith-nexus/image-generations/20250922/d38lur0nu56s73a6vlm0.jpg",
+            "state": "processing",
+            "model": "gemini-2.5-flash-image-preview"
+        }
+    },
+    {
+        "result": {
+            "generation_id": "3ace79d9-71ca-47f5-b8dd-77410545d17a",
+            "image_request_url": "https://stg-static.vulcanlabs.co/smith-nexus/images/20250922/d38fr7920snc73bbq6d0.png",
+            "style": "birthday_girl",
+            "status": "done",
+            "error_code": "",
+            "error_message": "",
+            "created_at": "2025-09-22 07:41:22",
+            "done_at": "2025-09-22 07:41:31",
+            "image_response_url": "https://stg-static.vulcanlabs.co/smith-nexus/image-generations/20250922/d38frap20snc73bbq6dg.jpg",
+            "state": "processing",
+            "model": "gemini-2.5-flash-image-preview"
+        }
+    },
+    {
+        "result": {
+            "generation_id": "035abc60-4632-4f6c-a3a4-99ef9d61725d",
+            "image_request_url": "https://stg-static.vulcanlabs.co/smith-nexus/images/20250922/d38fstj3897c73db07o0.png",
+            "style": "birthday_girl",
+            "status": "done",
+            "error_code": "",
+            "error_message": "",
+            "created_at": "2025-09-22 07:44:59",
+            "done_at": "2025-09-22 07:45:09",
+            "image_response_url": "https://stg-static.vulcanlabs.co/smith-nexus/image-generations/20250922/d38ft1920snc73bbq6eg.jpg",
+            "state": "processing",
+            "model": "gemini-2.5-flash-image-preview"
+        }
+    },
+    {
+        "result": {
+            "generation_id": "4e79933a-ea8f-4064-9884-7f3768f6d73e",
+            "image_request_url": "https://stg-static.vulcanlabs.co/smith-nexus/images/20250922/d38f9or3897c73db07a0.png",
+            "style": "birthday_girl",
+            "status": "done",
+            "error_code": "",
+            "error_message": "",
+            "created_at": "2025-09-22 07:04:06",
+            "done_at": "2025-09-22 07:04:16",
+            "image_response_url": "https://stg-static.vulcanlabs.co/smith-nexus/image-generations/20250922/d38f9rp20snc73bbq620.jpg",
+            "state": "processing",
+            "model": "gemini-2.5-flash-image-preview"
+        }
+    },
+    {
+        "result": {
+            "generation_id": "0fd083d7-e536-47ca-adce-dea20e6edbb2",
+            "image_request_url": "https://stg-static.vulcanlabs.co/smith-nexus/images/20250922/d38ibeonu56s73a6vkeg.png",
+            "style": "poster_design",
+            "status": "done",
+            "error_code": "",
+            "error_message": "",
+            "created_at": "2025-09-22 10:32:32",
+            "done_at": "2025-09-22 10:32:42",
+            "image_response_url": "https://stg-static.vulcanlabs.co/smith-nexus/image-generations/20250922/d38ibil8i8qs73fp17ag.jpg",
+            "state": "processing",
+            "model": "gemini-2.5-flash-image-preview"
+        }
+    },
+    {
+        "result": {
+            "generation_id": "d792251a-3b82-4e82-af3c-e403afa013f2",
+            "image_request_url": "https://stg-static.vulcanlabs.co/smith-nexus/images/20250922/d38ibeonu56s73a6vkeg.png",
+            "style": "poster_design",
+            "status": "done",
+            "error_code": "",
+            "error_message": "",
+            "created_at": "2025-09-22 10:33:41",
+            "done_at": "2025-09-22 10:33:50",
+            "image_response_url": "https://stg-static.vulcanlabs.co/smith-nexus/image-generations/20250922/d38ic3l8i8qs73fp17b0.jpg",
+            "state": "processing",
+            "model": "gemini-2.5-flash-image-preview"
+        }
+    },
+    {
+        "result": {
+            "generation_id": "82300388-19e6-458c-b87c-a67151e7f2fc",
+            "image_request_url": "https://stg-static.vulcanlabs.co/smith-nexus/images/20250922/d38lvi8nu56s73a6vlmg.png",
+            "style": "poster_design",
+            "status": "done",
+            "error_code": "",
+            "error_message": "",
+            "created_at": "2025-09-22 14:40:12",
+            "done_at": "2025-09-22 14:40:26",
+            "image_response_url": "https://stg-static.vulcanlabs.co/smith-nexus/image-generations/20250922/d38lvmgnu56s73a6vln0.jpg",
+            "state": "processing",
+            "model": "gemini-2.5-flash-image-preview"
+        }
+    },
+    {
+        "result": {
+            "generation_id": "f51d256c-c76a-4bf8-8685-09e8eabd219e",
+            "image_request_url": "https://stg-static.vulcanlabs.co/smith-nexus/images/20250922/d38j1l0nu56s73a6vlag.png",
+            "style": "spotify",
+            "status": "done",
+            "error_code": "",
+            "error_message": "",
+            "created_at": "2025-09-22 11:19:51",
+            "done_at": "2025-09-22 11:20:02",
+            "image_response_url": "https://stg-static.vulcanlabs.co/smith-nexus/image-generations/20250922/d38j1ognu56s73a6vlb0.jpg",
+            "state": "processing",
+            "model": "gemini-2.5-flash-image-preview"
+        }
+    },
+    {
+        "result": {
+            "generation_id": "acc49b45-97d1-4c45-aaba-93da967da09c",
+            "image_request_url": "https://stg-static.vulcanlabs.co/smith-nexus/images/20250922/d38j2md8i8qs73fp18eg.png",
+            "style": "spotify",
+            "status": "done",
+            "error_code": "",
+            "error_message": "",
+            "created_at": "2025-09-22 11:22:06",
+            "done_at": "2025-09-22 11:22:19",
+            "image_response_url": "https://stg-static.vulcanlabs.co/smith-nexus/image-generations/20250922/d38j2qt8i8qs73fp18f0.jpg",
+            "state": "processing",
+            "model": "gemini-2.5-flash-image-preview"
+        }
+    },
+    {
+        "result": {
+            "generation_id": "fe87e68d-03d3-4c7b-b0b8-68d939db9271",
+            "image_request_url": "https://stg-static.vulcanlabs.co/smith-nexus/images/20250922/d38j358nu56s73a6vlbg.png",
+            "style": "spotify",
+            "status": "done",
+            "error_code": "",
+            "error_message": "",
+            "created_at": "2025-09-22 11:23:06",
+            "done_at": "2025-09-22 11:23:17",
+            "image_response_url": "https://stg-static.vulcanlabs.co/smith-nexus/image-generations/20250922/d38j39d8i8qs73fp18fg.jpg",
+            "state": "processing",
+            "model": "gemini-2.5-flash-image-preview"
+        }
+    },
+    {
+        "result": {
+            "generation_id": "c6a9edbb-f9eb-4f88-bc4d-fb20ef37c2de",
+            "image_request_url": "https://stg-static.vulcanlabs.co/smith-nexus/images/20250922/d38ik6d8i8qs73fp17o0.png",
+            "style": "meowchic",
+            "status": "done",
+            "error_code": "",
+            "error_message": "",
+            "created_at": "2025-09-22 10:51:09",
+            "done_at": "2025-09-22 10:51:19",
+            "image_response_url": "https://stg-static.vulcanlabs.co/smith-nexus/image-generations/20250922/d38ik9t8i8qs73fp17og.jpg",
+            "state": "processing",
+            "model": "gemini-2.5-flash-image-preview"
+        }
+    },
+    {
+        "result": {
+            "generation_id": "51ca47ff-1ffa-4702-8995-6b9cc0577576",
+            "image_request_url": "https://stg-static.vulcanlabs.co/smith-nexus/images/20250922/d38m07t8i8qs73fp18o0.png",
+            "style": "meowchic",
+            "status": "done",
+            "error_code": "",
+            "error_message": "",
+            "created_at": "2025-09-22 14:41:39",
+            "done_at": "2025-09-22 14:41:50",
+            "image_response_url": "https://stg-static.vulcanlabs.co/smith-nexus/image-generations/20250922/d38m0bgnu56s73a6vlng.jpg",
+            "state": "processing",
+            "model": "gemini-2.5-flash-image-preview"
+        }
+    },
+    {
+        "result": {
+            "generation_id": "9b71b40b-ebbf-4148-bf7b-40564c122d18",
+            "image_request_url": "https://stg-static.vulcanlabs.co/smith-nexus/images/20250922/d38m0qgnu56s73a6vlo0.png",
+            "style": "autumn",
+            "status": "done",
+            "error_code": "",
+            "error_message": "",
+            "created_at": "2025-09-22 14:42:54",
+            "done_at": "2025-09-22 14:43:09",
+            "image_response_url": "https://stg-static.vulcanlabs.co/smith-nexus/image-generations/20250922/d38m0vd8i8qs73fp18og.jpg",
+            "state": "processing",
+            "model": "gemini-2.5-flash-image-preview"
+        }
+    },
+    {
+        "result": {
+            "generation_id": "89040686-bfd3-44ed-8a05-7b149b452a72",
+            "image_request_url": "https://stg-static.vulcanlabs.co/smith-nexus/images/20250922/d38ikpt8i8qs73fp17pg.png",
+            "style": "autumn",
+            "status": "done",
+            "error_code": "",
+            "error_message": "",
+            "created_at": "2025-09-22 10:52:25",
+            "done_at": "2025-09-22 10:52:36",
+            "image_response_url": "https://stg-static.vulcanlabs.co/smith-nexus/image-generations/20250922/d38ikst8i8qs73fp17q0.jpg",
+            "state": "processing",
+            "model": "gemini-2.5-flash-image-preview"
+        }
+    },
+    {
+        "result": {
+            "generation_id": "67aa6872-a322-4fd3-8d8f-ef16ba12d906",
+            "image_request_url": "https://stg-static.vulcanlabs.co/smith-nexus/images/20250922/d38m1858i8qs73fp18p0.png",
+            "style": "autumn",
+            "status": "done",
+            "error_code": "",
+            "error_message": "",
+            "created_at": "2025-09-22 14:43:46",
+            "done_at": "2025-09-22 14:43:57",
+            "image_response_url": "https://stg-static.vulcanlabs.co/smith-nexus/image-generations/20250922/d38m1b8nu56s73a6vlog.jpg",
+            "state": "processing",
+            "model": "gemini-2.5-flash-image-preview"
+        }
+    },
+    {
+        "result": {
+            "generation_id": "cc3b0f94-b7fb-44c4-882a-591b6b31b98b",
+            "image_request_url": "https://stg-static.vulcanlabs.co/smith-nexus/images/20250922/d38ils58i8qs73fp17qg.png",
+            "style": "winter",
+            "status": "done",
+            "error_code": "",
+            "error_message": "",
+            "created_at": "2025-09-22 10:54:42",
+            "done_at": "2025-09-22 10:54:54",
+            "image_response_url": "https://stg-static.vulcanlabs.co/smith-nexus/image-generations/20250922/d38ilvl8i8qs73fp17r0.jpg",
+            "state": "processing",
+            "model": "gemini-2.5-flash-image-preview"
+        }
+    },
+    {
+        "result": {
+            "generation_id": "156484b8-a687-4cb8-b5a3-791dcb64ddc8",
+            "image_request_url": "https://stg-static.vulcanlabs.co/smith-nexus/images/20250922/d38m1ql8i8qs73fp18pg.png",
+            "style": "winter",
+            "status": "done",
+            "error_code": "",
+            "error_message": "",
+            "created_at": "2025-09-22 14:45:01",
+            "done_at": "2025-09-22 14:45:14",
+            "image_response_url": "https://stg-static.vulcanlabs.co/smith-nexus/image-generations/20250922/d38m1ugnu56s73a6vlpg.jpg",
+            "state": "processing",
+            "model": "gemini-2.5-flash-image-preview"
+        }
+    },
+    {
+        "result": {
+            "generation_id": "c00124c3-3222-499e-a8e1-cd3d2e8d33d1",
+            "image_request_url": "https://stg-static.vulcanlabs.co/smith-nexus/images/20250922/d38m6et8i8qs73fp18qg.png",
+            "style": "winter",
+            "status": "done",
+            "error_code": "",
+            "error_message": "",
+            "created_at": "2025-09-22 14:54:55",
+            "done_at": "2025-09-22 14:55:10",
+            "image_response_url": "https://stg-static.vulcanlabs.co/smith-nexus/image-generations/20250922/d38m6jgnu56s73a6vlrg.jpg",
+            "state": "processing",
+            "model": "gemini-2.5-flash-image-preview"
+        }
+    },
+    {
+        "result": {
+            "generation_id": "f741e480-8b19-479e-a7c4-ff483f9a9eea",
+            "image_request_url": "https://stg-static.vulcanlabs.co/smith-nexus/images/20250922/d38imbl8i8qs73fp17rg.png",
+            "style": "santorini",
+            "status": "done",
+            "error_code": "",
+            "error_message": "",
+            "created_at": "2025-09-22 10:55:45",
+            "done_at": "2025-09-22 10:55:56",
+            "image_response_url": "https://stg-static.vulcanlabs.co/smith-nexus/image-generations/20250922/d38imf58i8qs73fp17sg.jpg",
+            "state": "processing",
+            "model": "gemini-2.5-flash-image-preview"
+        }
+    },
+    {
+        "result": {
+            "generation_id": "61f002a2-da1e-4460-8a30-1c7b16de9546",
+            "image_request_url": "https://stg-static.vulcanlabs.co/smith-nexus/images/20250922/d38ip558i8qs73fp182g.png",
+            "style": "santorini",
+            "status": "done",
+            "error_code": "",
+            "error_message": "",
+            "created_at": "2025-09-22 11:01:43",
+            "done_at": "2025-09-22 11:01:55",
+            "image_response_url": "https://stg-static.vulcanlabs.co/smith-nexus/image-generations/20250922/d38ip8onu56s73a6vl10.jpg",
+            "state": "processing",
+            "model": "gemini-2.5-flash-image-preview"
+        }
+    },
+    {
+        "result": {
+            "generation_id": "fe084a20-0349-482c-a6dc-4558b0618534",
+            "image_request_url": "https://stg-static.vulcanlabs.co/smith-nexus/images/20250922/d38ipll8i8qs73fp1840.png",
+            "style": "mount_fuji",
+            "status": "done",
+            "error_code": "",
+            "error_message": "",
+            "created_at": "2025-09-22 11:02:50",
+            "done_at": "2025-09-22 11:03:01",
+            "image_response_url": "https://stg-static.vulcanlabs.co/smith-nexus/image-generations/20250922/d38ipp0nu56s73a6vl20.jpg",
+            "state": "processing",
+            "model": "gemini-2.5-flash-image-preview"
+        }
+    },
+    {
+        "result": {
+            "generation_id": "7cfa1113-809d-4c76-ba13-21e5f66ce7bd",
+            "image_request_url": "https://stg-static.vulcanlabs.co/smith-nexus/images/20250922/d38iq48nu56s73a6vl2g.png",
+            "style": "mount_fuji",
+            "status": "done",
+            "error_code": "",
+            "error_message": "",
+            "created_at": "2025-09-22 11:03:48",
+            "done_at": "2025-09-22 11:03:59",
+            "image_response_url": "https://stg-static.vulcanlabs.co/smith-nexus/image-generations/20250922/d38iq7t8i8qs73fp1850.jpg",
+            "state": "processing",
+            "model": "gemini-2.5-flash-image-preview"
+        }
+    },
+    {
+        "result": {
+            "generation_id": "b4fc96e6-310b-427e-ad31-7ab066b24e50",
+            "image_request_url": "https://stg-static.vulcanlabs.co/smith-nexus/images/20250922/d38iqm8nu56s73a6vl30.png",
+            "style": "taj_mahal",
+            "status": "done",
+            "error_code": "",
+            "error_message": "",
+            "created_at": "2025-09-22 11:05:00",
+            "done_at": "2025-09-22 11:05:13",
+            "image_response_url": "https://stg-static.vulcanlabs.co/smith-nexus/image-generations/20250922/d38iqq8nu56s73a6vl40.jpg",
+            "state": "processing",
+            "model": "gemini-2.5-flash-image-preview"
+        }
+    },
+    {
+        "result": {
+            "generation_id": "47e79af6-9771-42aa-a6f6-fbaf6b05ee67",
+            "image_request_url": "https://stg-static.vulcanlabs.co/smith-nexus/images/20250922/d38ir50nu56s73a6vl4g.png",
+            "style": "taj_mahal",
+            "status": "done",
+            "error_code": "",
+            "error_message": "",
+            "created_at": "2025-09-22 11:05:59",
+            "done_at": "2025-09-22 11:06:11",
+            "image_response_url": "https://stg-static.vulcanlabs.co/smith-nexus/image-generations/20250922/d38ir8onu56s73a6vl50.jpg",
+            "state": "processing",
+            "model": "gemini-2.5-flash-image-preview"
+        }
+    },
+    {
+        "result": {
+            "generation_id": "1622856d-804b-4790-ba80-e946742106b8",
+            "image_request_url": "https://stg-static.vulcanlabs.co/smith-nexus/images/20250922/d38j1458i8qs73fp18dg.png",
+            "style": "taj_mahal",
+            "status": "done",
+            "error_code": "",
+            "error_message": "",
+            "created_at": "2025-09-22 11:18:43",
+            "done_at": "2025-09-22 11:18:56",
+            "image_response_url": "https://stg-static.vulcanlabs.co/smith-nexus/image-generations/20250922/d38j180nu56s73a6vla0.jpg",
+            "state": "processing",
+            "model": "gemini-2.5-flash-image-preview"
+        }
+    },
+    {
+        "result": {
+            "generation_id": "ff64b8d9-f409-46f4-a473-4920c742167a",
+            "image_request_url": "https://stg-static.vulcanlabs.co/smith-nexus/images/20250922/d38is158i8qs73fp185g.png",
+            "style": "colosseum",
+            "status": "done",
+            "error_code": "",
+            "error_message": "",
+            "created_at": "2025-09-22 11:07:51",
+            "done_at": "2025-09-22 11:08:02",
+            "image_response_url": "https://stg-static.vulcanlabs.co/smith-nexus/image-generations/20250922/d38is4l8i8qs73fp1860.jpg",
+            "state": "processing",
+            "model": "gemini-2.5-flash-image-preview"
+        }
+    },
+    {
+        "result": {
+            "generation_id": "c0df376c-4071-4b9c-9f0d-fc684f1d2611",
+            "image_request_url": "https://stg-static.vulcanlabs.co/smith-nexus/images/20250922/d38isconu56s73a6vl5g.png",
+            "style": "colosseum",
+            "status": "done",
+            "error_code": "",
+            "error_message": "",
+            "created_at": "2025-09-22 11:08:38",
+            "done_at": "2025-09-22 11:08:49",
+            "image_response_url": "https://stg-static.vulcanlabs.co/smith-nexus/image-generations/20250922/d38isgd8i8qs73fp186g.jpg",
+            "state": "processing",
+            "model": "gemini-2.5-flash-image-preview"
+        }
+    },
+    {
+        "result": {
+            "generation_id": "209e906b-991b-4fca-8595-119fc37107c8",
+            "image_request_url": "https://stg-static.vulcanlabs.co/smith-nexus/images/20250922/d38f94r3897c73db079g.png",
+            "style": "eiffel_tower",
+            "status": "done",
+            "error_code": "",
+            "error_message": "",
+            "created_at": "2025-09-22 07:02:46",
+            "done_at": "2025-09-22 07:02:58",
+            "image_response_url": "https://stg-static.vulcanlabs.co/smith-nexus/image-generations/20250922/d38f98h20snc73bbq61g.jpg",
+            "state": "processing",
+            "model": "gemini-2.5-flash-image-preview"
+        }
+    },
+    {
+        "result": {
+            "generation_id": "c65ab1ca-23cf-47eb-a717-5bb65689209c",
+            "image_request_url": "https://stg-static.vulcanlabs.co/smith-nexus/images/20250922/d38f7rj3897c73db0790.png",
+            "style": "eiffel_tower",
+            "status": "done",
+            "error_code": "",
+            "error_message": "",
+            "created_at": "2025-09-22 07:00:01",
+            "done_at": "2025-09-22 07:00:11",
+            "image_response_url": "https://stg-static.vulcanlabs.co/smith-nexus/image-generations/20250922/d38f7up20snc73bbq60g.jpg",
+            "state": "processing",
+            "model": "gemini-2.5-flash-image-preview"
+        }
+    },
+    {
+        "result": {
+            "generation_id": "038d66c1-fbbc-4f7e-b8e1-91570b8e328f",
+            "image_request_url": "https://stg-static.vulcanlabs.co/smith-nexus/images/20250922/d38m2m8nu56s73a6vlq0.png",
+            "style": "eiffel_tower",
+            "status": "done",
+            "error_code": "",
+            "error_message": "",
+            "created_at": "2025-09-22 14:46:52",
+            "done_at": "2025-09-22 14:47:06",
+            "image_response_url": "https://stg-static.vulcanlabs.co/smith-nexus/image-generations/20250922/d38m2q8nu56s73a6vlqg.jpg",
+            "state": "processing",
+            "model": "gemini-2.5-flash-image-preview"
+        }
+    },
+    {
+        "result": {
+            "generation_id": "dec2b731-3136-4bf7-9c18-eacfc77d403c",
+            "image_request_url": "https://stg-static.vulcanlabs.co/smith-nexus/images/20250922/d38it2d8i8qs73fp1870.png",
+            "style": "venice",
+            "status": "done",
+            "error_code": "",
+            "error_message": "",
+            "created_at": "2025-09-22 11:10:04",
+            "done_at": "2025-09-22 11:10:14",
+            "image_response_url": "https://stg-static.vulcanlabs.co/smith-nexus/image-generations/20250922/d38it5l8i8qs73fp187g.jpg",
+            "state": "processing",
+            "model": "gemini-2.5-flash-image-preview"
+        }
+    },
+    {
+        "result": {
+            "generation_id": "db61689f-252c-4135-a67d-0b3813c9df29",
+            "image_request_url": "https://stg-static.vulcanlabs.co/smith-nexus/images/20250922/d38itfl8i8qs73fp1880.png",
+            "style": "venice",
+            "status": "done",
+            "error_code": "",
+            "error_message": "",
+            "created_at": "2025-09-22 11:10:58",
+            "done_at": "2025-09-22 11:11:08",
+            "image_response_url": "https://stg-static.vulcanlabs.co/smith-nexus/image-generations/20250922/d38itit8i8qs73fp188g.jpg",
+            "state": "processing",
+            "model": "gemini-2.5-flash-image-preview"
+        }
+    },
+    {
+        "result": {
+            "generation_id": "6e1114fa-61f9-4833-8a48-6df32d7ca705",
+            "image_request_url": "https://stg-static.vulcanlabs.co/smith-nexus/images/20250922/d38itvd8i8qs73fp1890.png",
+            "style": "venice",
+            "status": "done",
+            "error_code": "",
+            "error_message": "",
+            "created_at": "2025-09-22 11:12:00",
+            "done_at": "2025-09-22 11:12:13",
+            "image_response_url": "https://stg-static.vulcanlabs.co/smith-nexus/image-generations/20250922/d38iu3d8i8qs73fp189g.jpg",
+            "state": "processing",
+            "model": "gemini-2.5-flash-image-preview"
+        }
+    },
+    {
+        "result": {
+            "generation_id": "93cd95cf-741e-430c-b593-a96c4730baf0",
+            "image_request_url": "https://stg-static.vulcanlabs.co/smith-nexus/images/20250922/d38iug0nu56s73a6vl60.png",
+            "style": "venice",
+            "status": "done",
+            "error_code": "",
+            "error_message": "",
+            "created_at": "2025-09-22 11:13:09",
+            "done_at": "2025-09-22 11:13:20",
+            "image_response_url": "https://stg-static.vulcanlabs.co/smith-nexus/image-generations/20250922/d38iuk58i8qs73fp18a0.jpg",
+            "state": "processing",
+            "model": "gemini-2.5-flash-image-preview"
+        }
+    },
+    {
+        "result": {
+            "generation_id": "1f48c48d-ceb9-4514-971e-175df471bc81",
+            "image_request_url": "https://stg-static.vulcanlabs.co/smith-nexus/images/20250922/d38icod8i8qs73fp17cg.png",
+            "style": "disney",
+            "status": "done",
+            "error_code": "",
+            "error_message": "",
+            "created_at": "2025-09-22 10:35:18",
+            "done_at": "2025-09-22 10:36:07",
+            "image_response_url": "https://stg-static.vulcanlabs.co/smith-nexus/image-generations/20250922/d38id5onu56s73a6vkgg.jpg",
+            "state": "processing",
+            "model": "gpt-image-1"
+        }
+    },
+    {
+        "result": {
+            "generation_id": "fd353637-761f-4d95-a86a-df812fde9b99",
+            "image_request_url": "https://stg-static.vulcanlabs.co/smith-nexus/images/20250922/d38icod8i8qs73fp17cg.png",
+            "style": "disney",
+            "status": "done",
+            "error_code": "",
+            "error_message": "",
+            "created_at": "2025-09-22 10:36:43",
+            "done_at": "2025-09-22 10:37:05",
+            "image_response_url": "https://stg-static.vulcanlabs.co/smith-nexus/image-generations/20250922/d38idk8nu56s73a6vkh0.jpg",
+            "state": "processing",
+            "model": "gpt-image-1"
+        }
+    },
+    {
+        "result": {
+            "generation_id": "fb090993-7a87-4bc9-86b0-ec587b983d7b",
+            "image_request_url": "https://stg-static.vulcanlabs.co/smith-nexus/images/20250922/d38m3sd8i8qs73fp18q0.png",
+            "style": "custom",
+            "status": "done",
+            "error_code": "",
+            "error_message": "",
+            "created_at": "2025-09-22 14:49:25",
+            "done_at": "2025-09-22 14:51:32",
+            "image_response_url": "https://stg-static.vulcanlabs.co/smith-nexus/image-generations/20250922/d38m4t0nu56s73a6vlr0.jpg",
+            "state": "processing",
+            "model": "gpt-image-1"
+        }
+    }
+]
