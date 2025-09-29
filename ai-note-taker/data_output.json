@@ -1,0 +1,461 @@
+[
+    {
+        "id": "user_data_01",
+        "source": "https:\/\/static.vulcanlabs.co\/media\/ms-note-taker\/20250823\/d2l2m60i0pas73d7vu6g.mp4",
+        "source_type": "audio",
+        "description": "US woman voice. The voice is small and difficult to listen. some noise on recording",
+        "language": "us",
+        "summary": null,
+        "transcription": null
+    },
+    {
+        "id": "user_data_02",
+        "source": "https:\/\/static.vulcanlabs.co\/media\/ms-note-taker\/20250818\/d2hpi90i0pas73d7vmsg.mp4",
+        "source_type": "audio",
+        "description": "US girl voice. voice is clear",
+        "language": "us",
+        "summary": null,
+        "transcription": null
+    },
+    {
+        "id": "user_data_03",
+        "source": "https:\/\/static.vulcanlabs.co\/media\/ms-note-taker\/20250822\/d2kehirj1goc739b9dqg.mp4",
+        "source_type": "audio",
+        "description": "woman voice with english language",
+        "language": "us",
+        "summary": null,
+        "transcription": null
+    },
+    {
+        "id": "user_data_04",
+        "source": "https:\/\/static.vulcanlabs.co\/media\/ms-note-taker\/20250820\/d2ijti3j1goc739b99k0.mp4",
+        "source_type": "audio",
+        "description": "woman voice with some noise in backgroud. Long recording (more than 1hour)",
+        "language": "Bahasa Indonesia",
+        "summary": null,
+        "transcription": null
+    },
+    {
+        "id": "user_data_05",
+        "source": "https:\/\/static.vulcanlabs.co\/media\/ms-note-taker\/20250820\/d2ihhcgi0pas73d7vnt0.mp4",
+        "source_type": "audio",
+        "description": "Woman voice in room",
+        "language": "Bahasa Indonesia",
+        "summary": null,
+        "transcription": null
+    },
+    {
+        "id": "user_data_06",
+        "source": "https:\/\/static.vulcanlabs.co\/media\/ms-note-taker\/20250819\/d2i0vtjj1goc739b98v0.mp4",
+        "source_type": "audio",
+        "description": "Man voice with noise in backgroud. it's difficult to listen",
+        "language": "Bahasa Indonesia",
+        "summary": null,
+        "transcription": null
+    },
+    {
+        "id": "user_data_07",
+        "source": "https:\/\/static.vulcanlabs.co\/media\/ms-note-taker\/20250819\/d2hvktjj1goc739b98ug.mp4",
+        "source_type": "audio",
+        "description": "Woman voice in conversation with student",
+        "language": "Bahasa Indonesia",
+        "summary": null,
+        "transcription": null
+    },
+    {
+        "id": "user_data_08",
+        "source": "https:\/\/static.vulcanlabs.co\/media\/ms-note-taker\/20250821\/d2jd0m3j1goc739b9bn0.mp4",
+        "source_type": "audio",
+        "description": "man voice, in 20 second at begin without any sound. sometimes, it will be in slient 10-15s",
+        "language": "Bahasa Indonesia",
+        "summary": null,
+        "transcription": null
+    },
+    {
+        "id": "user_data_09",
+        "source": "https:\/\/static.vulcanlabs.co\/media\/ms-note-taker\/20250823\/d2l4ep0i0pas73d7vua0.mp4",
+        "source_type": "audio",
+        "description": "man voice",
+        "language": "Bahasa Indonesia",
+        "summary": null,
+        "transcription": null
+    },
+    {
+        "id": "user_data_10",
+        "source": "https:\/\/static.vulcanlabs.co\/media\/ms-note-taker\/20250820\/d2j2pc3j1goc739b9am0.mp4",
+        "source_type": "audio",
+        "description": "Man voice with noise in backgroud. it's difficult to listen",
+        "language": "Bahasa Malaysia",
+        "summary": null,
+        "transcription": null
+    },
+    {
+        "id": "user_data_11",
+        "source": "https:\/\/static.vulcanlabs.co\/media\/ms-note-taker\/20250819\/d2i29nrj1goc739b9900.mp4",
+        "source_type": "audio",
+        "description": "some women voice",
+        "language": "Philippines",
+        "summary": null,
+        "transcription": null
+    },
+    {
+        "id": "user_data_12",
+        "source": "https:\/\/static.vulcanlabs.co\/media\/ms-note-taker\/20250821\/d2jb3jrj1goc739b9b90.mp4",
+        "source_type": "audio",
+        "description": "sound is not clear. noise in background",
+        "language": "Philippines",
+        "summary": null,
+        "transcription": null
+    },
+    {
+        "id": "user_data_13",
+        "source": "https:\/\/static.vulcanlabs.co\/media\/ms-note-taker\/20250823\/d2kr47jj1goc739b9eug.mp4",
+        "source_type": "audio",
+        "description": "woman voice. it is easy to listen",
+        "language": "Philippines",
+        "summary": null,
+        "transcription": null
+    },
+    {
+        "id": "user_data_14",
+        "source": "https:\/\/static.vulcanlabs.co\/media\/ms-note-taker\/20250823\/d2l437rj1goc739b9fvg.mp4",
+        "source_type": "audio",
+        "description": "Mising two language. man voice wint music in background",
+        "language": "Mixing",
+        "summary": null,
+        "transcription": null
+    },
+    {
+        "id": "user_data_15",
+        "source": "https:\/\/static.vulcanlabs.co\/media\/ms-note-taker\/20250823\/d2ktmpjj1goc739b9f8g.mp4",
+        "source_type": "audio",
+        "description": "many voice in coversation. noise in background",
+        "language": "Mixing",
+        "summary": null,
+        "transcription": null
+    },
+    {
+        "id": "user_data_16",
+        "source": "https:\/\/static.vulcanlabs.co\/media\/ms-note-taker\/20250821\/d2ja0ijj1goc739b9b4g.mp4",
+        "source_type": "audio",
+        "description": "Non US language",
+        "language": "Non-US",
+        "summary": null,
+        "transcription": null
+    },
+    {
+        "id": "user_data_17",
+        "source": "https:\/\/static.vulcanlabs.co\/media\/ms-note-taker\/20250821\/d2j8cfrj1goc739b9b0g.mp4",
+        "source_type": "audio",
+        "description": "Non US language with noise in voice sound",
+        "language": "Non-US",
+        "summary": null,
+        "transcription": null
+    },
+    {
+        "id": "user_data_18",
+        "source": "https:\/\/static.vulcanlabs.co\/media\/ms-note-taker\/20250824\/d2lcm7gi0pas73d7vup0.mp4",
+        "source_type": "audio",
+        "description": "Non US language with noise in voice sound. at begin recording, it sings a song.",
+        "language": "Non-US",
+        "summary": null,
+        "transcription": null
+    },
+    {
+        "id": "user_data_19",
+        "source": "https:\/\/static.vulcanlabs.co\/media\/ms-note-taker\/20250823\/d2l2f90i0pas73d7vu60.mp4",
+        "source_type": "audio",
+        "description": "Non US language",
+        "language": "Non-US",
+        "summary": null,
+        "transcription": null
+    },
+    {
+        "id": "user_data_20",
+        "source": "https:\/\/static.vulcanlabs.co\/media\/ms-note-taker\/20250823\/d2ktmpjj1goc739b9f8g.mp4",
+        "source_type": "audio",
+        "description": "Non US language with noise in voice sound. many voices in recording",
+        "language": "Non-US",
+        "summary": null,
+        "transcription": null
+    },
+    {
+        "id": "user_data_21",
+        "source": "https:\/\/static.vulcanlabs.co\/media\/ms-note-taker\/20250823\/d2km8e8i0pas73d7vsq0.mp4",
+        "source_type": "audio",
+        "description": "man voice, Non US language",
+        "language": "Non-US",
+        "summary": null,
+        "transcription": null
+    },
+    {
+        "id": "bahasa_indo_14",
+        "source": "sources/audio/bahasa-indo/2025-09-24 21-45-39.mov",
+        "source_type": "audio",
+        "description": null,
+        "language": "Bahasa Indonesia",
+        "summary": null,
+        "transcription": "a raft a bridge for those who wish to cross the flood may I be a lamp in the Darkness a resting place for the weary a healing medicine for all who are sick a vase of plenty a tree of Miracles and for the boundless multitudes of living beings may I bring sustenance and Awakening enduring like the Earth and Sky until all beings are freed from sorrow and all are awakened have you ever considered the Seven Dwarfs in the fairy tale team about Alpha Grand Rapids mission and vision statement but motivated by the love of Christ Alpha Grand Rapids promotes Abundant Life by providing holistic services to women and men affected by unplanned pregnancy we believe that all people deserve the opportunity to live life abundantly"
+    },
+    {
+        "id": "bahasa_indo_15",
+        "source": "sources/audio/bahasa-indo/Basic Prompt_Bunny_Script Bahasa Indonesia.mov",
+        "source_type": "audio",
+        "description": null,
+        "language": "Bahasa Indonesia",
+        "summary": "Halo, terima kasih telah menelepon perusahaan kami. Cara terbaik untuk mendapatkan sulih suara sempurna untuk proyek Anda dalam setiap bahasa. Untuk mengetahui lebih lanjut tentang perusahaan, tekan 1. Jika Anda ingin mengajukan proyek atau berbicara dengan tim penjualan kami, tekan 2. Butuh bantuan dari tim manajemen produksi kami? Tidak masalah, silahkan tekan 3. Untuk pertanyaan terkait kualitas, tekan 4. Punya ide, saran? Kami akan dengan senang hati mendengarnya. Tekan 5. Ingin menjadi bagian dari tim? Kami membuka lawangan. Kunjungi website kami untuk mempelajari lebih lanjut tentang lawangan pekerjaan saat ini.",
+        "transcription": null
+    },
+    {
+        "id": "bahasa_indo_16",
+        "source": "sources/audio/bahasa-indo/Pemprov DKI Jakarta Lakukan Upaya Antisipasi Banjir.mov",
+        "source_type": "audio",
+        "description": null,
+        "language": "Bahasa Indonesia",
+        "summary": "The Jakarta Provincial Water Resources Agency is taking various measures to minimize the impact of recent heavy rainfall. These measures include the construction of reservoirs, reinforcement of river embankments, development of polders or pumps, and improvement of drainage capacity. Five polders or pumps are currently being built, while two stationary pump locations are being revitalized. Additionally, eight reservoirs are being constructed, including six ongoing projects and two new ones. The agency also conducts regular dredging and installs sheet piles to prevent landslides. To address coastal flooding, the construction of coastal embankments and the implementation of flood monitoring and early warning systems are being accelerated. The agency also continues to optimize flood control infrastructure, such as pump houses and gates, through regular maintenance and inspections. There are 580 stationary pumps and 557 mobile pumps across Jakarta, along with 845 gates, 254 heavy machinery",
+        "transcription": "Dinas Sumber Daya Air Provinsi DKI Jakarta melakukan berbagai upaya meminimalkan dampak curah hujan tinggi yang terjadi beberapa hari terakhir. Program penanganan banjir tersebut telah disusun melalui Rencana Aksi Roadmap yang akan menjadi landasan penyusunan Rencana Pembangunan Jangka Panjang Daerah RPJPD 2025-2045, PLT. Kepala Dinas SDA Provinsi DKI Jakarta Ika Agustin Ningrum mengatakan beberapa upaya penanganan banjir di Jakarta seperti waduk atau umbung, perkuatan tanggul kali, pembangunan sistem polder atau pompa, serta peningkatan kapasitas drainase kawasan. Pada 2024 ini, terdapat lima polder atau pompa yang sedang dibangun dan dua lokasi pompa stasioner yang direvitalisasi.\n\nKemudian terdapat delapan waduk atau umbung yang dibangun dengan rincian enam waduk atau umbung merupakan pembangunan lanjutan dan dua waduk atau umbung baru, ucap IKA, Selasa, 26 Maret 2024. Adapun lima polder atau pompa tersebut, yaitu polder atau pompa Sunter C, polder atau pompa Gaya Motor, polder atau pompa Kali Sepatan, KBN, polder atau pompa IKPN, dan polder atau pompa RW13, Grey & Fillet. Sementara, revitalisasi dilakukan di dua lokasi pompa yaitu pompa stasioner Jalan Tanjung Duren Raya sampai Jalan Lejen S Parman, Jakarta Barat, dan pompa stasioner Taman BMW, Jakarta Utara.\n\nSementara rincian enam lokasi pembangunan waduk atau umbung lanjutan yaitu waduk Marunda, waduk Dukuh II, waduk Munjul, waduk Cilangkap, revitalisasi umbung Kaja, dan penyelesaian umbung Pekayon. Untuk waduk atau umbung yang baru dibangun tahun ini yaitu umbung SDN 01 Petukangan Selatan dan umbung Jalan Pemuda Sreng Seng Sawah. Untuk meminimalkan genangan saat musim hujan, Dinas SDA rutin melakukan pengerukan di kali, waduk, dan saluran air untuk mengangkat sedimen lumpur, sehingga kapasitas saluran tetap optimal dalam menampung air. Selain itu, Dinas SDA juga memasang sheet pile atau tanggul di sisi kali atau sungai.\n\nPemasangan tanggul bertujuan untuk menanggulangi tanah longsor di sekitar kali atau sungai. Sheet pile yang telah dibangun seperti di Kali Pesanggerahan, Jakarta Barat dan Kali Sunter segmen Pompapulomas, Jakarta Utara. Untuk mengatasi banjir rob karena pasang laut di wilayah pesisir utara Jakarta, pembangunan tanggul pengaman pantai National Capital Integrated Coastal Development, NCIC-D, fase A terus dipercepat. Pembangunan NCIC-D fase A dilakukan di kawasan Muara Angke, Pantai Mutiara, Sunda Kelapa-Kelapa Anco Barat, dan Kali Belencong, kawasan Cilincing Marunda. Selain itu, dibangun pulau pompa dan pintu air di Muara Sungai, serta sistem monitoring dan early warning sistem banjir rob.\n\nOptimalisasi operasional sarana dan prasarana pengendali banjir juga terus dilakukan, seperti penyagaan dan pengecekan secara berkala rumah pompa, pintu air, alat berat, serta pemeliharaan atau perawatan agar dapat bekerja secara maksimal saat kondisi pra maupun saat penanganan banjir. Penyagaan satuan tugas di lapangan juga dilakukan sebagai langkah mitigasi banjir. Berdasarkan data sarana dan prasarana per 15 Maret 2024, terdapat 580 unit pompa stasioner yang tersebar di 202 lokasi dan 557 unit pompa mobile yang tersebar di 5 wilayah administrasi Jakarta.\n\nKatanya, pompa mobile digunakan untuk menjangkau lokasi banjir atau genangan yang tidak bisa dijangkau pompa stasioner. Kemudian terdapat 845 unit pintu air di 589 lokasi, 254 unit alat berat, 460 unit dump truck, serta 4.226 personel pasukan biru, tambahnya."
+    },
+    {
+        "id": "bahasa_indo_17",
+        "source": "sources/audio/bahasa-indo/pemprov-dki-jakarta-rencanakan-pembangunan-fasilitas-pengolahan-sampah-ramah-lingkungan.mov",
+        "source_type": "audio",
+        "description": null,
+        "language": "Bahasa Indonesia",
+        "summary": "The Jakarta Provincial Government plans to build environmentally friendly waste management facilities in the Jakarta Bay or the Thousand Islands area to address the limited land for waste processing in Jakarta. The government wants to involve environmental activists and academics in determining the concept of the sustainable facilities. Jakarta needs waste management facilities that can accommodate and process waste for the next 50 years. The facilities will not only process waste but also accommodate mud from dredging 13 rivers, creating small islands that can be used as green open spaces. The Jakarta government aims to innovate in waste management and looks to Singapore and the Maldives as examples of successful waste management facilities. The government will conduct in-depth studies and feasibility studies with environmental experts to plan the construction of the facilities. The goal is to make Jakarta a global city that follows international standards in environmentally conscious",
+        "transcription": "Pemerintah Provinsi DKI Jakarta merencanakan pembangunan fasilitas pengolahan sampah ramah lingkungan di Teluk Jakarta, ataupun wilayah Lautan Kepulauan Seribu. Hal ini sebagai upaya mengatasi keterbatasan lahan untuk tempat memproses akhir sampah di Jakarta. Penjabat Gubernur DKI Jakarta Heru Budi Hartono meminta Dinas Lingkungan Hidup, DLH, Provinsi DKI Jakarta untuk mengkaji rencana tersebut bersama para aktivis lingkungan dan akademisi agar dapat menentukan konsep pembangunan fasilitas ramah lingkungan tersebut. Sementara itu, Kepala DLH Provinsi DKI Jakarta Asep Kuswanto mengatakan, Jakarta harus memiliki fasilitas pengolahan sampah ramah lingkungan yang mampu menampung dan mengolah sampah lebih besar untuk memenuhi kebutuhan hingga 50 tahun ke depan.\n\nSaat ini, Jakarta sudah memiliki Tempat Pengolahan Sampah Terpadu, TPST, Tempat Pengolahan Sampah, TPS, 3R, Reduce, Reuset, Recikle, dan RDF Plan. Tidak hanya mengolah sampah, fasilitas pengolahan sampah ramah lingkungan tersebut juga akan dilengkapi tempat menampung lumpur dari hasil pengerukan 13 sungai. Dengan begitu, diharapkan nantinya bisa terbentuk pulau-pulau kecil dari hasil proses tersebut yang kemudian dapat dimanfaatkan sebagai Ruang Terbuka Hijau, RTH. Pulau tersebut nantinya bisa dikelola oleh Dinas Pertamanan dan Hutan Kota Provinsi DKI Jakarta. Pemprov DKI Jakarta terus berinovasi dalam mengelola sampah dari hulu hingga ke hilir.\n\nSalah satu solusi jangka panjang adalah membangun fasilitas pengolahan sampah ramah lingkungan di luar daratan. Konsep ini sebenarnya sudah dicetuskan pada tahun 2012. Saat ini, sudah ada dua negara yang sukses membangun fasilitas pengolahan sampah di pulau kecil dan bisa dijadikan contoh oleh Jakarta. Ucapnya. Pertama, di Pulau Semakau, Singapura, pulau tersebut merupakan hasil pengolahan sampah di Incineration Plant dengan Prinsip Waste to Energy, WTE. Mereka melakukan reklamasi dari abu sisa pembakaran sampah. Lalu, di Maladewa, mereka mengolah sampah yang dihasilkan di pulau besar dan diangkut ke pulau kecil yang khusus disiapkan untuk mengelola sampah menggunakan tongkang.\n\nKedua negara tersebut bisa dijadikan best practice dalam upaya pengelolaan sampah standar global. Karena, sama-sama kita ketahui bahwa Singapura unggul dari aspek ekonomi dan Maladewa unggul dari sektor pariwisata yang berkelanjutan. Katanya. ASEP mengungkapkan, Pemprov DKI Jakarta akan mengkaji secara mendalam terhadap pembangunan fasilitas tersebut dengan mengundang para ahli lingkungan untuk melakukan perencanaan serta menyusun feasibility study. Hal ini seiring dengan arah pembangunan Jakarta sebagai kota global yang terus berinovasi dan mengikuti standar kota global lainnya dalam upaya pengelolaan sampah yang berwawasan lingkungan.\n\nJadi, ini bukan TPA, tempat pembuangan akhir, ya atau seperti landfill di TPST, tempat pengelolaan sampah terpadu, bantar gebang. Ini fasilitas yang lebih ramah lingkungan, jelasnya."
+    },
+    {
+        "id": "bahasa_indo_18",
+        "source": "sources/audio/bahasa-indo/5 Tips Rencanakan Libur Panjang Lebaran Bersama Keluarga.mov",
+        "source_type": "audio",
+        "description": null,
+        "language": "Bahasa Indonesia",
+        "summary": "The transcript discusses tips for planning a holiday during the Lebaran holiday, a time when families get together. The main points include setting a budget, choosing a destination, booking tickets early, enjoying the time with family, and taking care of health by eating well and bringing necessary medication.",
+        "transcription": "Libur lebaran menjadi momen yang dinantikan untuk berkumpul bersama keluarga. Beragam aktivitas dilakukan untuk mengisi libur lebaran, seperti pergi ke rumah kerabat hingga pergi berlibur. Namun, sebelum pergi pastinya kamu butuh rencana yang mata, sehingga liburan kamu bersama keluarga akan menyenangkan. Berikut beberapa tips rencana libur lebaran yang perlu dilakukan. Satu, tentukan anggaran. Hal pertama yang mesti dilakukan adalah menentukan anggaran, terlebih kamu pergi berlibur bersama keluarga. Pastinya badget yang dikeluarkan tidak terbilang sedikit, jadi pastikan badget tercukupi selama liburan.\n\nJangan lupa untuk mencatat pengeluaran, sehingga bisa memudahkan kamu untuk mengetahui untuk apa saja uang tersebut. Dua, pilih destinasi liburan. Tidak hanya anggaran, sebelum libur panjang lebaran kamu juga perlu memilih tempat-tempat yang ingin dikunjungi. Buatlah perencanaan dengan rinci, seperti waktu keberangkatan dan kepulangan, jam berapa harus berangkat dan pulang, serta aktivitas yang ingin dilakukan. Selain itu, tidak ada salahnya untuk berdiskusi bersama keluarga mengenai destinasi wisata. Tiga, pesan tiket lebih awal. Bila kamu dan keluarga ingin berlibur ke luar kota atau ke luar negeri, pastikan sudah mendapatkan tiket lebih awal.\n\nHal ini meminimalisir terjadinya tiket habis atau naiknya harga tiket. Selain itu, dengan memesan tiket lebih awal, kamu akan mendapatkan harga tiket yang terjangkau dan menghindarkan risiko kehabisan tempat akomodasi, terlebih saat libur lebaran banyak masyarakat yang berbondong-bondong juga pergi ke berbagai tempat wisata. Empat, nikmati momen bersama keluarga. Libur lebaran dapat dimanfaatkan untuk memperat hubungan dan meningkatkan kebersamaan antara kamu bersama keluarga dengan menciptakan kenangan tak terlupakan. Kamu juga bisa mengabadikannya dengan foto bersama. Lima, jaga kesehatan dan bawa obat-obatan.\n\nPastikan untuk tetap menjaga kesehatan dengan makan makanan bergizi, minum air putih, dan istirahat yang cukup. Selain itu, kamu juga wajib membawa obat-obatan yang dibutuhkan. Dengan badan yang sehat, liburan kamu akan terasa menyenangkan."
+    },
+    {
+        "id": "bahasa_indo_19",
+        "source": "sources/audio/bahasa-indo/Wajib Dikunjungi, Ini 6 Destinasi Wisata Menarik di Aceh.mov",
+        "source_type": "audio",
+        "description": null,
+        "language": "Bahasa Indonesia",
+        "summary": "Aceh is a province in Indonesia known for its beautiful tourist destinations and natural beauty. Some recommended places to visit include the Tsunami Museum, a memorial for the 2004 earthquake and tsunami, the Baitur Rahman Grand Mosque, which withstood the disaster, the Nol Kilometer marker in Sabang, and the Lake Tawar, a volcanic lake with various water activities. Other attractions include the Sarang Cave and the uninhabited Keluang Island.",
+        "transcription": "Aceh merupakan provinsi di Indonesia yang terletak di ujung Pulau Sumatra. Aceh mempunyai banyak tempat wisata menarik serta keindahan alam yang memanjakan mata. Dari sekian banyaknya tempat wisata di Aceh, berikut beberapa rekomendasi destinasi yang wajib dikunjungi. 1. Museum Tsunami Pada tahun 2004, Aceh mengalami gempa bumi yang hebat dan mengakibatkan terjadinya tsunami. Bencana alam di Aceh ini meninggalkan duka yang mendalam untuk Indonesia maupun dunia. Untuk itu, Museum Tsunami di Aceh berdiri sebagai tempat untuk mengenang kejadian dan menghormati para korban.\n\nTidak hanya itu, tempat ini juga menjadi pusat pendidikan dan sebagai pusat evakuasi jika bencana tsunami sewaktu-waktu datang lagi. 2. Masjid Raya Baitur Rahman Masjid Raya Baitur Rahman merupakan bangunan yang menjadi saksi bisu gempa bumi dan tsunami di Aceh pada 2004 silam. Pada saat itu, masjid ini tetap berdiri kokoh meski bangunan di sekitar sudah hancur di sapu ombak tsunami. Masjid Raya Baitur Rahman dibangun pada 1022 H1612M di bawah kepemimpinan Sultan Iskandar Muda dari Kesultanan Aceh Darussalam. Tidak hanya menjadi tempat beribadah, masjid ini juga menjadi pusat pendidikan ilmu agama Islam pada masa Kesultanan Aceh.\n\nKini, Masjid Raya Baitur Rahman dapat menampung hingga 24.000 jamaah dan menjadi objek wisata ikonik di Aceh. 3. Nol Kilometer di Aceh Titik Nol Kilometer terdapat di berbagai kota di Indonesia, salah satunya ada di Desa Iboih Ujong Bau, Kecamatan Sukakarya, Kota Sabang, Aceh. Tempat ini sering disebut penanda geografis ujung terjauh barat Indonesia, di mana berdiri di atas tebing dan menghadap langsung ke Samudera Hindia. Selain berfoto di Tugu Nol Kilometer, kamu juga bisa melihat bawah laut yang sangat indah.\n\nTerdapat 20 titik selam di Sabang seperti di West Seulako, Arus Balai, Rubiah Jeti, hingga Sofi Rikmers. 4. Vietra Danau Laut Tava Aceh memiliki danau yang berada di dataran tinggi Gayo, Kabupaten Aceh Tengah, Nanggro Aceh Darussalam. Danau ini bernama Danau Laut Tawar oleh suku Gayo. Danau ini memiliki luas sekitar 5.472 hektare dengan panjang 17 kilometer dan lebar 3,219 kilometer. Danau Laut Tawar merupakan danau tektofulkanik yang terbentuk bersamaan dengan Sesar Semangko. Kamu bisa menikmati Danau Laut Tawar dengan menggunakan sekoci, perahu karet, sampan, hingga speedboat.\n\n5. Gua Sarang Destinasi wisata lain yang ada di Aceh adalah Gua Sarang yang terletak di Desa Sarang, Kecamatan Sukajaya, Kota Sabang. Gua ini berada di kaki tebing dan perbukitan hutan lindung Pulau Weh yang menjorok ke laut. Selain itu, gua ini menjadi tempat bersarangnya burung walet dan kalong. 6. Pulau Keluang Pulau Keluang di Kecamatan Jaya, Kabupaten Aceh Jaya merupakan salah satu pulau di Aceh yang mempunyai alam memesona. Pulau ini merupakan pulau tidak berpenghuni sehingga dapat membuat suasana hati menjadi tenang.\n\nDi pulau ini terdapat gua bawah laut yang diberi nama Gua Kelelawar. Kamu bisa menjelajahinya dengan berenang atau menggunakan perahu saat air laut pasang."
+    },
+    {
+        "id": "bahasa_malay_01",
+        "source": "sources/audio/bahasa-malay/berita-sinar-harian.mp3",
+        "source_type": "audio",
+        "description": "Have noise, man voice",
+        "language": "Bahasa Malaysia",
+        "summary": "Kuda Kepang Allowed as Long as It Does Not Violate Three Prohibited Elements – Exco\n\nThe Kuda Kepang performance is still permitted in Johor as long as it does not contain three prohibited elements: offerings to other beings, acts of worship, and loss of sanity.\n\nThe Johor State Executive Councillor for Islamic Religious Affairs, Mohd Fared Mohd Khalid, said that the Johor Islamic Religious Department (JAINJ) will issue new guidelines to ensure that this cultural performance, as well as other activities, do not conflict with Islamic teachings.\n\nSource: Sinar Harian",
+        "transcription": null
+    },
+    {
+        "id": "bahasa_malay_02",
+        "source": "sources/audio/bahasa-malay/Polis Pahang lupus dadah lebih RM500,000, libatkan 2,656 barang kes.mp3",
+        "source_type": "audio",
+        "description": "man voice",
+        "language": "Bahasa Malaysia",
+        "summary": "Pahang Police Destroy Drugs Worth Over RM500,000, Involving 2,656 Case Items\n\nPahang police have destroyed various types of drugs valued at RM519,158.78, involving 2,656 case items that had been concluded in court trials from 2011 to 2025, reported Sinar Harian journalist, Norawazni Yusof.\n\nPahang Police Chief, Datuk Seri Yahaya Othman, said the disposal was carried out at 12 noon on Tuesday by an authorized and professional contractor based in Bestari Jaya, Selangor.",
+        "transcription": null
+    },
+    {
+        "id": "bahasa_malay_03",
+        "source": "sources/audio/bahasa-malay/Lima lelaki didakwa seleweng lebih 20,000 liter diesel bersubsidi.mp3",
+        "source_type": "audio",
+        "description": "woman voice",
+        "language": "Bahasa Malaysia",
+        "summary": "Lorry Driver Charged with Murdering a Transgender Woman\n\nA lorry driver was brought before the Ipoh Magistrate’s Court on Thursday on a charge of intentionally murdering a man last week, reported Sinar Harian journalist, Noor Ainon Mohamed Yusof.\n\nThe accused, M. I. Saravanan, 32, nodded in understanding when the charge was read out by the court interpreter before Magistrate Mohd Harith Mohd Mazlan.",
+        "transcription": null
+    },
+    {
+        "id": "bahasa_malay_04",
+        "source": "sources/audio/bahasa-malay/Kenderaan roda tiga gagal peroleh VTA tak boleh digunakan di jalan raya.mp3",
+        "source_type": "audio",
+        "description": "man voice",
+        "language": "Bahasa Malaysia",
+        "summary": "Three-Wheeled Vehicles Without VTA Approval Cannot Be Used on Roads\n\nMinister Anthony Loke Siew Fook said the Ministry of Transport (MoT) has emphasized that modified three-wheeled vehicles that fail to obtain the Vehicle Type Approval (VTA) Certificate are not allowed to be used on roads throughout the country.\n\nAccording to him, the decision was made after considering several factors, especially safety aspects, particularly if the vehicles are carrying passengers.",
+        "transcription": null
+    },
+    {
+        "id": "bahasa_malay_05",
+        "source": "sources/audio/bahasa-malay/Persembahan terbaik daripada pasukan teres grafik - PM.mp3",
+        "source_type": "audio",
+        "description": "man voice, have background noise",
+        "language": "Bahasa Malaysia",
+        "summary": "Prime Minister Proud of Graphic Terrace Performance at National Day 2025\n\nPrime Minister Datuk Seri Anwar Ibrahim expressed pride in the success of the graphic terrace performance staged by more than 2,000 students in conjunction with the 2025 National Day Celebration at Dataran Putrajaya on Sunday, reported Sinar Harian journalist Mukhriz Mat Husin.\n\nMinister of Communications, Datuk Fahmi Fadzil, said the Finance Minister also described the performance as the best achievement throughout the event.",
+        "transcription": null
+    },
+    {
+        "id": "bahasa_malay_06",
+        "source": "sources/audio/bahasa-malay/Zara Qairina dikepung, dituduh mencuri malam 15 Julai lalu - Saksi kanak-kanak kedua.mp3",
+        "source_type": "audio",
+        "description": "man voice",
+        "language": "Bahasa Malaysia",
+        "summary": "Zara Qairina Surrounded, Accused of Stealing on the Night of July 15 – Second Child Witness\n\nThe inquest proceedings into the death of Zara Qairina Mahathir on Wednesday heard testimony from a second child witness, who described the situation that occurred on the night of July 15, before the Form One student was found unconscious at the dormitory building of a religious school in Papar the following day.\n\nLawyer representing Zara Qairina’s mother, Rizwandean M. Borhan, said that according to the witness’s testimony, the incident began when the child lost their wallet and suspected the late Zara Qairina.",
+        "transcription": null
+    },
+    {
+        "id": "bahasa_malay_07",
+        "source": "sources/audio/bahasa-malay/36 warga China didakwa jadi 'calling center' tawar pelaburan palsu.mp3",
+        "source_type": "audio",
+        "description": "woman voice, have music in background",
+        "language": "Bahasa Malaysia",
+        "summary": "Five Men Charged with Misappropriating Over 20,000 Liters of Subsidized Diesel\n\nFive men pleaded not guilty at the Seremban Sessions Court on Thursday to charges related to the misappropriation of subsidized diesel without valid authorization, involving a total of more than 20,000 liters, reported Sinar Harian journalist Norafiza Jaafar.\n\nAll the accused made their pleas after the charges were read separately before Judge Mohamad Kamil Nizam.",
+        "transcription": null
+    },
+    {
+        "id": "bahasa_malay_08",
+        "source": "sources/audio/bahasa-malay/Implikasi 'Id, Ego, Superego' di dalam bilik darjah - Hive Educators.mp3",
+        "source_type": "audio",
+        "description": "woman voice, have music in background",
+        "language": "Bahasa Malaysia",
+        "summary": "In this episode, together with Teacher Kineeshaa Pannir Selvam, we will discuss the implications of the id, ego, and superego in the classroom. These concepts originate from Sigmund Freud’s psychoanalytic theory and play an important role in understanding student behavior and classroom dynamics.\n\nWe will explore how the id (basic instincts), ego (rationality), and superego (morality) influence students’ actions and reactions in the classroom. By understanding the role of each component, teachers can manage classrooms more effectively, improve discipline, and help students reach their full potential.",
+        "transcription": null
+    },
+    {
+        "id": "java_indonesia_01",
+        "source": "sources/audio/jawa-indo/Pengarang, Genre, Tema dan Kedudukan Raja dalam Puisi Jawa Kuna dan Jawa Pertengahan.mp3",
+        "source_type": "audio",
+        "description": "man voice with music in background",
+        "language": "Jawa Indonesia",
+        "summary": "On this occasion, we will briefly review authorship, genre, theme, and the position of the king in Old Javanese and Middle Javanese poetry. What does the explanation look like? Let’s find out.",
+        "transcription": null
+    },
+    {
+        "id": "java_indonesia_02",
+        "source": "sources/audio/jawa-indo/Perkembangan Karya Sastra Jawa pada Masa Pesisir hingga Mataram Islam.mp3",
+        "source_type": "audio",
+        "description": "man voice with music in background",
+        "language": "Jawa Indonesia",
+        "summary": "This podcast discusses the development of Javanese literature from the arrival of Islam on the north coast of Java to the Islamic Mataram period. The discussion of this development includes the adaptation of Arabic-Persian literary works into Javanese literature in the early 16th century, suluk literature, babad chronicles, and oral traditions about Sultan Agung that were later developed into texts.",
+        "transcription": null
+    },
+    {
+        "id": "java_indonesia_03",
+        "source": "sources/audio/jawa-indo/java_indonesia_03.mp3",
+        "source_type": "audio",
+        "description": "many persion in coversation",
+        "language": "Jawa Indonesia",
+        "summary": "Reliving Childhood Memories in a Nostalgic Podcast",
+        "transcription": null
+    },
+    {
+        "id": "bahasa_indo_01",
+        "source": "https:\/\/ibtpi.pelitaindonesia.ac.id\/1.Artikel\/69-TEORI-EKONOMI-FULL.pdf",
+        "source_type": "pdf",
+        "description": null,
+        "language": "Bahasa Indonesia",
+        "summary": null,
+        "transcription": null
+    },
+    {
+        "id": "bahasa_indo_02",
+        "source": "https:\/\/eprints.unm.ac.id\/17435\/1\/buku%20konsep%20dasar%20ekonomi.pdf",
+        "source_type": "pdf",
+        "description": null,
+        "language": "Bahasa Indonesia",
+        "summary": null,
+        "transcription": null
+    },
+    {
+        "id": "bahasa_indo_03",
+        "source": "https:\/\/repository.metrouniv.ac.id\/id\/eprint\/5391\/1\/BUKU%20PEREKONOMIAN%20INDONESIA.pdf",
+        "source_type": "pdf",
+        "description": null,
+        "language": "Bahasa Indonesia",
+        "summary": null,
+        "transcription": null
+    },
+    {
+        "id": "bahasa_indo_04",
+        "source": "https:\/\/digilib.isi.ac.id\/1854\/1\/JURNAL.pdf",
+        "source_type": "pdf",
+        "description": null,
+        "language": "Bahasa Indonesia",
+        "summary": null,
+        "transcription": null
+    },
+    {
+        "id": "bahasa_indo_05",
+        "source": "https:\/\/www.youtube.com\/watch?v=QU_Z-DIErdY&list=PLsRNoUx8w3rNkQEmDfmFlkLZQ0LLquMiq&index=9",
+        "source_type": "youtube",
+        "description": null,
+        "language": "Bahasa Indonesia",
+        "summary": null,
+        "transcription": null
+    },
+    {
+        "id": "bahasa_indo_06",
+        "source": "https:\/\/www.youtube.com\/watch?v=9oJt71KSzjU&list=PLsRNoUx8w3rNkQEmDfmFlkLZQ0LLquMiq&index=14",
+        "source_type": "youtube",
+        "description": "voice sound is not clear",
+        "language": "Bahasa Indonesia",
+        "summary": null,
+        "transcription": null
+    },
+    {
+        "id": "bahasa_indo_07",
+        "source": "https:\/\/listening.jembatanbahasa.com\/audio\/1709279985-Pasar%20Ubud.mp3",
+        "source_type": "audio",
+        "description": null,
+        "language": "Bahasa Indonesia",
+        "summary": null,
+        "transcription": null
+    },
+    {
+        "id": "bahasa_indo_08",
+        "source": "https:\/\/listening.jembatanbahasa.com\/audio\/1703492864-WhatsApp-Audio-2023-12-25-at-15.28.54.mp3",
+        "source_type": "audio",
+        "description": null,
+        "language": "Bahasa Indonesia",
+        "summary": null,
+        "transcription": null
+    },
+    {
+        "id": "bahasa_indo_09",
+        "source": "https:\/\/listening.jembatanbahasa.com\/audio\/1709273260-Jida%20dan%20Abid.mp3",
+        "source_type": "audio",
+        "description": "https:\/\/listening.jembatanbahasa.com\/learn\/175",
+        "language": "Bahasa Indonesia",
+        "summary": null,
+        "transcription": null
+    },
+    {
+        "id": "bahasa_indo_10",
+        "source": "https:\/\/audio.com\/fakhrizal-fikri-handoko\/audio\/data-annotation-fikri-bahasa-indonesia",
+        "source_type": "audio",
+        "description": null,
+        "language": "Bahasa Indonesia",
+        "summary": null,
+        "transcription": null
+    },
+    {
+        "id": "bahasa_indo_11",
+        "source": "https:\/\/audio.com\/musawakinansi\/audio\/khan-audio-1842867486203351",
+        "source_type": "audio",
+        "description": null,
+        "language": "Bahasa Indonesia",
+        "summary": null,
+        "transcription": null
+    },
+    {
+        "id": "bahasa_indo_12",
+        "source": "https:\/\/audio.com\/vedshri\/audio\/school-crowd-indonesian-244632-4",
+        "source_type": "audio",
+        "description": "voice with noise",
+        "language": "Bahasa Indonesia",
+        "summary": null,
+        "transcription": null
+    },
+    {
+        "id": "bahasa_indo_13",
+        "source": "https:\/\/audio.com\/nurfadhilah\/audio\/ragam-bahasa",
+        "source_type": "audio",
+        "description": null,
+        "language": "Bahasa Indonesia",
+        "summary": null,
+        "transcription": null
+    }
+]
