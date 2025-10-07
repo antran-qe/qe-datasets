@@ -1,0 +1,2243 @@
+[
+  {
+    "name_food": "tonkotsu-ramen",
+    "item_id": "M_1",
+    "img_location": "images/1-ramen.jpeg",
+    "image_url": null,
+    "food_url": "https://foods.fatsecret.com/calories-nutrition/nong-shim/tonkotsu-ramen",
+    "ingredients_per_recipe": null,
+    "servings_size_per_recipe": null,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 460,
+      "fat": 19,
+      "carb": 62,
+      "protein": 9
+    }
+  },
+  {
+    "name_food": "Peach Raspberry Yogurt Parfait",
+    "item_id": "M_2",
+    "img_location": "images/2-Peach Raspberry Yogurt Parfait.jpg",
+    "image_url": null,
+    "food_url": "https://foods.fatsecret.com/Diary.aspx?pa=fimg&rid=80450&iid=281217",
+    "ingredients_per_recipe": null,
+    "servings_size_per_recipe": null,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 280,
+      "fat": 3.5,
+      "carb": 54,
+      "protein": 8
+    }
+  },
+  {
+    "name_food": "Special K Pastry Crisps - Strawberry",
+    "item_id": "M_3",
+    "img_location": "images/3-Special K Pastry Crisps - Strawberry.jpg",
+    "image_url": null,
+    "food_url": "https://foods.fatsecret.com/calories-nutrition/kelloggs/special-k-pastry-crisps---strawberry",
+    "ingredients_per_recipe": null,
+    "servings_size_per_recipe": null,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 100,
+      "fat": 2,
+      "carb": 20,
+      "protein": 1
+    }
+  },
+  {
+    "name_food": "KFC\nSpicy Chicken Sandwich",
+    "item_id": "M_4",
+    "img_location": "images/4-kfc-chicken-sandwiches-1611081937.avif",
+    "image_url": null,
+    "food_url": "https://foods.fatsecret.com/calories-nutrition/kfc/spicy-chicken-sandwich",
+    "ingredients_per_recipe": null,
+    "servings_size_per_recipe": null,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 620,
+      "fat": 33,
+      "carb": 49,
+      "protein": 34
+    }
+  },
+  {
+    "name_food": "Original Recipe Chicken Thigh",
+    "item_id": "M_5",
+    "img_location": "images/5-KFC Original Recipe Chicken Thigh.jpg",
+    "image_url": null,
+    "food_url": "https://foods.fatsecret.com/calories-nutrition/kfc/original-recipe-chicken-thigh",
+    "ingredients_per_recipe": null,
+    "servings_size_per_recipe": null,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 280,
+      "fat": 19,
+      "carb": 8,
+      "protein": 19
+    }
+  },
+  {
+    "name_food": "Mashed Potatoes",
+    "item_id": "M_6",
+    "img_location": "images/6-Mashed Potatoes.jpeg",
+    "image_url": null,
+    "food_url": "https://foods.fatsecret.com/calories-nutrition/kfc/mashed-potatoes",
+    "ingredients_per_recipe": null,
+    "servings_size_per_recipe": null,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 110,
+      "fat": 3.5,
+      "carb": 17,
+      "protein": 2
+    }
+  },
+  {
+    "name_food": "White rice",
+    "item_id": "M_7",
+    "img_location": "images/7-white rice.jpg",
+    "image_url": null,
+    "food_url": "https://www.fatsecret.com.sg/calories-nutrition/generic/steamed-rice?portionid=4936686&portionamount=1.000",
+    "ingredients_per_recipe": null,
+    "servings_size_per_recipe": null,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 204,
+      "fat": 0.44,
+      "carb": 44.24,
+      "protein": 4.32
+    }
+  },
+  {
+    "name_food": "Rice fried with chicken",
+    "item_id": "M_8",
+    "img_location": "images/8-Rice Fried mix Chicken .jpg",
+    "image_url": null,
+    "food_url": "https://foods.fatsecret.com/calories-nutrition/generic/rice-fried-with-chicken",
+    "ingredients_per_recipe": null,
+    "servings_size_per_recipe": null,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 329,
+      "fat": 11.96,
+      "carb": 41.82,
+      "protein": 12.45
+    }
+  },
+  {
+    "name_food": "Shrimp Fried Rice",
+    "item_id": "M_9",
+    "img_location": "images/9-Shrimp Fried Rice.jpg",
+    "image_url": null,
+    "food_url": "https://foods.fatsecret.com/calories-nutrition/generic/rice-fried-with-shrimp",
+    "ingredients_per_recipe": null,
+    "servings_size_per_recipe": null,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 321,
+      "fat": 11.6,
+      "carb": 41.88,
+      "protein": 10.95
+    }
+  },
+  {
+    "name_food": "Blue berries",
+    "item_id": "M_10",
+    "img_location": "images/10-blueberry.jpg",
+    "image_url": null,
+    "food_url": "https://foods.fatsecret.com/calories-nutrition/usda/blueberries",
+    "ingredients_per_recipe": null,
+    "servings_size_per_recipe": null,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 83,
+      "fat": 0.48,
+      "carb": 21.01,
+      "protein": 1.07
+    }
+  },
+  {
+    "name_food": "Thịt xông khói",
+    "item_id": "M_11",
+    "img_location": "images/11-thịt xông khói.jpg",
+    "image_url": null,
+    "food_url": "https://foods.fatsecret.com/calories-nutrition/usda/bacon-(cured-baked-cooked)",
+    "ingredients_per_recipe": null,
+    "servings_size_per_recipe": null,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 132,
+      "fat": 10.5,
+      "carb": 0.33,
+      "protein": 8.67
+    }
+  },
+  {
+    "name_food": "Morning Bun",
+    "item_id": "M_12",
+    "img_location": "images/12-morning-bun.webp",
+    "image_url": null,
+    "food_url": "https://www.kaggle.com/datasets/utkarshx27/starbucks-nutrition",
+    "ingredients_per_recipe": null,
+    "servings_size_per_recipe": null,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 350,
+      "fat": 16,
+      "carb": 45,
+      "protein": 6
+    }
+  },
+  {
+    "name_food": "Tuna - Subway",
+    "item_id": "M_13",
+    "img_location": "images/13-tuna subway.jpeg",
+    "image_url": null,
+    "food_url": "https://www.kaggle.com/datasets/joebeachcapital/subway-nutrition",
+    "ingredients_per_recipe": null,
+    "servings_size_per_recipe": null,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 450,
+      "fat": 25,
+      "carb": 38,
+      "protein": 19
+    }
+  },
+  {
+    "name_food": "Italian_BMT_Salad_594x334",
+    "item_id": "M_14",
+    "img_location": "images/14-Italian_BMT_Salad_594x334.avif",
+    "image_url": null,
+    "food_url": "https://www.kaggle.com/datasets/joebeachcapital/subway-nutrition",
+    "ingredients_per_recipe": null,
+    "servings_size_per_recipe": null,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 240,
+      "fat": 15,
+      "carb": 12,
+      "protein": 14
+    }
+  },
+  {
+    "name_food": "Veggie Delite® with Avo",
+    "item_id": "M_15",
+    "img_location": "images/15-Veggie_Delite_with_Avo_Salad_594x334.avif",
+    "image_url": null,
+    "food_url": "https://www.subway.com/en-AU/MenuNutrition/Menu/Product?ProductId=6904&MenuCategoryId=378",
+    "ingredients_per_recipe": null,
+    "servings_size_per_recipe": null,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 150,
+      "fat": 10.6,
+      "carb": 8.4,
+      "protein": 6.3
+    }
+  },
+  {
+    "name_food": "Berry Parfait",
+    "item_id": "M_16",
+    "img_location": "images/16-berry par.png",
+    "image_url": null,
+    "food_url": "https://www.chick-fil-a.com/menu/berry-parfait",
+    "ingredients_per_recipe": null,
+    "servings_size_per_recipe": null,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 270,
+      "fat": 9,
+      "carb": 35,
+      "protein": 13
+    }
+  },
+  {
+    "name_food": "Cobb Salad w/ No Chicken",
+    "item_id": "M_17",
+    "img_location": "images/17-cobbSalad_noMeat_pdp.png",
+    "image_url": null,
+    "food_url": "https://www.chick-fil-a.com/menu/cobb-salad",
+    "ingredients_per_recipe": null,
+    "servings_size_per_recipe": null,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 580,
+      "fat": 49,
+      "carb": 21,
+      "protein": 15
+    }
+  },
+  {
+    "name_food": "Cobb Salad w/ Spicy Filet",
+    "item_id": "M_18",
+    "img_location": "images/18-cobb_SpicyFilet_pdp.png",
+    "image_url": null,
+    "food_url": "https://www.chick-fil-a.com/menu/cobb-salad",
+    "ingredients_per_recipe": null,
+    "servings_size_per_recipe": null,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 860,
+      "fat": 62,
+      "carb": 37,
+      "protein": 38
+    }
+  },
+  {
+    "name_food": "Chicken Noodle Soup",
+    "item_id": "M_19",
+    "img_location": "images/19-Chicken-Noodle-Soup_Small_PDP.png",
+    "image_url": null,
+    "food_url": "https://www.chick-fil-a.com/menu/chicken-noodle-soup",
+    "ingredients_per_recipe": null,
+    "servings_size_per_recipe": null,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 170,
+      "fat": 4,
+      "carb": 25,
+      "protein": 10
+    }
+  },
+  {
+    "name_food": "Chocolate Fudge Brownie",
+    "item_id": "M_20",
+    "img_location": "images/20-FudgeChunkBrownie_PDP.png",
+    "image_url": null,
+    "food_url": "https://www.chick-fil-a.com/menu/chocolate-fudge-brownie",
+    "ingredients_per_recipe": null,
+    "servings_size_per_recipe": null,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 370,
+      "fat": 21,
+      "carb": 47,
+      "protein": 4
+    }
+  },
+  {
+    "name_food": "Simply Orange®",
+    "item_id": "M_21",
+    "img_location": "images/21-SimplyOJ_Oct19_PDP.png",
+    "image_url": null,
+    "food_url": "https://www.chick-fil-a.com/menu/simply-orange",
+    "ingredients_per_recipe": null,
+    "servings_size_per_recipe": null,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 160,
+      "fat": null,
+      "carb": 34,
+      "protein": 2
+    }
+  },
+  {
+    "name_food": "Dr Pepper",
+    "item_id": "M_22",
+    "img_location": "images/22-DrPepper_PaperCup_straight_wet_1200x1200.png",
+    "image_url": null,
+    "food_url": "https://www.chick-fil-a.com/menu/dr-pepper",
+    "ingredients_per_recipe": null,
+    "servings_size_per_recipe": null,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 170,
+      "fat": null,
+      "carb": 44,
+      "protein": null
+    }
+  },
+  {
+    "name_food": "3 Piece Chicken Tenders",
+    "item_id": "M_23",
+    "img_location": "images/23-chicken-tenders-wendys 3.jpg",
+    "image_url": null,
+    "food_url": "https://www.carbmanager.com/food-detail/md:5b7316e05a2806cdf007132ba13c5016/3-piece-chicken-tenders",
+    "ingredients_per_recipe": null,
+    "servings_size_per_recipe": null,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 330,
+      "fat": 16,
+      "carb": 22,
+      "protein": 22
+    }
+  },
+  {
+    "name_food": "4 Piece Chicken Tenders",
+    "item_id": "M_24",
+    "img_location": "images/24-wendys-chicken-tenders-4.jpg",
+    "image_url": null,
+    "food_url": "https://www.eatthismuch.com/calories/4-piece-chicken-tenders-1754649",
+    "ingredients_per_recipe": null,
+    "servings_size_per_recipe": null,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 430,
+      "fat": 21,
+      "carb": 29,
+      "protein": 32
+    }
+  },
+  {
+    "name_food": "Crock-Pot Potato Chowder",
+    "item_id": "M_25",
+    "img_location": "images/25-Crock-Pot Potato Chowder.jpeg",
+    "image_url": null,
+    "food_url": "https://www.food.com/recipe/crock-pot-potato-chowder-50144",
+    "ingredients_per_recipe": null,
+    "servings_size_per_recipe": null,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 270,
+      "fat": 17.2,
+      "carb": 21,
+      "protein": 8.2
+    }
+  },
+  {
+    "name_food": "Mahogany Beef Stew",
+    "item_id": "M_26",
+    "img_location": "images/26-Mahogany Beef Stew.jpeg",
+    "image_url": null,
+    "food_url": "https://www.food.com/recipe/mahogany-beef-stew-80536",
+    "ingredients_per_recipe": null,
+    "servings_size_per_recipe": null,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 390,
+      "fat": 16,
+      "carb": 20,
+      "protein": 35
+    }
+  },
+  {
+    "name_food": "Waffles",
+    "item_id": "M_27",
+    "img_location": "images/27-waffle_top_large_02.jpg",
+    "image_url": null,
+    "food_url": "https://caloriefriend.com/en/food/2567-waffle-avg/4",
+    "ingredients_per_recipe": null,
+    "servings_size_per_recipe": null,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 200,
+      "fat": 9,
+      "carb": 23,
+      "protein": 5
+    }
+  },
+  {
+    "name_food": "Apple Juice",
+    "item_id": "M_28",
+    "img_location": "images/28-Just_Juice_Apple_200mL_594x330.avif",
+    "image_url": null,
+    "food_url": null,
+    "ingredients_per_recipe": null,
+    "servings_size_per_recipe": null,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 100,
+      "fat": null,
+      "carb": 25,
+      "protein": null
+    }
+  },
+  {
+    "name_food": "Chicken pasta",
+    "item_id": "M_29",
+    "img_location": "images/29-Chicken pasta.jpg",
+    "image_url": null,
+    "food_url": null,
+    "ingredients_per_recipe": null,
+    "servings_size_per_recipe": null,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 750,
+      "fat": 30,
+      "carb": 70,
+      "protein": 45
+    }
+  },
+  {
+    "name_food": "Pizza margherita",
+    "item_id": "M_30",
+    "img_location": "images/30-pizza_cheese_large_pizza_hut_top_large_01.jpg",
+    "image_url": null,
+    "food_url": "https://assets.ctfassets.net/kahtja4ygpol/6H22bKbKBZwadBnnT4PXhG/22533a6e309ff78e52b1e7ca57b065cb/Dine_In_Allergen___Nutrition_Information_September_2025.pdf",
+    "ingredients_per_recipe": null,
+    "servings_size_per_recipe": null,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 250,
+      "fat": 10,
+      "carb": 29,
+      "protein": 10
+    }
+  },
+  {
+    "name_food": "user data_Strawberry_cake",
+    "item_id": "U_31",
+    "img_location": "images/40-us.jpg",
+    "image_url": null,
+    "food_url": null,
+    "ingredients_per_recipe": null,
+    "servings_size_per_recipe": null,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 210,
+      "fat": 11,
+      "carb": 25,
+      "protein": 3
+    }
+  },
+  {
+    "name_food": "user data_Sanwind",
+    "item_id": "U_32",
+    "img_location": "images/39-us.jpeg",
+    "image_url": null,
+    "food_url": null,
+    "ingredients_per_recipe": null,
+    "servings_size_per_recipe": null,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 360,
+      "fat": 14,
+      "carb": 38,
+      "protein": 20
+    }
+  },
+  {
+    "name_food": "user data_crambled eggs with toast and coffee",
+    "item_id": "U_33",
+    "img_location": "images/38-us.jpeg",
+    "image_url": null,
+    "food_url": null,
+    "ingredients_per_recipe": null,
+    "servings_size_per_recipe": null,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 420,
+      "fat": 25,
+      "carb": 28,
+      "protein": 19
+    }
+  },
+  {
+    "name_food": "user data_White rice, banana, meat",
+    "item_id": "U_34",
+    "img_location": "images/37-us.jpeg",
+    "image_url": null,
+    "food_url": null,
+    "ingredients_per_recipe": null,
+    "servings_size_per_recipe": null,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 720,
+      "fat": 28,
+      "carb": 85,
+      "protein": 28
+    }
+  },
+  {
+    "name_food": "user data _White rice, fish",
+    "item_id": "U_35",
+    "img_location": "images/36-us.jpeg",
+    "image_url": null,
+    "food_url": null,
+    "ingredients_per_recipe": null,
+    "servings_size_per_recipe": null,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 520,
+      "fat": 18,
+      "carb": 50,
+      "protein": 38
+    }
+  },
+  {
+    "name_food": "user data_ Bitter Melon with Eggs",
+    "item_id": "U_36",
+    "img_location": "images/35-us.jpg",
+    "image_url": null,
+    "food_url": null,
+    "ingredients_per_recipe": null,
+    "servings_size_per_recipe": null,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 180,
+      "fat": 12,
+      "carb": 6,
+      "protein": 10
+    }
+  },
+  {
+    "name_food": "user data_Tofu",
+    "item_id": "U_37",
+    "img_location": "images/34-us.jpg",
+    "image_url": null,
+    "food_url": null,
+    "ingredients_per_recipe": null,
+    "servings_size_per_recipe": null,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 160,
+      "fat": 10,
+      "carb": 3,
+      "protein": 13
+    }
+  },
+  {
+    "name_food": "user data_ lasagna",
+    "item_id": "U_38",
+    "img_location": "images/33-us.jpg",
+    "image_url": null,
+    "food_url": null,
+    "ingredients_per_recipe": null,
+    "servings_size_per_recipe": null,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 370,
+      "fat": 20,
+      "carb": 25,
+      "protein": 22
+    }
+  },
+  {
+    "name_food": "user data_keto_pork_floss",
+    "item_id": "U_39",
+    "img_location": "images/32-us.jpg",
+    "image_url": null,
+    "food_url": null,
+    "ingredients_per_recipe": null,
+    "servings_size_per_recipe": null,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 150,
+      "fat": 6,
+      "carb": 3,
+      "protein": 20
+    }
+  },
+  {
+    "name_food": "user data_Steak",
+    "item_id": "U_40",
+    "img_location": "images/31-us.jpg",
+    "image_url": null,
+    "food_url": null,
+    "ingredients_per_recipe": null,
+    "servings_size_per_recipe": null,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 520,
+      "fat": 36,
+      "carb": 2,
+      "protein": 46
+    }
+  },
+  {
+    "name_food": "Grilled Cheese, Diner Style",
+    "item_id": 151,
+    "img_location": "images/food_1_151.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/10/85/22/dAngu0ifTDe2Ao3k4LuJ_DGC%206%20-%20final_4.jpg",
+    "food_url": "https://www.food.com/recipe/grilled-cheese-diner-style-108522",
+    "ingredients_per_recipe": "['2 slices bread', '1 slice American cheese', '1 tablespoon mayonnaise']",
+    "servings_size_per_recipe": 1,
+    "servings_size_in_image": 1 ,
+    "nutrients_per_serving": {
+      "calories": 385,
+      "fat": 22,
+      "carb": 33,
+      "protein": 15
+    }
+  },
+  {
+    "name_food": "Roasted Brussels Sprouts!",
+    "item_id": 2094,
+    "img_location": "images/food_2_2094.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/56/10/3/c6Zrly8oQ8OPBImWQBDz_BS%205%20-%20final_3.png",
+    "food_url": "https://www.food.com/recipe/roasted-brussels-sprouts-56103",
+    "ingredients_per_recipe": "['1 1/2 lbs Brussels sprouts', '3 tablespoons olive oil', '1/2-3/4 teaspoon kosher salt', '1/2 teaspoon lemon-pepper seasoning or 1/2 teaspoon ground black pepper']",
+    "servings_size_per_recipe": 6,
+    "servings_size_in_image": 6,
+    "nutrients_per_serving": {
+      "calories": 101,
+      "fat": 7.3,
+      "carb": 8.2,
+      "protein": 2.9
+    }
+  },
+  {
+    "name_food": "Roasted Brussels Sprouts!",
+    "item_id": 20942,
+    "img_location": "images/food_2_2094_1.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/56/10/3/c6Zrly8oQ8OPBImWQBDz_BS%205%20-%20final_3.png",
+    "food_url": "https://www.food.com/recipe/roasted-brussels-sprouts-56103",
+    "ingredients_per_recipe": "['1 1/2 lbs Brussels sprouts', '3 tablespoons olive oil', '1/2-3/4 teaspoon kosher salt', '1/2 teaspoon lemon-pepper seasoning or 1/2 teaspoon ground black pepper']",
+    "servings_size_per_recipe": 6,
+    "servings_size_in_image": 6,
+    "nutrients_per_serving": {
+      "calories": 101,
+      "fat": 7.3,
+      "carb": 8.2,
+      "protein": 2.9
+    }
+  },
+  {
+    "name_food": "Beef Patties in Onion Gravy",
+    "item_id": 1606,
+    "img_location": "images/food_3_1606.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/37/41/3/pic4UCnZH.jpg",
+    "food_url": "https://www.food.com/recipe/beef-patties-in-onion-gravy-37413",
+    "ingredients_per_recipe": "['1 lb ground beef', '1 egg', '1/2 cup dry breadcrumbs', '1/2 envelope dry onion soup mix', '1 teaspoon Worcestershire sauce', '1/8 teaspoon pepper', '1/2 envelope dry onion soup mix', '2 cups water', '2 tablespoons flour']",
+    "servings_size_per_recipe": 4,
+    "servings_size_in_image": 4,
+    "nutrients_per_serving": {
+      "calories": 359.1,
+      "fat": 19,
+      "carb": 19.4,
+      "protein": 25.6
+    }
+  },
+  {
+    "name_food": "Incredibly Delicious Cheese Garlic Bread Spread",
+    "item_id": 850,
+    "img_location": "images/food_4_850.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/18/91/4/Pk1IzLaSZueGZ9dc8nsw_garlic spread SITE-1.jpg",
+    "food_url": "https://www.food.com/recipe/incredibly-delicious-cheese-garlic-bread-spread-18914",
+    "ingredients_per_recipe": "['1/2-1 cup margarine', '3 teaspoons chopped garlic', '1/2 teaspoon garlic powder', '1/8 teaspoon black pepper', '1/4 cup parmesan cheese', '1 cup grated cheddar cheese']",
+    "servings_size_per_recipe": 1,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 928.4,
+      "fat": 90.3,
+      "carb": 5,
+      "protein": 26.4
+    }
+  },
+  {
+    "name_food": "So It's Bekah's Pulled Pork Now",
+    "item_id": 1181,
+    "img_location": "images/food_5_1181.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/26/25/7/AdoDgpv6TcKxdzBIecQA_BPP%204%20-%20final_1.jpg",
+    "food_url": "https://www.food.com/recipe/so-its-bekahs-pulled-pork-now-26257",
+    "ingredients_per_recipe": "['1 whole pork butt', '1/4 cup black pepper', '1/4 cup paprika', '1/4 cup turbinado sugar', '2 tablespoons salt', '2 teaspoons dry mustard', '1 teaspoon cayenne', '3 cups chicken stock', '1 cup dry white wine', '1/4 cup apple cider vinegar', '1/4 cup molasses', '1/4 cup chopped plum tomato', '3 tablespoons shallots, minced', '2 tablespoons pitted dates, minced', '1 tablespoon garlic, minced']",
+    "servings_size_per_recipe": 8,
+    "servings_size_in_image": 8,
+    "nutrients_per_serving": {
+      "calories": 121.9,
+      "fat": 1.9,
+      "carb": 19.1,
+      "protein": 3.5
+    }
+  },
+  {
+    "name_food": "Southwestern Baked Spaghetti",
+    "item_id": 2616,
+    "img_location": "images/food_6_2616.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/87/08/5/9TA3cQQwRV2jWyCT29i4_SS%204%20-%20final_1.jpg",
+    "food_url": "https://www.food.com/recipe/southwestern-baked-spaghetti-87085",
+    "ingredients_per_recipe": "['8 ounces uncooked spaghetti', '1/2 cup milk', '1 egg', '1 lb ground beef', '1 medium onion, chopped', '1 medium green bell pepper, chopped', '2 garlic cloves, minced', '1 teaspoon chili powder', '1/2 teaspoon cumin', '1/2 teaspoon oregano', '1/2 teaspoon salt', '1/4 teaspoon pepper', '2 (8 ounce) cans tomato sauce', '1/2 cup shredded cheddar cheese', '1/2 cup shredded monterey jack cheese']",
+    "servings_size_per_recipe": 6,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 434.8,
+      "fat": 19.7,
+      "carb": 37,
+      "protein": 26.9
+    }
+  },
+  {
+    "name_food": "Roasted Green Beans",
+    "item_id": 432,
+    "img_location": "images/food_8_432.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/13/38/21/8JbamEgZSzOQgR13anhB_roasted-green-beans-2435.jpg",
+    "food_url": "https://www.food.com/recipe/roasted-green-beans-133821",
+    "ingredients_per_recipe": "['2 lbs green beans', '1 -2 tablespoon olive oil (or just enough to lightly coat beans)', '1 teaspoon kosher salt (or to taste, may substitute with Mrs. Dash if desired)', '1/2 teaspoon fresh ground pepper (or to taste, omit if using Mrs. Dash)']",
+    "servings_size_per_recipe": 4,
+    "servings_size_in_image": 4,
+    "nutrients_per_serving": {
+      "calories": 100.9,
+      "fat": 3.9,
+      "carb": 16,
+      "protein": 4.2
+    }
+  },
+  {
+    "name_food": "Bev's Macaroni and Cheese",
+    "item_id": 1367,
+    "img_location": "images/food_10_1367.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/30/36/6/B9cFKbkQSJ2OUdHTK66i_0S9A4607.jpg",
+    "food_url": "https://www.food.com/recipe/bevs-macaroni-and-cheese-30366",
+    "ingredients_per_recipe": "['2 tablespoons butter', '1/4 cup flour', '1 teaspoon salt', '1/2 teaspoon dry mustard', '1/4 teaspoon pepper', '2 1/2 cups milk', '2 cups grated cheddar cheese', '8 ounces dry elbow macaroni, cooked according to package directions']",
+    "servings_size_per_recipe": 6,
+    "servings_size_in_image": 6,
+    "nutrients_per_serving": {
+      "calories": 420.3,
+      "fat": 20.8,
+      "carb": 39.4,
+      "protein": 18.6
+    }
+  },
+  {
+    "name_food": "Copycat Green Giant Niblets Corn in Butter Sauce",
+    "item_id": 1183,
+    "img_location": "images/food_11_1183.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/26/30/6/picXc4qQh.jpg",
+    "food_url": "https://www.food.com/recipe/copycat-green-giant-niblets-corn-in-butter-sauce-26306",
+    "ingredients_per_recipe": "['2 (16 ounce) bags frozen corn (yellow \"or\" shoepeg white, any brand)', '2 teaspoons salt', '1/2 cup butter, cut up', '1 teaspoon sugar', '1 cup water', '1 1/2 teaspoons cornstarch']",
+    "servings_size_per_recipe": 10,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 164.5,
+      "fat": 9.9,
+      "carb": 19.7,
+      "protein": 2.8
+    }
+  },
+  {
+    "name_food": "Frizzled Cabbage",
+    "item_id": 2550,
+    "img_location": "images/food_12_2550.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/83/52/4/gwA7gKiZRdKajMvCzqcG_0S9A9117.jpg",
+    "food_url": "https://www.food.com/recipe/frizzled-cabbage-83524",
+    "ingredients_per_recipe": "['1/4 medium green cabbage', '2 tablespoons butter (or more if you are feeling decadent)', 'salt and pepper']",
+    "servings_size_per_recipe": 2,
+    "servings_size_in_image": 2,
+    "nutrients_per_serving": {
+      "calories": 130.2,
+      "fat": 11.6,
+      "carb": 6.6,
+      "protein": 1.6
+    }
+  },
+  {
+    "name_food": "Strawberries & Cream Bread (Strawberry or Blueberry)",
+    "item_id": 316,
+    "img_location": "images/food_13_316.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_iw/v1/img/recipes/12/14/90/picXVZPpV.jpg",
+    "food_url": "https://www.food.com/recipe/strawberries-cream-bread-strawberry-or-blueberry-121490",
+    "ingredients_per_recipe": "['1 3/4 cups flour', '1/2 teaspoon baking powder', '1/4 teaspoon baking soda', '1/2 teaspoon salt', '1/4 teaspoon cinnamon', '1/2 cup butter, softened', '3/4 cup sugar', '1/4 cup light brown sugar (use if you want a sweeter bread)', '2 eggs, room temperature', '1/2 cup sour cream, room temperature', '1 teaspoon vanilla', '1 1/4 cups strawberries, fresh & coarsely chopped (do NOT use frozen) or 1 1/4 cups fresh blueberries', '3/4 cup walnuts (optional)']",
+    "servings_size_per_recipe": 10,
+    "servings_size_in_image": 10,
+    "nutrients_per_serving": {
+      "calories": 283.7,
+      "fat": 12.7,
+      "carb": 39,
+      "protein": 4
+    }
+  },
+  {
+    "name_food": "Zesty Oven Baked Fries",
+    "item_id": 2410,
+    "img_location": "images/food_14_2410.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/74/73/0/M1uNFVXlQ76fO4sQ6wdJ_fries-2.jpg",
+    "food_url": "https://www.food.com/recipe/zesty-oven-baked-fries-74730",
+    "ingredients_per_recipe": "['2 large baking potatoes, peeled and cut into thin strips', '1 tablespoon grated parmesan cheese', '1 tablespoon oil', '1/4 teaspoon salt', '1/4 teaspoon garlic powder', '1/4 teaspoon paprika', '1/4 teaspoon black pepper']",
+    "servings_size_per_recipe": 2,
+    "servings_size_in_image": 2,
+    "nutrients_per_serving": {
+      "calories": 203.8,
+      "fat": 7.7,
+      "carb": 30.8,
+      "protein": 3.9
+    }
+  },
+  {
+    "name_food": "Chicken Scaloppine With Lemon Glaze (Low Fat and Delicious!)",
+    "item_id": 390,
+    "img_location": "images/food_15_390.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/12/93/45/zoMIro80TzGMfju9sHwr_LC%205%20-%20final_3.jpg",
+    "food_url": "https://www.food.com/recipe/chicken-scaloppine-with-lemon-glaze-low-fat-and-delicious-129345",
+    "ingredients_per_recipe": "['4 boneless skinless chicken breasts (pounded to about 1/3-inch thickness)', '2 tablespoons Dijon mustard', '1 large egg (you may need two)', '1 cup dry breadcrumbs', '1/4 teaspoon poultry seasoning (or to taste)', '1/2 teaspoon garlic powder', '1/4-1/2 teaspoon seasoning salt', '1 -2 tablespoon olive oil (for frying)', '1/4 cup chicken broth', '2 tablespoons fresh lemon juice', '1/4 teaspoon salt (can use more to taste)', '4 -5 thin lemon slices', 'fresh parsley, chopped (to taste)']",
+    "servings_size_per_recipe": 4,
+    "servings_size_in_image": 4,
+    "nutrients_per_serving": {
+      "calories": 301.6,
+      "fat": 9.5,
+      "carb": 21.5,
+      "protein": 31
+    }
+  },
+  {
+    "name_food": "Libby's Famous Pumpkin Pie",
+    "item_id": 23,
+    "img_location": "images/food_16_23.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_iw/v1/img/recipes/10/11/04/picleECl4.jpg",
+    "food_url": "https://www.food.com/recipe/libbys-famous-pumpkin-pie-101104",
+    "ingredients_per_recipe": "['3/4 cup granulated sugar', '1/2 teaspoon salt', '1 teaspoon ground cinnamon (See note)', '1/2 teaspoon ground ginger (See note)', '1/4 teaspoon ground cloves (See note)', '2 large eggs', \"1 (15 ounce) can libby's 100% pumpkin puree\", '1 (12 ounce) can Carnation Evaporated Milk', '1 unbaked 9-inch deep dish pie pastry', 'whipped cream (optional)']",
+    "servings_size_per_recipe": 8,
+    "servings_size_in_image": 8,
+    "nutrients_per_serving": {
+      "calories": 276.9,
+      "fat": 12,
+      "carb": 37.3,
+      "protein": 6.4
+    }
+  },
+  {
+    "name_food": "Libby's Famous Pumpkin Pie",
+    "item_id": 2302,
+    "img_location": "images/food_16_23_2.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_iw/v1/img/recipes/10/11/04/llxAyUdBRwqWZ7Xb7nAP_pumpkin%2520pie.JPG",
+    "food_url": "https://www.food.com/recipe/libbys-famous-pumpkin-pie-101104",
+    "ingredients_per_recipe": "['3/4 cup granulated sugar', '1/2 teaspoon salt', '1 teaspoon ground cinnamon (See note)', '1/2 teaspoon ground ginger (See note)', '1/4 teaspoon ground cloves (See note)', '2 large eggs', \"1 (15 ounce) can libby's 100% pumpkin puree\", '1 (12 ounce) can Carnation Evaporated Milk', '1 unbaked 9-inch deep dish pie pastry', 'whipped cream (optional)']",
+    "servings_size_per_recipe": 8,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 276.9,
+      "fat": 12,
+      "carb": 37.3,
+      "protein": 6.4
+    }
+  },
+  {
+    "name_food": "24k Carrots",
+    "item_id": 607,
+    "img_location": "images/food_17_607.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/15/24/41/H4L74ucGR56ldmoYtRp5_24K%204%20-%20final_2.jpg",
+    "food_url": "https://www.food.com/recipe/24k-carrots-152441",
+    "ingredients_per_recipe": "['1 lb carrots, peeled and sliced (I find organic has the best flavor) or 1 lb baby carrots, whole (I find organic has the best flavor)', '2 tablespoons brown sugar, packed', '2 tablespoons butter (real butter is always better) or 2 tablespoons margarine (real butter is always better)', '1/2 teaspoon ground ginger (grated, feel free to add more or less) or 1 1/2 teaspoons fresh ginger (grated, feel free to add more or less)']",
+    "servings_size_per_recipe": 4,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 124.4,
+      "fat": 6,
+      "carb": 17.8,
+      "protein": 1.1
+    }
+  },
+  {
+    "name_food": "Jumbo Shrimp Parmesan",
+    "item_id": 1726,
+    "img_location": "images/food_18_1726.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_iw/v1/img/recipes/42/16/9/01500165478.jpeg",
+    "food_url": "https://www.food.com/recipe/jumbo-shrimp-parmesan-42169",
+    "ingredients_per_recipe": "['12 jumbo shrimp (10 to 12 per lb)', '2 tablespoons olive oil', '1 clove minced garlic', 'salt and pepper', '1/2 cup unseasoned breadcrumbs', '1/4 cup grated parmesan cheese', '2 tablespoons melted butter', '1 medium lemon, cut in wedges']",
+    "servings_size_per_recipe": 2,
+    "servings_size_in_image": 2,
+    "nutrients_per_serving": {
+      "calories": 511.6,
+      "fat": 31.8,
+      "carb": 24.7,
+      "protein": 31.8
+    }
+  },
+  {
+    "name_food": "Mashed Red Potatoes With Garlic and Parmesan",
+    "item_id": 1534,
+    "img_location": "images/food_19_1534.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/34/38/2/picEKNrvR.jpg",
+    "food_url": "https://www.food.com/recipe/mashed-red-potatoes-with-garlic-and-parmesan-34382",
+    "ingredients_per_recipe": "['2 1/2 lbs red potatoes, unpeeled, quartered', '3 garlic cloves, peeled (depending on size and taste preference)', '2 tablespoons butter', '1/2 cup milk', '1 teaspoon salt', '1/4 cup grated parmesan cheese']",
+    "servings_size_per_recipe": 6,
+    "servings_size_in_image": 6,
+    "nutrients_per_serving": {
+      "calories": 199.6,
+      "fat": 6,
+      "carb": 31.7,
+      "protein": 6
+    }
+  },
+  {
+    "name_food": "Mrs. Geraldine's Ground Beef Casserole",
+    "item_id": 2417,
+    "img_location": "images/food_20_2417.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/75/30/2/picTi7XKG.jpg",
+    "food_url": "https://www.food.com/recipe/mrs-geraldines-ground-beef-casserole-75302",
+    "ingredients_per_recipe": "['1 lb ground beef', '1 (15 ounce) can tomatoes', '1/4 cup chopped onion', '1/4 cup chopped bell pepper', '1/4 cup chopped celery', '1 (8 ounce) can mushrooms', '2 tablespoons brown sugar or 2 tablespoons sweet pickle juice', '2 tablespoons Worcestershire sauce', '1 (10 3/4 ounce) can cream of mushroom soup', '1/4 lb sharp cheddar cheese', '1 (6 ounce) package angel hair pasta, cooked, this is an estimated size bag- the original recipe called for 1 small bag', '1 (8 ounce) can tomato sauce', 'salt and pepper']",
+    "servings_size_per_recipe": 6,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 444.6,
+      "fat": 21.4,
+      "carb": 37.6,
+      "protein": 25.8
+    }
+  },
+  {
+    "name_food": "Kittencal's Taco Seasoning Mix",
+    "item_id": 2436,
+    "img_location": "images/food_21_2436.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/76/61/6/picBWkd1d.jpg",
+    "food_url": "https://www.food.com/recipe/kittencals-taco-seasoning-mix-76616",
+    "ingredients_per_recipe": "['2 tablespoons mild chili powder (for the best flavor do not reduce this amount)', '1/2-1 teaspoon garlic powder', '1/4 teaspoon onion powder', '1/4 teaspoon dried oregano', '1/2 teaspoon paprika', '2 -3 teaspoons cumin', '1 teaspoon seasoning salt (or use 1/2 teaspoon white salt)', '1 teaspoon black pepper', '1 pinch cayenne pepper (optional or to taste)']",
+    "servings_size_per_recipe": 1,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 78.1,
+      "fat": 3.5,
+      "carb": 13.7,
+      "protein": 3.7
+    }
+  },
+  {
+    "name_food": "Oven-Roasted Corn on the Cob",
+    "item_id": 775,
+    "img_location": "images/food_22_775.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/17/75/58/6ZE33WTMTBm2cqHZmVon_0S9A6857.jpg",
+    "food_url": "https://www.food.com/recipe/oven-roasted-corn-on-the-cob-177558",
+    "ingredients_per_recipe": "['6 ears corn on the cob, in their husks (Or however many will fit in your oven.)', 'water, to rinse them']",
+    "servings_size_per_recipe": 6,
+    "servings_size_in_image": 5,
+    "nutrients_per_serving": {
+      "calories": 122.5,
+      "fat": 1,
+      "carb": 29.4,
+      "protein": 4.1
+    }
+  },
+  {
+    "name_food": "Iced Coffee",
+    "item_id": 212,
+    "img_location": "images/food_23_212.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/11/30/64/BBYePZZ4TAisolysQWvR_1coffee.jpg",
+    "food_url": "https://www.food.com/recipe/iced-coffee-113064",
+    "ingredients_per_recipe": "['6 -8 cups strong coffee', '1 (14 ounce) can sweetened condensed milk']",
+    "servings_size_per_recipe": 6,
+    "servings_size_in_image": 2,
+    "nutrients_per_serving": {
+      "calories": 214.7,
+      "fat": 5.8,
+      "carb": 36,
+      "protein": 5.5
+    }
+  },
+  {
+    "name_food": "Kittencal's Famous Caesar Salad",
+    "item_id": 263,
+    "img_location": "images/food_24_263.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/11/68/49/picQXPI7E.jpg",
+    "food_url": "https://www.food.com/recipe/kittencals-famous-caesar-salad-116849",
+    "ingredients_per_recipe": "['1 large head romaine lettuce (washed over and thoroughly dried)', \"1 1/2 cups garlic-flavored croutons (or to taste, see Kittencal's Garlic Croutons)\", 'parmesan cheese', 'freshly grated black pepper (to taste)', '2 anchovy fillets (or to taste)', '2 fresh garlic cloves (or to taste)', \"1 cup mayonnaise (not salad dressing Hellman's is best)\", '1/4 cup half-and-half cream or 1/4 cup milk', '1/3 cup grated parmesan cheese', '2 tablespoons fresh squeezed lemon juice', \"1 tablespoon Dijon mustard (Hellman's Dijonnaise is best!)\", 'salt and pepper', '2 teaspoons Worcestershire sauce (or to taste) (optional)', 'buttermilk or half-and-half, for thinning']",
+    "servings_size_per_recipe": 4,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 391.6,
+      "fat": 27.3,
+      "carb": 30.9,
+      "protein": 8.6
+    }
+  },
+  {
+    "name_food": "Szechuan Noodles With Spicy Beef Sauce",
+    "item_id": 1904,
+    "img_location": "images/food_25_1904.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_iw/v1/img/recipes/48/76/0/pichbm7Jc.jpg",
+    "food_url": "https://www.food.com/recipe/szechuan-noodles-with-spicy-beef-sauce-48760",
+    "ingredients_per_recipe": "['1 lb ground beef', '1 1/2 cups chopped onions', '2 teaspoons minced garlic', '1 1/2 teaspoons minced fresh ginger', '1/2-1 1/2 teaspoon dry crushed red pepper (start off with just a little and work your way up)', '2 tablespoons sesame oil', '2 tablespoons cornstarch', '3/4 cup beef broth', '1/3 cup hoisin sauce', '2 tablespoons soy sauce', '8 ounces vermicelli, cooked', '1/2 cup sliced green onion']",
+    "servings_size_per_recipe": 4,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 617.1,
+      "fat": 25.6,
+      "carb": 63.3,
+      "protein": 31.7
+    }
+  },
+  {
+    "name_food": "Mean Guy's General Tso's Chicken",
+    "item_id": 2015,
+    "img_location": "images/food_26_2015.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_iw/v1/img/recipes/52/48/8/RVZu14b6QgQSgkj72QyC_20140902_201950.jpg",
+    "food_url": "https://www.food.com/recipe/mean-guys-general-tsos-chicken-52488",
+    "ingredients_per_recipe": "['1 lb chicken thigh, boned and cubed', '3 eggs, beaten', '1/2 cup cornstarch, plus', '2 teaspoons cornstarch', '5 dried chili pods', '1 1/2 tablespoons rice vinegar', '2 tablespoons rice wine', '3 tablespoons sugar', '3 tablespoons soy sauce']",
+    "servings_size_per_recipe": 4,
+    "servings_size_in_image": 4,
+    "nutrients_per_serving": {
+      "calories": 414,
+      "fat": 20.9,
+      "carb": 26.6,
+      "protein": 25.9
+    }
+  },
+  {
+    "name_food": "Thick Chocolate Pudding",
+    "item_id": 2434,
+    "img_location": "images/food_27_2434.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/76/49/1/dpryzMT8TbyA8EI11V0s_0S9A3570.jpg",
+    "food_url": "https://www.food.com/recipe/thick-chocolate-pudding-76491",
+    "ingredients_per_recipe": "['1/3 cup sugar', '1/4 cup cocoa', '3 tablespoons cornstarch', '1/8 teaspoon salt', '2 cups skim milk', '1 teaspoon vanilla extract']",
+    "servings_size_per_recipe": 4,
+    "servings_size_in_image": 4,
+    "nutrients_per_serving": {
+      "calories": 160.8,
+      "fat": 0.8,
+      "carb": 32.1,
+      "protein": 5.9
+    }
+  },
+  {
+    "name_food": "My No Roll Pie Crust",
+    "item_id": 1983,
+    "img_location": "images/food_28_1983.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/51/53/7/5AM5mA39Qde8zKbbDd0w_NRPC%207%20-%20final_4.jpg",
+    "food_url": "https://www.food.com/recipe/my-no-roll-pie-crust-51537",
+    "ingredients_per_recipe": "['1 1/2 cups flour', '1 teaspoon salt', '2 teaspoons sugar', '1/2 cup oil', '2 tablespoons milk']",
+    "servings_size_per_recipe": 6,
+    "servings_size_in_image": 6,
+    "nutrients_per_serving": {
+      "calories": 283,
+      "fat": 18.7,
+      "carb": 25.5,
+      "protein": 3.4
+    }
+  },
+  {
+    "name_food": "Wholly Guacamole",
+    "item_id": 2623,
+    "img_location": "images/food_29_2623.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/87/39/zuFHZZQnSTepkWu1Fk41_WG%205%20-%20final_3.jpg",
+    "food_url": "https://www.food.com/recipe/wholly-guacamole-8739",
+    "ingredients_per_recipe": "['6 avocados (soft, but not mushy)', '2 -4 garlic cloves, minced (depends on how much you like garlic)', '1 lime, cut in half', '1 medium tomatoes, diced', '1/2 medium onion, diced', 'salt', 'chopped cilantro (optional)', '1 diced jalapeno peppers (optional) or 1 diced serrano pepper (optional)']",
+    "servings_size_per_recipe": 4,
+    "servings_size_in_image": 4,
+    "nutrients_per_serving": {
+      "calories": 500.7,
+      "fat": 44.3,
+      "carb": 30.5,
+      "protein": 6.7
+    }
+  },
+  {
+    "name_food": "Kung Pao Chicken",
+    "item_id": 1674,
+    "img_location": "images/food_30_1674.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_iw/v1/img/recipes/40/33/9/fvCMcLgToiYM7WyAn3bd_DSC05253-2.jpg",
+    "food_url": "https://www.food.com/recipe/kung-pao-chicken-40339",
+    "ingredients_per_recipe": "['1 lb boneless skinless chicken breast, cut into 1 inch pieces', '1 tablespoon cornstarch', '2 teaspoons light sesame oil or 2 teaspoons vegetable oil', '3 tablespoons green onions, chopped with tops', '2 garlic cloves, minced', '1/4-1 1/2 teaspoon crushed red pepper flakes (to your own taste)', '1/2 teaspoon powdered ginger (can use fresh grated if preferred)', '2 tablespoons rice wine vinegar', '2 tablespoons soy sauce', '2 teaspoons sugar', '1/3 cup dry roasted peanuts', '4 cups cooked rice, hot']",
+    "servings_size_per_recipe": 3,
+    "servings_size_in_image": 3,
+    "nutrients_per_serving": {
+      "calories": 703.3,
+      "fat": 20,
+      "carb": 83.6,
+      "protein": 45.5
+    }
+  },
+  {
+    "name_food": "Kittencal's Famous Greek Salad",
+    "item_id": 2282,
+    "img_location": "images/food_33_2282.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/66/59/6/UbR6JLoqSWOnHGkUd9Q7_DSC02040.jpg",
+    "food_url": "https://www.food.com/recipe/kittencals-famous-greek-salad-66596",
+    "ingredients_per_recipe": "['1 cup olive oil (can reduce to 3/4 cup)', '1 extra large lemon, juice of (can use 2 lemons ( make certain that the lemon is at room temperature before squeezing)', '2 -4 teaspoons dried oregano (start with 2 teaspoons)', '3 teaspoons fresh minced garlic (about 2 medium cloves)', '1 teaspoon dried basil', '2 tablespoons red wine vinegar', '1/2 teaspoon salt (or to taste)', '1 teaspoon sugar', '1/2 teaspoon fresh ground black pepper (or to taste)', '1 large romaine lettuce, chopped (or use 2 small)', '2 -3 plum tomatoes, cut in wedges (use Roma tomatoes)', '1 English cucumber (peeled, seeded and chopped)', '1 red onion, cut in slices', '1 green bell pepper (seeded and cut into rings or sliced) (optional)', '1/2 lb feta cheese, crumbled (or to taste)', '1 cup kalamata olive']",
+    "servings_size_per_recipe": 6,
+    "servings_size_in_image": 6,
+    "nutrients_per_serving": {
+      "calories": 489.7,
+      "fat": 47,
+      "carb": 12.9,
+      "protein": 7.8
+    }
+  },
+  {
+    "name_food": "Pan-Roasted Broccoli",
+    "item_id": 627,
+    "img_location": "images/food_34_627.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/15/50/18/OFEkqju8TS6cOLve3aNC_pan%20roasted%20broccoli%20SITE-1.jpg",
+    "food_url": "https://www.food.com/recipe/pan-roasted-broccoli-155018",
+    "ingredients_per_recipe": "['3 tablespoons water', '1/4 teaspoon salt', '1/8 teaspoon pepper (I used garlic pepper blend)', '2 tablespoons vegetable oil', '1 1/4 lbs broccoli, separated into small florets, and stems, sliced (about 5 cups florets and 3/4 cup stems in total)']",
+    "servings_size_per_recipe": 4,
+    "servings_size_in_image": 4,
+    "nutrients_per_serving": {
+      "calories": 108.5,
+      "fat": 7.3,
+      "carb": 9.5,
+      "protein": 4
+    }
+  },
+  {
+    "name_food": "Roasted Cauliflower & 16 Roasted Cloves of Garlic",
+    "item_id": 105,
+    "img_location": "images/food_35_105.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/10/62/51/D9l5R78tQDajxdSnMhEO_DSC_1005.jpg",
+    "food_url": "https://www.food.com/recipe/roasted-cauliflower-16-roasted-cloves-of-garlic-106251",
+    "ingredients_per_recipe": "['1 large cauliflower (trimmed and cut into bite size pieces, washed with water still on)', '16 garlic cloves, peeled and lightly crushed', '1 -2 teaspoon minced fresh rosemary', '1 teaspoon salt', '1/4-1/2 teaspoon black pepper', '1/4 cup olive oil, adding more to taste', 'more olive oil, to drizzle if wanted']",
+    "servings_size_per_recipe": 6,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 126.9,
+      "fat": 9.4,
+      "carb": 9.7,
+      "protein": 3.2
+    }
+  },
+  {
+    "name_food": "Potato Salad",
+    "item_id": 1151,
+    "img_location": "images/food_36_1151.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/25/76/8/SfafPrzGTSO9KAX5aTmx_potato-salad-8700.jpg",
+    "food_url": "https://www.food.com/recipe/potato-salad-25768",
+    "ingredients_per_recipe": "['4 lbs red potatoes', '5 hard-boiled eggs, separated', '1 teaspoon salt, divided', '3 green onions, sliced', '1 cup mayonnaise', '2 tablespoons sweet pickle relish', '1 tablespoon prepared mustard', '1/2 teaspoon pepper', '1/2 teaspoon celery seed']",
+    "servings_size_per_recipe": 8,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 216.1,
+      "fat": 3.8,
+      "carb": 38.4,
+      "protein": 8.5
+    }
+  },
+  {
+    "name_food": "Pumpkin Pie Dip",
+    "item_id": 1147,
+    "img_location": "images/food_37_1147.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/25/73/0/XA3FCTaTR0qBYGai6GIK_0S9A2585.jpg",
+    "food_url": "https://www.food.com/recipe/pumpkin-pie-dip-25730",
+    "ingredients_per_recipe": "['1 (8 ounce) package cream cheese, softened', '2 cups powdered sugar', '1 (15 ounce) can pumpkin pie filling (pumpkin pie filling)', '1 teaspoon ground cinnamon', '1/2-1 teaspoon ground ginger', 'apple, slices', 'gingersnaps']",
+    "servings_size_per_recipe": 12,
+    "servings_size_in_image": 12,
+    "nutrients_per_serving": {
+      "calories": 180.2,
+      "fat": 6.5,
+      "carb": 30.3,
+      "protein": 1.5
+    }
+  },
+  {
+    "name_food": "Mile High Biscuits",
+    "item_id": 1203,
+    "img_location": "images/food_38_1203.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/26/49/9/6zMSmxfTRwuF8tVHLIBN_untitled-1208.jpg",
+    "food_url": "https://www.food.com/recipe/mile-high-biscuits-26499",
+    "ingredients_per_recipe": "['3 cups all-purpose flour', '1/4 cup sugar', '4 teaspoons baking powder', '1/2 teaspoon cream of tartar', '3/4 teaspoon salt', '1/2 cup shortening', '1 egg, beaten', '3/4 cup milk']",
+    "servings_size_per_recipe": 1,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 410,
+      "fat": 16,
+      "carb": 58,
+      "protein": 7
+    }
+  },
+  {
+    "name_food": "Caramelized Chicken Wings",
+    "item_id": 1808,
+    "img_location": "images/food_39_1808.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/44/88/8/pMEmR1aDS6W8Kf8wOlBf_ChickenWings1.jpg",
+    "food_url": "https://www.food.com/recipe/caramelized-chicken-wings-44888",
+    "ingredients_per_recipe": "['3 lbs chicken wings', '2 tablespoons olive oil', '1/2 cup soy sauce', '2 tablespoons ketchup', '1 cup honey', '1 garlic clove, minced, to taste', '1 pinch salt', '1 pinch ground black pepper']",
+    "servings_size_per_recipe": 4,
+    "servings_size_in_image": 4,
+    "nutrients_per_serving": {
+      "calories": 1103.3,
+      "fat": 61.2,
+      "carb": 74,
+      "protein": 66.6
+    }
+  },
+  {
+    "name_food": "Steak Marinade",
+    "item_id": 2283,
+    "img_location": "images/food_40_2283.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/66/64/8/FcAlimStTn6PghXzHPp7_steak-marinade-9713.jpg",
+    "food_url": "https://www.food.com/recipe/steak-marinade-66648",
+    "ingredients_per_recipe": "['1 tablespoon olive oil', '1 garlic clove, minced', '1 tablespoon Worcestershire sauce', '1 tablespoon balsamic vinegar or 1 tablespoon white vinegar', '1 teaspoon yellow mustard', '1 tablespoon soy sauce', 'pepper']",
+    "servings_size_per_recipe": 3,
+    "servings_size_in_image": 2,
+    "nutrients_per_serving": {
+      "calories": 980,
+      "fat": 56,
+      "carb": 3,
+      "protein": 106
+    }
+  },
+  {
+    "name_food": "Amazing Chicken Marinade",
+    "item_id": 1338,
+    "img_location": "images/food_44_1338.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/29/59/8/SnLYGe3JSzqRP9EVX2Dy_0S9A7541-copy.jpg",
+    "food_url": "https://www.food.com/recipe/amazing-chicken-marinade-29598",
+    "ingredients_per_recipe": "['1/4 cup cider vinegar', '3 tablespoons whole grain mustard', '3 cloves garlic, peeled and minced', '1 lime, juiced', '1/2 lemon, juiced', '1/2 cup brown sugar', '1 1/2 teaspoons salt', '6 tablespoons olive oil', 'ground black pepper', '6 boneless skinless chicken breast halves']",
+    "servings_size_per_recipe": 6,
+    "servings_size_in_image": 6,
+    "nutrients_per_serving": {
+      "calories": 337.6,
+      "fat": 16.9,
+      "carb": 20.6,
+      "protein": 25.6
+    }
+  },
+  {
+    "name_food": "Grilled Moroccan Chicken",
+    "item_id": 634,
+    "img_location": "images/food_45_634.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/15/58/0/dyOtVKSBSGSpv7gPGy01_IMG_2605%20grilled%20moroccan%20chicken.jpg",
+    "food_url": "https://www.food.com/recipe/grilled-moroccan-chicken-15580",
+    "ingredients_per_recipe": "['1/2 cup extra virgin olive oil (the best quality you can get)', '1/4 cup chopped scallion (, white part only)', '1/4 cup chopped parsley', '1/4 cup chopped fresh cilantro', '1 tablespoon minced garlic', '2 teaspoons paprika', '2 teaspoons ground cumin', '1 teaspoon salt', '1/4 teaspoon turmeric', '1/4 teaspoon cayenne pepper', '4 boneless skinless chicken breasts']",
+    "servings_size_per_recipe": 4,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 387.9,
+      "fat": 30.5,
+      "carb": 2.7,
+      "protein": 25.8
+    }
+  },
+
+  {
+    "name_food": "Southern Sweet Iced Tea",
+    "item_id": 2235,
+    "img_location": "images/food_47_2235.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/63/78/5/SkmVD4OjTQaQX3eOKV8D_DSC_6105.jpg",
+    "food_url": "https://www.food.com/recipe/southern-sweet-iced-tea-63785",
+    "ingredients_per_recipe": "['6 regular tea bags', '1/8 teaspoon baking soda', '2 cups boiling water', '1 1/2-2 cups sugar', '6 cups cold water']",
+    "servings_size_per_recipe": 6,
+    "servings_size_in_image": 2,
+    "nutrients_per_serving": {
+      "calories": 580.5,
+      "fat": 0,
+      "carb": 150,
+      "protein": 0
+    }
+  },
+  {
+    "name_food": "Easy Baked Potato Wedges",
+    "item_id": 1916,
+    "img_location": "images/food_49_1916.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/49/20/0/wupkKymsQvMaFpxwYEQp_untitled-8249.jpg",
+    "food_url": "https://www.food.com/recipe/easy-baked-potato-wedges-49200",
+    "ingredients_per_recipe": "['4 large potatoes', '1/4 cup cooking oil', '1 tablespoon parmesan cheese', '1 teaspoon salt', '1 tablespoon paprika', '1/2 teaspoon pepper', '1/2 teaspoon garlic powder']",
+    "servings_size_per_recipe": 4,
+    "servings_size_in_image": 4,
+    "nutrients_per_serving": {
+      "calories": 416.8,
+      "fat": 14.6,
+      "carb": 65.9,
+      "protein": 8.3
+    }
+  },
+  {
+    "name_food": "Best Apple Cake",
+    "item_id": 465,
+    "img_location": "images/food_50_465.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/13/65/89/picf17oaH.jpg",
+    "food_url": "https://www.food.com/recipe/best-apple-cake-136589",
+    "ingredients_per_recipe": "['3 cups flour', '2 cups sugar', '1 teaspoon baking soda', '1/2 teaspoon salt', '3 large eggs, beaten', '1 cup vegetable oil', '2 teaspoons vanilla', '3 cups finely chopped apples', '1/2 cup apple juice', '1 cup chopped walnuts', '1 cup brown sugar', '1/4 cup butter', '1/3 cup whipping cream']",
+    "servings_size_per_recipe": 12,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 634.4,
+      "fat": 32.4,
+      "carb": 82.3,
+      "protein": 6.6
+    }
+  },
+  {
+    "name_food": "Crock Pot Ravioli",
+    "item_id": 2243,
+    "img_location": "images/food_51_2243.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/64/13/8/srBdzamQqeN2RnURsmmR-DSC_0727.JPG",
+    "food_url": "https://www.food.com/recipe/crock-pot-ravioli-64138",
+    "ingredients_per_recipe": "['1 (25 ounce) bag beef ravioli', '1 (26 ounce) jar pasta sauce', '1 (8 ounce) can tomato sauce', '1 cup water', '2 -3 teaspoons red peppers', 'Italian spices', '1 cup shredded mozzarella cheese']",
+    "servings_size_per_recipe": 6,
+    "servings_size_in_image": 3,
+    "nutrients_per_serving": {
+      "calories": 186.6,
+      "fat": 8,
+      "carb": 21.7,
+      "protein": 7.1
+    }
+  },
+  {
+    "name_food": "Cucumber Salad",
+    "item_id": 1989,
+    "img_location": "images/food_52_1989.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/51/72/1/ivnX7QTUQOeg1NFdOPDP_THE%20FOOD%20GAYS%20-%20CUCUMBER%20SALAD-3.jpg",
+    "food_url": "https://www.food.com/recipe/cucumber-salad-51721",
+    "ingredients_per_recipe": "['2 cucumbers, very thinly sliced', '1 red onion, very thinly sliced', '2 tablespoons vinegar or 2 tablespoons lemon juice', '2 tablespoons low-fat sour cream or 2 tablespoons yogurt', 'salt and pepper, to taste (I like a lot of pepper)', '1/2 teaspoon sugar', '1 teaspoon chopped fresh dill']",
+    "servings_size_per_recipe": 6,
+    "servings_size_in_image": 4,
+    "nutrients_per_serving": {
+      "calories": 31.4,
+      "fat": 0.7,
+      "carb": 5.9,
+      "protein": 1
+    }
+  },
+  {
+    "name_food": "Oven-Fried Garlic Chicken",
+    "item_id": 2551,
+    "img_location": "images/food_53_2551.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/83/56/1/picgjxmdl.jpg",
+    "food_url": "https://www.food.com/recipe/oven-fried-garlic-chicken-83561",
+    "ingredients_per_recipe": "['2/3 cup breadcrumbs', '2/3 cup grated parmesan cheese', '1/4 cup minced fresh parsley', '1/4 teaspoon salt', '1/8 teaspoon fresh ground pepper', '5 tablespoons butter or 5 tablespoons margarine', '3 garlic cloves, minced', '3 lbs chicken, cut up']",
+    "servings_size_per_recipe": 4,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 1006.6,
+      "fat": 71.4,
+      "carb": 14.7,
+      "protein": 72.5
+    }
+  },
+  {
+    "name_food": "Ranch Chicken Thighs",
+    "item_id": 1739,
+    "img_location": "images/food_54_1739.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_iw/v1/img/recipes/42/60/3/2gWGXngqRy2T3zC65wrN_0S9A0626.jpg",
+    "food_url": "https://www.food.com/recipe/ranch-chicken-thighs-42603",
+    "ingredients_per_recipe": "['1/2 cup dry breadcrumbs', '1/4 cup grated parmesan cheese', '2 tablespoons yellow cornmeal', '1/2 teaspoon italian seasoning', '6 chicken thighs (skin removed)', '1/2 cup bottled ranch salad dressing', 'seasoning salt']",
+    "servings_size_per_recipe": 6,
+    "servings_size_in_image": 6,
+    "nutrients_per_serving": {
+      "calories": 357.9,
+      "fat": 26.4,
+      "carb": 9.9,
+      "protein": 19.4
+    }
+  },
+  {
+    "name_food": "Beef Tips",
+    "item_id": 794,
+    "img_location": "images/food_56_794.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/17/99/0/5xlpyAPOSxGdaqmTLZ0o_BT%205%20-%20final_3.jpg",
+    "food_url": "https://www.food.com/recipe/beef-tips-17990",
+    "ingredients_per_recipe": "['2 lbs cubed beef stew meat', '1 onion, chopped', '1 package brown gravy mix', '1/4 cup soy sauce', '1/4 cup Worcestershire sauce', '2 cups water', '3 tablespoons vegetable oil', '1 teaspoon garlic', '1 teaspoon salt', '1 teaspoon ground pepper', '1 cup water']",
+    "servings_size_per_recipe": 6,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 747,
+      "fat": 21,
+      "carb": 68,
+      "protein": 49
+    }
+  },
+  {
+    "name_food": "Crock Pot Chicken Taco Meat",
+    "item_id": 1927,
+    "img_location": "images/food_58_1927.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/49/57/EhLd4qFRjS9WEGLpDFFX_crockpot-chicken-taco-meat-ww-02224.jpg",
+    "food_url": "https://www.food.com/recipe/crock-pot-chicken-taco-meat-4957",
+    "ingredients_per_recipe": "['3 tablespoons taco seasoning, I use Bulk Taco Seasoning Mix', '1 cup chicken broth', '1 lb boneless skinless chicken breast']",
+    "servings_size_per_recipe": 8,
+    "servings_size_in_image": 8,
+    "nutrients_per_serving": {
+      "calories": 71.4,
+      "fat": 1.6,
+      "carb": 0.7,
+      "protein": 12.7
+    }
+  },
+  {
+    "name_food": "Italian Wedding Soup",
+    "item_id": 508,
+    "img_location": "images/food_59_508.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/14/06/1/z4CKHahYTvu5iZHOoeRG_0S9A1065.jpg",
+    "food_url": "https://www.food.com/recipe/italian-wedding-soup-14061",
+    "ingredients_per_recipe": "['1/2 lb lean ground beef', '1 egg, slightly beaten', '2 tablespoons breadcrumbs', '1 tablespoon parmesan cheese', '1/2 teaspoon dried basil', '1/2 teaspoon onion powder', '5 3/4 cups chicken broth', '2 cups chopped escarole or 2 cups chopped spinach', '1/2 cup orzo pasta, uncooked', '1/3 cup finely chopped carrot', 'grated parmesan cheese']",
+    "servings_size_per_recipe": 4,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 295,
+      "fat": 10,
+      "carb": 24.4,
+      "protein": 24.6
+    }
+  },
+  {
+    "name_food": "Oven Fried Eggplant (Aubergine)",
+    "item_id": 1921,
+    "img_location": "images/food_60_1921.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/49/38/7/rLVYQY0QZqsVUbyrslUQ_DSC_0910.jpg",
+    "food_url": "https://www.food.com/recipe/oven-fried-eggplant-aubergine-49387",
+    "ingredients_per_recipe": "['1/2 cup fat-free mayonnaise', '1 tablespoon minced onion', '1 lb unpeeled eggplant, sliced-about 12 (1/2 inch slices)', '1/3 cup fine dry breadcrumb', '1/3 cup grated parmesan cheese (or parmesan alternative, like asiago)', '1/2 teaspoon dried Italian seasoning', 'vegetable oil cooking spray']",
+    "servings_size_per_recipe": 4,
+    "servings_size_in_image": 4,
+    "nutrients_per_serving": {
+      "calories": 122,
+      "fat": 3.9,
+      "carb": 17.5,
+      "protein": 5.6
+    }
+  },
+  {
+    "name_food": "Perfectly Sweet Cornbread",
+    "item_id": 2553,
+    "img_location": "images/food_61_2553.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_iw/v1/img/recipes/83/62/5/QIGkqlxRR3imprDYbDdg_cornbread%20SITE-3.jpg",
+    "food_url": "https://www.food.com/recipe/sweet-cornbread-83625",
+    "ingredients_per_recipe": "['1 1/2 cups flour', '2/3 cup sugar', '1/2 cup cornmeal', '1 tablespoon baking powder', '1/2 teaspoon salt', '1 1/4 cups milk', '2 large eggs, lightly beaten', '1/3 cup oil', '3 tablespoons butter or 3 tablespoons margarine, melted']",
+    "servings_size_per_recipe": 12,
+    "servings_size_in_image": 12,
+    "nutrients_per_serving": {
+      "calories": 226,
+      "fat": 11,
+      "carb": 28.5,
+      "protein": 3.9
+    }
+  },
+  {
+    "name_food": "Quick Spanish Rice",
+    "item_id": 736,
+    "img_location": "images/food_62_736.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/17/12/6/picgz7Npe.jpg",
+    "food_url": "https://www.food.com/recipe/quick-spanish-rice-17126",
+    "ingredients_per_recipe": "['1 (15 ounce) can stewed tomatoes', '1 1/2 cups chicken stock', '1 1/4 cups rice', '1 tablespoon butter or 1 tablespoon margarine', '2 teaspoons chili powder', '3/4 teaspoon oregano', '1/2 teaspoon garlic salt', '1 teaspoon cumin']",
+    "servings_size_per_recipe": 8,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 421,
+      "fat": 15,
+      "carb": 58,
+      "protein": 12
+    }
+  },
+  {
+    "name_food": "Salsa Chicken",
+    "item_id": 1241,
+    "img_location": "images/food_63_1241.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_iw/v1/img/recipes/27/47/5/01483408220.jpeg",
+    "food_url": "https://www.food.com/recipe/salsa-chicken-27475",
+    "ingredients_per_recipe": "['4 boneless skinless chicken breast halves', '4 -5 teaspoons taco seasoning mix', '1 cup salsa', '1 -1 1/2 cup shredded cheddar cheese', '2 tablespoons sour cream (optional)']",
+    "servings_size_per_recipe": 4,
+    "servings_size_in_image": 4,
+    "nutrients_per_serving": {
+      "calories": 267.5,
+      "fat": 12.5,
+      "carb": 4.9,
+      "protein": 33.1
+    }
+  },
+  {
+    "name_food": "Tiny Cinnamon Rolls",
+    "item_id": 1145,
+    "img_location": "images/food_64_1145.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/25/72/3/qW2UIi33SbiXvvJbOAyy_TCR%206%20-%20final_3.jpg",
+    "food_url": "https://www.food.com/recipe/tiny-cinnamon-rolls-25723",
+    "ingredients_per_recipe": "['1 (8 ounce) package refrigerated crescent dinner rolls', '1 1/2 teaspoons sugar', '1/2 teaspoon ground cinnamon', '1/3 cup powdered sugar', '1 teaspoon milk', '1 drop vanilla']",
+    "servings_size_per_recipe": 1,
+    "servings_size_in_image": 6,
+    "nutrients_per_serving": {
+      "calories": 750,
+      "fat": 36,
+      "carb": 102,
+      "protein": 12
+    }
+  },
+  {
+    "name_food": "4 Minute Spicy Garlic Shrimp",
+    "item_id": 142,
+    "img_location": "images/food_66_142.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_iw/v1/img/recipes/10/79/97/Q5bU78bSOioFlACcBaRl_IMG_0646.JPG",
+    "food_url": "https://www.food.com/recipe/4-minute-spicy-garlic-shrimp-107997",
+    "ingredients_per_recipe": "['12 shrimp (Jumbo sized, peeled, deveined, & tails intact)', '2 tablespoons olive oil', '2 garlic cloves (crushed with the side of a knife)', '1/4 teaspoon red pepper flakes', '1 teaspoon steak seasoning (Montreal Seasoning by McCormick is recommended)', '1 teaspoon lemon, zest of', '2 teaspoons lemon juice', '1 tablespoon fresh parsley (chopped)']",
+    "servings_size_per_recipe": 2,
+    "servings_size_in_image": 2,
+    "nutrients_per_serving": {
+      "calories": 152.4,
+      "fat": 13.9,
+      "carb": 2.1,
+      "protein": 5.2
+    }
+  },
+  {
+    "name_food": "Bacon Wrapped Chicken (Oamc)",
+    "item_id": 2483,
+    "img_location": "images/food_67_2483.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_iw/v1/img/recipes/79/94/4/nmFb9KALTNaKdFSdxOVM_0S9A0307.jpg",
+    "food_url": "https://www.food.com/recipe/bacon-wrapped-chicken-oamc-79944",
+    "ingredients_per_recipe": "['12 boneless skinless chicken breast halves', '2 (8 ounce) cartons chive & onion cream cheese', '2 tablespoons butter', 'salt', '12 slices bacon']",
+    "servings_size_per_recipe": 12,
+    "servings_size_in_image": 4,
+    "nutrients_per_serving": {
+      "calories": 317.6,
+      "fat": 21.5,
+      "carb": 1.6,
+      "protein": 28.2
+    }
+  },
+  {
+    "name_food": "Big Thicket Chicken and Dumplings",
+    "item_id": 2002,
+    "img_location": "images/food_69_2002.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/52/25/3/TnYFQylSa6BG9fSZ0ynR_big-thicket-chicken-dumpling-0052.jpg",
+    "food_url": "https://www.food.com/recipe/big-thicket-chicken-and-dumplings-52253",
+    "ingredients_per_recipe": "['1 (3 -4 lb) whole chickens', '1 gallon water', '1 teaspoon poultry seasoning', '1 teaspoon garlic powder', '1/2 teaspoon black pepper', '1/8 teaspoon red pepper (optional)', '2 celery ribs, chopped', '4 green onions, sliced thin or 1/2 medium onion, chopped', '1 carrot, shredded', '6 chicken bouillon cubes', '6 cups flour', '2 teaspoons baking powder', '1 teaspoon poultry seasoning', '1 teaspoon salt', '1 cup margarine or 1 cup butter flavor shortening', '2 eggs, beaten', '2 cups chicken stock']",
+    "servings_size_per_recipe": 8,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 839.3,
+      "fat": 43.5,
+      "carb": 77,
+      "protein": 32.8
+    }
+  },
+  {
+    "name_food": "Brussels Sprouts in Garlic Butter",
+    "item_id": 981,
+    "img_location": "images/food_70_981.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/21/76/1/rZ8Gw5E2RTqeRLHp8cWT_DSC_0314.JPG",
+    "food_url": "https://www.food.com/recipe/brussels-sprouts-in-garlic-butter-21761",
+    "ingredients_per_recipe": "['15 Brussels sprouts, halved lengthwise', '1 1/2 tablespoons butter', '1 1/2 tablespoons olive oil', '3 cloves garlic, smashed with the flat of a knife', 'freshly grated parmesan cheese (optional)', 'salt and pepper']",
+    "servings_size_per_recipe": 2,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 229.3,
+      "fat": 19.6,
+      "carb": 12.7,
+      "protein": 4.4
+    }
+  },
+  {
+    "name_food": "Crock-Pot Potato Chowder",
+    "item_id": 1945,
+    "img_location": "images/food_71_1945.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/50/14/4/dZgkofoTl6AEIhxA1ZAf-Crock-Pot-Potato-Chowder---50144-2.JPG",
+    "food_url": "https://www.food.com/recipe/crock-pot-potato-chowder-50144",
+    "ingredients_per_recipe": "['8 cups diced potatoes', '1/3 cup onion, chopped', '3 (14 1/2 ounce) cans chicken broth', '1 (10 3/4 ounce) can condensed cream of chicken soup', '1 (8 ounce) package cream cheese, cubed, softened', '1/2 lb bacon, cooked and crumbled', 'chives']",
+    "servings_size_per_recipe": 12,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 270.6,
+      "fat": 17.2,
+      "carb": 21,
+      "protein": 8.2
+    }
+  },
+  {
+    "name_food": "Macaroni and Cheese",
+    "item_id": 2022,
+    "img_location": "images/food_72_2022.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/52/79/9/VgaiZqtbRByPpcH71R9E_Macaroni%20and%20cheese%2052799-7.jpg",
+    "food_url": "https://www.food.com/recipe/macaroni-and-cheese-52799",
+    "ingredients_per_recipe": "['16 ounces elbow macaroni (cooked)', '1/2 cup butter', '1 teaspoon salt', '1/2 teaspoon pepper', '1/2 cup flour', '3 1/2 cups milk', '1 lb cheese, cut into cubes (I use Velveeta for creamier mac and cheese)', 'breadcrumbs']",
+    "servings_size_per_recipe": 6,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 814.7,
+      "fat": 40.4,
+      "carb": 81.2,
+      "protein": 31.3
+    }
+  },
+  {
+    "name_food": "Mahogany Beef Stew",
+    "item_id": 2494,
+    "img_location": "images/food_73_2494.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/80/53/6/XjL7crRfNDKJR8eSzews_MS%204%20-%20final_2.jpg",
+    "food_url": "https://www.food.com/recipe/mahogany-beef-stew-80536",
+    "ingredients_per_recipe": "['4 tablespoons olive oil', '3 1/2 lbs boneless beef chuck roast, trimmed, cut into 2 1/2 inch pieces', '4 cups chopped onions', '2 cups good-quality red wine', '1 (14 1/2 ounce) can diced tomatoes, undrained', '1/2 teaspoon dried oregano', '1/2 teaspoon dried basil', '1/4 teaspoon thyme', \"1/2 cup hoisin sauce (this is the critical ingredient, don't leave it out!)\", '2 bay leaves', '1 garlic clove, minced', '1 lb slender carrot, peeled, cut diagonally into 1 inch lengths', '1 tablespoon cornstarch, mixed with', '1 tablespoon water', '2 tablespoons chopped fresh parsley']",
+    "servings_size_per_recipe": 6,
+    "servings_size_in_image": 6,
+    "nutrients_per_serving": {
+      "calories": 656.3,
+      "fat": 26.2,
+      "carb": 33.7,
+      "protein": 59.2
+    }
+  },
+  {
+    "name_food": "Chicken Garlic Bites",
+    "item_id": 1252,
+    "img_location": "images/food_74_1252.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/27/73/3/CQ0Bs63mSTOFTqqbK45u_Food-com-2017-10-310580.jpg",
+    "food_url": "https://www.food.com/recipe/chicken-garlic-bites-27733",
+    "ingredients_per_recipe": "['2 boneless skinless chicken breasts, cut into bite size pieces', '1/2 cup olive oil', '4 garlic cloves, minced', '1/4 teaspoon pepper', '1/2 cup breadcrumbs', '1/4 teaspoon cayenne pepper']",
+    "servings_size_per_recipe": 16,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 540,
+      "fat": 28,
+      "carb": 30,
+      "protein": 42
+    }
+  },
+  {
+    "name_food": "Deviled Eggs",
+    "item_id": 1882,
+    "img_location": "images/food_75_1882.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_iw/v1/img/recipes/48/15/3/picqlrGKl.jpg",
+    "food_url": "https://www.food.com/recipe/deviled-eggs-48153",
+    "ingredients_per_recipe": "['6 large hard-boiled eggs', 'salt and black pepper', '2 tablespoons real mayonnaise', '1 teaspoon prepared yellow mustard', '2 diced gherkins', '1 sliced jalapeno', 'paprika']",
+    "servings_size_per_recipe": 6,
+    "servings_size_in_image": 6,
+    "nutrients_per_serving": {
+      "calories": 81.3,
+      "fat": 5.4,
+      "carb": 1.3,
+      "protein": 6.5
+    }
+  },
+  {
+    "name_food": "Perfect Pasta With No Watching and No Sweating",
+    "item_id": 1366,
+    "img_location": "images/food_76_1366.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/30/35/8/BPbwoHgjQEaTlodpoTwQ_No%20Watch%20Pasta%20Final%20Dish%20Overhead.jpg",
+    "food_url": "https://www.food.com/recipe/perfect-pasta-with-no-watching-and-no-sweating-30358",
+    "ingredients_per_recipe": "['16 ounces your favorite pasta', 'water (lots)']",
+    "servings_size_per_recipe": 1,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 422.9,
+      "fat": 1.7,
+      "carb": 85.1,
+      "protein": 14.9
+    }
+  },
+  {
+    "name_food": "Spanish Chicken & Rice Bake",
+    "item_id": 1424,
+    "img_location": "images/food_77_1424.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/31/51/6/Hcc7qzQwTmeIbMTnAWAp-Spanish-Chicken-2.jpg",
+    "food_url": "https://www.food.com/recipe/spanish-chicken-rice-bake-31516",
+    "ingredients_per_recipe": "['1 (10 3/4 ounce) can cream of chicken soup', '1 cup salsa', '1/2 cup water', '1 cup whole kernel corn', '3/4 cup uncooked long-grain white rice', '4 boneless chicken breast halves', '1/2 teaspoon chili powder', '1/2 cup shredded cheddar cheese', '1 cup canned black beans, washed (optional)']",
+    "servings_size_per_recipe": 4,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 496.8,
+      "fat": 17.5,
+      "carb": 45.2,
+      "protein": 39.1
+    }
+  },
+  {
+    "name_food": "Wet Burritos",
+    "item_id": 1511,
+    "img_location": "images/food_78_1511.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/33/66/5/01498782317.jpeg",
+    "food_url": "https://www.food.com/recipe/wet-burritos-33665",
+    "ingredients_per_recipe": "['1 lb lean ground beef', '2 cloves garlic, pressed', '1/2 cup finely chopped onion', '1 tablespoon Worcestershire sauce', '1 teaspoon paprika', '1 teaspoon Mexican oregano', '1 1/2 teaspoons chili powder', '3/4 teaspoon cumin', '1/2 teaspoon black pepper', '1 (15 ounce) can diced tomatoes, in sauce divided', '2 cups cheddar cheese, shredded (or you can use mexican blend)', '4 large flour tortillas', '2 cups refried beans, with', '1/4 teaspoon cumin, added', '1 (10 ounce) can enchilada sauce', '1 (18 ounce) jar homestyle beef gravy', 'sour cream', 'chopped onion', 'salsa', 'jalapeno', 'chopped lettuce', 'chopped tomato']",
+    "servings_size_per_recipe": 4,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 1028.4,
+      "fat": 43.9,
+      "carb": 98.4,
+      "protein": 60.2
+    }
+  },
+  {
+    "name_food": "Baja Black Beans, Corn and Rice",
+    "item_id": 2087,
+    "img_location": "images/food_79_2087.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/55/76/8/kASmFgkHRf6yPLmv9pLE_black-beans-and-corn-3.jpg",
+    "food_url": "https://www.food.com/recipe/baja-black-beans-corn-and-rice-55768",
+    "ingredients_per_recipe": "['6 cups cooked brown rice', '1 (15 ounce) can black beans, rinsed and drained', '1 (15 ounce) can corn, drained', '4 fresh tomatoes, diced', '1/2 cup red onion, chopped', '1/2 cup cilantro, chopped', '1 jalapeno pepper, seeded and diced', '2 tablespoons fresh lime juice', '1 tablespoon olive oil', '1/2 teaspoon salt', '1/4 teaspoon fresh ground pepper', '2 dashes hot sauce']",
+    "servings_size_per_recipe": 6,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 396.4,
+      "fat": 5.4,
+      "carb": 78,
+      "protein": 12.4
+    }
+  },
+  {
+    "name_food": "Chili Con Carne With Beans",
+    "item_id": 195,
+    "img_location": "images/food_80_195.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/11/14/9/JNv4llZLTRKyOteWkYAl_chiliconcarne-3.jpg",
+    "food_url": "https://www.food.com/recipe/chili-con-carne-with-beans-11149",
+    "ingredients_per_recipe": "['2 lbs ground beef', '1 large onion, chopped', '2 garlic cloves, minced', '1 (15 ounce) can tomato sauce', '1 (6 ounce) can tomato paste', '1 (15 ounce) can tomatoes', '1 (15 ounce) can diced tomatoes with green chilies', '1 (12 ounce) bottle dark beer', '1 teaspoon ground cumin', '1 teaspoon paprika', '2 teaspoons chili powder', '1 teaspoon oregano', '1 teaspoon salt', '1/2 teaspoon pepper', '1 teaspoon Worcestershire sauce', '1 (28 ounce) can chili beans']",
+    "servings_size_per_recipe": 6,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 628.5,
+      "fat": 24.1,
+      "carb": 57.4,
+      "protein": 44.2
+    }
+  },
+  {
+    "name_food": "Easy Breakfast Casserole",
+    "item_id": 1619,
+    "img_location": "images/food_81_1619.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/38/06/5/j3QqGylQye8OJ6x0SuIA_bfast casserole SITE.jpg",
+    "food_url": "https://www.food.com/recipe/easy-breakfast-casserole-38065",
+    "ingredients_per_recipe": "['2 cups dry chicken stove top stuffing mix (from the canister)', '2 cups milk', '1 1/2 cups cubed ham (or use Bob Evans Sausage, cooked, drained well, and crumbled)', '6 eggs, beaten', '1 cup cheddar cheese, shredded', '1/2 teaspoon salt']",
+    "servings_size_per_recipe": 6,
+    "servings_size_in_image": 6,
+    "nutrients_per_serving": {
+      "calories": 199.4,
+      "fat": 14,
+      "carb": 4.4,
+      "protein": 13.6
+    }
+  },
+  {
+    "name_food": "Peanut Butter Chocolate Chunk Cookies",
+    "item_id": 1893,
+    "img_location": "images/food_85_1893.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/48/53/2/picYb3Oar.jpg",
+    "food_url": "https://www.food.com/recipe/peanut-butter-chocolate-chunk-cookies-48532",
+    "ingredients_per_recipe": "['1/2 cup unsalted butter', '3/4 cup chunky peanut butter', '1/2 cup sugar', '1/2 cup dark brown sugar, firmly packed', '1 large egg', '1/2 teaspoon vanilla', '1 cup all-purpose flour', '3/4 teaspoon baking soda', '6 ounces bittersweet chocolate chips or 6 ounces bittersweet semisweet chocolate chunks']",
+    "servings_size_per_recipe": 36,
+    "servings_size_in_image": 8,
+    "nutrients_per_serving": {
+      "calories": 115.1,
+      "fat": 7.9,
+      "carb": 11,
+      "protein": 2.5
+    }
+  },
+  {
+    "name_food": "Baked Ham and Cheese Omelet Roll",
+    "item_id": 1290,
+    "img_location": "images/food_87_1290.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/28/64/8/JbZ43zlEQNeHyqiPrOvi_omeletroll.jpg",
+    "food_url": "https://www.food.com/recipe/baked-ham-and-cheese-omelet-roll-28648",
+    "ingredients_per_recipe": "['6 eggs', '1 cup milk', '1/2 cup all-purpose flour', '1/2 teaspoon salt', '1/4 teaspoon black pepper', '1 cup cooked ham, chopped or 9 slices of any deli ham', '1 cup shredded sharp cheddar cheese']",
+    "servings_size_per_recipe": 4,
+    "servings_size_in_image": 4,
+    "nutrients_per_serving": {
+      "calories": 409.5,
+      "fat": 24.8,
+      "carb": 15.8,
+      "protein": 29.1
+    }
+  },
+  {
+    "name_food": "Tortellini Tomato Spinach Soup",
+    "item_id": 1578,
+    "img_location": "images/food_92_1578.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/35/98/8/3hjSOQLYTcuK2x8P8sJs_tortellini-soup-5.jpg",
+    "food_url": "https://www.food.com/recipe/tortellini-tomato-spinach-soup-35988",
+    "ingredients_per_recipe": "['1 tablespoon olive oil', '1/2 cup minced onion (about 1/2 small onion)', '1 garlic clove, minced', '4 -6 cups chicken broth or 4 -6 cups vegetable broth', '1 (14 ounce) can whole tomatoes, coarsely chopped', '1 (9 ounce) package fresh tortellini or 1 (9 ounce) package dried tortellini', 'kosher salt', 'cracked black pepper', '10 ounces fresh spinach or 10 ounces frozen spinach, defrosted and chopped', '1/4 cup freshly grated parmesan cheese (optional)']",
+    "servings_size_per_recipe": 4,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 312.6,
+      "fat": 10,
+      "carb": 40.3,
+      "protein": 17.1
+    }
+  },
+  {
+    "name_food": "Cabbage and Noodles",
+    "item_id": 1894,
+    "img_location": "images/food_94_1894.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/48/58/8/oJ9K0Q0lS6exQR3HcPGS_0S9A9976.jpg",
+    "food_url": "https://www.food.com/recipe/cabbage-and-noodles-48588",
+    "ingredients_per_recipe": "['1 -1 1/2 lb cabbage, shredded (about 1/2 head)', '16 ounces egg noodles, cooked according to directions on package', '2 large onions, diced', 'salt and fresh cracked black pepper, lots and lots and I mean LOTS', '1/4 cup salted butter', '4 tablespoons olive oil', '1 cup green peas, frozen']",
+    "servings_size_per_recipe": 1,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 497.7,
+      "fat": 20.3,
+      "carb": 66.7,
+      "protein": 13.7
+    }
+  },
+  {
+    "name_food": "Kittencal's 5-Minute Cinnamon Flop Brunch Cake",
+    "item_id": 2445,
+    "img_location": "images/food_95_2445.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_iw/v1/img/recipes/77/39/7/pic8NVn1k.jpg",
+    "food_url": "https://www.food.com/recipe/kittencals-5-minute-cinnamon-flop-brunch-cake-77397",
+    "ingredients_per_recipe": "['2 cups all-purpose flour', '1 1/4 cups sugar (add in more for a sweeter taste)', '1 1/4 cups milk', '1 -2 teaspoon vanilla (optional) or 1 -2 teaspoon almond extract (optional)', '3 teaspoons baking powder', '1 pinch salt', '1 large egg (optional)', '1/2 cup brown sugar (can use more or less)', '1 -2 teaspoon cinnamon', '1/4 cup melted butter', 'chopped walnuts (optional) or pecans (optional)']",
+    "servings_size_per_recipe": 10,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 291.1,
+      "fat": 6,
+      "carb": 56.8,
+      "protein": 3.7
+    }
+  },
+  {
+    "name_food": "Kittencal's Onion Patties/Latkes",
+    "item_id": 488,
+    "img_location": "images/food_96_488.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/13/81/73/TVqwoWoDTEyfXXxV4GRD_kittencals-onion-patties-latkes_8050.jpg",
+    "food_url": "https://www.food.com/recipe/kittencals-onion-patties-latkes-138173",
+    "ingredients_per_recipe": "['2 1/2 cups onions, finely diced (I just chop about 3 medium onions for this)', '1 green onion, finely chopped (optional)', '3/4 cup flour', '1 1/2 tablespoons sugar', '2 teaspoons baking powder', '1 1/2 teaspoons seasoning salt (can use regular salt)', '1/8 teaspoon cayenne pepper', '1/2 teaspoon garlic powder (optional, or use 2-3 teaspoons fresh garlic)', 'black pepper (optional)', '3/4 cup milk', 'oil (for frying, I recommend to use vegetable oil olive oil will interact with the flavor)']",
+    "servings_size_per_recipe": 3,
+    "servings_size_in_image": 3,
+    "nutrients_per_serving": {
+      "calories": 234,
+      "fat": 2.7,
+      "carb": 46.6,
+      "protein": 6.8
+    }
+  },
+  {
+    "name_food": "Kittencal's Parmesan Garlic Bread or Garlic Toast",
+    "item_id": 97,
+    "img_location": "images/food_97_97.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/10/57/26/cbikDd9iQlaNV6Z5C4QI_Kittencal%27s Parmesan Garlic Bread or Garlic Toast_0165.JPG",
+    "food_url": "https://www.food.com/recipe/kittencals-parmesan-garlic-bread-or-garlic-toast-105726",
+    "ingredients_per_recipe": "['1 loaf French bread (not the long thin kind)', '1/2-3/4 cup butter, softened (no substitutes)', '1 -2 tablespoon fresh minced garlic', '2 teaspoons dried parsley or 2 tablespoons fresh parsley', '1/3 grated parmesan cheese (you may increase slightly if desired)', '1 pinch salt (or to taste)']",
+    "servings_size_per_recipe": 4,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 947.1,
+      "fat": 27.7,
+      "carb": 145.3,
+      "protein": 30.5
+    }
+  },
+  {
+    "name_food": "Buttery Shrimp And Pasta",
+    "item_id": 1426,
+    "img_location": "images/food_98_1426.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/31/56/2/IbBDJcuYTAyCoCbCvJff-Creamy-Shrimp-1.jpg",
+    "food_url": "https://www.food.com/recipe/buttery-shrimp-and-pasta-31562",
+    "ingredients_per_recipe": "['8 ounces pasta, cooked and drained (I like the tri-colored spirals)', '1/4 cup butter', '1 1/2 lbs shrimp, peeled and deveined', '1 tablespoon minced garlic', '2 cups half-and-half', '1/4 cup fresh basil, minced or 1 teaspoon dried basil', '1/4 cup parmesan cheese', '1/4 teaspoon black pepper', '1/8 teaspoon red pepper flakes, optional']",
+    "servings_size_per_recipe": 4,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 622.5,
+      "fat": 29.8,
+      "carb": 50.5,
+      "protein": 36.9
+    }
+  },
+  {
+    "name_food": "Chicken Noodle Soup",
+    "item_id": 938,
+    "img_location": "images/food_100_938.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/20/75/5/9FBxOfHgTtaMZ28CQSxS_chicken-noodle-soup-3802.jpg",
+    "food_url": "https://www.food.com/recipe/chicken-noodle-soup-20755",
+    "ingredients_per_recipe": "['2 teaspoons butter', '1 cup sliced celery', '1 cup chopped carrot', '1/2 cup chopped onion', '1/2 teaspoon thyme', '1 teaspoon poultry seasoning', '2 (32 ounce) containers and 1 can chicken broth (14 ounce)', '2 teaspoons chicken bouillon', '8 ounces egg noodles', '2 cups cooked chicken (3 frozen breasts)', 'parsley']",
+    "servings_size_per_recipe": 6,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 304.8,
+      "fat": 8,
+      "carb": 32.3,
+      "protein": 24.1
+    }
+  },
+  {
+    "name_food": "Funky Chicken With Sesame Noodles",
+    "item_id": 2440,
+    "img_location": "images/food_101_2440.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_iw/v1/img/recipes/76/93/0/qERwJKRWSZi3TBYuhqkj_funky-chicken-with-sesame-noodles-10.jpg",
+    "food_url": "https://www.food.com/recipe/funky-chicken-with-sesame-noodles-76930",
+    "ingredients_per_recipe": "['1 lb spaghettini (get the thinnest spaghetti you can find)', '1/2 cup soy sauce', '1/4 cup sesame oil (some reviewers have said that 1/2 cup of oil is too much and have halved the amount, so use your own)', '1/3 cup sugar', '3 scallions, thinly sliced', '1/4 cup sesame seeds (or more)', '1/4 cup soy sauce', '1/4 cup teriyaki sauce', '2 garlic cloves, minced', '1/4 cup brown sugar', '1 teaspoon fresh ginger, chopped (or 1/4 teaspoon dried)', '4 boneless skinless chicken breasts', 'sesame oil, for sauteing']",
+    "servings_size_per_recipe": 4,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 900.8,
+      "fat": 23,
+      "carb": 124.6,
+      "protein": 48.6
+    }
+  },
+  {
+    "name_food": "Parmesan Zucchini",
+    "item_id": 1807,
+    "img_location": "images/food_104_1807.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_iw/v1/img/recipes/44/83/3/01473806989.jpeg",
+    "food_url": "https://www.food.com/recipe/parmesan-zucchini-44833",
+    "ingredients_per_recipe": "['2 medium zucchini', '2 teaspoons olive oil', \"1/2 teaspoon seasoning salt, to taste (Lawry's or Johnny's)\", '1/3-1/2 cup grated parmesan cheese, to taste (and size of zucchini)']",
+    "servings_size_per_recipe": 4,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 72.4,
+      "fat": 5,
+      "carb": 3.4,
+      "protein": 4.4
+    }
+  },
+  {
+    "name_food": "The Blue Mill Tavern Loosemeat Sandwich",
+    "item_id": 2615,
+    "img_location": "images/food_105_2615.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/87/07/5/pic1Z7q90.jpg",
+    "food_url": "https://www.food.com/recipe/the-blue-mill-tavern-loosemeat-sandwich-87075",
+    "ingredients_per_recipe": "['1 lb ground beef round or 1 lb ground sirloin', '1 tablespoon fat like lard (if meat is round or sirloin) or 1 tablespoon Crisco (if meat is round or sirloin)', '2 teaspoons salt, just enough to lightly cover bottom of your skillet', '1 onion, chopped fine', '1 tablespoon prepared yellow mustard', '1 tablespoon vinegar', '1 tablespoon sugar', 'water, to cover', 'salt and pepper, to taste']",
+    "servings_size_per_recipe": 4,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 313.8,
+      "fat": 22.7,
+      "carb": 5.9,
+      "protein": 20.2
+    }
+  },
+  {
+    "name_food": "Cabbage for Those Who Dislike Cabbage",
+    "item_id": 843,
+    "img_location": "images/food_106_843.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/18/81/6/l4hHXQQTbmX6bCFCuT67_untitled-6970.jpg",
+    "food_url": "https://www.food.com/recipe/cabbage-for-those-who-dislike-cabbage-18816",
+    "ingredients_per_recipe": "['2 tablespoons butter or 2 tablespoons margarine', '1 tablespoon canola oil', '8 cups shredded green cabbage (about 1 normal-sized head)', '1 tablespoon packed brown sugar', '3 -4 garlic cloves, minced (I use 4)', '1 tablespoon red wine vinegar', 'salt', 'fresh ground black pepper']",
+    "servings_size_per_recipe": 6,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 95,
+      "fat": 5,
+      "carb": 11,
+      "protein": 3
+    }
+  },
+  {
+    "name_food": "Chicken Cordon Bleu Casserole",
+    "item_id": 783,
+    "img_location": "images/food_107_783.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/17/91/7/mawTmAQTQqqrlcoAFyHr_chicken-cordon-bleu-casserole-1894.jpg",
+    "food_url": "https://www.food.com/recipe/chicken-cordon-bleu-casserole-17917",
+    "ingredients_per_recipe": "['2 lbs skinless chicken breasts, cut into bite-size chunks', 'dry breadcrumbs', '1/2 cup milk', '1 egg, mixed with the milk', '8 ounces swiss cheese, cubed', '8 ounces ham, diced', '1 (10 3/4 ounce) can cream of chicken soup', '1 cup milk']",
+    "servings_size_per_recipe": 4,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 703.8,
+      "fat": 33.9,
+      "carb": 12.9,
+      "protein": 82.7
+    }
+  },
+  {
+    "name_food": "Hamburgers",
+    "item_id": 75,
+    "img_location": "images/food_108_75.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_iw/v1/img/recipes/10/42/8/piciExpMe.jpg",
+    "food_url": "https://www.food.com/recipe/hamburgers-10428",
+    "ingredients_per_recipe": "['1 lb good quality lean ground beef', '1 tablespoon olive oil', '2 garlic cloves', '1/4 teaspoon salt', '2 -3 tablespoons Worcestershire sauce', '1 tablespoon horseradish (optional but good) (optional)']",
+    "servings_size_per_recipe": 3,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 317.7,
+      "fat": 19.6,
+      "carb": 2.9,
+      "protein": 30.4
+    }
+  },
+  {
+    "name_food": "Thai Chicken Breasts",
+    "item_id": 143,
+    "img_location": "images/food_110_143.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/10/81/05/Ho88avWTQ2G1qhW8qHdw_DSC_4549.jpg",
+    "food_url": "https://www.food.com/recipe/thai-chicken-breasts-108105",
+    "ingredients_per_recipe": "['2 1/2 tablespoons grated fresh gingerroot', '2 tablespoons chopped garlic', '1/8 teaspoon crushed red pepper flakes', '4 boneless skinless chicken breasts, pounded thin', '1/2 cup flour', 'salt and pepper, to season flour,to taste', '2 tablespoons olive oil', '4 tablespoons soy sauce', '1/2 cup brown sugar', '1/2 cup white wine vinegar', '1 teaspoon fish sauce or 1 teaspoon anchovy paste (optional)', '1 cup sugar snap pea (mangetout)']",
+    "servings_size_per_recipe": 4,
+    "servings_size_in_image": 3,
+    "nutrients_per_serving": {
+      "calories": 387.1,
+      "fat": 10.1,
+      "carb": 44.5,
+      "protein": 29.6
+    }
+  },
+  {
+    "name_food": "Uncle Bill's Whipped Shortbread Cookies",
+    "item_id": 1851,
+    "img_location": "images/food_111_1851.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_iw/v1/img/feed/46877/Az4lJsYhSAejEMdCeT79_56BB6E19-1BC2-46CC-8251-0D71B56ECABB.jpeg",
+    "food_url": "https://www.food.com/recipe/uncle-bills-whipped-shortbread-cookies-46877",
+    "ingredients_per_recipe": "['1 cup butter, softened', '1 1/2 cups all-purpose flour', '1/2 cup icing sugar or 1/2 cup powdered sugar', '1 teaspoon vanilla extract (optional)', '1/4 cup red maraschino cherry', '1/4 cup green maraschino cherry']",
+    "servings_size_per_recipe": 36,
+    "servings_size_in_image": 36,
+    "nutrients_per_serving": {
+      "calories": 110.8,
+      "fat": 7.8,
+      "carb": 9.7,
+      "protein": 0.9
+    }
+  },
+  {
+    "name_food": "Awesome Baked Pork Chops",
+    "item_id": 1536,
+    "img_location": "images/food_112_1536.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_iw/v1/img/recipes/34/49/9/kblcLAVS8KUDr1vx6bZF_IMG_0936.JPG",
+    "food_url": "https://www.food.com/recipe/awesome-baked-pork-chops-34499",
+    "ingredients_per_recipe": "['6 pork chops', '1 teaspoon garlic powder', '1 teaspoon seasoning salt', '2 eggs, beaten', '1/4 cup all-purpose flour', '2 cups Italian style breadcrumbs', '4 tablespoons olive oil', '1 (10 3/4 ounce) can condensed cream of mushroom soup', '1/2 cup milk', '1/3 cup white wine']",
+    "servings_size_per_recipe": 6,
+    "servings_size_in_image": 3,
+    "nutrients_per_serving": {
+      "calories": 671.4,
+      "fat": 34.2,
+      "carb": 35.1,
+      "protein": 50.2
+    }
+  },
+  {
+    "name_food": "Cajun Style Oven Fries",
+    "item_id": 1525,
+    "img_location": "images/food_113_1525.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_iw/v1/img/recipes/34/01/1/F6kLZqXTYSDVflylNEBz-facebook_photo.jpg",
+    "food_url": "https://www.food.com/recipe/cajun-style-oven-fries-34011",
+    "ingredients_per_recipe": "['4 medium potatoes', '1/4 teaspoon oregano', '1/4 teaspoon thyme', '1 teaspoon paprika', '1/8 teaspoon cayenne (or to taste)', '1/8 teaspoon black pepper', '1/4 teaspoon sugar', '1/4 teaspoon cumin', '1/2 teaspoon salt', '1 teaspoon garlic powder', '1/2 teaspoon onion powder', '1/4 teaspoon Tabasco sauce', '1 tablespoon vegetable oil']",
+    "servings_size_per_recipe": 3,
+    "servings_size_in_image": 3,
+    "nutrients_per_serving": {
+      "calories": 268.4,
+      "fat": 5,
+      "carb": 51.7,
+      "protein": 6.1
+    }
+  },
+  {
+    "name_food": "Kittencal's Easy and Delicious Ranch-Parmesan Chicken",
+    "item_id": 905,
+    "img_location": "images/food_116_905.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/20/02/96/BWYIg8LTQTufENYENYcw_0S9A3738.jpg",
+    "food_url": "https://www.food.com/recipe/kittencals-easy-and-delicious-ranch-parmesan-chicken-200296",
+    "ingredients_per_recipe": "['6 boneless skinless chicken breasts', '1 cup dry breadcrumbs (even better, use panko breadcrumbs)', '1/4-1/3 cup parmesan cheese', '1 teaspoon seasoning salt', '1/2-1 teaspoon ground black pepper', '1/2-1 teaspoon garlic powder', '1 cup prepared ranch salad dressing (use bottled salad dressing, you might need a bit more dressing)', '1/4 cup melted butter (no substitutes)']",
+    "servings_size_per_recipe": 4,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 486.3,
+      "fat": 33.4,
+      "carb": 16.1,
+      "protein": 29.6
+    }
+  },
+  {
+    "name_food": "Uncle Bill's Fried Potatoes and Onions",
+    "item_id": 655,
+    "img_location": "images/food_117_655.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/15/88/32/FfPvjbKmRgmWEJd3wa29_potatoes%20and%20onions.JPG",
+    "food_url": "https://www.food.com/recipe/uncle-bills-fried-potatoes-and-onions-158832",
+    "ingredients_per_recipe": "['4 large russet potatoes or 4 large yukon gold potatoes', '1 large onion, sliced thin', '4 tablespoons butter (or more if required)', '2 tablespoons extra virgin olive oil', '1/2 teaspoon granulated garlic powder', '1/2 teaspoon dried dill weed', '1/4 teaspoon salt', '1/4 teaspoon black pepper']",
+    "servings_size_per_recipe": 4,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 462.6,
+      "fat": 18.6,
+      "carb": 68.4,
+      "protein": 8.1
+    }
+  },
+  {
+    "name_food": "Yummy Crunchy Apple Pie",
+    "item_id": 1404,
+    "img_location": "images/food_118_1404.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/31/12/8/t4sT7E0wT05Kd3ncgzOe_AP%2010%20-%20final_4.png",
+    "food_url": "https://www.food.com/recipe/yummy-crunchy-apple-pie-31128",
+    "ingredients_per_recipe": "['pastry for single-crust pie', '1/2 cup sugar', '3 tablespoons flour', '1/4 teaspoon cinnamon', '1/4 teaspoon nutmeg', '1/8 teaspoon allspice', '1/8 teaspoon salt', '6 cups thinly sliced peeled apples (1/2 Macintosh, 1/2 Granny Smith)', '2/3 cup packed brown sugar', '1/2 cup flour', '3/4 cup quick-cooking rolled oats', '1/2 cup butter', '1/4 cup toasted pecans, chopped']",
+    "servings_size_per_recipe": 8,
+    "servings_size_in_image": 8,
+    "nutrients_per_serving": {
+      "calories": 360.6,
+      "fat": 14.8,
+      "carb": 57.4,
+      "protein": 2.8
+    }
+  },
+  {
+    "name_food": "Bev's Sauteed Yellow Squash",
+    "item_id": 1419,
+    "img_location": "images/food_119_1419.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/31/37/1/LjtUqzcORxaIVtzzTnOT-091-summer-squash.jpg",
+    "food_url": "https://www.food.com/recipe/bevs-sauteed-yellow-squash-31371",
+    "ingredients_per_recipe": "['6 medium summer squash, sliced', '1/4 cup butter', '1 medium onion, sliced thinly or diced', 'salt & pepper']",
+    "servings_size_per_recipe": 4,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 159.8,
+      "fat": 12.1,
+      "carb": 12.4,
+      "protein": 4
+    }
+  },
+  {
+    "name_food": "Classic Baked Ziti",
+    "item_id": 1006,
+    "img_location": "images/food_120_1006.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_iw/v1/img/recipes/22/17/6/RKBhqOqRTCMBnZ8Q9gcJ_20170602_193204-01.jpeg",
+    "food_url": "https://www.food.com/recipe/classic-baked-ziti-22176",
+    "ingredients_per_recipe": "['1 lb lean ground beef', '1 cup onion, chopped', '2 garlic cloves, minced', '1 (32 ounce) jar meatless sauce', '1 cup chicken broth', '1 teaspoon dried oregano leaves', '1 (16 ounce) package ziti pasta, cooked and drained', '2 cups shredded mozzarella cheese', '1 cup grated parmesan cheese']",
+    "servings_size_per_recipe": 8,
+    "servings_size_in_image": 8,
+    "nutrients_per_serving": {
+      "calories": 463.7,
+      "fat": 16.6,
+      "carb": 46.1,
+      "protein": 30.7
+    }
+  },
+  {
+    "name_food": "Edna's Apple Crumble (Aka. Apple Crisp)",
+    "item_id": 2535,
+    "img_location": "images/food_122_2535.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/82/92/5/zv69BH9hT5yuF7xocXw7_apple crisp SITE-3.jpg",
+    "food_url": "https://www.food.com/recipe/ednas-apple-crumble-aka-apple-crisp-82925",
+    "ingredients_per_recipe": "['4 granny smith apples, peeled, cored and sliced', '3/4 cup packed brown sugar', '1/2 cup flour', '1/2 cup rolled oats', '3/4 teaspoon cinnamon', '3/4 teaspoon nutmeg', '1/3 cup butter, softened']",
+    "servings_size_per_recipe": 6,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 323.8,
+      "fat": 11.1,
+      "carb": 56.7,
+      "protein": 2.5
+    }
+  },
+  {
+    "name_food": "Fantastic Taco Casserole",
+    "item_id": 629,
+    "img_location": "images/food_123_629.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_iw/v1/img/recipes/15/51/86/01460851242.jpeg",
+    "food_url": "https://www.food.com/recipe/fantastic-taco-casserole-155186",
+    "ingredients_per_recipe": "['1 lb ground beef', '1 (1 1/4 ounce) package taco seasoning', '1 (15 ounce) can refried beans', '2 cups monterey jack cheese, divided (or mixed cheddar, jack etc.)', '1 cup salsa (I prefer mild, but if you would like to kick it up a notch, go for it)', '2 green onions, chopped', '1 (2 1/3 ounce) can sliced black olives', '1 tomatoes, chopped', '2 cups corn chips (coarsely crushed or chopped)']",
+    "servings_size_per_recipe": 7,
+    "servings_size_in_image": 7,
+    "nutrients_per_serving": {
+      "calories": 349.9,
+      "fat": 21.3,
+      "carb": 16.2,
+      "protein": 24.1
+    }
+  },
+  {
+    "name_food": "Simple Caribbean Jerk Chicken",
+    "item_id": 1496,
+    "img_location": "images/food_124_1496.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_iw/v1/img/recipes/33/17/0/picxZlHxi.jpg",
+    "food_url": "https://www.food.com/recipe/simple-caribbean-jerk-chicken-33170",
+    "ingredients_per_recipe": "['1 envelope Italian salad dressing mix', '2 tablespoons brown sugar', '2 tablespoons oil', '2 tablespoons soy sauce', '1 teaspoon cinnamon', '1 teaspoon thyme', '1/2 teaspoon ground red pepper', '2 1/2 lbs chicken pieces']",
+    "servings_size_per_recipe": 6,
+    "servings_size_in_image": 3,
+    "nutrients_per_serving": {
+      "calories": 310,
+      "fat": 21.9,
+      "carb": 5.3,
+      "protein": 22.1
+    }
+  },
+  {
+    "name_food": "Crock Pot Chops That Will Make You Eat Til You Pop!",
+    "item_id": 1335,
+    "img_location": "images/food_127_1335.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/29/54/4/pic3IiYqW.jpg",
+    "food_url": "https://www.food.com/recipe/crock-pot-chops-that-will-make-you-eat-til-you-pop-29544",
+    "ingredients_per_recipe": "['4 pork chops, each about 1/2 inch thick', '2 medium onions, chopped', '2 celery ribs, chopped', '1 large green pepper, sliced', '1 (14 1/2 ounce) can stewed tomatoes', '1/2 cup ketchup', '2 tablespoons cider vinegar', '2 tablespoons brown sugar', '2 tablespoons Worcestershire sauce', '1 tablespoon lemon juice', '1 beef bouillon cube', '2 tablespoons cornstarch', '2 tablespoons water']",
+    "servings_size_per_recipe": 4,
+    "servings_size_in_image": 1,
+    "nutrients_per_serving": {
+      "calories": 483.7,
+      "fat": 18.6,
+      "carb": 34.8,
+      "protein": 44.1
+    }
+  },
+  {
+    "name_food": "Fried Rice",
+    "item_id": 2592,
+    "img_location": "images/food_128_2592.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/85/94/22NCgGZSZesEPtXINoFw_Fried%20rice%208594-7.jpg",
+    "food_url": "https://www.food.com/recipe/fried-rice-8594",
+    "ingredients_per_recipe": "['1 tablespoon butter or 1 tablespoon margarine', '2 eggs, beaten', '1 tablespoon butter or 1 tablespoon margarine', '1/4 cup chopped onion', '1/4 cup chopped green pepper (optional)', '2 cups rice, prepared and cooled', '1/2 cup cooked shrimp (optional) or 1/2 cup cooked chicken (optional)', '1/4 cup soy sauce', '1/2 cup cooked peas (optional)']",
+    "servings_size_per_recipe": 4,
+    "servings_size_in_image": 4,
+    "nutrients_per_serving": {
+      "calories": 452.5,
+      "fat": 8.7,
+      "carb": 79.5,
+      "protein": 11.7
+    }
+  },
+  {
+    "name_food": "Kittencal's Chicken Crescent Roll Casserole",
+    "item_id": 2466,
+    "img_location": "images/food_129_2466.jpg",
+    "image_url": "https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_iw/v1/img/recipes/78/81/4/picw3c0iW.jpg",
+    "food_url": "https://www.food.com/recipe/kittencals-chicken-crescent-roll-casserole-78814",
+    "ingredients_per_recipe": "['2 (8 ounce) cans Pillsbury Refrigerated Crescent Dinner Rolls', '1 (10 3/4 ounce) can cream of chicken soup, undiluted', '3/4 cup grated cheddar cheese (or any cheese of choice) or 3/4 cup swiss cheese (or any cheese of choice)', '1/2 cup 18% table cream (or use whipping cream)', '4 ounces cream cheese (very soft)', '4 tablespoons butter (very soft but not melted)', '1/2-1 teaspoon garlic powder (optional)', '1/3 cup onion, finely chopped (can use green onions)', '2 large cooked chicken breasts, finely chopped (or use about 2 cups, can use cooked turkey)', '1/2-3/4 cup finely grated cheddar cheese', '1/2 teaspoon seasoning salt (or use 1/2 teaspoon white salt or to taste)', '1/2 teaspoon ground black pepper (or to taste)', '2 -4 tablespoons mayonnaise or 2 -4 tablespoons whipping cream', '1 -2 cup grated cheddar cheese (for topping)']",
+    "servings_size_per_recipe": 8,
+    "servings_size_in_image": 1.5,
+    "nutrients_per_serving": {
+      "calories": 650,
+      "fat": 48,
+      "carb": 38,
+      "protein": 24
+    }
+  }
+]

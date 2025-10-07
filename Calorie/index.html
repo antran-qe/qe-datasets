@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍽️ Food Gallery - Test Results</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; color: #333; line-height: 1.4; font-size: 14px; }
+        .header { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 15px 0; position: sticky; top: 0; z-index: 100; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); }
+        .header-content { max-width: 95%; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; }
+        .header h1 { font-size: 1.6em; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 700; }
+        .stats { background: linear-gradient(135deg, #48bb78 0%, #38a169 100%); color: white; padding: 6px 12px; border-radius: 15px; font-size: 12px; font-weight: 600; box-shadow: 0 4px 15px rgba(72, 187, 120, 0.4); }
+        .download-btn { background: linear-gradient(135deg, #4299e1 0%, #3182ce 100%); color: #fff; border: none; padding: 6px 12px; border-radius: 8px; font-size: 12px; font-weight: 700; cursor: pointer; box-shadow: 0 4px 12px rgba(49, 130, 206, 0.35); }
+        .download-btn:hover { transform: translateY(-1px); box-shadow: 0 6px 16px rgba(49, 130, 206, 0.45); }
+        .container { max-width: 95%; margin: 0 auto; padding: 20px; }
+        .controls { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 16px; }
+        .search-box { flex: 1; min-width: 240px; padding: 8px 15px; border: none; border-radius: 20px; font-size: 13px; background: white; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); }
+        .tabs { display: flex; background: rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 4px; margin-top: 10px; margin-bottom: 20px; backdrop-filter: blur(10px); gap: 8px; }
+        .main-tab-button { flex: 1; background: transparent; border: none; padding: 12px 20px; border-radius: 8px; color: rgba(255, 255, 255, 0.7); font-weight: 600; cursor: pointer; transition: all 0.3s ease; font-size: 14px; }
+        .main-tab-button.active, .main-tab-button:hover { background: #fff; color: #4a5568; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); }
+        .main-tab-content { display: none; }
+        .main-tab-content.active { display: block; }
+        table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); }
+        thead th { text-align: left; font-size: 12px; color: #4a5568; background: #f7fafc; padding: 10px 12px; border-bottom: 1px solid #e2e8f0; }
+        tbody td { padding: 10px 12px; border-bottom: 1px solid #edf2f7; vertical-align: top; }
+        .thumb { width: 90px; height: 70px; object-fit: cover; border-radius: 6px; background: #f1f5f9; }
+        .item-row { transition: background 0.2s ease; }
+        .item-row:hover { background: #fafcff; }
+        .expand-btn { background: #edf2f7; color: #4a5568; border: none; padding: 6px 8px; border-radius: 6px; cursor: pointer; font-size: 12px; }
+        .api-row { display: none; background: #f9fafb; }
+        .json { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size: 12px; white-space: pre-wrap; word-break: break-word; background: #111827; color: #e5e7eb; padding: 10px; border-radius: 8px; }
+        .pill { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 11px; font-weight: 600; }
+        .pill.ok { background: #c6f6d5; color: #22543d; border: 1px solid #68d391; }
+        .pill.fail { background: #fed7d7; color: #742a2a; border: 1px solid #f56565; }
+        .footer-space { height: 40px; }
+
+        /* Food Gallery styles */
+        .food-grid { display: grid; grid-template-columns: 1fr; gap: 14px; }
+        .food-card { background: #fff; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,0,0,0.1); overflow: hidden; }
+        .food-card .header { background: #f7fafc; padding: 8px 10px; display: flex; align-items: center; gap: 8px; box-shadow: none; position: static; }
+        .food-card .item-pill { background: #667eea; color: #fff; font-size: 11px; padding: 2px 6px; border-radius: 6px; }
+        .food-card .title { font-size: 13px; font-weight: 600; color: #2d3748; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+        .food-card img { width: 100%; background: #f1f5f9; }
+        .food-image { width: 100%; height: 350px; object-fit: contain; object-position: center; background-color: #f8f9fa; transition: transform 0.3s ease; }
+        .food-card .body { padding: 10px; display: grid; gap: 8px; }
+        .nutrients { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; }
+        .nut { background: #f9fafb; border-left: 3px solid #e2e8f0; border-radius: 6px; padding: 6px; text-align: center; }
+        .nut .label { display: block; font-size: 10px; color: #718096; font-weight: 700; text-transform: uppercase; }
+        .nut .val { display: block; font-size: 12px; font-weight: 800; color: #1a202c; }
+        .ingredients { background: #f0fff4; border-left: 3px solid #48bb78; border-radius: 6px; padding: 8px; font-size: 12px; color: #2f855a; }
+        .recipe { text-align: center; }
+        .recipe a { display: inline-block; background: #48bb78; color: #fff; text-decoration: none; padding: 6px 10px; border-radius: 8px; font-size: 12px; font-weight: 600; }
+
+        /* Results sub-tabs */
+        .sub-tabs { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 10px; }
+        .sub-tab-button { background: #fff; border: 1px solid #e2e8f0; color: #4a5568; padding: 4px 8px; border-radius: 6px; cursor: pointer; font-size: 11px; }
+        .sub-tab-button.active { background: #4c51bf; color: #fff; border-color: #4c51bf; }
+
+        /* Reference-styled nutrition/serving/ingredients */
+        .info-row { display: flex; align-items: stretch; gap: 12px; margin-bottom: 10px; height: 40px; }
+        .nutrients-panel { flex: 2; display: flex; align-items: center; gap: 8px; background: linear-gradient(135deg, #f0fff4 0%, #c6f6d5 100%); border-radius: 8px; padding: 8px 12px; border: 1px solid #68d391; box-shadow: 0 2px 4px rgba(104, 211, 145, 0.1); }
+        .serving-panel { flex: 1; display: flex; align-items: center; gap: 8px; background: linear-gradient(135deg, #ebf8ff 0%, #bee3f8 100%); border-radius: 8px; padding: 8px 12px; border: 1px solid #63b3ed; box-shadow: 0 2px 4px rgba(99, 179, 237, 0.1); }
+        .nutrients-title { font-size: 9px; color: #22543d; font-weight: 700; text-transform: uppercase; letter-spacing: 0.4px; white-space: nowrap; margin-right: 8px; background: rgba(255, 255, 255, 0.8); padding: 2px 6px; border-radius: 4px; }
+        .serving-title { font-size: 9px; color: #1a365d; font-weight: 700; text-transform: uppercase; letter-spacing: 0.4px; white-space: nowrap; margin-right: 8px; background: rgba(255, 255, 255, 0.8); padding: 2px 6px; border-radius: 4px; }
+        .nutrients-row, .serving-items { display: flex; gap: 6px; flex: 1; align-items: center; height: 100%; }
+        .nutrient-item, .serving-item { flex: 1; text-align: center; padding: 3px 2px; border-radius: 6px; background: rgba(255, 255, 255, 0.9); border-left: 4px solid; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08); transition: all 0.3s ease; height: 26px; display: flex; flex-direction: column; justify-content: center; }
+        .nutrient-item:hover, .serving-item:hover { transform: translateY(-1px); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); }
+        .nutrient-item.calories { border-left-color: #f56565; }
+        .nutrient-item.fat { border-left-color: #ed8936; }
+        .nutrient-item.carb { border-left-color: #38b2ac; }
+        .nutrient-item.protein { border-left-color: #9f7aea; }
+        .serving-item.recipe { border-left-color: #4299e1; }
+        .serving-item.image { border-left-color: #3182ce; }
+        .nutrient-label, .serving-label { font-size: 7px; color: #4a5568; font-weight: 700; text-transform: uppercase; letter-spacing: 0.3px; line-height: 1; }
+        .nutrient-value, .serving-value { font-size: 9px; font-weight: 800; color: #1a202c; line-height: 1; margin-top: 1px; }
+        .ingredients-section { background: linear-gradient(135deg, #f0fff4 0%, #c6f6d5 100%); border-radius: 8px; padding: 8px 10px; margin-bottom: 12px; border-left: 3px solid #48bb78; }
+        .ingredients-title { font-size: 9px; color: #276749; font-weight: 600; text-transform: uppercase; letter-spacing: 0.3px; margin-bottom: 4px; }
+        .ingredients-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-size: 10px; color: #2d3748; line-height: 1.3; }
+        .ingredient-item { padding-left: 8px; position: relative; margin-bottom: 2px; }
+        .ingredient-item:before { content: "•"; color: #48bb78; font-weight: bold; position: absolute; left: 0; }
+
+        /* Results detail table styles (from analyzer) */
+        .results-table { overflow-x: auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); }
+        .results-table table { width: 100%; border-collapse: collapse; background: white; }
+        .results-table th { background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%); color: white; padding: 12px 8px; text-align: left; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; }
+        .results-table td { padding: 10px 8px; border-bottom: 1px solid #e2e8f0; font-size: 11px; }
+        .item-row.pass { background: rgba(72, 187, 120, 0.05); }
+        .item-row.fail { background: rgba(245, 101, 101, 0.05); }
+        .food-name { font-weight: 600; max-width: 220px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+        .response-time { text-align: center; font-weight: 600; color: #4a5568; }
+        .nutrient-cell { text-align: center; min-width: 80px; }
+        .nutrient-comparison { display: flex; align-items: center; justify-content: center; gap: 4px; margin-bottom: 2px; }
+        .actual { color: #4a5568; font-weight: 600; }
+        .vs { color: #a0aec0; font-size: 9px; }
+        .predicted { color: #667eea; font-weight: 600; }
+        .mape { font-size: 10px; font-weight: 700; padding: 2px 6px; border-radius: 4px; background: rgba(72, 187, 120, 0.1); color: #38a169; display: inline-block; }
+        .mape.exceed { background: rgba(245, 101, 101, 0.1); color: #e53e3e; }
+        .nutrient-cell.exceed { background: rgba(245, 101, 101, 0.1); }
+        .status-cell { text-align: center; }
+        .status-badge { display: inline-block; padding: 4px 8px; border-radius: 12px; font-size: 10px; font-weight: 700; }
+        .status-badge.pass { background: rgba(72, 187, 120, 0.1); color: #38a169; }
+        .status-badge.fail { background: rgba(245, 101, 101, 0.1); color: #e53e3e; }
+        .item-id-container { display: flex; align-items: center; gap: 8px; }
+        .expand-btn { background: none; border: none; cursor: pointer; padding: 4px; border-radius: 4px; transition: all 0.3s ease; display: flex; align-items: center; justify-content: center; }
+        .expand-btn:hover { background: rgba(0, 0, 0, 0.1); }
+        .expand-icon { font-size: 10px; color: #4a5568; transition: transform 0.3s ease; }
+        .api-result-row { background: #f8f9fa !important; }
+        .json { background: #2d3748; color: #e2e8f0; border-radius: 6px; padding: 10px; }
+
+        /* Summary styles (from analyzer) */
+        .summary-section { background: white; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,0,0,0.08); margin-bottom: 16px; border: 1px solid #e2e8f0; }
+        .summary-header { display: flex; justify-content: space-between; align-items: center; padding: 16px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-top-left-radius: 12px; border-top-right-radius: 12px; }
+        .summary-header h3 { font-size: 1.1em; }
+        .overall-status { padding: 6px 12px; border-radius: 20px; font-weight: 700; font-size: 12px; background: rgba(255,255,255,0.15); }
+        .summary-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; padding: 16px; }
+        .summary-card { background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 10px; padding: 14px; border: 1px solid #e2e8f0; }
+        .card-title { font-size: 13px; font-weight: 700; color: #4a5568; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.4px; }
+        .stat-item { display: flex; justify-content: space-between; align-items: center; padding: 6px 0; border-bottom: 1px solid rgba(0,0,0,0.05); }
+        .stat-item:last-child { border-bottom: none; }
+        .stat-label { font-size: 12px; color: #718096; }
+        .stat-value { font-weight: 700; color: #2d3748; }
+        .stat-value-small { font-weight: 700;font-size: 12px; color: #2d3748; }
+        .threshold { font-size: 10px; color: #a0aec0; margin-left: 5px; }
+        .percentage { font-size: 11px; color: #718096; margin-left: 5px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-content">
+            <h1>🍽️ Food Gallery – Test Results</h1>
+            <div style="display:flex; gap:10px; align-items:center;">
+                <div class="stats" id="stats">Loading…</div>
+                <button id="downloadBtn" class="download-btn">⬇️ Download Data</button>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="container">
+        <div class="controls">
+            <input id="search" class="search-box" placeholder="Search by name, id, prediction…" />
+        </div>
+
+        <div id="tabs" class="tabs"></div>
+        <div id="tabContents"></div>
+    </div>
+
+    <div class="footer-space"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+    <script>
+        const DATA_FILE = './data_output.json';
+        const RESULT_FILES = [
+            './test-results/nutrition_api_results_20250930_2.5_lite_flash_fallback_cv.json',
+            './test-results/nutrition_api_results_11092025_2.5_lite_0925_flash_fallback.json',
+            './test-results/nutrition_api_results_11092025_2.5_lite_0925.json',
+            './test-results/nutrition_api_results_1109202502.json',
+            './test-results/nutrition_api_results_1109202501.json'
+        ];
+
+        const state = { data: [], runs: [], filteredText: '', activeTab: 'food', selectedRunIdx: 0 };
+
+        init();
+
+        async function init() {
+            try {
+                const [data, ...runs] = await Promise.all([
+                    fetch(DATA_FILE).then(r => r.json()),
+                    ...RESULT_FILES.map(path => fetch(path).then(r => r.json()).then(j => ({ path, json: j })))
+                ]);
+                state.data = data;
+                state.runs = runs;
+                renderTabs();
+                renderStats();
+                renderActiveTab(state.activeTab);
+                document.getElementById('search').addEventListener('input', (e) => {
+                    state.filteredText = e.target.value.trim().toLowerCase();
+                    // Re-render active tab
+                    renderActiveTab(state.activeTab);
+                });
+                const dl = document.getElementById('downloadBtn');
+                if (dl) dl.addEventListener('click', downloadDatasetZip);
+            } catch (e) {
+                console.error(e);
+                document.getElementById('stats').textContent = 'Failed to load data';
+            }
+        }
+
+        function renderStats() {
+            const total = state.data.length;
+            const runs = state.runs.length;
+            document.getElementById('stats').textContent = `${total} items • ${runs} test runs`;
+        }
+
+        function renderTabs() {
+            const tabs = document.getElementById('tabs');
+            const foodBtn = `<button class="main-tab-button ${state.activeTab==='food'?'active':''}" onclick="openMainTab(event, 'food')">Food Gallery</button>`;
+            const resultsBtn = `<button class="main-tab-button ${state.activeTab==='results'?'active':''}" onclick="openMainTab(event, 'results')">Results</button>`;
+            tabs.innerHTML = foodBtn + resultsBtn;
+
+            const contents = document.getElementById('tabContents');
+            const foodContent = `<div id="tab-food" class="main-tab-content ${state.activeTab==='food'?'active':''}"></div>`;
+            const resultsContent = `<div id="tab-results" class="main-tab-content ${state.activeTab==='results'?'active':''}"></div>`;
+            contents.innerHTML = foodContent + resultsContent;
+        }
+
+        function openMainTab(evt, key) {
+            state.activeTab = key;
+            document.querySelectorAll('.main-tab-button').forEach(b => b.classList.remove('active'));
+            evt.currentTarget.classList.add('active');
+            document.querySelectorAll('.main-tab-content').forEach(c => c.classList.remove('active'));
+            const tabId = (key === 'food') ? 'tab-food' : 'tab-results';
+            const el = document.getElementById(tabId);
+            if (el) el.classList.add('active');
+            renderActiveTab(key);
+        }
+
+        function renderActiveTab(key) {
+            if (key === 'food') { renderFoodGallery(); return; }
+            if (key === 'results') { renderResultsView(); return; }
+        }
+
+        function renderResultsView() {
+            const container = document.getElementById('tab-results');
+            if (!container) return;
+            // Build sub-tabs shell
+            const subTabs = state.runs.map((r, i) => {
+                const name = (r.json && r.json.metadata && r.json.metadata.completed_at) ? r.json.metadata.completed_at : r.path.split('/').pop();
+                return `<button class="sub-tab-button ${state.selectedRunIdx===i?'active':''}" onclick="openResultRun(${i})">${name}</button>`;
+            }).join('');
+            container.innerHTML = `
+                <div class="sub-tabs">${subTabs}</div>
+                <div id="results-content"></div>
+            `;
+            renderResultsContent();
+        }
+
+        function openResultRun(i) {
+            state.selectedRunIdx = i;
+            renderResultsView();
+        }
+
+        function renderResultsContent() {
+            const wrap = document.getElementById('results-content');
+            if (!wrap) return;
+            const idx = state.selectedRunIdx;
+            const run = state.runs[idx];
+            if (!run) { wrap.innerHTML = '<div style="color:#fff">No run</div>'; return; }
+
+            const byId = new Map(state.data.map(item => [String(item.item_id), item]));
+            const results = Array.isArray(run.json.results) ? run.json.results : [];
+
+            // Helpers (aligned with analyzer logic)
+            const calcMAPE = (actual, predicted) => {
+                if (Number(actual) === 0) return Number(predicted) === 0 ? 0 : 100;
+                return Math.abs((Number(actual) - Number(predicted)) / Number(actual)) * 100;
+            };
+            const normalize = (api, servings) => {
+                const s = (!servings || servings <= 1) ? 1 : Number(servings);
+                if (s === 1) return api || {};
+                return {
+                    ...api,
+                    total_calories: Number(api?.total_calories) / s,
+                    fats: Number(api?.fats) / s,
+                    carbohydrates: Number(api?.carbohydrates) / s,
+                    proteins: Number(api?.proteins) / s
+                };
+            };
+            const CAL_TOL_PCT = 10; // %
+            const CAL_TOL_ABS = 50; // kcal
+            const MACRO_TOL = 25; // %
+
+            let successful = 0;
+            const mapeVals = { cal: [], fat: [], carb: [], protein: [] };
+            let caloriesExceeding = 0; let macrosExceeding = 0;
+
+            const rows = results
+                .map((res, i) => {
+                    const itemId = String(res?.original_data?.item_id ?? '');
+                    const original = byId.get(itemId);
+                    const name = original?.name_food || res?.original_data?.name_food || '';
+                    const servingsInImage = original?.servings_size_in_image ?? res?.original_data?.servings_size_in_image ?? 1;
+                    const normalized = normalize(res?.api_result || {}, servingsInImage);
+                    const kcal = normalized?.total_calories;
+                    const fats = normalized?.fats;
+                    const carbs = normalized?.carbohydrates;
+                    const proteins = normalized?.proteins;
+                    const matchesFilter = filterMatch([itemId, name, String(kcal)], state.filteredText);
+                    if (!matchesFilter) return '';
+                    const uid = `${idx}-${itemId}-${i}`;
+
+                    // ground truth and MAPE
+                    const gt = original?.nutrients_per_serving || res?.original_data?.nutrients_per_serving;
+                    let caloriesMAPE, fatMAPE, carbMAPE, proteinMAPE;
+                    let absCalDiff;
+                    let calorieExceed=false, fatExceed=false, carbExceed=false, proteinExceed=false;
+                    if (gt) {
+                        caloriesMAPE = calcMAPE(gt.calories, kcal);
+                        fatMAPE = calcMAPE(gt.fat, fats);
+                        carbMAPE = calcMAPE(gt.carb, carbs);
+                        proteinMAPE = calcMAPE(gt.protein, proteins);
+                        absCalDiff = Math.abs(Number(gt.calories) - Number(kcal));
+                        // Exceed only if BOTH conditions fail: pct >= 10% AND abs > 50 kcal
+                        calorieExceed = !(caloriesMAPE < CAL_TOL_PCT || absCalDiff <= CAL_TOL_ABS);
+                        fatExceed = fatMAPE > MACRO_TOL;
+                        carbExceed = carbMAPE > MACRO_TOL;
+                        proteinExceed = proteinMAPE > MACRO_TOL;
+
+                        successful++;
+                        mapeVals.cal.push(caloriesMAPE);
+                        mapeVals.fat.push(fatMAPE);
+                        mapeVals.carb.push(carbMAPE);
+                        mapeVals.protein.push(proteinMAPE);
+                        if (calorieExceed) caloriesExceeding++;
+                        if (fatExceed || carbExceed || proteinExceed) macrosExceeding++;
+                    }
+                    const overallStatus = (gt && (calorieExceed || fatExceed || carbExceed || proteinExceed)) ? 'fail' : 'pass';
+
+                    return `
+                        <tr class="item-row ${overallStatus}" data-status="${overallStatus}">
+                            <td>
+                                <div class="item-id-container">
+                                    <button class="expand-btn" onclick="toggleApi('${uid}')" title="View raw API result"><span class="expand-icon">▼</span></button>
+                                    <span>${itemId||'-'}</span>
+                                </div>
+                            </td>
+                            <td class="food-name">${escapeHtml(name)}</td>
+                            <td class="response-time">${fmt(res?.processing_info?.api_response_time_ms)}</td>
+                            <td>${fmt(servingsInImage)}</td>
+                            <td class="nutrient-cell ${calorieExceed?'exceed':''}">
+                                <div class="nutrient-comparison">
+                                    <span class="actual">${gt?fmt(gt.calories):'-'}</span>
+                                    <span class="vs">vs</span>
+                                    <span class="predicted">${fmt(kcal)}</span>
+                                </div>
+                                <div class="mape ${calorieExceed?'exceed':''}">${gt&&caloriesMAPE!=null?caloriesMAPE.toFixed(1)+'%':''}${gt&&absCalDiff!=null?` | ${absCalDiff.toFixed(1)}`:''}</div>
+                            </td>
+                            <td class="nutrient-cell ${fatExceed?'exceed':''}">
+                                <div class="nutrient-comparison">
+                                    <span class="actual">${gt?fmt(gt.fat):'-'}</span>
+                                    <span class="vs">vs</span>
+                                    <span class="predicted">${fmt(fats)}</span>
+                                </div>
+                                <div class="mape ${fatExceed?'exceed':''}">${gt&&fatMAPE!=null?fatMAPE.toFixed(1)+'%':'-'}</div>
+                            </td>
+                            <td class="nutrient-cell ${carbExceed?'exceed':''}">
+                                <div class="nutrient-comparison">
+                                    <span class="actual">${gt?fmt(gt.carb):'-'}</span>
+                                    <span class="vs">vs</span>
+                                    <span class="predicted">${fmt(carbs)}</span>
+                                </div>
+                                <div class="mape ${carbExceed?'exceed':''}">${gt&&carbMAPE!=null?carbMAPE.toFixed(1)+'%':'-'}</div>
+                            </td>
+                            <td class="nutrient-cell ${proteinExceed?'exceed':''}">
+                                <div class="nutrient-comparison">
+                                    <span class="actual">${gt?fmt(gt.protein):'-'}</span>
+                                    <span class="vs">vs</span>
+                                    <span class="predicted">${fmt(proteins)}</span>
+                                </div>
+                                <div class="mape ${proteinExceed?'exceed':''}">${gt&&proteinMAPE!=null?proteinMAPE.toFixed(1)+'%':'-'}</div>
+                            </td>
+                            <td>${fmt(res?.api_result?.confidence)}</td>
+                            <td class="status-cell"><span class="status-badge ${overallStatus}">${overallStatus==='pass'?'✅':'❌'}</span></td>
+                        </tr>
+                        <tr id="api-${uid}" class="api-row"><td colspan="10"><div class="json">${escapeHtml(JSON.stringify([res.api_result,res.processing_info], null, 2))}</div></td></tr>
+                    `;
+                })
+                .filter(Boolean)
+                .join('');
+
+            const avg = arr => arr.length ? (arr.reduce((a,b)=>a+b,0)/arr.length) : 0;
+            const caloriesMAPEAvg = avg(mapeVals.cal);
+            const fatMAPEAvg = avg(mapeVals.fat);
+            const carbMAPEAvg = avg(mapeVals.carb);
+            const proteinMAPEAvg = avg(mapeVals.protein);
+            const calorieExceedPct = successful ? (caloriesExceeding / successful) * 100 : 0;
+            const overallPass = (calorieExceedPct <= 10) && (caloriesMAPEAvg <= 12);
+
+            const runDate = run.json?.metadata?.run_date || run.json?.metadata?.completed_at || '';
+            const fileName = (state.runs[idx]?.path || '').split('/').pop() || '';
+            const endpoint = run.json?.metadata?.api_endpoint || '';
+            const minRt = run.json?.summary?.api_response_time_min_ms ?? null;
+            const maxRt = run.json?.summary?.api_response_time_max_ms ?? null;
+            const avgRt = run.json?.summary?.api_response_time_avg_ms ?? null;
+
+            wrap.innerHTML = `
+                <div class="summary-section">
+                    <div class="summary-header">
+                        <h3>📊 Test Summary</h3>
+                        <div class="overall-status">${overallPass ? '✅ PASS' : '❌ FAIL'}</div>
+                    </div>
+                    <div class="summary-grid">
+                        <div class="summary-card">
+                            <div class="card-title">Run Information</div>
+                            <div class="card-content">
+                                <div class="stat-item"><span class="stat-label">Run Date:</span><span class="stat-value">${escapeHtml(runDate)}</span></div>
+                                <div class="stat-item"><span class="stat-label">File Result Name:</span><span class="stat-value-small">${escapeHtml(fileName)}</span></div>
+                                <div class="stat-item"><span class="stat-label">Endpoint:</span><span class="stat-value-small">${escapeHtml(endpoint) || 'N/A'}</span></div>
+                                <div class="stat-item"><span class="stat-label">Total Items:</span><span class="stat-value">${results.length}</span></div>
+                                <div class="stat-item"><span class="stat-label">Successful Predictions:</span><span class="stat-value">${successful}</span></div>
+                                <div class="stat-item"><span class="stat-label">Failed Predictions:</span><span class="stat-value">${results.length - successful}</span></div>
+                            </div>
+                        </div>
+                        <div class="summary-card">
+                            <div class="card-title">Response Time Statistics</div>
+                            <div class="card-content">
+                                <div class="stat-item"><span class="stat-label">Min Response Time:</span><span class="stat-value">${minRt!=null?minRt+'ms':'N/A'}</span></div>
+                                <div class="stat-item"><span class="stat-label">Max Response Time:</span><span class="stat-value">${maxRt!=null?maxRt+'ms':'N/A'}</span></div>
+                                <div class="stat-item"><span class="stat-label">Avg Response Time:</span><span class="stat-value">${avgRt!=null?avgRt+'ms':'N/A'}</span></div>
+                            </div>
+                        </div>
+                        <!--<div class="summary-card">
+                            <div class="card-title">MAPE Metrics</div>
+                            <div class="card-content">
+                                <div class="stat-item"><span class="stat-label">Calories MAPE:</span><span class="stat-value">${caloriesMAPEAvg.toFixed(2)}%</span><span class="threshold">(≤12%)</span></div>
+                                <div class="stat-item"><span class="stat-label">Fat MAPE:</span><span class="stat-value">${fatMAPEAvg.toFixed(2)}%</span></div>
+                                <div class="stat-item"><span class="stat-label">Carb MAPE:</span><span class="stat-value">${carbMAPEAvg.toFixed(2)}%</span></div>
+                                <div class="stat-item"><span class="stat-label">Protein MAPE:</span><span class="stat-value">${proteinMAPEAvg.toFixed(2)}%</span></div>
+                            </div>
+                        </div> --!>
+                        <div class="summary-card">
+                            <div class="card-title">Tolerance Check</div>
+                            <div class="card-content">
+                                <div class="stat-item"><span class="stat-label">Items Exceeding Calorie Tolerance:</span><span class="stat-value">${caloriesExceeding}</span><span class="percentage">(${calorieExceedPct.toFixed(1)}%)</span><span class="threshold">(≤10% or ≤50kcal)</span></div>
+                                <div class="stat-item"><span class="stat-label">Items Exceeding Macro Tolerance:</span><span class="stat-value">${macrosExceeding}</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details-section">
+                    <div class="filter-controls">
+                        <button class="filter-btn active" onclick="filterResults('all', this)">All Items</button>
+                        <button class="filter-btn" onclick="filterResults('pass', this)">Passing Items</button>
+                        <button class="filter-btn" onclick="filterResults('fail', this)">Failing Items</button>
+                    </div>
+                    <div class="results-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Item ID</th>
+                                    <th>Food Name</th>
+                                    <th>Response Time (ms)</th>
+                                    <th>Servings</th>
+                                    <th>Calories</th>
+                                    <th>Fat (g)</th>
+                                    <th>Carb (g)</th>
+                                    <th>Protein (g)</th>
+                                    <th>Confidence</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>${rows}</tbody>
+                        </table>
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderFoodGallery() {
+            const container = document.getElementById('tab-food');
+            if (!container) return;
+            const items = Array.isArray(state.data) ? state.data : [];
+            const rows = items.map((item) => {
+                const itemId = String(item.item_id ?? '');
+                const name = item.name_food ?? '';
+                const img = item.img_location || item.image_url || '';
+                const n = item.nutrients_per_serving || {};
+                const ing = item.ingredients_per_recipe;
+                const url = item.food_url;
+                const matches = filterMatch([itemId, name], state.filteredText);
+                if (!matches) return '';
+                return `
+                    <div class="food-card">
+                        <div class="header"><span class="item-pill">${escapeHtml(itemId)}</span><div class="title">${escapeHtml(name)}</div></div>
+                        ${img ? `<img class=\"food-image\" src=\"${img}\" onerror=\"this.style.display='none'\" alt=\"img\"/>` : `<div style=\"height:350px;background:#f8f9fa;display:flex;align-items:center;justify-content:center;color:#94a3b8\">No Image</div>`}
+                        <div class="body">
+                            <div class="info-row">
+                                <div class="nutrients-panel">
+                                    <span class="nutrients-title">Nutrition</span>
+                                    <div class="nutrients-row">
+                                        <div class="nutrient-item calories"><span class="nutrient-label">Calories</span><span class="nutrient-value">${fmt(n.calories)}</span></div>
+                                        <div class="nutrient-item fat"><span class="nutrient-label">Fat</span><span class="nutrient-value">${fmt(n.fat)}g</span></div>
+                                        <div class="nutrient-item carb"><span class="nutrient-label">Carb</span><span class="nutrient-value">${fmt(n.carb)}g</span></div>
+                                        <div class="nutrient-item protein"><span class="nutrient-label">Protein</span><span class="nutrient-value">${fmt(n.protein)}g</span></div>
+                                    </div>
+                                </div>
+                                <div class="serving-panel">
+                                    <span class="serving-title">Serving</span>
+                                    <div class="serving-items">
+                                        <div class="serving-item recipe"><span class="serving-label">per recipe</span><span class="serving-value">${fmtWithoutDecimal(item.servings_size_per_recipe)}</span></div>
+                                        <div class="serving-item image"><span class="serving-label">in image</span><span class="serving-value">${fmtWithoutDecimal(item.servings_size_in_image)}</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ingredients-section">
+                                <div class="ingredients-title">Ingredients</div>
+                                ${ing ? `<div class=\"ingredients-grid\"><div class=\"ingredient-item\">${escapeHtml(String(ing))}</div></div>` : 'null'}
+                            </div>
+                            <div class="recipe">${url ? `<a href="${url}" target="_blank" rel="noopener">🔗 View Recipe</a>` : 'null'}</div>
+                        </div>
+                    </div>
+                `;
+            }).filter(Boolean).join('');
+            container.innerHTML = `<div class="food-grid">${rows}</div>`;
+        }
+
+        function toggleApi(uid) {
+            const row = document.getElementById('api-' + uid);
+            const btn = document.querySelector(`[onclick="toggleApi('${uid}')"]`);
+            if (!row || !btn) return;
+            const icon = btn.querySelector('.expand-icon');
+            if (row.style.display === 'table-row') { row.style.display = 'none'; if (icon) icon.textContent = '▼'; }
+            else { row.style.display = 'table-row'; if (icon) icon.textContent = '▲'; }
+        }
+
+        function filterMatch(fields, text) {
+            if (!text) return true;
+            return fields.some(v => (v||'').toString().toLowerCase().includes(text));
+        }
+
+        function escapeHtml(s) {
+            if (s == null) return '';
+            return s.toString().replace(/[&<>"]+/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+        }
+
+        function fmt(v) {
+            if (v == null || v === '' || isNaN(Number(v))) return '-';
+            return Number(v).toFixed(1);
+        }
+
+        function fmtWithoutDecimal(v) {
+            if (v == null || v === '' || isNaN(Number(v))) return '-';
+            return Number(v);
+        }
+
+        // Filter controls (for results details)
+        function filterResults(status, button) {
+            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            if (button) button.classList.add('active');
+            const activeTab = document.getElementById('results-content');
+            if (!activeTab) return;
+            activeTab.querySelectorAll('.item-row').forEach(row => {
+                if (status === 'all') { row.style.display = ''; return; }
+                row.style.display = row.dataset.status === status ? '' : 'none';
+                if (row.style.display === 'none') {
+                    const uidBtn = row.querySelector('.expand-btn');
+                    if (uidBtn) {
+                        const icon = uidBtn.querySelector('.expand-icon');
+                        const uid = (uidBtn.getAttribute('onclick')||'').match(/toggleApi\('(.*)'\)/);
+                        if (uid && uid[1]) {
+                            const apiRow = document.getElementById('api-' + uid[1]);
+                            if (apiRow) apiRow.style.display = 'none';
+                        }
+                        if (icon) icon.textContent = '▼';
+                    }
+                }
+            });
+        }
+
+        async function downloadDatasetZip() {
+            try {
+                const zip = new JSZip();
+                // Add current page as index.html
+                const currentHtml = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+                zip.file('index.html', currentHtml);
+                // Add data_output.json
+                zip.file('data_output.json', JSON.stringify(state.data, null, 2));
+                // Add test results
+                const resultsFolder = zip.folder('test-results');
+                for (const r of state.runs) {
+                    const name = (r.path||'').split('/').pop() || 'result.json';
+                    resultsFolder.file(name, JSON.stringify(r.json, null, 2));
+                }
+                // Add images referenced by data_output.json (best-effort)
+                const imagesFolder = zip.folder('images');
+                const imagePaths = Array.from(new Set((state.data||[]).map(i => i.img_location).filter(Boolean)));
+                // Fetch images as blobs and add
+                for (const p of imagePaths) {
+                    try {
+                        const resp = await fetch(p);
+                        if (!resp.ok) continue;
+                        const blob = await resp.blob();
+                        const arrBuf = await blob.arrayBuffer();
+                        const fileName = p.split('/').pop();
+                        imagesFolder.file(fileName, arrBuf);
+                    } catch (_) { /* ignore missing files */ }
+                }
+                const blob = await zip.generateAsync({ type: 'blob' });
+                const a = document.createElement('a');
+                a.href = URL.createObjectURL(blob);
+                a.download = 'calorie-dataset.zip';
+                document.body.appendChild(a);
+                a.click();
+                a.remove();
+            } catch (e) {
+                console.error('Failed to build zip', e);
+                alert('Failed to download zip. See console.');
+            }
+        }
+    </script>
+</body>
+</html>
+
+
