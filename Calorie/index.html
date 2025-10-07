@@ -123,6 +123,12 @@
         .stat-value-small { font-weight: 700;font-size: 12px; color: #2d3748; }
         .threshold { font-size: 10px; color: #a0aec0; margin-left: 5px; }
         .percentage { font-size: 11px; color: #718096; margin-left: 5px; }
+        
+        /* Filter controls styling */
+        .filter-controls { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; }
+        .filter-btn { background: #fff; border: 1px solid #e2e8f0; color: #4a5568; padding: 6px 12px; border-radius: 6px; cursor: pointer; font-size: 12px; font-weight: 600; transition: all 0.2s ease; }
+        .filter-btn:hover { background: #f7fafc; border-color: #cbd5e0; }
+        .filter-btn.active { background: #4c51bf; color: #fff; border-color: #4c51bf; }
     </style>
 </head>
 <body>
@@ -318,7 +324,7 @@
                     const overallStatus = (gt && (calorieExceed || fatExceed || carbExceed || proteinExceed)) ? 'fail' : 'pass';
 
                     return `
-                        <tr class="item-row ${overallStatus}" data-status="${overallStatus}">
+                        <tr class="item-row ${overallStatus}" data-status="${overallStatus}" data-calories-pass="${!calorieExceed}" data-fat-pass="${!fatExceed}" data-carb-pass="${!carbExceed}" data-protein-pass="${!proteinExceed}">
                             <td>
                                 <div class="item-id-container">
                                     <button class="expand-btn" onclick="toggleApi('${uid}')" title="View raw API result"><span class="expand-icon">▼</span></button>
@@ -434,6 +440,10 @@
                         <button class="filter-btn active" onclick="filterResults('all', this)">All Items</button>
                         <button class="filter-btn" onclick="filterResults('pass', this)">Passing Items</button>
                         <button class="filter-btn" onclick="filterResults('fail', this)">Failing Items</button>
+                        <button class="filter-btn" onclick="filterResults('calories-pass', this)">Passed Calories</button>
+                        <button class="filter-btn" onclick="filterResults('fat-pass', this)">Passed Fat</button>
+                        <button class="filter-btn" onclick="filterResults('carb-pass', this)">Passed Carb</button>
+                        <button class="filter-btn" onclick="filterResults('protein-pass', this)">Passed Protein</button>
                     </div>
                     <div class="results-table">
                         <table>
@@ -542,8 +552,24 @@
             const activeTab = document.getElementById('results-content');
             if (!activeTab) return;
             activeTab.querySelectorAll('.item-row').forEach(row => {
-                if (status === 'all') { row.style.display = ''; return; }
-                row.style.display = row.dataset.status === status ? '' : 'none';
+                let shouldShow = false;
+                if (status === 'all') { 
+                    shouldShow = true; 
+                } else if (status === 'pass') {
+                    shouldShow = row.dataset.status === 'pass';
+                } else if (status === 'fail') {
+                    shouldShow = row.dataset.status === 'fail';
+                } else if (status === 'calories-pass') {
+                    shouldShow = row.dataset.caloriesPass === 'true';
+                } else if (status === 'fat-pass') {
+                    shouldShow = row.dataset.fatPass === 'true';
+                } else if (status === 'carb-pass') {
+                    shouldShow = row.dataset.carbPass === 'true';
+                } else if (status === 'protein-pass') {
+                    shouldShow = row.dataset.proteinPass === 'true';
+                }
+                
+                row.style.display = shouldShow ? '' : 'none';
                 if (row.style.display === 'none') {
                     const uidBtn = row.querySelector('.expand-btn');
                     if (uidBtn) {
