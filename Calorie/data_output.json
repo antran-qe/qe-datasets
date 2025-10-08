@@ -482,7 +482,7 @@
   {
     "name_food": "user data_Strawberry_cake",
     "item_id": "U_31",
-    "img_location": "images/40-us.jpg",
+    "img_location": "images/31-us.jpg",
     "image_url": null,
     "food_url": null,
     "ingredients_per_recipe": null,
@@ -498,7 +498,7 @@
   {
     "name_food": "user data_Sanwind",
     "item_id": "U_32",
-    "img_location": "images/39-us.jpeg",
+    "img_location": "images/32-us.jpg",
     "image_url": null,
     "food_url": null,
     "ingredients_per_recipe": null,
@@ -514,7 +514,7 @@
   {
     "name_food": "user data_crambled eggs with toast and coffee",
     "item_id": "U_33",
-    "img_location": "images/38-us.jpeg",
+    "img_location": "images/33-us.jpg",
     "image_url": null,
     "food_url": null,
     "ingredients_per_recipe": null,
@@ -530,7 +530,7 @@
   {
     "name_food": "user data_White rice, banana, meat",
     "item_id": "U_34",
-    "img_location": "images/37-us.jpeg",
+    "img_location": "images/34-us.jpg",
     "image_url": null,
     "food_url": null,
     "ingredients_per_recipe": null,
@@ -546,7 +546,7 @@
   {
     "name_food": "user data _White rice, fish",
     "item_id": "U_35",
-    "img_location": "images/36-us.jpeg",
+    "img_location": "images/35-us.avif",
     "image_url": null,
     "food_url": null,
     "ingredients_per_recipe": null,
@@ -562,7 +562,7 @@
   {
     "name_food": "user data_ Bitter Melon with Eggs",
     "item_id": "U_36",
-    "img_location": "images/35-us.jpg",
+    "img_location": "images/36-us.jpeg",
     "image_url": null,
     "food_url": null,
     "ingredients_per_recipe": null,
@@ -578,7 +578,7 @@
   {
     "name_food": "user data_Tofu",
     "item_id": "U_37",
-    "img_location": "images/34-us.jpg",
+    "img_location": "images/37-us.jpeg",
     "image_url": null,
     "food_url": null,
     "ingredients_per_recipe": null,
@@ -594,7 +594,7 @@
   {
     "name_food": "user data_ lasagna",
     "item_id": "U_38",
-    "img_location": "images/33-us.jpg",
+    "img_location": "images/38-us.jpeg",
     "image_url": null,
     "food_url": null,
     "ingredients_per_recipe": null,
@@ -610,7 +610,7 @@
   {
     "name_food": "user data_keto_pork_floss",
     "item_id": "U_39",
-    "img_location": "images/32-us.jpg",
+    "img_location": "images/39-us.jpeg",
     "image_url": null,
     "food_url": null,
     "ingredients_per_recipe": null,
@@ -626,7 +626,7 @@
   {
     "name_food": "user data_Steak",
     "item_id": "U_40",
-    "img_location": "images/31-us.jpg",
+    "img_location": "images/40-us.jpg",
     "image_url": null,
     "food_url": null,
     "ingredients_per_recipe": null,
