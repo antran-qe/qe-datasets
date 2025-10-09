@@ -326,8 +326,20 @@
                     }
                     const overallStatus = (gt && (calorieExceed || fatExceed || carbExceed || proteinExceed)) ? 'fail' : 'pass';
 
+                    // Determine calorie fail category
+                    let calorieFailCategory = '';
+                    if (calorieExceed && gt) {
+                        if (caloriesMAPE >= 10 && caloriesMAPE <= 30) {
+                            calorieFailCategory = 'low';
+                        } else if (caloriesMAPE > 30 && caloriesMAPE <= 50) {
+                            calorieFailCategory = 'medium';
+                        } else if (caloriesMAPE > 50) {
+                            calorieFailCategory = 'high';
+                        }
+                    }
+
                     return `
-                        <tr class="item-row ${overallStatus}" data-status="${overallStatus}" data-calories-pass="${!calorieExceed}" data-fat-pass="${!fatExceed}" data-carb-pass="${!carbExceed}" data-protein-pass="${!proteinExceed}">
+                        <tr class="item-row ${overallStatus}" data-status="${overallStatus}" data-calories-pass="${!calorieExceed}" data-fat-pass="${!fatExceed}" data-carb-pass="${!carbExceed}" data-protein-pass="${!proteinExceed}" data-calories-fail-category="${calorieFailCategory}">
                             <td>
                                 <div class="item-id-container">
                                     <button class="expand-btn" onclick="toggleApi('${uid}')" title="View raw API result"><span class="expand-icon">▼</span></button>
@@ -444,9 +456,13 @@
                         <button class="filter-btn" onclick="filterResults('pass', this)">Passing Items</button>
                         <button class="filter-btn" onclick="filterResults('fail', this)">Failing Items</button>
                         <button class="filter-btn" onclick="filterResults('calories-pass', this)">Passed Calories</button>
+                        <button class="filter-btn" onclick="filterResults('calories-fail-low', this)">Calories Fail Low (10-30%)</button>
+                        <button class="filter-btn" onclick="filterResults('calories-fail-medium', this)">Calories Fail Medium (30-50%)</button>
+                        <button class="filter-btn" onclick="filterResults('calories-fail-high', this)">Calories Fail High (>50%)</button>
                         <button class="filter-btn" onclick="filterResults('fat-pass', this)">Passed Fat</button>
                         <button class="filter-btn" onclick="filterResults('carb-pass', this)">Passed Carb</button>
                         <button class="filter-btn" onclick="filterResults('protein-pass', this)">Passed Protein</button>
+                        
                     </div>
                     <div class="results-table">
                         <table>
@@ -570,6 +586,12 @@
                     shouldShow = row.dataset.carbPass === 'true';
                 } else if (status === 'protein-pass') {
                     shouldShow = row.dataset.proteinPass === 'true';
+                } else if (status === 'calories-fail-low') {
+                    shouldShow = row.dataset.caloriesFailCategory === 'low';
+                } else if (status === 'calories-fail-medium') {
+                    shouldShow = row.dataset.caloriesFailCategory === 'medium';
+                } else if (status === 'calories-fail-high') {
+                    shouldShow = row.dataset.caloriesFailCategory === 'high';
                 }
                 
                 row.style.display = shouldShow ? '' : 'none';
