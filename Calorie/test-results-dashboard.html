@@ -260,10 +260,12 @@
                     <!-- Stats cards will be populated here -->
                 </div>
 
+                <!--
                 <div class="chart-container">
                     <div class="chart-title">MAPE Distribution by Category</div>
                     <canvas id="mapeChart" width="250" height="250"></canvas>
                 </div>
+                -->
 
                 <div class="chart-container">
                     <div class="chart-title">Pass/Fail Rate Comparison</div>
@@ -504,7 +506,7 @@
             updateStatsCards(stats, runInfo);
 
             // Update charts
-            updateMAPEChart(stats, runName);
+            // updateMAPEChart(stats, runName);
             updatePassFailChart(stats, runName);
             updateComparisonChart();
             updateComparisonTable();
