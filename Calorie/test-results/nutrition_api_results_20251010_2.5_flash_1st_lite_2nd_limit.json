@@ -1,0 +1,6345 @@
+{
+  "metadata": {
+    "run_date": "2025-10-09T22:39:15.930745",
+    "dataset_source": "data_output.json",
+    "images_directory": "./images",
+    "api_endpoint": "http://127.0.0.1:8000/api/v1/internal/food/image-to-calories",
+    "total_items": 140,
+    "processing_config": {
+      "delay_ms": 1000,
+      "max_retries": 3,
+      "test_mode": false,
+      "test_limit": null
+    },
+    "completed_at": "2025-10-09T23:12:59.100510"
+  },
+  "summary": {
+    "total_processed": 140,
+    "successful_api_calls": 140,
+    "failed_api_calls": 0,
+    "items_without_images": 0,
+    "processing_time_ms": 2023169,
+    "api_response_times_ms": [
+      10590,
+      12482,
+      8273,
+      11669,
+      8094,
+      10230,
+      6790,
+      13559,
+      12901,
+      6079,
+      9526,
+      10547,
+      12361,
+      15628,
+      16427,
+      11573,
+      13811,
+      20579,
+      12245,
+      11635,
+      10705,
+      8772,
+      9225,
+      12206,
+      16282,
+      16098,
+      8930,
+      9635,
+      16392,
+      11257,
+      11851,
+      20631,
+      15972,
+      19249,
+      15705,
+      10247,
+      7984,
+      10794,
+      9581,
+      10961,
+      15771,
+      12397,
+      12117,
+      15170,
+      13126,
+      13113,
+      17970,
+      12421,
+      13204,
+      10084,
+      10400,
+      9800,
+      11881,
+      14148,
+      10759,
+      12477,
+      13976,
+      11373,
+      11696,
+      17626,
+      10477,
+      13336,
+      10953,
+      13006,
+      15596,
+      14219,
+      12888,
+      15032,
+      12061,
+      23535,
+      14909,
+      17272,
+      11291,
+      13085,
+      19070,
+      19533,
+      14384,
+      13161,
+      15730,
+      13831,
+      10165,
+      15375,
+      12748,
+      11367,
+      10440,
+      18262,
+      21215,
+      17511,
+      17241,
+      17118,
+      16429,
+      14495,
+      12727,
+      15381,
+      12810,
+      14543,
+      19584,
+      14569,
+      12384,
+      11098,
+      15596,
+      14513,
+      10446,
+      11661,
+      12052,
+      15468,
+      16833,
+      13563,
+      13843,
+      14472,
+      16571,
+      14772,
+      14862,
+      12337,
+      13330,
+      14736,
+      15856,
+      13449,
+      13560,
+      12332,
+      11469,
+      12819,
+      14338,
+      13171,
+      12647,
+      15338,
+      12062,
+      15892,
+      10329,
+      14806,
+      12545,
+      12116,
+      10973,
+      13891,
+      12130,
+      15370,
+      14931,
+      12979,
+      12569,
+      16789
+    ],
+    "api_response_time_min_ms": 6079,
+    "api_response_time_max_ms": 23535,
+    "api_response_time_avg_ms": 13452
+  },
+  "results": [
+    {
+      "original_data": {
+        "item_id": "M_1",
+        "name_food": "tonkotsu-ramen",
+        "img_location": "images/1-ramen.jpeg",
+        "food_url": "https://foods.fatsecret.com/calories-nutrition/nong-shim/tonkotsu-ramen"
+      },
+      "api_result": {
+        "food_name": "Nongshim Tonkotsu Ramen Premium Noodle Soup (Cup)",
+        "total_calories": 270.0,
+        "fats": 10.5,
+        "proteins": 6.3,
+        "carbohydrates": 39.0,
+        "image_caption": [
+          {
+            "ingredients": "Instant ramen noodles (estimated fried noodles)",
+            "quantity": "1",
+            "portion_size": "serving (conservative estimate)"
+          },
+          {
+            "ingredients": "Tonkotsu soup base and seasoning (estimated fat/flavor contribution)",
+            "quantity": "1",
+            "portion_size": "packet (conservative estimate)"
+          }
+        ],
+        "confidence": 90,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:39:15.931503",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 10590
+      }
+    },
+    {
+      "original_data": {
+        "item_id": "M_2",
+        "name_food": "Peach Raspberry Yogurt Parfait",
+        "img_location": "images/2-Peach Raspberry Yogurt Parfait.jpg",
+        "food_url": "https://foods.fatsecret.com/Diary.aspx?pa=fimg&rid=80450&iid=281217"
+      },
+      "api_result": {
+        "food_name": "Yogurt Parfait with Granola and Fruit (Recalculated Conservatively)",
+        "total_calories": 235,
+        "fats": 6.0,
+        "proteins": 7.5,
+        "carbohydrates": 31.0,
+        "image_caption": [
+          {
+            "ingredients": "low-fat vanilla yogurt (Estimated based on 150g)",
+            "quantity": "150",
+            "portion_size": "grams (approx 2/3 cup)"
+          },
+          {
+            "ingredients": "granola (Estimated based on 25g)",
+            "quantity": "25",
+            "portion_size": "grams (small handful)"
+          },
+          {
+            "ingredients": "mixed fruit and puree (Estimated based on 75g)",
+            "quantity": "75",
+            "portion_size": "grams"
+          }
+        ],
+        "confidence": 70,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:39:27.524835",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 12482
+      }
+    },
+    {
+      "original_data": {
+        "item_id": "M_3",
+        "name_food": "Special K Pastry Crisps - Strawberry",
+        "img_location": "images/3-Special K Pastry Crisps - Strawberry.jpg",
+        "food_url": "https://foods.fatsecret.com/calories-nutrition/kelloggs/special-k-pastry-crisps---strawberry"
+      },
+      "api_result": {
+        "food_name": "Kellogg's Special K Strawberry Pastry Crisps",
+        "total_calories": 100,
+        "fats": 2.0,
+        "proteins": 1.0,
+        "carbohydrates": 20.0,
+        "image_caption": [
+          {
+            "ingredients": "Strawberry Pastry Crisps",
+            "quantity": "1",
+            "portion_size": "pouch (25g)"
+          }
+        ],
+        "confidence": 100,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:39:41.015089",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 8273
+      }
+    },
+    {
+      "original_data": {
+        "item_id": "M_4",
+        "name_food": "KFC\nSpicy Chicken Sandwich",
+        "img_location": "images/4-kfc-chicken-sandwiches-1611081937.avif",
+        "food_url": "https://foods.fatsecret.com/calories-nutrition/kfc/spicy-chicken-sandwich"
+      },
+      "api_result": {
+        "food_name": "Fried chicken sandwich with mayonnaise and pickles",
+        "total_calories": 494,
+        "fats": 22.8,
+        "proteins": 29.0,
+        "carbohydrates": 35.0,
+        "image_caption": [
+          {
+            "ingredients": "sandwich bun",
+            "quantity": "70",
+            "portion_size": "grams (medium)"
+          },
+          {
+            "ingredients": "fried chicken patty",
+            "quantity": "85",
+            "portion_size": "grams (palm size)"
+          },
+          {
+            "ingredients": "mayonnaise/creamy sauce",
+            "quantity": "1",
+            "portion_size": "tablespoon (conservative 100 kcal)"
+          },
+          {
+            "ingredients": "pickle slices",
+            "quantity": "2",
+            "portion_size": "slices"
+          }
+        ],
+        "confidence": 90,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:39:50.294082",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 11669
+      }
+    },
+    {
+      "original_data": {
+        "item_id": "M_5",
+        "name_food": "Original Recipe Chicken Thigh",
+        "img_location": "images/5-KFC Original Recipe Chicken Thigh.jpg",
+        "food_url": "https://foods.fatsecret.com/calories-nutrition/kfc/original-recipe-chicken-thigh"
+      },
+      "api_result": {
+        "food_name": "Fried chicken cutlet or breast",
+        "total_calories": 240,
+        "fats": 13.0,
+        "proteins": 30.8,
+        "carbohydrates": 0.0,
+        "image_caption": [
+          {
+            "ingredients": "fried chicken (breaded)",
+            "quantity": "120",
+            "portion_size": "grams (medium piece)"
+          }
+        ],
+        "confidence": 90,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:40:02.966961",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 8094
+      }
+    },
+    {
+      "original_data": {
+        "item_id": "M_6",
+        "name_food": "Mashed Potatoes",
+        "img_location": "images/6-Mashed Potatoes.jpeg",
+        "food_url": "https://foods.fatsecret.com/calories-nutrition/kfc/mashed-potatoes"
+      },
+      "api_result": {
+        "food_name": "Mashed potatoes with brown gravy (Recalculated Conservatively)",
+        "total_calories": 360,
+        "fats": 15.2,
+        "proteins": 4.6,
+        "carbohydrates": 51.0,
+        "image_caption": [
+          {
+            "ingredients": "mashed potatoes (base starch)",
+            "quantity": "180",
+            "portion_size": "grams (baked potato equivalent)"
+          },
+          {
+            "ingredients": "added fat (butter/milk equivalent)",
+            "quantity": "0.75",
+            "portion_size": "tablespoon (estimated 12g fat)"
+          },
+          {
+            "ingredients": "brown gravy",
+            "quantity": "2",
+            "portion_size": "tablespoons (conservative 100 kcal estimate)"
+          }
+        ],
+        "confidence": 90,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:40:12.064532",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 10230
+      }
+    },
+    {
+      "original_data": {
+        "item_id": "M_7",
+        "name_food": "White rice",
+        "img_location": "images/7-white rice.jpg",
+        "food_url": "https://www.fatsecret.com.sg/calories-nutrition/generic/steamed-rice?portionid=4936686&portionamount=1.000"
+      },
+      "api_result": {
+        "food_name": "Cooked white rice",
+        "total_calories": 156,
+        "fats": 0,
+        "proteins": 3,
+        "carbohydrates": 34,
+        "image_caption": [
+          {
+            "ingredients": "white rice",
+            "quantity": "120",
+            "portion_size": "grams (approximately 2/3 cup cooked)"
+          }
+        ],
+        "confidence": 90,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:40:23.299816",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 6790
+      }
+    },
+    {
+      "original_data": {
+        "item_id": "M_8",
+        "name_food": "Rice fried with chicken",
+        "img_location": "images/8-Rice Fried mix Chicken .jpg",
+        "food_url": "https://foods.fatsecret.com/calories-nutrition/generic/rice-fried-with-chicken"
+      },
+      "api_result": {
+        "food_name": "Chicken and broccoli stir-fry with rice",
+        "total_calories": 407.4,
+        "fats": 14.0,
+        "proteins": 23.0,
+        "carbohydrates": 43.2,
+        "image_caption": [
+          {
+            "ingredients": "cooked rice (white/brown mix)",
+            "quantity": "200",
+            "portion_size": "grams (approx 1 cup)"
+          },
+          {
+            "ingredients": "chicken breast pieces",
+            "quantity": "100",
+            "portion_size": "grams (palm size)"
+          },
+          {
+            "ingredients": "broccoli and other vegetables",
+            "quantity": "100",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "cooking oil (for stir-frying)",
+            "quantity": "1",
+            "portion_size": "tablespoon"
+          },
+          {
+            "ingredients": "stir-fry sauce/soy sauce",
+            "quantity": "2",
+            "portion_size": "tablespoons (conservatively estimated)"
+          }
+        ],
+        "confidence": 90,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:40:31.094900",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 13559
+      }
+    },
+    {
+      "original_data": {
+        "item_id": "M_9",
+        "name_food": "Shrimp Fried Rice",
+        "img_location": "images/9-Shrimp Fried Rice.jpg",
+        "food_url": "https://foods.fatsecret.com/calories-nutrition/generic/rice-fried-with-shrimp"
+      },
+      "api_result": {
+        "food_name": "Shrimp fried rice with egg and peas",
+        "total_calories": 577,
+        "fats": 20.0,
+        "proteins": 31.1,
+        "carbohydrates": 66.1,
+        "image_caption": [
+          {
+            "ingredients": "cooked white rice",
+            "quantity": "220",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "shrimp",
+            "quantity": "80",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "egg",
+            "quantity": "1",
+            "portion_size": "large"
+          },
+          {
+            "ingredients": "green peas and cabbage/scallions",
+            "quantity": "50",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "cooking oil (for frying)",
+            "quantity": "1",
+            "portion_size": "tablespoon"
+          }
+        ],
+        "confidence": 95,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:40:45.662381",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 12901
+      }
+    },
+    {
+      "original_data": {
+        "item_id": "M_10",
+        "name_food": "Blue berries",
+        "img_location": "images/10-blueberry.jpg",
+        "food_url": "https://foods.fatsecret.com/calories-nutrition/usda/blueberries"
+      },
+      "api_result": {
+        "food_name": "Blueberries",
+        "total_calories": 68,
+        "fats": 0.0,
+        "proteins": 0.0,
+        "carbohydrates": 17.0,
+        "image_caption": [
+          {
+            "ingredients": "blueberries",
+            "quantity": "120",
+            "portion_size": "grams (approx. 3/4 cup)"
+          }
+        ],
+        "confidence": 90,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:40:59.566734",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 6079
+      }
+    },
+    {
+      "original_data": {
+        "item_id": "M_11",
+        "name_food": "Thịt xông khói",
+        "img_location": "images/11-thịt xông khói.jpg",
+        "food_url": "https://foods.fatsecret.com/calories-nutrition/usda/bacon-(cured-baked-cooked)"
+      },
+      "api_result": {
+        "food_name": "Bacon",
+        "total_calories": 112,
+        "fats": 8.1,
+        "proteins": 9.6,
+        "carbohydrates": 0,
+        "image_caption": [
+          {
+            "ingredients": "bacon (estimated using conservative shrimp base + added fat)",
+            "quantity": "3",
+            "portion_size": "slices (thin cut, estimated 40g total mass)"
+          }
+        ],
+        "confidence": 60,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:41:06.648833",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 9526
+      }
+    },
+    {
+      "original_data": {
+        "item_id": "M_12",
+        "name_food": "Morning Bun",
+        "img_location": "images/12-morning-bun.webp",
+        "food_url": "https://www.kaggle.com/datasets/utkarshx27/starbucks-nutrition"
+      },
+      "api_result": {
+        "food_name": "Cinnamon Swirl Pastry, Danish (Recalculated)",
+        "total_calories": 186.0,
+        "fats": 7.8,
+        "proteins": 2.4,
+        "carbohydrates": 30.0,
+        "image_caption": [
+          {
+            "ingredients": "laminated dough pastry",
+            "quantity": "1",
+            "portion_size": "medium roll (90g, conservative estimate)"
+          },
+          {
+            "ingredients": "cinnamon sugar filling",
+            "quantity": "light",
+            "portion_size": "filling (estimated 15g carbs)"
+          }
+        ],
+        "confidence": 85,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:41:17.179067",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 10547
+      }
+    },
+    {
+      "original_data": {
+        "item_id": "M_13",
+        "name_food": "Tuna - Subway",
+        "img_location": "images/13-tuna subway.jpeg",
+        "food_url": "https://www.kaggle.com/datasets/joebeachcapital/subway-nutrition"
+      },
+      "api_result": {
+        "food_name": "Tuna Sub Sandwich (6-inch) - Conservative Recalculation",
+        "total_calories": 547,
+        "fats": 27.7,
+        "proteins": 24.8,
+        "carbohydrates": 45.0,
+        "image_caption": [
+          {
+            "ingredients": "whole wheat bread (estimated using database bread slice)",
+            "quantity": "90",
+            "portion_size": "grams (3 slices equivalent)"
+          },
+          {
+            "ingredients": "tuna salad (estimated using lean protein + added fat)",
+            "quantity": "80",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "cheese slice (estimated using 2/3 of 30g cheese)",
+            "quantity": "20",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "vegetables (lettuce, tomato, onion - estimated using broccoli density)",
+            "quantity": "50",
+            "portion_size": "grams"
+          }
+        ],
+        "confidence": 75,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:41:28.729128",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 12361
+      }
+    },
+    {
+      "original_data": {
+        "item_id": "M_14",
+        "name_food": "Italian_BMT_Salad_594x334",
+        "img_location": "images/14-Italian_BMT_Salad_594x334.avif",
+        "food_url": "https://www.kaggle.com/datasets/joebeachcapital/subway-nutrition"
+      },
+      "api_result": {
+        "food_name": "Italian style deli meat salad",
+        "total_calories": 514,
+        "fats": 27.0,
+        "proteins": 34.6,
+        "carbohydrates": 30.0,
+        "image_caption": [
+          {
+            "ingredients": "mixed greens (lettuce, spinach)",
+            "quantity": "3",
+            "portion_size": "cups (approx 600g)"
+          },
+          {
+            "ingredients": "salami or cured meat (estimated as high-fat protein)",
+            "quantity": "60",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "ham or turkey slices (estimated as grilled chicken)",
+            "quantity": "40",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "tomato, cucumber, onion, bell pepper (mixed)",
+            "quantity": "300",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "black olives (estimated as fat source)",
+            "quantity": "6",
+            "portion_size": "halves"
+          },
+          {
+            "ingredients": "light vinaigrette dressing (1 tbsp)",
+            "quantity": "1",
+            "portion_size": "tablespoon"
+          }
+        ],
+        "confidence": 90,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:41:42.094757",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 15628
+      }
+    },
+    {
+      "original_data": {
+        "item_id": "M_15",
+        "name_food": "Veggie Delite® with Avo",
+        "img_location": "images/15-Veggie_Delite_with_Avo_Salad_594x334.avif",
+        "food_url": "https://www.subway.com/en-AU/MenuNutrition/Menu/Product?ProductId=6904&MenuCategoryId=378"
+      },
+      "api_result": {
+        "food_name": "Vegetable salad with avocado",
+        "total_calories": 177,
+        "fats": 10.9,
+        "proteins": 4.3,
+        "carbohydrates": 17.4,
+        "image_caption": [
+          {
+            "ingredients": "mixed greens/lettuce",
+            "quantity": "150",
+            "portion_size": "grams (3 cups)"
+          },
+          {
+            "ingredients": "tomato slices",
+            "quantity": "120",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "cucumber slices",
+            "quantity": "80",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "avocado/guacamole",
+            "quantity": "70",
+            "portion_size": "grams (Estimated 10.5g Fat)"
+          },
+          {
+            "ingredients": "red onion and bell pepper",
+            "quantity": "30",
+            "portion_size": "grams (Estimated)"
+          }
+        ],
+        "confidence": 95,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:41:58.728642",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 16427
+      }
+    },
+    {
+      "original_data": {
+        "item_id": "M_16",
+        "name_food": "Berry Parfait",
+        "img_location": "images/16-berry par.png",
+        "food_url": "https://www.chick-fil-a.com/menu/berry-parfait"
+      },
+      "api_result": {
+        "food_name": "Yogurt parfait with mixed berries and granola (Recalculated Conservatively)",
+        "total_calories": 158,
+        "fats": 3.0,
+        "proteins": 11.0,
+        "carbohydrates": 20.0,
+        "image_caption": [
+          {
+            "ingredients": "low-fat vanilla yogurt (Estimated)",
+            "quantity": "150",
+            "portion_size": "grams (approx 5 oz)"
+          },
+          {
+            "ingredients": "mixed berries (Estimated)",
+            "quantity": "50",
+            "portion_size": "grams (light topping)"
+          },
+          {
+            "ingredients": "granola (Estimated)",
+            "quantity": "15",
+            "portion_size": "grams (1 tablespoon)"
+          }
+        ],
+        "confidence": 70,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:42:16.160910",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 11573
+      }
+    },
+    {
+      "original_data": {
+        "item_id": "M_17",
+        "name_food": "Cobb Salad w/ No Chicken",
+        "img_location": "images/17-cobbSalad_noMeat_pdp.png",
+        "food_url": "https://www.chick-fil-a.com/menu/cobb-salad"
+      },
+      "api_result": {
+        "food_name": "Cobb-style salad with egg, bacon, cheese, and crispy toppings (Recalculated)",
+        "total_calories": 357,
+        "fats": 22.4,
+        "proteins": 29.5,
+        "carbohydrates": 13.4,
+        "image_caption": [
+          {
+            "ingredients": "mixed greens/lettuce",
+            "quantity": "150",
+            "portion_size": "grams (Conservative reduction from 3 cups)"
+          },
+          {
+            "ingredients": "hard-boiled egg",
+            "quantity": "1",
+            "portion_size": "large (50g)"
+          },
+          {
+            "ingredients": "shredded cheese (cheddar/jack)",
+            "quantity": "30",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "bacon bits/crumbled bacon",
+            "quantity": "10",
+            "portion_size": "grams (Conservative reduction)"
+          },
+          {
+            "ingredients": "cherry tomatoes",
+            "quantity": "60",
+            "portion_size": "grams (Estimated 4 small tomatoes)"
+          },
+          {
+            "ingredients": "corn kernels",
+            "quantity": "20",
+            "portion_size": "grams (Conservative reduction)"
+          },
+          {
+            "ingredients": "crispy fried onions/croutons",
+            "quantity": "15",
+            "portion_size": "grams (Conservative reduction)"
+          }
+        ],
+        "confidence": 90,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:42:28.741041",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 13811
+      }
+    },
+    {
+      "original_data": {
+        "item_id": "M_18",
+        "name_food": "Cobb Salad w/ Spicy Filet",
+        "img_location": "images/18-cobb_SpicyFilet_pdp.png",
+        "food_url": "https://www.chick-fil-a.com/menu/cobb-salad"
+      },
+      "api_result": {
+        "food_name": "Crispy Chicken Salad with Egg and Bacon (Recalculated)",
+        "total_calories": 713,
+        "fats": 50.7,
+        "proteins": 45.8,
+        "carbohydrates": 10.8,
+        "image_caption": [
+          {
+            "ingredients": "mixed greens",
+            "quantity": "200",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "fried chicken fillet",
+            "quantity": "100",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "hard-boiled egg",
+            "quantity": "1",
+            "portion_size": "large egg"
+          },
+          {
+            "ingredients": "shredded cheese (cheddar/jack)",
+            "quantity": "30",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "bacon bits",
+            "quantity": "15",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "cherry tomatoes",
+            "quantity": "50",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "corn kernels",
+            "quantity": "20",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "creamy dressing (Ranch assumed)",
+            "quantity": "1.5",
+            "portion_size": "tablespoons (Capped at 150 kcal)"
+          }
+        ],
+        "confidence": 95,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:42:43.558022",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 20579
+      }
+    },
+    {
+      "original_data": {
+        "item_id": "M_19",
+        "name_food": "Chicken Noodle Soup",
+        "img_location": "images/19-Chicken-Noodle-Soup_Small_PDP.png",
+        "food_url": "https://www.chick-fil-a.com/menu/chicken-noodle-soup"
+      },
+      "api_result": {
+        "food_name": "Chicken noodle soup (Recalculated)",
+        "total_calories": 139,
+        "fats": 1.6,
+        "proteins": 12.7,
+        "carbohydrates": 20.9,
+        "image_caption": [
+          {
+            "ingredients": "soup broth (chicken/vegetable)",
+            "quantity": "1.5",
+            "portion_size": "cups (conservative estimate: 15 kcal)"
+          },
+          {
+            "ingredients": "pasta/noodles (small shells)",
+            "quantity": "40",
+            "portion_size": "grams cooked"
+          },
+          {
+            "ingredients": "shredded chicken",
+            "quantity": "30",
+            "portion_size": "grams (assumed grilled)"
+          },
+          {
+            "ingredients": "mixed vegetables (carrot, celery)",
+            "quantity": "30",
+            "portion_size": "grams (conservative estimate based on carrot)"
+          }
+        ],
+        "confidence": 90,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:43:05.141513",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 12245
+      }
+    },
+    {
+      "original_data": {
+        "item_id": "M_20",
+        "name_food": "Chocolate Fudge Brownie",
+        "img_location": "images/20-FudgeChunkBrownie_PDP.png",
+        "food_url": "https://www.chick-fil-a.com/menu/chocolate-fudge-brownie"
+      },
+      "api_result": {
+        "food_name": "Chocolate Brownie (Recalculated Conservatively)",
+        "total_calories": 184,
+        "fats": 14.2,
+        "proteins": 1.3,
+        "carbohydrates": 14.0,
+        "image_caption": [
+          {
+            "ingredients": "brownie (estimated via conservative rice proxy)",
+            "quantity": "70",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "chocolate chunks (estimated via 1 tbsp oil proxy)",
+            "quantity": "1",
+            "portion_size": "tablespoon"
+          }
+        ],
+        "confidence": 60,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:43:18.391375",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 11635
+      }
+    },
+    {
+      "original_data": {
+        "item_id": "M_21",
+        "name_food": "Simply Orange®",
+        "img_location": "images/21-SimplyOJ_Oct19_PDP.png",
+        "food_url": "https://www.chick-fil-a.com/menu/simply-orange"
+      },
+      "api_result": {
+        "food_name": "Simply Orange Juice (Recalculated Conservatively)",
+        "total_calories": 152,
+        "fats": 0,
+        "proteins": 2,
+        "carbohydrates": 36,
+        "image_caption": [
+          {
+            "ingredients": "Simply Orange Juice",
+            "quantity": "1",
+            "portion_size": "bottle (11.5 fl oz)"
+          }
+        ],
+        "confidence": 95,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:43:31.030056",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 10705
+      }
+    },
+    {
+      "original_data": {
+        "item_id": "M_22",
+        "name_food": "Dr Pepper",
+        "img_location": "images/22-DrPepper_PaperCup_straight_wet_1200x1200.png",
+        "food_url": "https://www.chick-fil-a.com/menu/dr-pepper"
+      },
+      "api_result": {
+        "food_name": "Dr Pepper soda (regular) - Cannot recalculate using solid food database",
+        "total_calories": 200,
+        "fats": 0,
+        "proteins": 0,
+        "carbohydrates": 53,
+        "image_caption": [
+          {
+            "ingredients": "Dr Pepper soda",
+            "quantity": "16",
+            "portion_size": "fluid ounces (liquid volume, accounting for ice)"
+          },
+          {
+            "ingredients": "ice",
+            "quantity": "1",
+            "portion_size": "serving"
+          }
+        ],
+        "confidence": 10,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:43:42.738097",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 8772
+      }
+    },
+    {
+      "original_data": {
+        "item_id": "M_23",
+        "name_food": "3 Piece Chicken Tenders",
+        "img_location": "images/23-chicken-tenders-wendys 3.jpg",
+        "food_url": "https://www.carbmanager.com/food-detail/md:5b7316e05a2806cdf007132ba13c5016/3-piece-chicken-tenders"
+      },
+      "api_result": {
+        "food_name": "Fried chicken tenders (3 pieces)",
+        "total_calories": 194.4,
+        "fats": 9.7,
+        "proteins": 21.9,
+        "carbohydrates": 8.1,
+        "image_caption": [
+          {
+            "ingredients": "fried chicken tenders",
+            "quantity": "3",
+            "portion_size": "pieces (estimated 150g total)"
+          }
+        ],
+        "confidence": 90,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:43:52.516698",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 9225
+      }
+    },
+    {
+      "original_data": {
+        "item_id": "M_24",
+        "name_food": "4 Piece Chicken Tenders",
+        "img_location": "images/24-wendys-chicken-tenders-4.jpg",
+        "food_url": "https://www.eatthismuch.com/calories/4-piece-chicken-tenders-1754649"
+      },
+      "api_result": {
+        "food_name": "Fried chicken tenders with dipping sauce",
+        "total_calories": 349.2,
+        "fats": 19.0,
+        "proteins": 29.2,
+        "carbohydrates": 21.0,
+        "image_caption": [
+          {
+            "ingredients": "fried chicken tenders",
+            "quantity": "5",
+            "portion_size": "pieces (conservatively estimated at 180g total)"
+          },
+          {
+            "ingredients": "dipping sauce (honey mustard/BBQ type)",
+            "quantity": "1",
+            "portion_size": "packet (estimated 150 kcal, 35g C, 10g F)"
+          }
+        ],
+        "confidence": 95,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:44:02.746973",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 12206
+      }
+    },
+    {
+      "original_data": {
+        "item_id": "M_25",
+        "name_food": "Crock-Pot Potato Chowder",
+        "img_location": "images/25-Crock-Pot Potato Chowder.jpeg",
+        "food_url": "https://www.food.com/recipe/crock-pot-potato-chowder-50144"
+      },
+      "api_result": {
+        "food_name": "Creamy potato soup with bacon and chives",
+        "total_calories": 344,
+        "fats": 11.3,
+        "proteins": 14.3,
+        "carbohydrates": 42.0,
+        "image_caption": [
+          {
+            "ingredients": "Potato (estimated 200g base for starch)",
+            "quantity": "200",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "Added Cream/Dairy/Fat (conservative estimate for creaminess)",
+            "quantity": "1",
+            "portion_size": "estimated serving"
+          },
+          {
+            "ingredients": "Bacon crumbles (estimated 30g cooked equivalent)",
+            "quantity": "1.5",
+            "portion_size": "slices, cooked"
+          },
+          {
+            "ingredients": "Chives",
+            "quantity": "1",
+            "portion_size": "teaspoon"
+          }
+        ],
+        "confidence": 80,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:44:15.957942",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 16282
+      }
+    },
+    {
+      "original_data": {
+        "item_id": "M_26",
+        "name_food": "Mahogany Beef Stew",
+        "img_location": "images/26-Mahogany Beef Stew.jpeg",
+        "food_url": "https://www.food.com/recipe/mahogany-beef-stew-80536"
+      },
+      "api_result": {
+        "food_name": "Beef Stew (Bourguignon style) - Conservative Recalculation",
+        "total_calories": 254,
+        "fats": 7.9,
+        "proteins": 26.4,
+        "carbohydrates": 4.6,
+        "image_caption": [
+          {
+            "ingredients": "beef stew meat (substituted with grilled chicken breast)",
+            "quantity": "85",
+            "portion_size": "grams (palm-sized)"
+          },
+          {
+            "ingredients": "carrots",
+            "quantity": "50",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "thickened stew sauce/broth (estimated low-calorie base)",
+            "quantity": "250",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "added cooking fat (estimated 1 tsp)",
+            "quantity": "5",
+            "portion_size": "grams"
+          }
+        ],
+        "confidence": 90,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:44:33.244653",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 16098
+      }
+    },
+    {
+      "original_data": {
+        "item_id": "M_27",
+        "name_food": "Waffles",
+        "img_location": "images/27-waffle_top_large_02.jpg",
+        "food_url": "https://caloriefriend.com/en/food/2567-waffle-avg/4"
+      },
+      "api_result": {
+        "food_name": "Plain waffle",
+        "total_calories": 188,
+        "fats": 3.8,
+        "proteins": 3.0,
+        "carbohydrates": 33.8,
+        "image_caption": [
+          {
+            "ingredients": "waffle",
+            "quantity": "1",
+            "portion_size": "75 grams (medium, conservatively estimated)"
+          }
+        ],
+        "confidence": 80,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:44:50.348004",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 8930
+      }
+    },
+    {
+      "original_data": {
+        "item_id": "M_28",
+        "name_food": "Apple Juice",
+        "img_location": "images/28-Just_Juice_Apple_200mL_594x330.avif",
+        "food_url": null
+      },
+      "api_result": {
+        "food_name": "Just Juice Apple Juice",
+        "total_calories": 96,
+        "fats": 0,
+        "proteins": 0,
+        "carbohydrates": 23,
+        "image_caption": [
+          {
+            "ingredients": "apple juice",
+            "quantity": "200",
+            "portion_size": "milliliters"
+          }
+        ],
+        "confidence": 100,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:45:00.284246",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 9635
+      }
+    },
+    {
+      "original_data": {
+        "item_id": "M_29",
+        "name_food": "Chicken pasta",
+        "img_location": "images/29-Chicken pasta.jpg",
+        "food_url": null
+      },
+      "api_result": {
+        "food_name": "Creamy chicken linguine pasta, grated parmesan cheese (Recalculated)",
+        "total_calories": 996,
+        "fats": 38.4,
+        "proteins": 77.1,
+        "carbohydrates": 78.5,
+        "image_caption": [
+          {
+            "ingredients": "Linguine pasta (cooked)",
+            "quantity": "250",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "Chicken breast chunks (grilled)",
+            "quantity": "170",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "Added Fats (Oil/Butter/Cream contribution)",
+            "quantity": "Equivalent to",
+            "portion_size": "150 kcal"
+          },
+          {
+            "ingredients": "Parmesan cheese",
+            "quantity": "40",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "Sun-dried Tomatoes/Peppers",
+            "quantity": "30",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "Green Onions",
+            "quantity": "Garnish",
+            "portion_size": "minimal"
+          }
+        ],
+        "confidence": 90,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:45:10.924632",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 16392
+      }
+    },
+    {
+      "original_data": {
+        "item_id": "M_30",
+        "name_food": "Pizza margherita",
+        "img_location": "images/30-pizza_cheese_large_pizza_hut_top_large_01.jpg",
+        "food_url": "https://assets.ctfassets.net/kahtja4ygpol/6H22bKbKBZwadBnnT4PXhG/22533a6e309ff78e52b1e7ca57b065cb/Dine_In_Allergen___Nutrition_Information_September_2025.pdf"
+      },
+      "api_result": {
+        "food_name": "Cheese pizza slice (Recalculated)",
+        "total_calories": 260,
+        "fats": 11.8,
+        "proteins": 11.7,
+        "carbohydrates": 26.3,
+        "image_caption": [
+          {
+            "ingredients": "mozzarella cheese",
+            "quantity": "30",
+            "portion_size": "grams (from database entry)"
+          },
+          {
+            "ingredients": "pizza crust and sauce proxy (using bread values)",
+            "quantity": "70",
+            "portion_size": "grams (reduced by 25% conservatively)"
+          }
+        ],
+        "confidence": 85,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:45:28.327516",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 11257
+      }
+    },
+    {
+      "original_data": {
+        "item_id": "U_31",
+        "name_food": "user data_Strawberry_cake",
+        "img_location": "images/31-us.jpg",
+        "food_url": null
+      },
+      "api_result": {
+        "food_name": "Individual fruit tartlet with custard and strawberries (Recalculated Conservatively)",
+        "total_calories": 275,
+        "fats": 13,
+        "proteins": 5,
+        "carbohydrates": 29,
+        "image_caption": [
+          {
+            "ingredients": "shortcrust pastry shell, custard, and glaze (Estimated complex component)",
+            "quantity": "80",
+            "portion_size": "grams (Conservative estimate based on initial total)"
+          },
+          {
+            "ingredients": "strawberries",
+            "quantity": "20",
+            "portion_size": "grams (Using low vegetable proxy)"
+          },
+          {
+            "ingredients": "dragon fruit",
+            "quantity": "10",
+            "portion_size": "grams (Using low vegetable proxy)"
+          }
+        ],
+        "confidence": 75,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:45:40.590709",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 11851
+      }
+    },
+    {
+      "original_data": {
+        "item_id": "U_32",
+        "name_food": "user data_Sanwind",
+        "img_location": "images/32-us.jpg",
+        "food_url": null
+      },
+      "api_result": {
+        "food_name": "Grilled Chicken, Bacon, and Cheese Sandwich (Recalculated Conservatively)",
+        "total_calories": 287,
+        "fats": 23.8,
+        "proteins": 22.4,
+        "carbohydrates": 9.0,
+        "image_caption": [
+          {
+            "ingredients": "bread",
+            "quantity": "2",
+            "portion_size": "slices (60g)"
+          },
+          {
+            "ingredients": "chicken breast (grilled)",
+            "quantity": "60",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "cheese",
+            "quantity": "30",
+            "portion_size": "grams (1 slice)"
+          },
+          {
+            "ingredients": "shrimp",
+            "quantity": "10",
+            "portion_size": "grams (Proxy for small meat portion)"
+          },
+          {
+            "ingredients": "cooking oil",
+            "quantity": "5",
+            "portion_size": "grams (Proxy for grilling fat/butter)"
+          },
+          {
+            "ingredients": "cooking oil",
+            "quantity": "5",
+            "portion_size": "grams (Proxy for mayonnaise/spread)"
+          }
+        ],
+        "confidence": 95,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:45:53.448487",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 20631
+      }
+    },
+    {
+      "original_data": {
+        "item_id": "U_33",
+        "name_food": "user data_crambled eggs with toast and coffee",
+        "img_location": "images/33-us.jpg",
+        "food_url": null
+      },
+      "api_result": {
+        "food_name": "Scrambled eggs, toast, coffee with milk",
+        "total_calories": 410,
+        "fats": 22.3,
+        "proteins": 12.9,
+        "carbohydrates": 30.0,
+        "image_caption": [
+          {
+            "ingredients": "scrambled eggs",
+            "quantity": "2.5",
+            "portion_size": "large eggs (125g total)"
+          },
+          {
+            "ingredients": "cooking oil/butter",
+            "quantity": "1",
+            "portion_size": "tablespoon (15g)"
+          },
+          {
+            "ingredients": "toast/bread",
+            "quantity": "2",
+            "portion_size": "slices (60g)"
+          },
+          {
+            "ingredients": "coffee with milk",
+            "quantity": "1",
+            "portion_size": "cup (conservative estimate for splash of skim milk)"
+          }
+        ],
+        "confidence": 90,
+        "is_blurry": true,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:46:15.083611",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 15972
+      }
+    },
+    {
+      "original_data": {
+        "item_id": "U_34",
+        "name_food": "user data_White rice, banana, meat",
+        "img_location": "images/34-us.jpg",
+        "food_url": null
+      },
+      "api_result": {
+        "food_name": "Recalculated Rice with Ground Beef Hash (Picadillo style) and Banana",
+        "total_calories": 789,
+        "fats": 12.3,
+        "proteins": 36.8,
+        "carbohydrates": 134.0,
+        "image_caption": [
+          {
+            "ingredients": "cooked white rice",
+            "quantity": "300",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "lean ground beef (Proxy: Grilled Chicken Breast)",
+            "quantity": "80",
+            "portion_size": "grams (cooked)"
+          },
+          {
+            "ingredients": "fried/sauteed potatoes (Proxy: Baked Potato + added fat)",
+            "quantity": "100",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "onions and peppers (Proxy: Broccoli)",
+            "quantity": "30",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "cooking oil (added)",
+            "quantity": "0.5",
+            "portion_size": "tablespoon"
+          },
+          {
+            "ingredients": "banana",
+            "quantity": "1",
+            "portion_size": "medium/large (120g)"
+          }
+        ],
+        "confidence": 90,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:46:32.060884",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 19249
+      }
+    },
+    {
+      "original_data": {
+        "item_id": "U_35",
+        "name_food": "user data _White rice, fish",
+        "img_location": "images/35-us.avif",
+        "food_url": null
+      },
+      "api_result": {
+        "food_name": "Recalculated Grilled Salmon with White Rice and Greens",
+        "total_calories": 663,
+        "fats": 27.1,
+        "proteins": 38.4,
+        "carbohydrates": 56.0,
+        "image_caption": [
+          {
+            "ingredients": "Salmon (substituted for Mackerel)",
+            "quantity": "150",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "White rice",
+            "quantity": "200",
+            "portion_size": "grams (approx 1 cup cooked)"
+          },
+          {
+            "ingredients": "Stir-fried greens (conservative estimate)",
+            "quantity": "100",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "Cooking oil (conservative estimate for 1.5 tsp)",
+            "quantity": "7",
+            "portion_size": "grams"
+          }
+        ],
+        "confidence": 90,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:46:52.318526",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 15705
+      }
+    },
+    {
+      "original_data": {
+        "item_id": "U_36",
+        "name_food": "user data_ Bitter Melon with Eggs",
+        "img_location": "images/36-us.jpeg",
+        "food_url": null
+      },
+      "api_result": {
+        "food_name": "Stir-fried bitter melon with eggs (Recalculated Conservatively)",
+        "total_calories": 311,
+        "fats": 28.5,
+        "proteins": 9.0,
+        "carbohydrates": 3.5,
+        "image_caption": [
+          {
+            "ingredients": "bitter melon (gourd)",
+            "quantity": "150",
+            "portion_size": "grams (cooked)"
+          },
+          {
+            "ingredients": "large eggs",
+            "quantity": "1.5",
+            "portion_size": "whole eggs"
+          },
+          {
+            "ingredients": "cooking oil",
+            "quantity": "1.5",
+            "portion_size": "tablespoons (for stir-frying)"
+          }
+        ],
+        "confidence": 90,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:47:09.029024",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 10247
+      }
+    },
+    {
+      "original_data": {
+        "item_id": "U_37",
+        "name_food": "user data_Tofu",
+        "img_location": "images/37-us.jpeg",
+        "food_url": null
+      },
+      "api_result": {
+        "food_name": "Atsuage (Thick Deep-Fried Tofu)",
+        "total_calories": 200,
+        "fats": 10.0,
+        "proteins": 15.0,
+        "carbohydrates": 5.0,
+        "image_caption": [
+          {
+            "ingredients": "deep-fried tofu (atsuage)",
+            "quantity": "100",
+            "portion_size": "grams (medium piece)"
+          }
+        ],
+        "confidence": 85,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:47:20.281321",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 7984
+      }
+    },
+    {
+      "original_data": {
+        "item_id": "U_38",
+        "name_food": "user data_ lasagna",
+        "img_location": "images/38-us.jpeg",
+        "food_url": null
+      },
+      "api_result": {
+        "food_name": "Meat Lasagna (Recalculated based on component proxies)",
+        "total_calories": 536,
+        "fats": 26.9,
+        "proteins": 45.7,
+        "carbohydrates": 24.8,
+        "image_caption": [
+          {
+            "ingredients": "lasagna noodles (Proxy: Cooked Pasta)",
+            "quantity": "80",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "meat sauce (Proxy: Lean Chicken Breast)",
+            "quantity": "80",
+            "portion_size": "grams equivalent"
+          },
+          {
+            "ingredients": "cheese (Mozzarella/Ricotta)",
+            "quantity": "70",
+            "portion_size": "grams"
+          }
+        ],
+        "confidence": 75,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:47:29.269203",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 10794
+      }
+    },
+    {
+      "original_data": {
+        "item_id": "U_39",
+        "name_food": "user data_keto_pork_floss",
+        "img_location": "images/39-us.jpeg",
+        "food_url": null
+      },
+      "api_result": {
+        "food_name": "Pork Floss (Rousong) - Recalculated Conservatively",
+        "total_calories": 52,
+        "fats": 1.1,
+        "proteins": 9.8,
+        "carbohydrates": 6.8,
+        "image_caption": [
+          {
+            "ingredients": "Pork Floss (Estimated using conservative Chicken Breast proxy)",
+            "quantity": "45",
+            "portion_size": "grams (heaped small bowl)"
+          }
+        ],
+        "confidence": 60,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:47:41.068150",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 9581
+      }
+    },
+    {
+      "original_data": {
+        "item_id": "U_40",
+        "name_food": "user data_Steak",
+        "img_location": "images/40-us.jpg",
+        "food_url": null
+      },
+      "api_result": {
+        "food_name": "Pan-seared steak (recalculated using conservative chicken substitute)",
+        "total_calories": 190.8,
+        "fats": 11.0,
+        "proteins": 22.3,
+        "carbohydrates": 0.0,
+        "image_caption": [
+          {
+            "ingredients": "Chicken breast (grilled) [Substitute for steak]",
+            "quantity": "120",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "Cooking oil (in jus)",
+            "quantity": "1",
+            "portion_size": "tablespoon"
+          }
+        ],
+        "confidence": 90,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:47:51.653425",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 10961
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 151,
+        "name_food": "Grilled Cheese, Diner Style",
+        "img_location": "images/food_1_151.jpg",
+        "food_url": "https://www.food.com/recipe/grilled-cheese-diner-style-108522"
+      },
+      "api_result": {
+        "food_name": "Grilled cheese sandwich",
+        "total_calories": 460,
+        "fats": 31.0,
+        "proteins": 15.9,
+        "carbohydrates": 30.0,
+        "image_caption": [
+          {
+            "ingredients": "Bread (approximated as white bread for conservative base)",
+            "quantity": "2",
+            "portion_size": "slices (60g total)"
+          },
+          {
+            "ingredients": "Cheese (approximated based on 30g unit)",
+            "quantity": "1.5",
+            "portion_size": "units (45g total)"
+          },
+          {
+            "ingredients": "Cooking oil for grilling",
+            "quantity": "1",
+            "portion_size": "tablespoon"
+          }
+        ],
+        "confidence": 95,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:48:03.621604",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 15771
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 2094,
+        "name_food": "Roasted Brussels Sprouts!",
+        "img_location": "images/food_2_2094.jpg",
+        "food_url": "https://www.food.com/recipe/roasted-brussels-sprouts-56103"
+      },
+      "api_result": {
+        "food_name": "Roasted Brussels Sprouts",
+        "total_calories": 195,
+        "fats": 14.5,
+        "proteins": 3.0,
+        "carbohydrates": 14.0,
+        "image_caption": [
+          {
+            "ingredients": "Brussels sprouts (using Broccoli proxy)",
+            "quantity": "200",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "cooking oil (for roasting)",
+            "quantity": "1",
+            "portion_size": "tablespoon"
+          }
+        ],
+        "confidence": 90,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:48:20.395952",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 12397
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 20942,
+        "name_food": "Roasted Brussels Sprouts!",
+        "img_location": "images/food_2_2094_1.jpg",
+        "food_url": "https://www.food.com/recipe/roasted-brussels-sprouts-56103"
+      },
+      "api_result": {
+        "food_name": "Roasted Brussels Sprouts",
+        "total_calories": 281.2,
+        "fats": 17.5,
+        "proteins": 12.4,
+        "carbohydrates": 25.1,
+        "image_caption": [
+          {
+            "ingredients": "Brussels sprouts (Estimated based on Broccoli profile)",
+            "quantity": "375",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "cooking oil (absorbed)",
+            "quantity": "1.25",
+            "portion_size": "tablespoons"
+          }
+        ],
+        "confidence": 75,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:48:33.805126",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 12117
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 1606,
+        "name_food": "Beef Patties in Onion Gravy",
+        "img_location": "images/food_3_1606.jpg",
+        "food_url": "https://www.food.com/recipe/beef-patties-in-onion-gravy-37413"
+      },
+      "api_result": {
+        "food_name": "Hamburger Patty with Brown Gravy (Salisbury Steak style) - Conservative Recalculation",
+        "total_calories": 240,
+        "fats": 9.0,
+        "proteins": 28.0,
+        "carbohydrates": 5.0,
+        "image_caption": [
+          {
+            "ingredients": "ground beef patty (lean) - Estimated using conservative proxy",
+            "quantity": "100",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "brown gravy - Estimated conservatively (no database match)",
+            "quantity": "0.5",
+            "portion_size": "cup (120ml)"
+          }
+        ],
+        "confidence": 80,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:48:46.927160",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 15170
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 850,
+        "name_food": "Incredibly Delicious Cheese Garlic Bread Spread",
+        "img_location": "images/food_4_850.jpg",
+        "food_url": "https://www.food.com/recipe/incredibly-delicious-cheese-garlic-bread-spread-18914"
+      },
+      "api_result": {
+        "food_name": "Compound butter/spread",
+        "total_calories": 367.2,
+        "fats": 43.2,
+        "proteins": 0.6,
+        "carbohydrates": 0.6,
+        "image_caption": [
+          {
+            "ingredients": "compound butter/spread",
+            "quantity": "90",
+            "portion_size": "grams"
+          }
+        ],
+        "confidence": 95,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:49:03.102600",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 13126
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 1181,
+        "name_food": "So It's Bekah's Pulled Pork Now",
+        "img_location": "images/food_5_1181.jpg",
+        "food_url": "https://www.food.com/recipe/so-its-bekahs-pulled-pork-now-26257"
+      },
+      "api_result": {
+        "food_name": "Pulled pork with BBQ sauce (Recalculated Conservatively)",
+        "total_calories": 532,
+        "fats": 21.6,
+        "proteins": 48.6,
+        "carbohydrates": 25.0,
+        "image_caption": [
+          {
+            "ingredients": "pulled pork (estimated using Fried Chicken proxy for fatty meat)",
+            "quantity": "180",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "BBQ sauce (estimated external value for 4 tbsp)",
+            "quantity": "60",
+            "portion_size": "grams/ml"
+          }
+        ],
+        "confidence": 75,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:49:17.235701",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 13113
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 2616,
+        "name_food": "Southwestern Baked Spaghetti",
+        "img_location": "images/food_6_2616.jpg",
+        "food_url": "https://www.food.com/recipe/southwestern-baked-spaghetti-87085"
+      },
+      "api_result": {
+        "food_name": "Baked Spaghetti Casserole with Meat Sauce and Cheese (Recalculated Conservatively)",
+        "total_calories": 483,
+        "fats": 17.0,
+        "proteins": 34.3,
+        "carbohydrates": 40.3,
+        "image_caption": [
+          {
+            "ingredients": "cooked spaghetti pasta",
+            "quantity": "130",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "lean ground beef proxy (reduced chicken breast)",
+            "quantity": "70",
+            "portion_size": "grams (25% reduction applied)"
+          },
+          {
+            "ingredients": "tomato sauce and vegetables proxy",
+            "quantity": "50",
+            "portion_size": "grams (conservative estimate)"
+          },
+          {
+            "ingredients": "shredded mozzarella cheese",
+            "quantity": "45",
+            "portion_size": "grams (1.5 oz)"
+          }
+        ],
+        "confidence": 90,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:49:31.352698",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 17970
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 432,
+        "name_food": "Roasted Green Beans",
+        "img_location": "images/food_8_432.jpg",
+        "food_url": "https://www.food.com/recipe/roasted-green-beans-133821"
+      },
+      "api_result": {
+        "food_name": "Sautéed green beans, white wine",
+        "total_calories": 295,
+        "fats": 15.3,
+        "proteins": 3.0,
+        "carbohydrates": 12.0,
+        "image_caption": [
+          {
+            "ingredients": "green beans (cooked)",
+            "quantity": "150",
+            "portion_size": "grams (conservative estimate)"
+          },
+          {
+            "ingredients": "cooking oil (for sautéing)",
+            "quantity": "1",
+            "portion_size": "tablespoon (conservative cap applied)"
+          },
+          {
+            "ingredients": "white wine",
+            "quantity": "120",
+            "portion_size": "milliliters (4 oz)"
+          }
+        ],
+        "confidence": 95,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:49:50.327990",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 12421
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 1367,
+        "name_food": "Bev's Macaroni and Cheese",
+        "img_location": "images/food_10_1367.jpg",
+        "food_url": "https://www.food.com/recipe/bevs-macaroni-and-cheese-30366"
+      },
+      "api_result": {
+        "food_name": "Baked Macaroni and Cheese (Recalculated Conservatively)",
+        "total_calories": 373,
+        "fats": 23.1,
+        "proteins": 13.9,
+        "carbohydrates": 32.9,
+        "image_caption": [
+          {
+            "ingredients": "cooked elbow macaroni (Pasta)",
+            "quantity": "90",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "cheese sauce components (Estimated based on Cheese/Oil database entries)",
+            "quantity": "110",
+            "portion_size": "grams"
+          }
+        ],
+        "confidence": 80,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:50:03.757946",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 13204
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 1183,
+        "name_food": "Copycat Green Giant Niblets Corn in Butter Sauce",
+        "img_location": "images/food_11_1183.jpg",
+        "food_url": "https://www.food.com/recipe/copycat-green-giant-niblets-corn-in-butter-sauce-26306"
+      },
+      "api_result": {
+        "food_name": "Buttered sweet corn",
+        "total_calories": 290,
+        "fats": 6.0,
+        "proteins": 5.0,
+        "carbohydrates": 55.0,
+        "image_caption": [
+          {
+            "ingredients": "sweet corn kernels",
+            "quantity": "250",
+            "portion_size": "grams (conservative estimate for starchy vegetable)"
+          },
+          {
+            "ingredients": "butter or oil",
+            "quantity": "1",
+            "portion_size": "teaspoon (approx 5g)"
+          },
+          {
+            "ingredients": "parsley",
+            "quantity": "small amount",
+            "portion_size": "garnish"
+          }
+        ],
+        "confidence": 95,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:50:17.971686",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 10084
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 2550,
+        "name_food": "Frizzled Cabbage",
+        "img_location": "images/food_12_2550.jpg",
+        "food_url": "https://www.food.com/recipe/frizzled-cabbage-83524"
+      },
+      "api_result": {
+        "food_name": "Sautéed Cabbage",
+        "total_calories": 110,
+        "fats": 7.1,
+        "proteins": 1.0,
+        "carbohydrates": 10.0,
+        "image_caption": [
+          {
+            "ingredients": "cabbage",
+            "quantity": "200",
+            "portion_size": "grams (cooked, conservative estimate)"
+          },
+          {
+            "ingredients": "cooking oil or butter",
+            "quantity": "0.5",
+            "portion_size": "tablespoon (conservative estimate)"
+          }
+        ],
+        "confidence": 90,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:50:29.059616",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 10400
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 316,
+        "name_food": "Strawberries & Cream Bread (Strawberry or Blueberry)",
+        "img_location": "images/food_13_316.jpg",
+        "food_url": "https://www.food.com/recipe/strawberries-cream-bread-strawberry-or-blueberry-121490"
+      },
+      "api_result": {
+        "food_name": "Homemade berry quick bread (one slice)",
+        "total_calories": 181,
+        "fats": 3.5,
+        "proteins": 5.4,
+        "carbohydrates": 32.0,
+        "image_caption": [
+          {
+            "ingredients": "quick bread (using bread base, 60g portion)",
+            "quantity": "1",
+            "portion_size": "slice (estimated 60g)"
+          }
+        ],
+        "confidence": 90,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:50:40.465010",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 9800
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 2410,
+        "name_food": "Zesty Oven Baked Fries",
+        "img_location": "images/food_14_2410.jpg",
+        "food_url": "https://www.food.com/recipe/zesty-oven-baked-fries-74730"
+      },
+      "api_result": {
+        "food_name": "Seasoned baked french fries with ketchup (Recalculated Conservatively)",
+        "total_calories": 316,
+        "fats": 15.9,
+        "proteins": 3.0,
+        "carbohydrates": 42.0,
+        "image_caption": [
+          {
+            "ingredients": "potatoes (fries base)",
+            "quantity": "150",
+            "portion_size": "grams (baked potato equivalent)"
+          },
+          {
+            "ingredients": "cooking oil (absorbed, reduced)",
+            "quantity": "1.125",
+            "portion_size": "tablespoons (estimated absorption)"
+          },
+          {
+            "ingredients": "ketchup",
+            "quantity": "3",
+            "portion_size": "tablespoons (estimated)"
+          }
+        ],
+        "confidence": 90,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:50:51.272721",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 11881
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 390,
+        "name_food": "Chicken Scaloppine With Lemon Glaze (Low Fat and Delicious!)",
+        "img_location": "images/food_15_390.jpg",
+        "food_url": "https://www.food.com/recipe/chicken-scaloppine-with-lemon-glaze-low-fat-and-delicious-129345"
+      },
+      "api_result": {
+        "food_name": "Pan-fried breaded cutlet (Piccata style)",
+        "total_calories": 395,
+        "fats": 29.0,
+        "proteins": 27.0,
+        "carbohydrates": 1.0,
+        "image_caption": [
+          {
+            "ingredients": "breaded and fried cutlet (chicken or veal)",
+            "quantity": "100",
+            "portion_size": "grams (conservative estimate based on fried chicken)"
+          },
+          {
+            "ingredients": "butter/oil sauce (absorbed and residual fat capped)",
+            "quantity": "1.25",
+            "portion_size": "tablespoons (capped at 150 kcal)"
+          },
+          {
+            "ingredients": "lemon and capers",
+            "quantity": "small amount",
+            "portion_size": "garnish"
+          }
+        ],
+        "confidence": 90,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:51:04.161764",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 14148
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 23,
+        "name_food": "Libby's Famous Pumpkin Pie",
+        "img_location": "images/food_16_23.jpg",
+        "food_url": "https://www.food.com/recipe/libbys-famous-pumpkin-pie-101104"
+      },
+      "api_result": {
+        "food_name": "Pumpkin or Sweet Potato Pie (Single Slice)",
+        "total_calories": 300,
+        "fats": 15.0,
+        "proteins": 3.0,
+        "carbohydrates": 40.0,
+        "image_caption": [
+          {
+            "ingredients": "pie crust",
+            "quantity": "1",
+            "portion_size": "slice component (conservative estimate)"
+          },
+          {
+            "ingredients": "pumpkin/sweet potato filling",
+            "quantity": "1",
+            "portion_size": "slice component (conservative estimate)"
+          }
+        ],
+        "confidence": 85,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:51:19.316282",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 10759
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 2302,
+        "name_food": "Libby's Famous Pumpkin Pie",
+        "img_location": "images/food_16_23_2.jpg",
+        "food_url": "https://www.food.com/recipe/libbys-famous-pumpkin-pie-101104"
+      },
+      "api_result": {
+        "food_name": "Pumpkin pie slice",
+        "total_calories": 261,
+        "fats": 14.4,
+        "proteins": 4.5,
+        "carbohydrates": 32.4,
+        "image_caption": [
+          {
+            "ingredients": "pie crust (shortcrust pastry)",
+            "quantity": "50",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "pumpkin/custard filling",
+            "quantity": "70",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "pie slice",
+            "quantity": "1",
+            "portion_size": "medium slice (1/8th of 9-inch pie)"
+          }
+        ],
+        "confidence": 90,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:51:31.082946",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 12477
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 607,
+        "name_food": "24k Carrots",
+        "img_location": "images/food_17_607.jpg",
+        "food_url": "https://www.food.com/recipe/24k-carrots-152441"
+      },
+      "api_result": {
+        "food_name": "Glazed and roasted carrots",
+        "total_calories": 182,
+        "fats": 7.2,
+        "proteins": 4.0,
+        "carbohydrates": 50.0,
+        "image_caption": [
+          {
+            "ingredients": "carrots (roasted)",
+            "quantity": "200",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "butter",
+            "quantity": "0.5",
+            "portion_size": "tablespoon"
+          },
+          {
+            "ingredients": "honey or sugar glaze",
+            "quantity": "0.5",
+            "portion_size": "tablespoon"
+          }
+        ],
+        "confidence": 90,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:51:44.570454",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 13976
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 1726,
+        "name_food": "Jumbo Shrimp Parmesan",
+        "img_location": "images/food_18_1726.jpg",
+        "food_url": "https://www.food.com/recipe/jumbo-shrimp-parmesan-42169"
+      },
+      "api_result": {
+        "food_name": "Baked breaded shrimp (recalculated conservatively)",
+        "total_calories": 406,
+        "fats": 15.5,
+        "proteins": 51.2,
+        "carbohydrates": 20.0,
+        "image_caption": [
+          {
+            "ingredients": "jumbo shrimp",
+            "quantity": "180",
+            "portion_size": "grams (meat weight)"
+          },
+          {
+            "ingredients": "breading/panko",
+            "quantity": "36",
+            "portion_size": "grams (estimated macros)"
+          },
+          {
+            "ingredients": "cooking oil/fat",
+            "quantity": "15",
+            "portion_size": "grams (absorbed)"
+          }
+        ],
+        "confidence": 90,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:51:59.555616",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 11373
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 1534,
+        "name_food": "Mashed Red Potatoes With Garlic and Parmesan",
+        "img_location": "images/food_19_1534.jpg",
+        "food_url": "https://www.food.com/recipe/mashed-red-potatoes-with-garlic-and-parmesan-34382"
+      },
+      "api_result": {
+        "food_name": "Mashed red potatoes (skin-on) with butter and milk/cream",
+        "total_calories": 326,
+        "fats": 11.8,
+        "proteins": 5.5,
+        "carbohydrates": 50.5,
+        "image_caption": [
+          {
+            "ingredients": "potatoes (red skin)",
+            "quantity": "250",
+            "portion_size": "grams (baked equivalent, conservative base)"
+          },
+          {
+            "ingredients": "butter",
+            "quantity": "1",
+            "portion_size": "tablespoon (estimated 100 kcal)"
+          },
+          {
+            "ingredients": "milk/cream",
+            "quantity": "1",
+            "portion_size": "tablespoon (low estimate)"
+          }
+        ],
+        "confidence": 90,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:52:11.931666",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 11696
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 2417,
+        "name_food": "Mrs. Geraldine's Ground Beef Casserole",
+        "img_location": "images/food_20_2417.jpg",
+        "food_url": "https://www.food.com/recipe/mrs-geraldines-ground-beef-casserole-75302"
+      },
+      "api_result": {
+        "food_name": "Baked spaghetti casserole with meat sauce and cheese, side salad (Recalculated Conservatively)",
+        "total_calories": 556,
+        "fats": 21.4,
+        "proteins": 31.3,
+        "carbohydrates": 41.5,
+        "image_caption": [
+          {
+            "ingredients": "cooked spaghetti/noodles",
+            "quantity": "100",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "ground meat sauce (estimated lean)",
+            "quantity": "85",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "melted cheese (cheddar/mozzarella)",
+            "quantity": "30",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "cooking oil (estimated in casserole)",
+            "quantity": "0.5",
+            "portion_size": "tablespoon"
+          },
+          {
+            "ingredients": "romaine lettuce",
+            "quantity": "50",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "croutons",
+            "quantity": "5",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "light dressing (vinaigrette/creamy)",
+            "quantity": "1",
+            "portion_size": "tablespoon"
+          }
+        ],
+        "confidence": 90,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:52:24.636353",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 17626
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 2436,
+        "name_food": "Kittencal's Taco Seasoning Mix",
+        "img_location": "images/food_21_2436.jpg",
+        "food_url": "https://www.food.com/recipe/kittencals-taco-seasoning-mix-76616"
+      },
+      "api_result": {
+        "food_name": "Dry spice blend, chili seasoning",
+        "total_calories": 105,
+        "fats": 1.8,
+        "proteins": 3.5,
+        "carbohydrates": 21.0,
+        "image_caption": [
+          {
+            "ingredients": "dry spice blend (chili powder, seasoning)",
+            "quantity": "5",
+            "portion_size": "tablespoons (approx 35g)"
+          }
+        ],
+        "confidence": 90,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:52:43.266279",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 10477
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 775,
+        "name_food": "Oven-Roasted Corn on the Cob",
+        "img_location": "images/food_22_775.jpg",
+        "food_url": "https://www.food.com/recipe/oven-roasted-corn-on-the-cob-177558"
+      },
+      "api_result": {
+        "food_name": "Roasted corn on the cob (Recalculated Conservatively)",
+        "total_calories": 252.0,
+        "fats": 7.8,
+        "proteins": 4.3,
+        "carbohydrates": 43.2,
+        "image_caption": [
+          {
+            "ingredients": "corn on the cob",
+            "quantity": "4",
+            "portion_size": "medium ears (kernels only, estimated 360g total)"
+          },
+          {
+            "ingredients": "butter or oil",
+            "quantity": "2.5",
+            "portion_size": "teaspoons (estimated 12.5g total fat)"
+          }
+        ],
+        "confidence": 95,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:52:54.753000",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 13336
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 212,
+        "name_food": "Iced Coffee",
+        "img_location": "images/food_23_212.jpg",
+        "food_url": "https://www.food.com/recipe/iced-coffee-113064"
+      },
+      "api_result": {
+        "food_name": "Iced coffee with sweetened condensed milk",
+        "total_calories": 167,
+        "fats": 1,
+        "proteins": 1,
+        "carbohydrates": 25,
+        "image_caption": [
+          {
+            "ingredients": "brewed coffee",
+            "quantity": "1",
+            "portion_size": "cup (240ml)"
+          },
+          {
+            "ingredients": "sweetened condensed milk",
+            "quantity": "3",
+            "portion_size": "tablespoons"
+          },
+          {
+            "ingredients": "ice",
+            "quantity": "3-4",
+            "portion_size": "cubes"
+          }
+        ],
+        "confidence": 80,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:53:09.094757",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 10953
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 263,
+        "name_food": "Kittencal's Famous Caesar Salad",
+        "img_location": "images/food_24_263.jpg",
+        "food_url": "https://www.food.com/recipe/kittencals-famous-caesar-salad-116849"
+      },
+      "api_result": {
+        "food_name": "Side salad with croutons and creamy dressing",
+        "total_calories": 130,
+        "fats": 8.5,
+        "proteins": 3.4,
+        "carbohydrates": 11.5,
+        "image_caption": [
+          {
+            "ingredients": "romaine lettuce",
+            "quantity": "100",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "croutons",
+            "quantity": "15",
+            "portion_size": "grams (conservative estimate)"
+          },
+          {
+            "ingredients": "creamy dressing (e.g., Ranch/Caesar)",
+            "quantity": "1.5",
+            "portion_size": "tablespoons (conservative estimate)"
+          }
+        ],
+        "confidence": 95,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:53:21.052383",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 13006
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 1904,
+        "name_food": "Szechuan Noodles With Spicy Beef Sauce",
+        "img_location": "images/food_25_1904.jpg",
+        "food_url": "https://www.food.com/recipe/szechuan-noodles-with-spicy-beef-sauce-48760"
+      },
+      "api_result": {
+        "food_name": "Spaghetti with ground beef sauce and scallions",
+        "total_calories": 481,
+        "fats": 18.7,
+        "proteins": 38.0,
+        "carbohydrates": 37.2,
+        "image_caption": [
+          {
+            "ingredients": "spaghetti pasta",
+            "quantity": "120",
+            "portion_size": "grams cooked (conservative estimate)"
+          },
+          {
+            "ingredients": "ground beef (lean proxy)",
+            "quantity": "100",
+            "portion_size": "grams (using grilled chicken proxy)"
+          },
+          {
+            "ingredients": "rich sauce/oil",
+            "quantity": "1",
+            "portion_size": "tablespoon equivalent (120 kcal)"
+          },
+          {
+            "ingredients": "scallions",
+            "quantity": "30",
+            "portion_size": "grams (garnish)"
+          }
+        ],
+        "confidence": 90,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:53:35.065253",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 15596
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 2015,
+        "name_food": "Mean Guy's General Tso's Chicken",
+        "img_location": "images/food_26_2015.jpg",
+        "food_url": "https://www.food.com/recipe/mean-guys-general-tsos-chicken-52488"
+      },
+      "api_result": {
+        "food_name": "Glazed chili chicken (General Tso's style) - Conservative Recalculation",
+        "total_calories": 410,
+        "fats": 21.5,
+        "proteins": 26.0,
+        "carbohydrates": 30.0,
+        "image_caption": [
+          {
+            "ingredients": "Chicken breast (fried/breaded)",
+            "quantity": "120",
+            "portion_size": "grams (Reduced by 20% for conservatism)"
+          },
+          {
+            "ingredients": "Sweet/savory glaze or sauce (Estimated)",
+            "quantity": "3",
+            "portion_size": "tablespoons (Estimated 180 kcal)"
+          },
+          {
+            "ingredients": "Chili peppers",
+            "quantity": "small amount",
+            "portion_size": "garnish"
+          }
+        ],
+        "confidence": 85,
+        "is_blurry": true,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:53:51.667284",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 14219
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 2434,
+        "name_food": "Thick Chocolate Pudding",
+        "img_location": "images/food_27_2434.jpg",
+        "food_url": "https://www.food.com/recipe/thick-chocolate-pudding-76491"
+      },
+      "api_result": {
+        "food_name": "Recalculated Conservative Phase 1 Meal (Chicken, Rice, Broccoli)",
+        "total_calories": 327.0,
+        "fats": 5.2,
+        "proteins": 19.1,
+        "carbohydrates": 33.6,
+        "image_caption": [
+          {
+            "ingredients": "Chicken breast (grilled)",
+            "quantity": "85",
+            "portion_size": "grams (palm-sized, conservative)"
+          },
+          {
+            "ingredients": "White rice (cooked)",
+            "quantity": "200",
+            "portion_size": "grams (1 cup)"
+          },
+          {
+            "ingredients": "Broccoli",
+            "quantity": "300",
+            "portion_size": "grams (generous serving)"
+          },
+          {
+            "ingredients": "Cooking oil (for preparation)",
+            "quantity": "5",
+            "portion_size": "grams (conservative teaspoon)"
+          }
+        ],
+        "confidence": 95,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:54:06.893956",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 12888
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 1983,
+        "name_food": "My No Roll Pie Crust",
+        "img_location": "images/food_28_1983.jpg",
+        "food_url": "https://www.food.com/recipe/my-no-roll-pie-crust-51537"
+      },
+      "api_result": {
+        "food_name": "Strawberry Pie (1 slice) - Conservative Recalculation",
+        "total_calories": 173,
+        "fats": 2,
+        "proteins": 1,
+        "carbohydrates": 38,
+        "image_caption": [
+          {
+            "ingredients": "pie crust (estimated via bread/oil proxy)",
+            "quantity": "1",
+            "portion_size": "eighth slice equivalent"
+          },
+          {
+            "ingredients": "strawberries (estimated via tomato proxy)",
+            "quantity": "95",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "sugar/glaze (estimated via simple carbs)",
+            "quantity": "2",
+            "portion_size": "tablespoons equivalent"
+          }
+        ],
+        "confidence": 60,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:54:20.789369",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 15032
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 2623,
+        "name_food": "Wholly Guacamole",
+        "img_location": "images/food_29_2623.jpg",
+        "food_url": "https://www.food.com/recipe/wholly-guacamole-8739"
+      },
+      "api_result": {
+        "food_name": "Guacamole and tortilla chips platter (Recalculated Conservatively)",
+        "total_calories": 833,
+        "fats": 61.3,
+        "proteins": 0.0,
+        "carbohydrates": 78.4,
+        "image_caption": [
+          {
+            "ingredients": "guacamole (estimated based on avocado/fat content)",
+            "quantity": "245",
+            "portion_size": "grams (Reduced from 350g)"
+          },
+          {
+            "ingredients": "tortilla chips (estimated based on corn/oil content)",
+            "quantity": "98",
+            "portion_size": "grams (Reduced from 140g)"
+          }
+        ],
+        "confidence": 75,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:54:36.832080",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 12061
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 1674,
+        "name_food": "Kung Pao Chicken",
+        "img_location": "images/food_30_1674.jpg",
+        "food_url": "https://www.food.com/recipe/kung-pao-chicken-40339"
+      },
+      "api_result": {
+        "food_name": "Chicken Stir-fry with Peanuts (Kung Pao style), Side Peanuts",
+        "total_calories": 953,
+        "fats": 60.8,
+        "proteins": 59.7,
+        "carbohydrates": 0.0,
+        "image_caption": [
+          {
+            "ingredients": "chicken breast (cubed)",
+            "quantity": "120",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "peanuts (mixed in stir-fry)",
+            "quantity": "40",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "red bell pepper",
+            "quantity": "50",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "stir-fry sauce (sweet/savory)",
+            "quantity": "3",
+            "portion_size": "tablespoons (reduced for calorie control)"
+          },
+          {
+            "ingredients": "cooking oil (for stir-fry)",
+            "quantity": "1",
+            "portion_size": "tablespoon"
+          },
+          {
+            "ingredients": "peanuts (side bowl)",
+            "quantity": "45",
+            "portion_size": "grams (reduced for calorie control)"
+          }
+        ],
+        "confidence": 90,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:54:49.900653",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 23535
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 2282,
+        "name_food": "Kittencal's Famous Greek Salad",
+        "img_location": "images/food_33_2282.jpg",
+        "food_url": "https://www.food.com/recipe/kittencals-famous-greek-salad-66596"
+      },
+      "api_result": {
+        "food_name": "Greek Salad (Feta, Olives, Vinaigrette)",
+        "total_calories": 399,
+        "fats": 34.7,
+        "proteins": 7.0,
+        "carbohydrates": 0.0,
+        "image_caption": [
+          {
+            "ingredients": "mixed greens/lettuce",
+            "quantity": "100",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "tomato",
+            "quantity": "100",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "cucumber and onion",
+            "quantity": "65",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "feta cheese",
+            "quantity": "30",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "kalamata olives",
+            "quantity": "30",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "vinaigrette dressing",
+            "quantity": "2",
+            "portion_size": "tablespoons"
+          }
+        ],
+        "confidence": 90,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:55:14.448215",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 14909
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 627,
+        "name_food": "Pan-Roasted Broccoli",
+        "img_location": "images/food_34_627.jpg",
+        "food_url": "https://www.food.com/recipe/pan-roasted-broccoli-155018"
+      },
+      "api_result": {
+        "food_name": "Stir-fried broccoli, white rice, sesame seeds",
+        "total_calories": 399.6,
+        "fats": 15.2,
+        "proteins": 10.4,
+        "carbohydrates": 53.5,
+        "image_caption": [
+          {
+            "ingredients": "broccoli",
+            "quantity": "400",
+            "portion_size": "grams (cooked, total in pan)"
+          },
+          {
+            "ingredients": "cooking oil",
+            "quantity": "1.5",
+            "portion_size": "tablespoons (CONSERVATIVE REDUCTION from 2 tbsp)"
+          },
+          {
+            "ingredients": "white rice",
+            "quantity": "225",
+            "portion_size": "grams (1.5 cups cooked)"
+          },
+          {
+            "ingredients": "sesame seeds",
+            "quantity": "5",
+            "portion_size": "grams (1 teaspoon)"
+          }
+        ],
+        "confidence": 95,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:55:30.365828",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 17272
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 105,
+        "name_food": "Roasted Cauliflower & 16 Roasted Cloves of Garlic",
+        "img_location": "images/food_35_105.jpg",
+        "food_url": "https://www.food.com/recipe/roasted-cauliflower-16-roasted-cloves-of-garlic-106251"
+      },
+      "api_result": {
+        "food_name": "Roasted Cauliflower",
+        "total_calories": 162,
+        "fats": 14.1,
+        "proteins": 0.5,
+        "carbohydrates": 7.0,
+        "image_caption": [
+          {
+            "ingredients": "cauliflower",
+            "quantity": "120",
+            "portion_size": "grams (conservative estimate for roasted)"
+          },
+          {
+            "ingredients": "cooking oil (for roasting)",
+            "quantity": "1",
+            "portion_size": "tablespoon (15g)"
+          },
+          {
+            "ingredients": "herbs/seasoning",
+            "quantity": "trace",
+            "portion_size": "negligible"
+          }
+        ],
+        "confidence": 90,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:55:48.643940",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 11291
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 1151,
+        "name_food": "Potato Salad",
+        "img_location": "images/food_36_1151.jpg",
+        "food_url": "https://www.food.com/recipe/potato-salad-25768"
+      },
+      "api_result": {
+        "food_name": "Potato salad with egg and mayonnaise dressing",
+        "total_calories": 395,
+        "fats": 26.0,
+        "proteins": 9.1,
+        "carbohydrates": 31.5,
+        "image_caption": [
+          {
+            "ingredients": "red potatoes (cooked)",
+            "quantity": "150",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "hard-boiled egg",
+            "quantity": "1",
+            "portion_size": "large"
+          },
+          {
+            "ingredients": "mayonnaise-based dressing",
+            "quantity": "2.5",
+            "portion_size": "tablespoons (estimated 188 kcal)"
+          },
+          {
+            "ingredients": "chives/green onion",
+            "quantity": "1",
+            "portion_size": "teaspoon (negligible)"
+          }
+        ],
+        "confidence": 90,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:56:00.942181",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 13085
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 1147,
+        "name_food": "Pumpkin Pie Dip",
+        "img_location": "images/food_37_1147.jpg",
+        "food_url": "https://www.food.com/recipe/pumpkin-pie-dip-25730"
+      },
+      "api_result": {
+        "food_name": "Pumpkin Dip Platter, Spiced Cookies, Apple Slices",
+        "total_calories": 1362.0,
+        "fats": 64.9,
+        "proteins": 15.8,
+        "carbohydrates": 181.2,
+        "image_caption": [
+          {
+            "ingredients": "Pumpkin Dip (Conservative Estimate)",
+            "quantity": "300",
+            "portion_size": "grams (total across two bowls)"
+          },
+          {
+            "ingredients": "Spiced Cookies (Conservative Estimate, reduced size/density)",
+            "quantity": "16",
+            "portion_size": "medium cookies"
+          },
+          {
+            "ingredients": "Apple Slices (Fruit)",
+            "quantity": "300",
+            "portion_size": "grams (approx. 2 medium apples)"
+          }
+        ],
+        "confidence": 80,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:56:15.035719",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 19070
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 1203,
+        "name_food": "Mile High Biscuits",
+        "img_location": "images/food_38_1203.jpg",
+        "food_url": "https://www.food.com/recipe/mile-high-biscuits-26499"
+      },
+      "api_result": {
+        "food_name": "Scones with jam and cream, Tea with milk (Recalculated Conservatively)",
+        "total_calories": 762,
+        "fats": 34.0,
+        "proteins": 16.0,
+        "carbohydrates": 106.5,
+        "image_caption": [
+          {
+            "ingredients": "scones",
+            "quantity": "3",
+            "portion_size": "medium (estimated 55g each, high fat/carb estimate)"
+          },
+          {
+            "ingredients": "butter or clotted cream",
+            "quantity": "7",
+            "portion_size": "grams (estimated pure fat source)"
+          },
+          {
+            "ingredients": "jam or preserve",
+            "quantity": "15",
+            "portion_size": "grams (estimated high sugar/carb source)"
+          },
+          {
+            "ingredients": "tea with milk",
+            "quantity": "1",
+            "portion_size": "mug (estimated equivalent of 240ml 2% milk)"
+          }
+        ],
+        "confidence": 80,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:56:35.112536",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 19533
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 1808,
+        "name_food": "Caramelized Chicken Wings",
+        "img_location": "images/food_39_1808.jpg",
+        "food_url": "https://www.food.com/recipe/caramelized-chicken-wings-44888"
+      },
+      "api_result": {
+        "food_name": "Glazed chicken wings (Recalculated Conservative Estimate)",
+        "total_calories": 608,
+        "fats": 25.4,
+        "proteins": 46.5,
+        "carbohydrates": 45.0,
+        "image_caption": [
+          {
+            "ingredients": "chicken wings (skin on, estimated 4 pieces/150g meat equivalent)",
+            "quantity": "4",
+            "portion_size": "pieces (conservative estimate)"
+          },
+          {
+            "ingredients": "sticky glaze/sauce (BBQ/honey type)",
+            "quantity": "4",
+            "portion_size": "tablespoons"
+          }
+        ],
+        "confidence": 80,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:56:55.652757",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 14384
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 2283,
+        "name_food": "Steak Marinade",
+        "img_location": "images/food_40_2283.jpg",
+        "food_url": "https://www.food.com/recipe/steak-marinade-66648"
+      },
+      "api_result": {
+        "food_name": "Lean Beef Steak (Recalculated as Chicken Breast for database compatibility)",
+        "total_calories": 477,
+        "fats": 27.5,
+        "proteins": 55.8,
+        "carbohydrates": 0.0,
+        "image_caption": [
+          {
+            "ingredients": "lean beef steak (substituted with Grilled Chicken Breast)",
+            "quantity": "180",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "cooking oil/marinade",
+            "quantity": "1",
+            "portion_size": "tablespoon"
+          },
+          {
+            "ingredients": "glaze/seasoning (estimated conservative fat/calorie contribution)",
+            "quantity": "0.5",
+            "portion_size": "tablespoon"
+          }
+        ],
+        "confidence": 90,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:57:11.043090",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 13161
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 1338,
+        "name_food": "Amazing Chicken Marinade",
+        "img_location": "images/food_44_1338.jpg",
+        "food_url": "https://www.food.com/recipe/amazing-chicken-marinade-29598"
+      },
+      "api_result": {
+        "food_name": "Grilled chicken fillets (4 servings) and mixed green salad",
+        "total_calories": 736,
+        "fats": 36.8,
+        "proteins": 93.0,
+        "carbohydrates": 0.0,
+        "image_caption": [
+          {
+            "ingredients": "grilled chicken breast fillets",
+            "quantity": "300",
+            "portion_size": "grams (4 servings)"
+          },
+          {
+            "ingredients": "cooking oil/marinade",
+            "quantity": "1.5",
+            "portion_size": "tablespoons"
+          },
+          {
+            "ingredients": "mixed greens (salad)",
+            "quantity": "75",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "light vinaigrette dressing",
+            "quantity": "1",
+            "portion_size": "tablespoon"
+          }
+        ],
+        "confidence": 95,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:57:25.211054",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 15730
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 634,
+        "name_food": "Grilled Moroccan Chicken",
+        "img_location": "images/food_45_634.jpg",
+        "food_url": "https://www.food.com/recipe/grilled-moroccan-chicken-15580"
+      },
+      "api_result": {
+        "food_name": "Blackened chicken breast with brown rice pilaf",
+        "total_calories": 552,
+        "fats": 18.9,
+        "proteins": 42.1,
+        "carbohydrates": 50.4,
+        "image_caption": [
+          {
+            "ingredients": "chicken breast (seasoned/blackened)",
+            "quantity": "120",
+            "portion_size": "grams (medium fillet)"
+          },
+          {
+            "ingredients": "white rice (cooked, used as proxy for brown rice)",
+            "quantity": "180",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "cooking oil/fat (total added)",
+            "quantity": "1",
+            "portion_size": "tablespoon"
+          },
+          {
+            "ingredients": "cilantro",
+            "quantity": "small",
+            "portion_size": "garnish"
+          }
+        ],
+        "confidence": 95,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:57:41.949391",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 13831
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 2235,
+        "name_food": "Southern Sweet Iced Tea",
+        "img_location": "images/food_47_2235.jpg",
+        "food_url": "https://www.food.com/recipe/southern-sweet-iced-tea-63785"
+      },
+      "api_result": {
+        "food_name": "Sweetened Iced Tea with Lemon",
+        "total_calories": 64,
+        "fats": 0,
+        "proteins": 0,
+        "carbohydrates": 16,
+        "image_caption": [
+          {
+            "ingredients": "iced tea (liquid volume)",
+            "quantity": "300",
+            "portion_size": "milliliters (approx 10 oz)"
+          },
+          {
+            "ingredients": "sugar (estimated sweetener)",
+            "quantity": "4",
+            "portion_size": "teaspoons (16g)"
+          },
+          {
+            "ingredients": "lemon",
+            "quantity": "1",
+            "portion_size": "slice (garnish)"
+          }
+        ],
+        "confidence": 95,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:57:56.786761",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 10165
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 1916,
+        "name_food": "Easy Baked Potato Wedges",
+        "img_location": "images/food_49_1916.jpg",
+        "food_url": "https://www.food.com/recipe/easy-baked-potato-wedges-49200"
+      },
+      "api_result": {
+        "food_name": "Roasted Potato Wedges (4 wedges)",
+        "total_calories": 182,
+        "fats": 7.1,
+        "proteins": 2.8,
+        "carbohydrates": 28.0,
+        "image_caption": [
+          {
+            "ingredients": "potato wedges",
+            "quantity": "4",
+            "portion_size": "wedges (estimated 140g baked potato)"
+          },
+          {
+            "ingredients": "cooking oil",
+            "quantity": "0.5",
+            "portion_size": "tablespoon"
+          },
+          {
+            "ingredients": "seasoning",
+            "quantity": "trace",
+            "portion_size": "salt and paprika"
+          }
+        ],
+        "confidence": 95,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:58:07.958546",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 15375
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 465,
+        "name_food": "Best Apple Cake",
+        "img_location": "images/food_50_465.jpg",
+        "food_url": "https://www.food.com/recipe/best-apple-cake-136589"
+      },
+      "api_result": {
+        "food_name": "Apple cake with caramel glaze, fresh apple slices",
+        "total_calories": 431,
+        "fats": 11.0,
+        "proteins": 4.6,
+        "carbohydrates": 73.5,
+        "image_caption": [
+          {
+            "ingredients": "apple cake or coffee cake",
+            "quantity": "90",
+            "portion_size": "grams (medium slice)"
+          },
+          {
+            "ingredients": "caramel or brown sugar glaze",
+            "quantity": "2",
+            "portion_size": "tablespoons"
+          },
+          {
+            "ingredients": "fresh apple slices",
+            "quantity": "30",
+            "portion_size": "grams (garnish)"
+          }
+        ],
+        "confidence": 75,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:58:24.341048",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 12748
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 2243,
+        "name_food": "Crock Pot Ravioli",
+        "img_location": "images/food_51_2243.jpg",
+        "food_url": "https://www.food.com/recipe/crock-pot-ravioli-64138"
+      },
+      "api_result": {
+        "food_name": "Cheese Ravioli with Marinara Sauce and Parmesan (Recalculated Conservatively)",
+        "total_calories": 259,
+        "fats": 7.9,
+        "proteins": 11.3,
+        "carbohydrates": 34.0,
+        "image_caption": [
+          {
+            "ingredients": "cheese ravioli (estimated from cooked pasta base)",
+            "quantity": "100",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "marinara sauce (estimated from tomato base)",
+            "quantity": "80",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "parmesan cheese (estimated from 15g cheese)",
+            "quantity": "15",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "parsley",
+            "quantity": "negligible",
+            "portion_size": "sprinkle"
+          }
+        ],
+        "confidence": 75,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:58:38.095643",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 11367
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 1989,
+        "name_food": "Cucumber Salad",
+        "img_location": "images/food_52_1989.jpg",
+        "food_url": "https://www.food.com/recipe/cucumber-salad-51721"
+      },
+      "api_result": {
+        "food_name": "Cucumber and red onion salad with creamy dressing",
+        "total_calories": 124,
+        "fats": 10.0,
+        "proteins": 1.2,
+        "carbohydrates": 5.4,
+        "image_caption": [
+          {
+            "ingredients": "cucumber",
+            "quantity": "50",
+            "portion_size": "grams (thinly sliced)"
+          },
+          {
+            "ingredients": "red onion",
+            "quantity": "10",
+            "portion_size": "grams (thinly sliced)"
+          },
+          {
+            "ingredients": "light creamy dressing (estimated 75 kcal/tbsp)",
+            "quantity": "1.5",
+            "portion_size": "tablespoons"
+          }
+        ],
+        "confidence": 90,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:58:50.470822",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 10440
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 2551,
+        "name_food": "Oven-Fried Garlic Chicken",
+        "img_location": "images/food_53_2551.jpg",
+        "food_url": "https://www.food.com/recipe/oven-fried-garlic-chicken-83561"
+      },
+      "api_result": {
+        "food_name": "Breaded/Crusted Protein with Creamy Rice and Vegetables",
+        "total_calories": 705,
+        "fats": 37.0,
+        "proteins": 27.9,
+        "carbohydrates": 55.4,
+        "image_caption": [
+          {
+            "ingredients": "Breaded/Crusted Protein (Assumed Fried Chicken Base)",
+            "quantity": "100",
+            "portion_size": "grams (cooked)"
+          },
+          {
+            "ingredients": "Cooking oil/butter (Absorbed by protein, reduced)",
+            "quantity": "1.25",
+            "portion_size": "tablespoons"
+          },
+          {
+            "ingredients": "Creamy Rice Pilaf/Risotto (Base + Added Fat)",
+            "quantity": "180",
+            "portion_size": "grams (cooked)"
+          },
+          {
+            "ingredients": "Cooking oil/butter (in rice, consolidated)",
+            "quantity": "0.5",
+            "portion_size": "tablespoon"
+          },
+          {
+            "ingredients": "Mixed vegetables (Carrot base estimate)",
+            "quantity": "50",
+            "portion_size": "grams"
+          }
+        ],
+        "confidence": 80,
+        "is_blurry": true,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:59:01.916373",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 18262
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 1739,
+        "name_food": "Ranch Chicken Thighs",
+        "img_location": "images/food_54_1739.jpg",
+        "food_url": "https://www.food.com/recipe/ranch-chicken-thighs-42603"
+      },
+      "api_result": {
+        "food_name": "Baked breaded chicken cutlets, arugula salad, creamy dipping sauce",
+        "total_calories": 602,
+        "fats": 31.3,
+        "proteins": 52.7,
+        "carbohydrates": 20.0,
+        "image_caption": [
+          {
+            "ingredients": "Breaded chicken cutlets (baked/air-fried)",
+            "quantity": "170",
+            "portion_size": "grams (Reduced portion estimate for conservative calculation)"
+          },
+          {
+            "ingredients": "Breading and added fat (estimated absorbed fat)",
+            "quantity": "1",
+            "portion_size": "serving equivalent (Fat accounted for in protein line)"
+          },
+          {
+            "ingredients": "Arugula/mixed greens",
+            "quantity": "100",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "Creamy dipping sauce (Ranch/Aioli)",
+            "quantity": "2",
+            "portion_size": "tablespoons (Reduced from 3 tbsp to meet fat limit)"
+          }
+        ],
+        "confidence": 90,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:59:21.186575",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 21215
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 794,
+        "name_food": "Beef Tips",
+        "img_location": "images/food_56_794.jpg",
+        "food_url": "https://www.food.com/recipe/beef-tips-17990"
+      },
+      "api_result": {
+        "food_name": "Beef Stroganoff with Egg Noodles (Recalculated)",
+        "total_calories": 643,
+        "fats": 27.0,
+        "proteins": 38.1,
+        "carbohydrates": 56.5,
+        "image_caption": [
+          {
+            "ingredients": "egg noodles (cooked)",
+            "quantity": "150",
+            "portion_size": "grams (using cooked pasta proxy)"
+          },
+          {
+            "ingredients": "stew beef (lean)",
+            "quantity": "85",
+            "portion_size": "grams (using grilled chicken breast proxy)"
+          },
+          {
+            "ingredients": "stroganoff sauce (base estimate)",
+            "quantity": "120",
+            "portion_size": "grams (conservative estimate for liquid/veg base)"
+          },
+          {
+            "ingredients": "added cooking fat/butter",
+            "quantity": "1.25",
+            "portion_size": "tablespoons (150 kcal)"
+          },
+          {
+            "ingredients": "parsley",
+            "quantity": "negligible",
+            "portion_size": "garnish"
+          }
+        ],
+        "confidence": 90,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T22:59:43.412372",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 17511
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 1927,
+        "name_food": "Crock Pot Chicken Taco Meat",
+        "img_location": "images/food_58_1927.jpg",
+        "food_url": "https://www.food.com/recipe/crock-pot-chicken-taco-meat-4957"
+      },
+      "api_result": {
+        "food_name": "Chicken Taco Salad Bowl (Recalculated)",
+        "total_calories": 465,
+        "fats": 13.5,
+        "proteins": 41.0,
+        "carbohydrates": 29.3,
+        "image_caption": [
+          {
+            "ingredients": "shredded chicken (conservative estimate based on grilled)",
+            "quantity": "100",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "black beans (estimated)",
+            "quantity": "75",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "shredded lettuce",
+            "quantity": "300",
+            "portion_size": "grams (1.5 cups)"
+          },
+          {
+            "ingredients": "sliced tomatoes",
+            "quantity": "120",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "shredded cheese (cheddar/jack)",
+            "quantity": "15",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "sour cream or yogurt (conservative estimate)",
+            "quantity": "1",
+            "portion_size": "tablespoon"
+          },
+          {
+            "ingredients": "salsa (conservative estimate)",
+            "quantity": "2",
+            "portion_size": "tablespoons"
+          },
+          {
+            "ingredients": "tortilla strips or corn (conservative estimate)",
+            "quantity": "10",
+            "portion_size": "grams"
+          }
+        ],
+        "confidence": 90,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T23:00:01.929290",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 17241
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 508,
+        "name_food": "Italian Wedding Soup",
+        "img_location": "images/food_59_508.jpg",
+        "food_url": "https://www.food.com/recipe/italian-wedding-soup-14061"
+      },
+      "api_result": {
+        "food_name": "Italian Wedding Soup (Minestra Maritata)",
+        "total_calories": 435,
+        "fats": 22.1,
+        "proteins": 24.0,
+        "carbohydrates": 15.5,
+        "image_caption": [
+          {
+            "ingredients": "meatballs (moderately lean ground meat, 75g total)",
+            "quantity": "3",
+            "portion_size": "small (75g total)"
+          },
+          {
+            "ingredients": "orzo pasta",
+            "quantity": "50",
+            "portion_size": "grams cooked"
+          },
+          {
+            "ingredients": "greens (spinach/kale)",
+            "quantity": "50",
+            "portion_size": "grams cooked"
+          },
+          {
+            "ingredients": "broth/stock",
+            "quantity": "1.5",
+            "portion_size": "cups (350g)"
+          },
+          {
+            "ingredients": "parmesan cheese",
+            "quantity": "10",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "added fat/oil",
+            "quantity": "0.5",
+            "portion_size": "tablespoon"
+          }
+        ],
+        "confidence": 85,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T23:00:20.178739",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 17118
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 1921,
+        "name_food": "Oven Fried Eggplant (Aubergine)",
+        "img_location": "images/food_60_1921.jpg",
+        "food_url": "https://www.food.com/recipe/oven-fried-eggplant-aubergine-49387"
+      },
+      "api_result": {
+        "food_name": "Recalculated Conservative Phase 1 Meal (Vegetable Slices Interpretation)",
+        "total_calories": 304,
+        "fats": 18.7,
+        "proteins": 3.2,
+        "carbohydrates": 22.5,
+        "image_caption": [
+          {
+            "ingredients": "vegetable slices (interpreted as low-cal veg bulk)",
+            "quantity": "180",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "breadcrumbs/coating (reduced portion)",
+            "quantity": "50",
+            "portion_size": "grams (discounted 30%)"
+          },
+          {
+            "ingredients": "cooking oil (absorbed)",
+            "quantity": "1.25",
+            "portion_size": "tablespoons"
+          }
+        ],
+        "confidence": 90,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T23:00:38.305003",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 16429
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 2553,
+        "name_food": "Perfectly Sweet Cornbread",
+        "img_location": "images/food_61_2553.jpg",
+        "food_url": "https://www.food.com/recipe/sweet-cornbread-83625"
+      },
+      "api_result": {
+        "food_name": "Cornbread wedge (Recalculated Conservatively)",
+        "total_calories": 298,
+        "fats": 18.0,
+        "proteins": 4.0,
+        "carbohydrates": 30.0,
+        "image_caption": [
+          {
+            "ingredients": "cornbread",
+            "quantity": "1",
+            "portion_size": "wedge (estimated 80g, conservative base macros)"
+          },
+          {
+            "ingredients": "butter/oil (used in baking/added)",
+            "quantity": "8",
+            "portion_size": "grams (added fat)"
+          }
+        ],
+        "confidence": 80,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T23:00:55.740219",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 14495
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 736,
+        "name_food": "Quick Spanish Rice",
+        "img_location": "images/food_62_736.jpg",
+        "food_url": "https://www.food.com/recipe/quick-spanish-rice-17126"
+      },
+      "api_result": {
+        "food_name": "Cheesy Spanish Rice, garnished with scallions",
+        "total_calories": 391,
+        "fats": 14.1,
+        "proteins": 7.5,
+        "carbohydrates": 57.0,
+        "image_caption": [
+          {
+            "ingredients": "Spanish/Mexican rice",
+            "quantity": "1",
+            "portion_size": "cup (200g cooked)"
+          },
+          {
+            "ingredients": "Cheddar or Colby cheese (melted)",
+            "quantity": "30",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "Cooking oil (absorbed in rice)",
+            "quantity": "0.75",
+            "portion_size": "tablespoon"
+          },
+          {
+            "ingredients": "Scallions/Green onions",
+            "quantity": "small amount",
+            "portion_size": "garnish (approx 10g)"
+          }
+        ],
+        "confidence": 95,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T23:01:11.245626",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 12727
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 1241,
+        "name_food": "Salsa Chicken",
+        "img_location": "images/food_63_1241.jpg",
+        "food_url": "https://www.food.com/recipe/salsa-chicken-27475"
+      },
+      "api_result": {
+        "food_name": "Baked protein or vegetable dish with tomato sauce and cheese (4 servings)",
+        "total_calories": 945,
+        "fats": 34.4,
+        "proteins": 139.0,
+        "carbohydrates": 9.0,
+        "image_caption": [
+          {
+            "ingredients": "Chicken breast (grilled, assumed conservative base for 400g protein)",
+            "quantity": "400",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "Tomato sauce/Marinara (240g total)",
+            "quantity": "240",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "Melted cheese (60g total)",
+            "quantity": "60",
+            "portion_size": "grams"
+          }
+        ],
+        "confidence": 85,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T23:01:24.980535",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 15381
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 1145,
+        "name_food": "Tiny Cinnamon Rolls",
+        "img_location": "images/food_64_1145.jpg",
+        "food_url": "https://www.food.com/recipe/tiny-cinnamon-rolls-25723"
+      },
+      "api_result": {
+        "food_name": "Mini Cinnamon Rolls (7 rolls total)",
+        "total_calories": 945.0,
+        "fats": 42.0,
+        "proteins": 13.5,
+        "carbohydrates": 153.0,
+        "image_caption": [
+          {
+            "ingredients": "cinnamon rolls",
+            "quantity": "7",
+            "portion_size": "mini rolls (estimated 60g each)"
+          },
+          {
+            "ingredients": "glaze/icing",
+            "quantity": "light",
+            "portion_size": "coating"
+          }
+        ],
+        "confidence": 80,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T23:01:41.365819",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 12810
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 142,
+        "name_food": "4 Minute Spicy Garlic Shrimp",
+        "img_location": "images/food_66_142.jpg",
+        "food_url": "https://www.food.com/recipe/4-minute-spicy-garlic-shrimp-107997"
+      },
+      "api_result": {
+        "food_name": "Garlic butter shrimp (Scampi style)",
+        "total_calories": 279,
+        "fats": 21.3,
+        "proteins": 24.0,
+        "carbohydrates": 0.0,
+        "image_caption": [
+          {
+            "ingredients": "shrimp",
+            "quantity": "100",
+            "portion_size": "grams (conservative estimate for 16 pieces)"
+          },
+          {
+            "ingredients": "cooking oil or butter",
+            "quantity": "1.5",
+            "portion_size": "tablespoons"
+          },
+          {
+            "ingredients": "garlic and parsley seasoning",
+            "quantity": "1",
+            "portion_size": "teaspoon (negligible calories)"
+          }
+        ],
+        "confidence": 90,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T23:01:55.184499",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 14543
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 2483,
+        "name_food": "Bacon Wrapped Chicken (Oamc)",
+        "img_location": "images/food_67_2483.jpg",
+        "food_url": "https://www.food.com/recipe/bacon-wrapped-chicken-oamc-79944"
+      },
+      "api_result": {
+        "food_name": "Bacon-wrapped stuffed chicken rolls, roasted potatoes, mixed greens salad",
+        "total_calories": 785,
+        "fats": 46.2,
+        "proteins": 41.2,
+        "carbohydrates": 40.0,
+        "image_caption": [
+          {
+            "ingredients": "Bacon-wrapped stuffed rolls (Conservative estimate based on 120g grilled chicken base + added fat for wrapping/stuffing)",
+            "quantity": "1",
+            "portion_size": "Serving equivalent (reduced portion size)"
+          },
+          {
+            "ingredients": "Roasted potatoes",
+            "quantity": "200",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "Cooking oil (absorbed)",
+            "quantity": "1.5",
+            "portion_size": "tablespoons"
+          },
+          {
+            "ingredients": "Mixed greens salad",
+            "quantity": "50",
+            "portion_size": "grams"
+          }
+        ],
+        "confidence": 90,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T23:02:10.740782",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 19584
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 2002,
+        "name_food": "Big Thicket Chicken and Dumplings",
+        "img_location": "images/food_69_2002.jpg",
+        "food_url": "https://www.food.com/recipe/big-thicket-chicken-and-dumplings-52253"
+      },
+      "api_result": {
+        "food_name": "Chicken and Dumpling Soup, Side Salad, White Wine (Recalculated)",
+        "total_calories": 379.0,
+        "fats": 3.8,
+        "proteins": 28.7,
+        "carbohydrates": 28.2,
+        "image_caption": [
+          {
+            "ingredients": "shredded chicken (in soup)",
+            "quantity": "80",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "dumplings or thick noodles",
+            "quantity": "50",
+            "portion_size": "grams (cooked)"
+          },
+          {
+            "ingredients": "broth and vegetables (carrots, celery)",
+            "quantity": "1.5",
+            "portion_size": "cups"
+          },
+          {
+            "ingredients": "mixed greens (side salad)",
+            "quantity": "30",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "white wine",
+            "quantity": "5",
+            "portion_size": "ounces"
+          }
+        ],
+        "confidence": 90,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T23:02:31.335360",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 14569
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 981,
+        "name_food": "Brussels Sprouts in Garlic Butter",
+        "img_location": "images/food_70_981.jpg",
+        "food_url": "https://www.food.com/recipe/brussels-sprouts-in-garlic-butter-21761"
+      },
+      "api_result": {
+        "food_name": "Roasted Brussels sprouts with Parmesan cheese (Recalculated Conservatively)",
+        "total_calories": 211,
+        "fats": 17.6,
+        "proteins": 3.8,
+        "carbohydrates": 9.0,
+        "image_caption": [
+          {
+            "ingredients": "Brussels sprouts (Approximated as Broccoli)",
+            "quantity": "150",
+            "portion_size": "grams (cooked)"
+          },
+          {
+            "ingredients": "cooking oil (for roasting)",
+            "quantity": "1",
+            "portion_size": "tablespoon"
+          },
+          {
+            "ingredients": "Parmesan cheese (Approximated as general Cheese)",
+            "quantity": "10",
+            "portion_size": "grams (grated)"
+          }
+        ],
+        "confidence": 80,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T23:02:46.912232",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 12384
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 1945,
+        "name_food": "Crock-Pot Potato Chowder",
+        "img_location": "images/food_71_1945.jpg",
+        "food_url": "https://www.food.com/recipe/crock-pot-potato-chowder-50144"
+      },
+      "api_result": {
+        "food_name": "Creamy potato soup with bacon and chives",
+        "total_calories": 415,
+        "fats": 21.0,
+        "proteins": 11.0,
+        "carbohydrates": 55.0,
+        "image_caption": [
+          {
+            "ingredients": "creamy potato soup base (estimated potato/cream mix)",
+            "quantity": "350",
+            "portion_size": "grams (1.5 cups)"
+          },
+          {
+            "ingredients": "bacon crumbles",
+            "quantity": "1.5",
+            "portion_size": "slices (cooked, conservative estimate)"
+          },
+          {
+            "ingredients": "chives",
+            "quantity": "1",
+            "portion_size": "tablespoon"
+          }
+        ],
+        "confidence": 90,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T23:03:00.305018",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 11098
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 2022,
+        "name_food": "Macaroni and Cheese",
+        "img_location": "images/food_72_2022.jpg",
+        "food_url": "https://www.food.com/recipe/macaroni-and-cheese-52799"
+      },
+      "api_result": {
+        "food_name": "Baked Macaroni and Cheese (Recalculated Conservatively for Phase 1)",
+        "total_calories": 286,
+        "fats": 9.4,
+        "proteins": 12.7,
+        "carbohydrates": 46.5,
+        "image_caption": [
+          {
+            "ingredients": "cooked elbow macaroni (mapped to Pasta, cooked)",
+            "quantity": "150",
+            "portion_size": "grams (reduced by 20%)"
+          },
+          {
+            "ingredients": "cheese sauce/topping (estimated conservatively)",
+            "quantity": "60",
+            "portion_size": "grams (highly reduced fat/calorie contribution)"
+          }
+        ],
+        "confidence": 80,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T23:03:12.409202",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 15596
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 2494,
+        "name_food": "Mahogany Beef Stew",
+        "img_location": "images/food_73_2494.jpg",
+        "food_url": "https://www.food.com/recipe/mahogany-beef-stew-80536"
+      },
+      "api_result": {
+        "food_name": "Beef Stew (Bourguignon style) with Carrots and Parsley (Recalculated Conservatively)",
+        "total_calories": 285,
+        "fats": 21.3,
+        "proteins": 21.4,
+        "carbohydrates": 10.0,
+        "image_caption": [
+          {
+            "ingredients": "braised beef chunks (Substituted with Shrimp values)",
+            "quantity": "85",
+            "portion_size": "grams (palm size)"
+          },
+          {
+            "ingredients": "stew sauce/gravy (broth, thickener, fat)",
+            "quantity": "250",
+            "portion_size": "grams (omitted due to lack of database match)"
+          },
+          {
+            "ingredients": "carrots",
+            "quantity": "50",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "added cooking fat (oil/butter, incorporated into sauce)",
+            "quantity": "1.5",
+            "portion_size": "tablespoons (calculated as oil)"
+          }
+        ],
+        "confidence": 75,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T23:03:29.017054",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 14513
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 1252,
+        "name_food": "Chicken Garlic Bites",
+        "img_location": "images/food_74_1252.jpg",
+        "food_url": "https://www.food.com/recipe/chicken-garlic-bites-27733"
+      },
+      "api_result": {
+        "food_name": "Breaded chicken nuggets or fish bites, served with lime",
+        "total_calories": 372,
+        "fats": 18.4,
+        "proteins": 41.3,
+        "carbohydrates": 1.0,
+        "image_caption": [
+          {
+            "ingredients": "Breaded/fried chicken or fish nuggets (Conservative estimate based on 15% reduction from initial 180g fried chicken proxy)",
+            "quantity": "162",
+            "portion_size": "grams (approx. 10-13 pieces)"
+          },
+          {
+            "ingredients": "Lime wedges",
+            "quantity": "4",
+            "portion_size": "wedges (negligible calories)"
+          }
+        ],
+        "confidence": 90,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T23:03:44.535652",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 10446
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 1882,
+        "name_food": "Deviled Eggs",
+        "img_location": "images/food_75_1882.jpg",
+        "food_url": "https://www.food.com/recipe/deviled-eggs-48153"
+      },
+      "api_result": {
+        "food_name": "Deviled eggs",
+        "total_calories": 700,
+        "fats": 61.3,
+        "proteins": 33.0,
+        "carbohydrates": 0.0,
+        "image_caption": [
+          {
+            "ingredients": "hard-boiled eggs",
+            "quantity": "5.5",
+            "portion_size": "whole eggs (11 halves)"
+          },
+          {
+            "ingredients": "mayonnaise/filling (estimated 3 tbsp)",
+            "quantity": "45",
+            "portion_size": "grams (estimated)"
+          },
+          {
+            "ingredients": "garnish",
+            "quantity": "minimal",
+            "portion_size": "herbs"
+          }
+        ],
+        "confidence": 95,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T23:03:55.989123",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 11661
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 1366,
+        "name_food": "Perfect Pasta With No Watching and No Sweating",
+        "img_location": "images/food_76_1366.jpg",
+        "food_url": "https://www.food.com/recipe/perfect-pasta-with-no-watching-and-no-sweating-30358"
+      },
+      "api_result": {
+        "food_name": "Spaghetti with marinara sauce and parmesan cheese",
+        "total_calories": 461,
+        "fats": 12.8,
+        "proteins": 18.6,
+        "carbohydrates": 68.7,
+        "image_caption": [
+          {
+            "ingredients": "spaghetti (cooked)",
+            "quantity": "200",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "tomato marinara sauce (conservative estimate based on tomato base + minimal oil)",
+            "quantity": "120",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "grated parmesan cheese",
+            "quantity": "30",
+            "portion_size": "grams"
+          }
+        ],
+        "confidence": 95,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T23:04:08.654105",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 12052
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 1424,
+        "name_food": "Spanish Chicken & Rice Bake",
+        "img_location": "images/food_77_1424.jpg",
+        "food_url": "https://www.food.com/recipe/spanish-chicken-rice-bake-31516"
+      },
+      "api_result": {
+        "food_name": "Mexican Chicken and Rice Skillet with Corn and Black Beans (Recalculated)",
+        "total_calories": 590.0,
+        "fats": 17.5,
+        "proteins": 31.1,
+        "carbohydrates": 69.0,
+        "image_caption": [
+          {
+            "ingredients": "cooked white rice (seasoned)",
+            "quantity": "200",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "cooked chicken breast pieces",
+            "quantity": "70",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "black beans (estimated conservative value)",
+            "quantity": "45",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "corn kernels (estimated conservative value)",
+            "quantity": "40",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "cooking oil (1 tbsp)",
+            "quantity": "1",
+            "portion_size": "tablespoon"
+          }
+        ],
+        "confidence": 90,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T23:04:21.715284",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 15468
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 1511,
+        "name_food": "Wet Burritos",
+        "img_location": "images/food_78_1511.jpg",
+        "food_url": "https://www.food.com/recipe/wet-burritos-33665"
+      },
+      "api_result": {
+        "food_name": "Large burrito or chimichanga with cheese and sour cream (Recalculated)",
+        "total_calories": 778,
+        "fats": 43.2,
+        "proteins": 27.4,
+        "carbohydrates": 64.4,
+        "image_caption": [
+          {
+            "ingredients": "Flour tortilla",
+            "quantity": "70",
+            "portion_size": "grams (large)"
+          },
+          {
+            "ingredients": "Ground beef (lean filling)",
+            "quantity": "60",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "Rice and beans (filling)",
+            "quantity": "80",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "Shredded cheddar cheese",
+            "quantity": "30",
+            "portion_size": "grams (small handful)"
+          },
+          {
+            "ingredients": "Sour cream",
+            "quantity": "2",
+            "portion_size": "tablespoons (large dollop)"
+          },
+          {
+            "ingredients": "Red chili/enchilada sauce",
+            "quantity": "2",
+            "portion_size": "tablespoons"
+          },
+          {
+            "ingredients": "Cooking oil (internal)",
+            "quantity": "0.5",
+            "portion_size": "tablespoon"
+          }
+        ],
+        "confidence": 85,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T23:04:38.189597",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 16833
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 2087,
+        "name_food": "Baja Black Beans, Corn and Rice",
+        "img_location": "images/food_79_2087.jpg",
+        "food_url": "https://www.food.com/recipe/baja-black-beans-corn-and-rice-55768"
+      },
+      "api_result": {
+        "food_name": "Southwestern Rice Salad with Beans and Corn",
+        "total_calories": 352,
+        "fats": 5.9,
+        "proteins": 9.5,
+        "carbohydrates": 64.0,
+        "image_caption": [
+          {
+            "ingredients": "cooked white rice",
+            "quantity": "150",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "black beans or kidney beans (estimated)",
+            "quantity": "60",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "sweet corn kernels (estimated)",
+            "quantity": "40",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "diced tomato and red onion",
+            "quantity": "50",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "cooking oil/vinaigrette (1 tsp)",
+            "quantity": "1",
+            "portion_size": "teaspoon"
+          }
+        ],
+        "confidence": 90,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T23:04:56.028958",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 13563
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 195,
+        "name_food": "Chili Con Carne With Beans",
+        "img_location": "images/food_80_195.jpg",
+        "food_url": "https://www.food.com/recipe/chili-con-carne-with-beans-11149"
+      },
+      "api_result": {
+        "food_name": "Beef and bean chili with cheese, sour cream, and tortilla chips",
+        "total_calories": 541,
+        "fats": 31.7,
+        "proteins": 25.5,
+        "carbohydrates": 38.0,
+        "image_caption": [
+          {
+            "ingredients": "Beef and bean chili (Estimated Base)",
+            "quantity": "300",
+            "portion_size": "grams (Conservative estimate applied)"
+          },
+          {
+            "ingredients": "Shredded cheddar cheese",
+            "quantity": "20",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "Sour cream",
+            "quantity": "1.5",
+            "portion_size": "tablespoons (Conservative 60 kcal/tbsp)"
+          },
+          {
+            "ingredients": "Tortilla chips/strips",
+            "quantity": "15",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "Green onions",
+            "quantity": "1",
+            "portion_size": "tablespoon (garnish)"
+          }
+        ],
+        "confidence": 80,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T23:05:10.597997",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 13843
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 1619,
+        "name_food": "Easy Breakfast Casserole",
+        "img_location": "images/food_81_1619.jpg",
+        "food_url": "https://www.food.com/recipe/easy-breakfast-casserole-38065"
+      },
+      "api_result": {
+        "food_name": "Baked Egg Casserole (Frittata) with Meat and Cheese",
+        "total_calories": 275,
+        "fats": 21.5,
+        "proteins": 16.8,
+        "carbohydrates": 0.0,
+        "image_caption": [
+          {
+            "ingredients": "large eggs",
+            "quantity": "1.3",
+            "portion_size": "eggs (estimated 1/6th of dish)"
+          },
+          {
+            "ingredients": "cooked sausage or bacon (estimated lean meat proxy)",
+            "quantity": "25",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "shredded cheese",
+            "quantity": "17",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "cooking oil/fat (conservative allocation)",
+            "quantity": "5",
+            "portion_size": "grams (estimated)"
+          }
+        ],
+        "confidence": 90,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T23:05:25.447448",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 14472
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 1893,
+        "name_food": "Peanut Butter Chocolate Chunk Cookies",
+        "img_location": "images/food_85_1893.jpg",
+        "food_url": "https://www.food.com/recipe/peanut-butter-chocolate-chunk-cookies-48532"
+      },
+      "api_result": {
+        "food_name": "Chocolate chip cookies, 2% milk (Recalculated Conservatively)",
+        "total_calories": 252.0,
+        "fats": 10.8,
+        "proteins": 7.8,
+        "carbohydrates": 37.2,
+        "image_caption": [
+          {
+            "ingredients": "chocolate chip cookies (estimated high-carb/fat proxy)",
+            "quantity": "175",
+            "portion_size": "grams (conservative estimate)"
+          },
+          {
+            "ingredients": "2% milk (estimated low-calorie liquid proxy)",
+            "quantity": "240",
+            "portion_size": "ml (conservative estimate)"
+          }
+        ],
+        "confidence": 60,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T23:05:40.928728",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 16571
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 1290,
+        "name_food": "Baked Ham and Cheese Omelet Roll",
+        "img_location": "images/food_87_1290.jpg",
+        "food_url": "https://www.food.com/recipe/baked-ham-and-cheese-omelet-roll-28648"
+      },
+      "api_result": {
+        "food_name": "Ham and cheese omelet roll with mixed greens",
+        "total_calories": 594,
+        "fats": 43.0,
+        "proteins": 51.0,
+        "carbohydrates": 0.0,
+        "image_caption": [
+          {
+            "ingredients": "eggs",
+            "quantity": "4",
+            "portion_size": "large eggs"
+          },
+          {
+            "ingredients": "deli ham",
+            "quantity": "80",
+            "portion_size": "grams (conservative estimate used)"
+          },
+          {
+            "ingredients": "shredded cheddar cheese",
+            "quantity": "30",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "mixed greens/spinach",
+            "quantity": "150",
+            "portion_size": "grams (using lettuce base)"
+          },
+          {
+            "ingredients": "cooking oil/butter",
+            "quantity": "1",
+            "portion_size": "teaspoon (conservative fat/kcal)"
+          }
+        ],
+        "confidence": 95,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T23:05:58.506339",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 14772
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 1578,
+        "name_food": "Tortellini Tomato Spinach Soup",
+        "img_location": "images/food_92_1578.jpg",
+        "food_url": "https://www.food.com/recipe/tortellini-tomato-spinach-soup-35988"
+      },
+      "api_result": {
+        "food_name": "Tortellini and Spinach Soup with Parmesan",
+        "total_calories": 313,
+        "fats": 15.8,
+        "proteins": 12.4,
+        "carbohydrates": 29.5,
+        "image_caption": [
+          {
+            "ingredients": "cheese tortellini",
+            "quantity": "75",
+            "portion_size": "grams cooked (conservative estimate)"
+          },
+          {
+            "ingredients": "tomato broth/base",
+            "quantity": "200",
+            "portion_size": "grams (1 cup, conservative estimate)"
+          },
+          {
+            "ingredients": "spinach and diced tomatoes",
+            "quantity": "100",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "parmesan cheese (grated)",
+            "quantity": "15",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "cooking oil (in broth)",
+            "quantity": "5",
+            "portion_size": "grams (approx 1 teaspoon)"
+          }
+        ],
+        "confidence": 90,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T23:06:14.284772",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 14862
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 1894,
+        "name_food": "Cabbage and Noodles",
+        "img_location": "images/food_94_1894.jpg",
+        "food_url": "https://www.food.com/recipe/cabbage-and-noodles-48588"
+      },
+      "api_result": {
+        "food_name": "Egg Noodles with Cabbage and Peas (Haluski) - Recalculated Conservatively",
+        "total_calories": 240,
+        "fats": 7.9,
+        "proteins": 5.8,
+        "carbohydrates": 36.0,
+        "image_caption": [
+          {
+            "ingredients": "egg noodles (approximated as pasta, cooked)",
+            "quantity": "100",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "cabbage (approximated as lettuce)",
+            "quantity": "150",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "peas (very small amount)",
+            "quantity": "15",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "cooking oil (0.5 tbsp)",
+            "quantity": "0.5",
+            "portion_size": "tablespoon"
+          }
+        ],
+        "confidence": 90,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T23:06:30.152138",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 12337
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 2445,
+        "name_food": "Kittencal's 5-Minute Cinnamon Flop Brunch Cake",
+        "img_location": "images/food_95_2445.jpg",
+        "food_url": "https://www.food.com/recipe/kittencals-5-minute-cinnamon-flop-brunch-cake-77397"
+      },
+      "api_result": {
+        "food_name": "Cinnamon sticky bun slice with nuts and glaze (Recalculated Conservatively)",
+        "total_calories": 234,
+        "fats": 15.3,
+        "proteins": 3.7,
+        "carbohydrates": 26.5,
+        "image_caption": [
+          {
+            "ingredients": "enriched dough/cake base (Approximated as bread + fat)",
+            "quantity": "80",
+            "portion_size": "grams (medium slice)"
+          },
+          {
+            "ingredients": "cinnamon sugar crumble topping (Estimated high sugar/fat)",
+            "quantity": "20",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "chopped nuts (pecans/walnuts) (Estimated high fat)",
+            "quantity": "10",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "powdered sugar glaze (Estimated high sugar)",
+            "quantity": "10",
+            "portion_size": "grams (light drizzle)"
+          }
+        ],
+        "confidence": 60,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T23:06:43.496836",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 13330
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 488,
+        "name_food": "Kittencal's Onion Patties/Latkes",
+        "img_location": "images/food_96_488.jpg",
+        "food_url": "https://www.food.com/recipe/kittencals-onion-patties-latkes-138173"
+      },
+      "api_result": {
+        "food_name": "Potato pancakes (Latkes) with sour cream and chives",
+        "total_calories": 473,
+        "fats": 23.4,
+        "proteins": 11.8,
+        "carbohydrates": 45.5,
+        "image_caption": [
+          {
+            "ingredients": "potato pancakes (latkes)",
+            "quantity": "4",
+            "portion_size": "medium pancakes (base estimate)"
+          },
+          {
+            "ingredients": "potatoes (shredded base)",
+            "quantity": "180",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "frying oil (absorbed)",
+            "quantity": "1.25",
+            "portion_size": "tablespoons"
+          },
+          {
+            "ingredients": "sour cream",
+            "quantity": "2",
+            "portion_size": "tablespoons"
+          },
+          {
+            "ingredients": "binder (1 egg + minimal flour)",
+            "quantity": "1",
+            "portion_size": "serving estimate"
+          },
+          {
+            "ingredients": "green onions/chives",
+            "quantity": "5",
+            "portion_size": "grams"
+          }
+        ],
+        "confidence": 90,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T23:06:57.835353",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 14736
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 97,
+        "name_food": "Kittencal's Parmesan Garlic Bread or Garlic Toast",
+        "img_location": "images/food_97_97.jpg",
+        "food_url": "https://www.food.com/recipe/kittencals-parmesan-garlic-bread-or-garlic-toast-105726"
+      },
+      "api_result": {
+        "food_name": "Spaghetti with meatballs and tomato sauce, served with garlic bread",
+        "total_calories": 803,
+        "fats": 34.3,
+        "proteins": 31.3,
+        "carbohydrates": 83.7,
+        "image_caption": [
+          {
+            "ingredients": "cooked spaghetti",
+            "quantity": "150",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "meatballs/ground beef",
+            "quantity": "80",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "tomato sauce",
+            "quantity": "120",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "bread",
+            "quantity": "2",
+            "portion_size": "slices"
+          },
+          {
+            "ingredients": "butter/garlic spread",
+            "quantity": "1.5",
+            "portion_size": "tablespoons (Capped)"
+          }
+        ],
+        "confidence": 85,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T23:07:13.581109",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 15856
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 1426,
+        "name_food": "Buttery Shrimp And Pasta",
+        "img_location": "images/food_98_1426.jpg",
+        "food_url": "https://www.food.com/recipe/buttery-shrimp-and-pasta-31562"
+      },
+      "api_result": {
+        "food_name": "Shrimp pasta with creamy sauce and chili flakes (Recalculated)",
+        "total_calories": 446,
+        "fats": 18.2,
+        "proteins": 27.3,
+        "carbohydrates": 43.4,
+        "image_caption": [
+          {
+            "ingredients": "rotini pasta",
+            "quantity": "140",
+            "portion_size": "grams (cooked)"
+          },
+          {
+            "ingredients": "shrimp",
+            "quantity": "80",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "creamy white sauce (alfredo style)",
+            "quantity": "4",
+            "portion_size": "tablespoons (Calorie capped at 150 kcal)"
+          },
+          {
+            "ingredients": "chili flakes",
+            "quantity": "trace",
+            "portion_size": "sprinkle"
+          }
+        ],
+        "confidence": 90,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T23:07:30.444274",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 13449
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 938,
+        "name_food": "Chicken Noodle Soup",
+        "img_location": "images/food_100_938.jpg",
+        "food_url": "https://www.food.com/recipe/chicken-noodle-soup-20755"
+      },
+      "api_result": {
+        "food_name": "Chicken Noodle Soup (Recalculated)",
+        "total_calories": 356,
+        "fats": 8.2,
+        "proteins": 25.5,
+        "carbohydrates": 43.3,
+        "image_caption": [
+          {
+            "ingredients": "egg noodles (using pasta proxy)",
+            "quantity": "75",
+            "portion_size": "grams (cooked)"
+          },
+          {
+            "ingredients": "shredded chicken (using grilled breast proxy)",
+            "quantity": "55",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "broth and vegetables (carrots, celery)",
+            "quantity": "1.5",
+            "portion_size": "cups (estimated 300g total)"
+          },
+          {
+            "ingredients": "fat/oil (1 tsp)",
+            "quantity": "1",
+            "portion_size": "teaspoon"
+          }
+        ],
+        "confidence": 90,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T23:07:44.900594",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 13560
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 2440,
+        "name_food": "Funky Chicken With Sesame Noodles",
+        "img_location": "images/food_101_2440.jpg",
+        "food_url": "https://www.food.com/recipe/funky-chicken-with-sesame-noodles-76930"
+      },
+      "api_result": {
+        "food_name": "Chicken Noodle Bowl, Lo Mein style (Recalculated)",
+        "total_calories": 571,
+        "fats": 21.2,
+        "proteins": 35.2,
+        "carbohydrates": 55.8,
+        "image_caption": [
+          {
+            "ingredients": "cooked noodles (lo mein/spaghetti)",
+            "quantity": "180",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "cooked chicken breast (sliced)",
+            "quantity": "80",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "cooking oil/sauce mixture (conservative estimate)",
+            "quantity": "1.5",
+            "portion_size": "tablespoons"
+          },
+          {
+            "ingredients": "green onion and sesame seeds",
+            "quantity": "small amount",
+            "portion_size": "garnish"
+          }
+        ],
+        "confidence": 95,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T23:07:59.466871",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 12332
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 1807,
+        "name_food": "Parmesan Zucchini",
+        "img_location": "images/food_104_1807.jpg",
+        "food_url": "https://www.food.com/recipe/parmesan-zucchini-44833"
+      },
+      "api_result": {
+        "food_name": "Baked Zucchini Sticks with Parmesan Breading (Recalculated Conservatively)",
+        "total_calories": 102,
+        "fats": 9.2,
+        "proteins": 3.4,
+        "carbohydrates": 2.9,
+        "image_caption": [
+          {
+            "ingredients": "zucchini (proxy: lettuce)",
+            "quantity": "75",
+            "portion_size": "grams (3 sticks)"
+          },
+          {
+            "ingredients": "breadcrumbs/flour (proxy: reduced rice carb)",
+            "quantity": "10",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "parmesan cheese (proxy: cheese)",
+            "quantity": "5",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "cooking oil (absorbed)",
+            "quantity": "0.5",
+            "portion_size": "teaspoon"
+          }
+        ],
+        "confidence": 90,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T23:08:12.803764",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 11469
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 2615,
+        "name_food": "The Blue Mill Tavern Loosemeat Sandwich",
+        "img_location": "images/food_105_2615.jpg",
+        "food_url": "https://www.food.com/recipe/the-blue-mill-tavern-loosemeat-sandwich-87075"
+      },
+      "api_result": {
+        "food_name": "Ground beef slider with pickle (Recalculated Conservatively)",
+        "total_calories": 365,
+        "fats": 14.0,
+        "proteins": 20.4,
+        "carbohydrates": 31.0,
+        "image_caption": [
+          {
+            "ingredients": "small white bun",
+            "quantity": "1",
+            "portion_size": "60 grams (Estimated)"
+          },
+          {
+            "ingredients": "lean ground beef filling (with onions)",
+            "quantity": "60",
+            "portion_size": "grams (Estimated conservatively)"
+          },
+          {
+            "ingredients": "pickle slice",
+            "quantity": "1",
+            "portion_size": "large slice (Negligible)"
+          }
+        ],
+        "confidence": 75,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T23:08:25.278398",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 12819
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 843,
+        "name_food": "Cabbage for Those Who Dislike Cabbage",
+        "img_location": "images/food_106_843.jpg",
+        "food_url": "https://www.food.com/recipe/cabbage-for-those-who-dislike-cabbage-18816"
+      },
+      "api_result": {
+        "food_name": "Sautéed Cabbage (Napa or Savoy)",
+        "total_calories": 220,
+        "fats": 17.5,
+        "proteins": 4.0,
+        "carbohydrates": 14.0,
+        "image_caption": [
+          {
+            "ingredients": "cooked cabbage",
+            "quantity": "200",
+            "portion_size": "grams (Conservative estimate based on vegetable database)"
+          },
+          {
+            "ingredients": "cooking oil or butter",
+            "quantity": "1.25",
+            "portion_size": "tablespoons (150 kcal)"
+          },
+          {
+            "ingredients": "flavor additions (garlic/spices)",
+            "quantity": "0",
+            "portion_size": "grams (Assumed negligible for conservative calculation)"
+          }
+        ],
+        "confidence": 90,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T23:08:39.103363",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 14338
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 783,
+        "name_food": "Chicken Cordon Bleu Casserole",
+        "img_location": "images/food_107_783.jpg",
+        "food_url": "https://www.food.com/recipe/chicken-cordon-bleu-casserole-17917"
+      },
+      "api_result": {
+        "food_name": "Ham and Cheese Casserole (Strata) - Conservative Recalculation",
+        "total_calories": 548,
+        "fats": 18.8,
+        "proteins": 32.8,
+        "carbohydrates": 60.0,
+        "image_caption": [
+          {
+            "ingredients": "casserole base (bread/binder)",
+            "quantity": "150",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "cubed ham (estimated lean)",
+            "quantity": "60",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "melted cheese",
+            "quantity": "30",
+            "portion_size": "grams"
+          }
+        ],
+        "confidence": 80,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T23:08:54.448174",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 13171
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 75,
+        "name_food": "Hamburgers",
+        "img_location": "images/food_108_75.jpg",
+        "food_url": "https://www.food.com/recipe/hamburgers-10428"
+      },
+      "api_result": {
+        "food_name": "Hypothetical Conservative Phase 1 Meal (Chicken, Rice, Broccoli)",
+        "total_calories": 319.2,
+        "fats": 5.8,
+        "proteins": 25.6,
+        "carbohydrates": 33.6,
+        "image_caption": [
+          {
+            "ingredients": "Chicken breast (grilled)",
+            "quantity": "120",
+            "portion_size": "grams (Conservative estimate)"
+          },
+          {
+            "ingredients": "White rice (cooked)",
+            "quantity": "200",
+            "portion_size": "grams (1 cup)"
+          },
+          {
+            "ingredients": "Broccoli",
+            "quantity": "100",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "Cooking oil",
+            "quantity": "5",
+            "portion_size": "grams (1 tsp, conservative fat source)"
+          }
+        ],
+        "confidence": 95,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T23:09:08.624693",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 12647
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 143,
+        "name_food": "Thai Chicken Breasts",
+        "img_location": "images/food_110_143.jpg",
+        "food_url": "https://www.food.com/recipe/thai-chicken-breasts-108105"
+      },
+      "api_result": {
+        "food_name": "Glazed Chicken Breast with Sugar Snap Peas (Recalculated Conservatively)",
+        "total_calories": 530,
+        "fats": 19.5,
+        "proteins": 47.1,
+        "carbohydrates": 40.0,
+        "image_caption": [
+          {
+            "ingredients": "Chicken breast",
+            "quantity": "150",
+            "portion_size": "grams (Reduced portion for validation)"
+          },
+          {
+            "ingredients": "Dark Glaze/Sauce (Soy/Honey/Teriyaki)",
+            "quantity": "3",
+            "portion_size": "tablespoons (Estimated 150 kcal)"
+          },
+          {
+            "ingredients": "Cooking oil",
+            "quantity": "1",
+            "portion_size": "tablespoon"
+          },
+          {
+            "ingredients": "Sugar Snap Peas",
+            "quantity": "30",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "Lime",
+            "quantity": "1",
+            "portion_size": "slice (garnish)"
+          }
+        ],
+        "confidence": 95,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T23:09:22.274804",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 15338
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 1851,
+        "name_food": "Uncle Bill's Whipped Shortbread Cookies",
+        "img_location": "images/food_111_1851.jpg",
+        "food_url": "https://www.food.com/recipe/uncle-bills-whipped-shortbread-cookies-46877"
+      },
+      "api_result": {
+        "food_name": "Hypothetical Conservative Phase 1 Meal (Chicken, Rice, Broccoli, Oil)",
+        "total_calories": 342.8,
+        "fats": 10.9,
+        "proteins": 22.0,
+        "carbohydrates": 39.9,
+        "image_caption": [
+          {
+            "ingredients": "Chicken breast (grilled)",
+            "quantity": "85",
+            "portion_size": "grams (palm-sized, conservative)"
+          },
+          {
+            "ingredients": "White rice (cooked)",
+            "quantity": "200",
+            "portion_size": "grams (1 cup)"
+          },
+          {
+            "ingredients": "Broccoli",
+            "quantity": "150",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "Cooking oil",
+            "quantity": "1",
+            "portion_size": "tablespoon"
+          }
+        ],
+        "confidence": 95,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T23:09:38.618084",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 12062
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 1536,
+        "name_food": "Awesome Baked Pork Chops",
+        "img_location": "images/food_112_1536.jpg",
+        "food_url": "https://www.food.com/recipe/awesome-baked-pork-chops-34499"
+      },
+      "api_result": {
+        "food_name": "Pan-fried breaded cutlets (pork or chicken)",
+        "total_calories": 700,
+        "fats": 48,
+        "proteins": 54,
+        "carbohydrates": 15,
+        "image_caption": [
+          {
+            "ingredients": "breaded meat cutlets (assumed 200g total weight, calculated using fried chicken base + conservative breading factor)",
+            "quantity": "3",
+            "portion_size": "medium pieces (recalculated to 200g equivalent)"
+          },
+          {
+            "ingredients": "cooking oil (absorbed)",
+            "quantity": "1",
+            "portion_size": "tablespoon"
+          }
+        ],
+        "confidence": 85,
+        "is_blurry": true,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T23:09:51.689386",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 15892
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 1525,
+        "name_food": "Cajun Style Oven Fries",
+        "img_location": "images/food_113_1525.jpg",
+        "food_url": "https://www.food.com/recipe/cajun-style-oven-fries-34011"
+      },
+      "api_result": {
+        "food_name": "Roasted potato wedges",
+        "total_calories": 398,
+        "fats": 21.3,
+        "proteins": 5.0,
+        "carbohydrates": 50.0,
+        "image_caption": [
+          {
+            "ingredients": "potato wedges",
+            "quantity": "250",
+            "portion_size": "grams (conservative estimate based on baked potato base)"
+          },
+          {
+            "ingredients": "cooking oil",
+            "quantity": "1.5",
+            "portion_size": "tablespoons (180 kcal, 21g Fat)"
+          },
+          {
+            "ingredients": "seasoning",
+            "quantity": "trace",
+            "portion_size": "minimal"
+          }
+        ],
+        "confidence": 95,
+        "is_blurry": true,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T23:10:08.594592",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 10329
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 905,
+        "name_food": "Kittencal's Easy and Delicious Ranch-Parmesan Chicken",
+        "img_location": "images/food_116_905.jpg",
+        "food_url": "https://www.food.com/recipe/kittencals-easy-and-delicious-ranch-parmesan-chicken-200296"
+      },
+      "api_result": {
+        "food_name": "Breaded Chicken Cutlet, Mashed Potatoes, and Green Peas",
+        "total_calories": 666,
+        "fats": 20.9,
+        "proteins": 43.0,
+        "carbohydrates": 58.0,
+        "image_caption": [
+          {
+            "ingredients": "Breaded Chicken Cutlet",
+            "quantity": "100",
+            "portion_size": "grams (Using Fried Chicken proxy conservatively)"
+          },
+          {
+            "ingredients": "Mashed Potatoes",
+            "quantity": "150",
+            "portion_size": "grams (Conservative estimate including preparation)"
+          },
+          {
+            "ingredients": "Green Peas",
+            "quantity": "200",
+            "portion_size": "grams (Conservative estimate including butter)"
+          }
+        ],
+        "confidence": 90,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T23:10:19.927867",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 14806
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 655,
+        "name_food": "Uncle Bill's Fried Potatoes and Onions",
+        "img_location": "images/food_117_655.jpg",
+        "food_url": "https://www.food.com/recipe/uncle-bills-fried-potatoes-and-onions-158832"
+      },
+      "api_result": {
+        "food_name": "Sauteed potatoes and onions with parsley (Recalculated)",
+        "total_calories": 296,
+        "fats": 14.2,
+        "proteins": 4.0,
+        "carbohydrates": 40.4,
+        "image_caption": [
+          {
+            "ingredients": "potatoes (sliced)",
+            "quantity": "187",
+            "portion_size": "grams (conservative estimate)"
+          },
+          {
+            "ingredients": "cooking oil (absorbed)",
+            "quantity": "1",
+            "portion_size": "tablespoon (conservative estimate)"
+          },
+          {
+            "ingredients": "onions (caramelized)",
+            "quantity": "30",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "parsley",
+            "quantity": "1",
+            "portion_size": "sprinkle (negligible)"
+          }
+        ],
+        "confidence": 90,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T23:10:35.740246",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 12545
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 1404,
+        "name_food": "Yummy Crunchy Apple Pie",
+        "img_location": "images/food_118_1404.jpg",
+        "food_url": "https://www.food.com/recipe/yummy-crunchy-apple-pie-31128"
+      },
+      "api_result": {
+        "food_name": "Pecan Crumble Pie with Ice Cream",
+        "total_calories": 491.2,
+        "fats": 30.0,
+        "proteins": 6.8,
+        "carbohydrates": 51.8,
+        "image_caption": [
+          {
+            "ingredients": "Pie (Crust, Filling, Crumble)",
+            "quantity": "1",
+            "portion_size": "slice (1/8th of pie)"
+          },
+          {
+            "ingredients": "Ice Cream (Caramel/Coffee flavor)",
+            "quantity": "1.5",
+            "portion_size": "scoops (approx 100g)"
+          },
+          {
+            "ingredients": "Pecans (topping)",
+            "quantity": "15",
+            "portion_size": "grams"
+          }
+        ],
+        "confidence": 50,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T23:10:49.292844",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 12116
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 1419,
+        "name_food": "Bev's Sauteed Yellow Squash",
+        "img_location": "images/food_119_1419.jpg",
+        "food_url": "https://www.food.com/recipe/bevs-sauteed-yellow-squash-31371"
+      },
+      "api_result": {
+        "food_name": "Sautéed yellow squash with herbs",
+        "total_calories": 135,
+        "fats": 5.5,
+        "proteins": 7.6,
+        "carbohydrates": 17.8,
+        "image_caption": [
+          {
+            "ingredients": "yellow squash",
+            "quantity": "270",
+            "portion_size": "grams (conservative estimate based on 34 kcal/100g)"
+          },
+          {
+            "ingredients": "cooking oil or butter",
+            "quantity": "1",
+            "portion_size": "teaspoon (approx 5g)"
+          },
+          {
+            "ingredients": "parsley/cilantro",
+            "quantity": "trace",
+            "portion_size": "garnish"
+          }
+        ],
+        "confidence": 95,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T23:11:02.419698",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 10973
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 1006,
+        "name_food": "Classic Baked Ziti",
+        "img_location": "images/food_120_1006.jpg",
+        "food_url": "https://www.food.com/recipe/classic-baked-ziti-22176"
+      },
+      "api_result": {
+        "food_name": "Baked Ziti or Rigatoni with Meat Sauce and Mozzarella",
+        "total_calories": 530,
+        "fats": 28.1,
+        "proteins": 27.3,
+        "carbohydrates": 42.2,
+        "image_caption": [
+          {
+            "ingredients": "cooked pasta (rigatoni/ziti)",
+            "quantity": "120",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "meat sauce (estimated conservative lean ground beef and tomato)",
+            "quantity": "100",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "mozzarella cheese",
+            "quantity": "40",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "cooking oil/fat (residual)",
+            "quantity": "1",
+            "portion_size": "teaspoon"
+          }
+        ],
+        "confidence": 90,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T23:11:14.398313",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 13891
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 2535,
+        "name_food": "Edna's Apple Crumble (Aka. Apple Crisp)",
+        "img_location": "images/food_122_2535.jpg",
+        "food_url": "https://www.food.com/recipe/ednas-apple-crumble-aka-apple-crisp-82925"
+      },
+      "api_result": {
+        "food_name": "Apple crisp with vanilla ice cream (Conservative Estimate)",
+        "total_calories": 468,
+        "fats": 33.1,
+        "proteins": 3.2,
+        "carbohydrates": 39.0,
+        "image_caption": [
+          {
+            "ingredients": "apple filling (cooked)",
+            "quantity": "120",
+            "portion_size": "grams (estimated using baked potato proxy)"
+          },
+          {
+            "ingredients": "oat/flour crisp topping",
+            "quantity": "40",
+            "portion_size": "grams (estimated using baked potato proxy)"
+          },
+          {
+            "ingredients": "vanilla ice cream",
+            "quantity": "1",
+            "portion_size": "scoop (estimated using fat/carb proxies)"
+          },
+          {
+            "ingredients": "butter/sugar (in crisp and filling)",
+            "quantity": "1.5",
+            "portion_size": "tablespoons total (estimated using cooking oil proxy)"
+          }
+        ],
+        "confidence": 75,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T23:11:29.298248",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 12130
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 629,
+        "name_food": "Fantastic Taco Casserole",
+        "img_location": "images/food_123_629.jpg",
+        "food_url": "https://www.food.com/recipe/fantastic-taco-casserole-155186"
+      },
+      "api_result": {
+        "food_name": "Taco Casserole Slice, Layered Mexican Bake (Recalculated Conservatively)",
+        "total_calories": 294,
+        "fats": 22.0,
+        "proteins": 17.5,
+        "carbohydrates": 9.6,
+        "image_caption": [
+          {
+            "ingredients": "Meat/Bean/Base Mixture (Conservative Estimate)",
+            "quantity": "100",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "Shredded Cheese (Cheddar/Monterey Jack)",
+            "quantity": "30",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "Black Olives (sliced)",
+            "quantity": "1.5",
+            "portion_size": "tablespoons"
+          },
+          {
+            "ingredients": "Diced Tomatoes",
+            "quantity": "0.5",
+            "portion_size": "cup"
+          },
+          {
+            "ingredients": "Hidden Fats/Sauce (Assumed 1 tbsp Cooking Oil)",
+            "quantity": "1",
+            "portion_size": "tablespoon"
+          }
+        ],
+        "confidence": 85,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T23:11:42.433405",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 15370
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 1496,
+        "name_food": "Simple Caribbean Jerk Chicken",
+        "img_location": "images/food_124_1496.jpg",
+        "food_url": "https://www.food.com/recipe/simple-caribbean-jerk-chicken-33170"
+      },
+      "api_result": {
+        "food_name": "Roasted chicken pieces (mixed parts, skin on) - Recalculated Conservatively",
+        "total_calories": 476.2,
+        "fats": 19.4,
+        "proteins": 69.8,
+        "carbohydrates": 0.0,
+        "image_caption": [
+          {
+            "ingredients": "roasted chicken (lean equivalent, skin removed for calculation)",
+            "quantity": "300",
+            "portion_size": "grams (conservative estimate of edible meat)"
+          },
+          {
+            "ingredients": "cooking oil/glaze",
+            "quantity": "1.5",
+            "portion_size": "tablespoons (capped fat source)"
+          }
+        ],
+        "confidence": 90,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T23:11:58.807926",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 14931
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 1335,
+        "name_food": "Crock Pot Chops That Will Make You Eat Til You Pop!",
+        "img_location": "images/food_127_1335.jpg",
+        "food_url": "https://www.food.com/recipe/crock-pot-chops-that-will-make-you-eat-til-you-pop-29544"
+      },
+      "api_result": {
+        "food_name": "Chicken with Creole Sauce and White Rice (Recalculated Conservatively)",
+        "total_calories": 466,
+        "fats": 10.1,
+        "proteins": 41.8,
+        "carbohydrates": 47.0,
+        "image_caption": [
+          {
+            "ingredients": "white rice",
+            "quantity": "150",
+            "portion_size": "grams (about 3/4 cup cooked)"
+          },
+          {
+            "ingredients": "lean chicken breast",
+            "quantity": "120",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "tomato and celery sauce",
+            "quantity": "120",
+            "portion_size": "grams (conservative estimate based on vegetable base)"
+          },
+          {
+            "ingredients": "cooking oil (for sauce/cooking)",
+            "quantity": "1",
+            "portion_size": "teaspoon (approx 5g)"
+          },
+          {
+            "ingredients": "lettuce/greens",
+            "quantity": "30",
+            "portion_size": "grams"
+          }
+        ],
+        "confidence": 95,
+        "is_blurry": false,
+        "is_complex": false
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T23:12:14.744783",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 12979
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 2592,
+        "name_food": "Fried Rice",
+        "img_location": "images/food_128_2592.jpg",
+        "food_url": "https://www.food.com/recipe/fried-rice-8594"
+      },
+      "api_result": {
+        "food_name": "Egg Fried Rice with Peas and Onion (Recalculated)",
+        "total_calories": 492,
+        "fats": 19.6,
+        "proteins": 13.4,
+        "carbohydrates": 62.0,
+        "image_caption": [
+          {
+            "ingredients": "cooked white rice",
+            "quantity": "200",
+            "portion_size": "grams (conservative estimate)"
+          },
+          {
+            "ingredients": "peas",
+            "quantity": "50",
+            "portion_size": "grams (conservative estimate)"
+          },
+          {
+            "ingredients": "scrambled egg",
+            "quantity": "1",
+            "portion_size": "large egg (50g)"
+          },
+          {
+            "ingredients": "cooking oil (total absorbed)",
+            "quantity": "1",
+            "portion_size": "tablespoon (14g, conservative total)"
+          },
+          {
+            "ingredients": "onion/scallions",
+            "quantity": "20",
+            "portion_size": "grams"
+          }
+        ],
+        "confidence": 90,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T23:12:28.730149",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 12569
+      }
+    },
+    {
+      "original_data": {
+        "item_id": 2466,
+        "name_food": "Kittencal's Chicken Crescent Roll Casserole",
+        "img_location": "images/food_129_2466.jpg",
+        "food_url": "https://www.food.com/recipe/kittencals-chicken-crescent-roll-casserole-78814"
+      },
+      "api_result": {
+        "food_name": "Baked cheesy rolls (Recalculated Conservatively)",
+        "total_calories": 435,
+        "fats": 20.3,
+        "proteins": 29.2,
+        "carbohydrates": 11.5,
+        "image_caption": [
+          {
+            "ingredients": "Tortilla or pasta shell (Conservative estimate based on bread/pasta)",
+            "quantity": "70",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "Ground meat filling (Conservative estimate based on grilled chicken breast)",
+            "quantity": "50",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "Creamy binder/sauce (Highly conservative estimate)",
+            "quantity": "50",
+            "portion_size": "grams"
+          },
+          {
+            "ingredients": "Cheddar cheese (melted topping)",
+            "quantity": "50",
+            "portion_size": "grams"
+          }
+        ],
+        "confidence": 85,
+        "is_blurry": false,
+        "is_complex": true
+      },
+      "processing_info": {
+        "processed_at": "2025-10-09T23:12:42.306301",
+        "success": true,
+        "error": null,
+        "has_image": true,
+        "api_response_time_ms": 16789
+      }
+    }
+  ]
+}
