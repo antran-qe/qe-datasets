@@ -1,0 +1,1421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Smith Agent – Dataset Explorer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        header {
+            background: white;
+            border-radius: 12px;
+            padding: 24px 32px;
+            margin-bottom: 24px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        
+        .config-status {
+            position: absolute;
+            top: 24px;
+            right: 32px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 13px;
+            color: #4a5568;
+        }
+        
+        .config-status-badge {
+            padding: 6px 12px;
+            background: #edf2f7;
+            border-radius: 6px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        
+        .config-status-badge.configured {
+            background: #c6f6d5;
+            color: #22543d;
+        }
+        
+        .config-status-badge.not-configured {
+            background: #fed7d7;
+            color: #742a2a;
+        }
+        
+        h1 {
+            font-size: 28px;
+            color: #2d3748;
+            margin-bottom: 8px;
+        }
+        
+        .subtitle {
+            color: #718096;
+            font-size: 14px;
+        }
+        
+        .tabs {
+            display: flex;
+            gap: 8px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .tab-btn {
+            padding: 10px 20px;
+            border: 2px solid transparent;
+            background: rgba(255, 255, 255, 0.2);
+            color: #4a5568;
+            cursor: pointer;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+        
+        .tab-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-1px);
+        }
+        
+        .tab-btn.active {
+            background: #667eea;
+            color: white;
+            box-shadow: 0 4px 6px rgba(102, 126, 234, 0.3);
+        }
+        
+        .content {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .mailbox-card {
+            background: #f7fafc;
+            border: 2px solid #e2e8f0;
+            border-radius: 10px;
+            margin-bottom: 16px;
+            overflow: hidden;
+            transition: all 0.2s;
+        }
+        
+        .mailbox-card:hover {
+            border-color: #cbd5e0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        
+        .mailbox-header {
+            padding: 20px 24px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .mailbox-header:hover {
+            background: linear-gradient(135deg, #5568d3 0%, #6a3f8f 100%);
+        }
+        
+        .mailbox-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        
+        .mailbox-meta {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            font-size: 13px;
+            opacity: 0.95;
+        }
+        
+        .meta-badge {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 3px 10px;
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .expand-icon {
+            font-size: 24px;
+            transition: transform 0.3s;
+        }
+        
+        .expand-icon.expanded {
+            transform: rotate(180deg);
+        }
+        
+        .mailbox-info {
+            padding: 20px 24px;
+            background: white;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 16px;
+        }
+        
+        .info-item {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .info-label {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #718096;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        
+        .info-value {
+            color: #2d3748;
+            font-size: 14px;
+        }
+        
+        .expected-briefing {
+            margin-top: 16px;
+            padding: 16px;
+            background: #fffbeb;
+            border-left: 4px solid #f59e0b;
+            border-radius: 6px;
+        }
+        
+        .expected-briefing-label {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #92400e;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+        
+        .expected-briefing-text {
+            color: #78350f;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        
+        .emails-container {
+            padding: 16px 24px 24px;
+            background: white;
+        }
+        
+        .email-card {
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            overflow: hidden;
+            transition: all 0.2s;
+        }
+        
+        .email-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            border-color: #cbd5e0;
+        }
+        
+        .email-header {
+            padding: 16px;
+            background: #f8fafc;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .email-subject {
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 8px;
+            font-size: 15px;
+        }
+        
+        .email-meta-row {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 8px;
+            margin-bottom: 4px;
+            font-size: 13px;
+        }
+        
+        .email-meta-label {
+            color: #718096;
+            font-weight: 500;
+        }
+        
+        .email-meta-value {
+            color: #4a5568;
+        }
+        
+        .email-pill {
+            display: inline-block;
+            padding: 2px 8px;
+            background: #e2e8f0;
+            border-radius: 12px;
+            font-size: 12px;
+            margin: 2px 4px 2px 0;
+            color: #4a5568;
+        }
+        
+        .email-body {
+            padding: 16px;
+            background: white;
+        }
+        
+        .email-body-text {
+            color: #4a5568;
+            font-size: 14px;
+            line-height: 1.6;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        
+        .email-actions {
+            padding: 12px 16px;
+            background: #f8fafc;
+            border-top: 1px solid #e2e8f0;
+            display: flex;
+            gap: 8px;
+        }
+        
+        .btn {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+        
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: #5568d3;
+            transform: translateY(-1px);
+            box-shadow: 0 2px 4px rgba(102, 126, 234, 0.3);
+        }
+        
+        .btn-secondary {
+            background: white;
+            color: #4a5568;
+            border: 1px solid #cbd5e0;
+        }
+        
+        .btn-secondary:hover {
+            background: #f7fafc;
+            border-color: #a0aec0;
+        }
+        
+        .btn-success {
+            background: #48bb78;
+            color: white;
+        }
+        
+        .btn-success:hover {
+            background: #38a169;
+            transform: translateY(-1px);
+        }
+        
+        .edit-form {
+            padding: 20px;
+            background: #fffef7;
+            border-top: 2px solid #f59e0b;
+        }
+        
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            margin-bottom: 16px;
+        }
+        
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .form-group.full {
+            grid-column: 1 / -1;
+        }
+        
+        .form-label {
+            font-size: 12px;
+            font-weight: 600;
+            color: #4a5568;
+            margin-bottom: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+        
+        .form-input, .form-textarea {
+            padding: 10px 12px;
+            border: 1px solid #cbd5e0;
+            border-radius: 6px;
+            font-size: 14px;
+            font-family: inherit;
+            transition: all 0.2s;
+        }
+        
+        .form-input:focus, .form-textarea:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+        
+        .form-textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+        
+        .form-actions {
+            display: flex;
+            gap: 8px;
+        }
+        
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: #a0aec0;
+        }
+        
+        .empty-state-icon {
+            font-size: 48px;
+            margin-bottom: 16px;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #718096;
+        }
+        
+        /* Modal Styles */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            padding: 20px;
+        }
+        
+        .modal {
+            background: white;
+            border-radius: 12px;
+            max-width: 700px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+        
+        .modal-header {
+            padding: 24px;
+            border-bottom: 2px solid #e2e8f0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 12px 12px 0 0;
+            position: relative;
+        }
+        
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+        }
+        
+        .modal-close:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: rotate(90deg);
+        }
+        
+        .modal-title {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 4px;
+            padding-right: 40px;
+        }
+        
+        .modal-subtitle {
+            font-size: 13px;
+            opacity: 0.9;
+        }
+        
+        .modal-body {
+            padding: 24px;
+        }
+        
+        .modal-footer {
+            padding: 16px 24px;
+            border-top: 1px solid #e2e8f0;
+            display: flex;
+            justify-content: flex-end;
+            gap: 8px;
+        }
+        
+        .config-section {
+            margin-bottom: 24px;
+        }
+        
+        .section-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .radio-group {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 16px;
+        }
+        
+        .radio-option {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 16px;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .radio-option:hover {
+            border-color: #cbd5e0;
+            background: #f7fafc;
+        }
+        
+        .radio-option.selected {
+            border-color: #667eea;
+            background: #eef2ff;
+        }
+        
+        .radio-option input[type="radio"] {
+            margin: 0;
+        }
+        
+        .config-card {
+            background: #f7fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 12px;
+        }
+        
+        .config-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        
+        .config-card-title {
+            font-weight: 600;
+            color: #2d3748;
+            font-size: 14px;
+        }
+        
+        .btn-icon {
+            padding: 6px 12px;
+            font-size: 12px;
+        }
+        
+        .btn-danger {
+            background: #f56565;
+            color: white;
+        }
+        
+        .btn-danger:hover {
+            background: #e53e3e;
+        }
+        
+        .config-badge {
+            display: inline-block;
+            padding: 4px 10px;
+            background: #48bb78;
+            color: white;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: 600;
+            margin-left: 8px;
+        }
+        
+        .config-toolbar {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            z-index: 100;
+        }
+        
+        .fab {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+            transition: all 0.3s;
+        }
+        
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+        }
+        
+        .sender-select-wrapper {
+            margin-bottom: 16px;
+            padding: 12px;
+            background: #eef2ff;
+            border-radius: 8px;
+            border: 1px solid #c7d2fe;
+        }
+        
+        .sender-select-label {
+            font-size: 12px;
+            font-weight: 600;
+            color: #4c51bf;
+            margin-bottom: 6px;
+            display: block;
+        }
+        
+        .sender-select {
+            width: 100%;
+            padding: 8px 12px;
+            border: 1px solid #cbd5e0;
+            border-radius: 6px;
+            font-size: 14px;
+            background: white;
+        }
+        
+        /* Hidden class - MUST be after modal-overlay to override display:flex */
+        .hidden {
+            display: none !important;
+        }
+        
+        @media (max-width: 768px) {
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .mailbox-meta {
+                flex-direction: column;
+                gap: 8px;
+            }
+            
+            .modal {
+                max-width: 100%;
+            }
+            
+            .radio-group {
+                flex-direction: column;
+            }
+        }
+    </style>
+    <meta name="robots" content="noindex">
+    <meta name="referrer" content="no-referrer">
+    <link rel="icon" href="data:,">
+    <script>
+    const DATASETS = [
+        {
+            key: 'daily_briefing_mailbox_simulation',
+            label: 'Daily Briefing Mailboxes',
+            file: 'daily_briefing_mailbox_simulation.json',
+            parseMailboxes: (json) => {
+                return (json.mailboxes || []).map(box => ({
+                    id: box.id || '',
+                    domain: box.domain || '',
+                    position: box.position || '',
+                    owner: box.owner || {},
+                    description: box.description || '',
+                    expectedBriefing: box.expected_briefing || '',
+                    messages: (box.messages || []).map(m => ({
+                        id: m.id || '',
+                        timestamp: m.timestamp || '',
+                        sender: m.sender || {},
+                        to: m.to || [],
+                        cc: m.cc || [],
+                        bcc: m.bcc || [],
+                        subject: m.subject || '',
+                        body: m.body || '',
+                        attachments: m.attachments || []
+                    }))
+                }));
+            }
+        },
+        {
+            key: 'performance_mailbox_simulation',
+            label: 'Performance Mailboxes',
+            file: 'performance_mailbox_simulation.json',
+            parseMailboxes: (json) => {
+                return (json.performance_mailboxes || []).map(box => ({
+                    id: box.id || '',
+                    domain: box.domain || '',
+                    position: box.position || '',
+                    owner: box.owner || {},
+                    description: box.description || '',
+                    expectedBriefing: '',
+                    messages: (box.messages || []).map(m => ({
+                        id: m.id || '',
+                        timestamp: m.timestamp || '',
+                        sender: m.sender || {},
+                        to: m.to || [],
+                        cc: m.cc || [],
+                        bcc: m.bcc || [],
+                        subject: m.subject || '',
+                        body: m.body || '',
+                        attachments: m.attachments || []
+                    }))
+                }));
+            }
+        },
+        {
+            key: 'daily_briefing_testset_extended',
+            label: 'Daily Briefing Testset (Extended)',
+            file: 'daily_briefing_testset_extended.json',
+            parseMailboxes: (json) => {
+                return (json.test_cases || []).map(tc => ({
+                    id: tc.id || '',
+                    domain: tc.domain || '',
+                    position: '',
+                    owner: {},
+                    description: tc.description || '',
+                    expectedBriefing: tc.expected_briefing || '',
+                    messages: (tc.messages || []).map(m => ({
+                        id: m.id || '',
+                        timestamp: m.timestamp || '',
+                        sender: m.sender || {},
+                        to: m.to || [],
+                        cc: m.cc || [],
+                        bcc: m.bcc || [],
+                        subject: m.subject || '',
+                        body: m.body || '',
+                        attachments: m.attachments || []
+                    }))
+                }));
+            }
+        },
+        {
+            key: 'enron_top_1000_labeled',
+            label: 'Enron Top 1000 (labeled)',
+            file: 'enron_top_1000_labeled.json',
+            parseMailboxes: (json) => {
+                return (json.emails || []).map((m, i) => ({
+                    id: `enron_${m.message_id || i}`,
+                    domain: '',
+                    position: '',
+                    owner: {},
+                    description: '',
+                    expectedBriefing: '',
+                    messages: [{
+                        id: m.message_id || i,
+                        timestamp: m.date || '',
+                        sender: {},
+                        to: [],
+                        cc: [],
+                        bcc: [],
+                        subject: m.subject || '',
+                        body: m.body || '',
+                        attachments: []
+                    }]
+                }));
+            }
+        }
+    ];
+
+    const state = {
+        activeKey: DATASETS[0].key,
+        mailboxesByKey: {},
+        expandedMailboxes: new Set(),
+        editingEmail: null,
+        emailConfig: {
+            method: 'smtp', // 'smtp' or 'token'
+            smtp: {
+                host: 'https://api.turbo-smtp.com/api/v2/mail/send',
+                authuser: '',
+                authpass: '',
+                from: ''
+            },
+            tokens: [] // Array of {id, email, token, name}
+        }
+    };
+
+    // Load config from localStorage
+    function loadConfig() {
+        const saved = localStorage.getItem('emailConfig');
+        if (saved) {
+            try {
+                state.emailConfig = JSON.parse(saved);
+            } catch (e) {
+                console.error('Failed to load config:', e);
+            }
+        }
+    }
+
+    // Save config to localStorage
+    function saveConfig() {
+        localStorage.setItem('emailConfig', JSON.stringify(state.emailConfig));
+    }
+
+    function renderTabs() {
+        const tabs = document.getElementById('tabs');
+        tabs.innerHTML = '';
+        DATASETS.forEach(ds => {
+            const btn = document.createElement('button');
+            btn.className = 'tab-btn' + (state.activeKey === ds.key ? ' active' : '');
+            btn.textContent = ds.label;
+            btn.addEventListener('click', () => {
+                state.activeKey = ds.key;
+                state.expandedMailboxes.clear();
+                state.editingEmail = null;
+                renderTabs();
+                ensureLoaded(ds).then(() => renderMailboxes());
+            });
+            tabs.appendChild(btn);
+        });
+    }
+
+    async function ensureLoaded(ds) {
+        if (state.mailboxesByKey[ds.key]) return;
+        const res = await fetch(ds.file);
+        const json = await res.json();
+        state.mailboxesByKey[ds.key] = ds.parseMailboxes(json);
+    }
+
+    function toggleMailbox(mailboxId) {
+        if (state.expandedMailboxes.has(mailboxId)) {
+            state.expandedMailboxes.delete(mailboxId);
+        } else {
+            state.expandedMailboxes.add(mailboxId);
+        }
+        renderMailboxes();
+    }
+
+    function toggleEdit(mailboxId, emailId) {
+        const key = `${mailboxId}_${emailId}`;
+        if (state.editingEmail === key) {
+            state.editingEmail = null;
+        } else {
+            state.editingEmail = key;
+        }
+        renderMailboxes();
+    }
+
+    function saveEmail(mailboxId, emailId) {
+        const mailboxes = state.mailboxesByKey[state.activeKey];
+        const mailbox = mailboxes.find(m => m.id === mailboxId);
+        const email = mailbox.messages.find(e => e.id === emailId);
+        
+        const form = document.getElementById(`edit-form-${mailboxId}-${emailId}`);
+        const formData = new FormData(form);
+        
+        email.sender.name = formData.get('senderName');
+        email.sender.email = formData.get('senderEmail');
+        email.subject = formData.get('subject');
+        email.body = formData.get('body');
+        
+        const recipients = formData.get('recipients').split(/[,;\s]+/).filter(Boolean);
+        email.to = recipients.map(email => ({ name: '', email: email.trim() }));
+        
+        state.editingEmail = null;
+        renderMailboxes();
+    }
+
+    async function sendEmail(email, selectedSender = null) {
+        const to = (email.to && email.to.length) ? email.to.map(r => r.email).filter(Boolean) : [];
+        
+        if (to.length === 0) {
+            alert('⚠️ No recipients specified');
+            return;
+        }
+
+        if (state.emailConfig.method === 'smtp') {
+            await sendViaSMTP(email, to);
+        } else if (state.emailConfig.method === 'token') {
+            await sendViaToken(email, to, selectedSender);
+        } else {
+            // Fallback to mailto
+            const mailto = `mailto:${encodeURIComponent(to[0])}?subject=${encodeURIComponent(email.subject || '')}${to.length > 1 ? `&cc=${encodeURIComponent(to.slice(1).join(','))}` : ''}&body=${encodeURIComponent(email.body || '')}`;
+            window.location.href = mailto;
+        }
+    }
+
+    async function sendViaSMTP(email, to) {
+        const config = state.emailConfig.smtp;
+        
+        if (!config.authuser || !config.authpass) {
+            alert('⚠️ Please configure SMTP credentials first (email and password)');
+            openConfigModal();
+            return;
+        }
+
+        // Use sender from email data, fallback to configured 'from' address
+        let fromAddress = '';
+        if (email.sender && email.sender.email) {
+            fromAddress = email.sender.email;
+        } else if (config.from) {
+            fromAddress = config.from;
+        } else {
+            alert('⚠️ No sender email found. Please configure a default "From" address or ensure email data has sender information.');
+            openConfigModal();
+            return;
+        }
+
+        try {
+            const response = await fetch(config.host, {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    authuser: config.authuser,
+                    authpass: config.authpass,
+                    from: fromAddress,
+                    to: to.join(','),
+                    subject: email.subject || '',
+                    content: email.body || ''
+                })
+            });
+
+            if (response.ok) {
+                const result = await response.json();
+                alert(`✅ Email sent successfully via Turbo-SMTP!\n\nFrom: ${fromAddress}\nTo: ${to.join(', ')}\n\nResponse: ${JSON.stringify(result, null, 2)}`);
+            } else {
+                const error = await response.text();
+                alert('❌ Failed to send email: ' + error);
+            }
+        } catch (error) {
+            console.error('SMTP Error:', error);
+            alert('❌ Failed to send email: ' + error.message);
+        }
+    }
+
+    async function sendViaToken(email, to, selectedSenderId) {
+        const sender = state.emailConfig.tokens.find(t => t.id === selectedSenderId);
+        
+        if (!sender) {
+            alert('⚠️ Please select a sender account');
+            return;
+        }
+
+        try {
+            // Using Microsoft Graph API for OAuth token
+            const response = await fetch('https://graph.microsoft.com/v1.0/me/sendMail', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${sender.token}`
+                },
+                body: JSON.stringify({
+                    message: {
+                        subject: email.subject || '',
+                        body: {
+                            contentType: 'Text',
+                            content: email.body || ''
+                        },
+                        toRecipients: to.map(addr => ({
+                            emailAddress: { address: addr }
+                        }))
+                    }
+                })
+            });
+
+            if (response.ok || response.status === 202) {
+                alert('✅ Email sent successfully via ' + sender.email + '!');
+            } else {
+                const error = await response.text();
+                alert('❌ Failed to send email: ' + error);
+            }
+        } catch (error) {
+            console.error('Token Send Error:', error);
+            alert('❌ Failed to send email: ' + error.message);
+        }
+    }
+
+    function openConfigModal() {
+        document.getElementById('configModal').classList.remove('hidden');
+        renderConfigModal();
+    }
+
+    function closeConfigModal() {
+        const modal = document.getElementById('configModal');
+        if (modal) {
+            modal.classList.add('hidden');
+        }
+    }
+
+    function renderConfigModal() {
+        const modal = document.getElementById('configModalContent');
+        if (!modal) {
+            console.error('configModalContent element not found');
+            return;
+        }
+        
+        const method = state.emailConfig.method;
+        
+        modal.innerHTML = `
+            <div class="config-section">
+                <div class="section-title">🔧 Email Sending Method</div>
+                <div class="radio-group">
+                    <label class="radio-option ${method === 'smtp' ? 'selected' : ''}" onclick="selectMethod('smtp')">
+                        <input type="radio" name="method" value="smtp" ${method === 'smtp' ? 'checked' : ''}>
+                        <div>
+                            <div style="font-weight:600;">Turbo-SMTP Server</div>
+                            <div style="font-size:12px;color:#718096;">Send via turbo-smtp.com API</div>
+                        </div>
+                    </label>
+                    <label class="radio-option ${method === 'token' ? 'selected' : ''}" onclick="selectMethod('token')">
+                        <input type="radio" name="method" value="token" ${method === 'token' ? 'checked' : ''}>
+                        <div>
+                            <div style="font-weight:600;">Access Token</div>
+                            <div style="font-size:12px;color:#718096;">Use OAuth tokens (Microsoft Graph)</div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            ${method === 'smtp' ? renderSMTPConfig() : renderTokenConfig()}
+        `;
+    }
+
+    function selectMethod(method) {
+        state.emailConfig.method = method;
+        renderConfigModal();
+    }
+
+    function renderSMTPConfig() {
+        const config = state.emailConfig.smtp;
+        return `
+            <div class="config-section">
+                <div class="section-title">📨 Turbo-SMTP Configuration</div>
+                <div class="form-grid">
+                    <div class="form-group full">
+                        <label class="form-label">API Endpoint</label>
+                        <input type="text" class="form-input" id="smtpHost" value="${config.host}" readonly style="font-size:11px;">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Auth User (Email)</label>
+                        <input type="email" class="form-input" id="smtpAuthuser" value="${config.authuser}" placeholder="your-email@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Auth Password</label>
+                        <input type="password" class="form-input" id="smtpAuthpass" value="${config.authpass}" placeholder="your-password">
+                    </div>
+                    <div class="form-group full">
+                        <label class="form-label">Default From Email (Optional)</label>
+                        <input type="email" class="form-input" id="smtpFrom" value="${config.from}" placeholder="sender@example.com">
+                        <div style="font-size:11px;color:#718096;margin-top:4px;">
+                            💡 Used as fallback when email data doesn't have a sender. Usually, the sender from email data will be used.
+                        </div>
+                    </div>
+                </div>
+                <p style="font-size:12px;color:#718096;margin-top:8px;">
+                    📖 Get your Turbo-SMTP credentials from <a href="https://www.turbo-smtp.com" target="_blank" style="color:#667eea;">turbo-smtp.com</a>
+                </p>
+            </div>
+        `;
+    }
+
+    function renderTokenConfig() {
+        const tokens = state.emailConfig.tokens;
+        return `
+            <div class="config-section">
+                <div class="section-title">
+                    🔑 Access Token Configurations
+                    <button class="btn btn-primary btn-icon" onclick="addToken()" style="margin-left:auto;">+ Add Token</button>
+                </div>
+                ${tokens.length === 0 ? `
+                    <div style="text-align:center;padding:20px;color:#a0aec0;">
+                        No sender accounts configured. Click "Add Token" to add one.
+                    </div>
+                ` : tokens.map((token, idx) => `
+                    <div class="config-card">
+                        <div class="config-card-header">
+                            <div class="config-card-title">
+                                ${token.name || 'Sender ' + (idx + 1)}
+                                ${idx === 0 ? '<span class="config-badge">DEFAULT</span>' : ''}
+                            </div>
+                            <button class="btn btn-danger btn-icon" onclick="removeToken(${idx})">🗑️ Remove</button>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Display Name</label>
+                            <input type="text" class="form-input" value="${token.name}" onchange="updateToken(${idx}, 'name', this.value)">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" class="form-input" value="${token.email}" onchange="updateToken(${idx}, 'email', this.value)">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Access Token</label>
+                            <textarea class="form-textarea" style="min-height:60px;font-family:monospace;font-size:12px;" onchange="updateToken(${idx}, 'token', this.value)">${token.token}</textarea>
+                        </div>
+                    </div>
+                `).join('')}
+                <p style="font-size:12px;color:#718096;margin-top:8px;">
+                    Generate OAuth tokens from Microsoft Graph API or your email provider's API
+                </p>
+            </div>
+        `;
+    }
+
+    function addToken() {
+        state.emailConfig.tokens.push({
+            id: Date.now().toString(),
+            name: '',
+            email: '',
+            token: ''
+        });
+        renderConfigModal();
+    }
+
+    function removeToken(idx) {
+        if (confirm('Remove this sender account?')) {
+            state.emailConfig.tokens.splice(idx, 1);
+            renderConfigModal();
+        }
+    }
+
+    function updateToken(idx, field, value) {
+        state.emailConfig.tokens[idx][field] = value;
+    }
+
+    function saveEmailConfig() {
+        if (state.emailConfig.method === 'smtp') {
+            const authuserEl = document.getElementById('smtpAuthuser');
+            const authpassEl = document.getElementById('smtpAuthpass');
+            const fromEl = document.getElementById('smtpFrom');
+            
+            if (authuserEl && authpassEl && fromEl) {
+                state.emailConfig.smtp.authuser = authuserEl.value;
+                state.emailConfig.smtp.authpass = authpassEl.value;
+                state.emailConfig.smtp.from = fromEl.value;
+            }
+        }
+        // Token configurations are already updated via onchange events
+        
+        saveConfig();
+        updateConfigStatus();
+        closeConfigModal();
+        
+        // Show detailed confirmation
+        const config = state.emailConfig;
+        let message = '✅ Configuration saved!\n\n';
+        
+        if (config.method === 'smtp') {
+            message += `Method: Turbo-SMTP Server\n`;
+            message += `Auth User: ${config.smtp.authuser || '(not set)'}\n`;
+            message += `Auth Password: ${config.smtp.authpass ? '******' : '(not set)'}\n`;
+            message += `Default From: ${config.smtp.from || '(will use sender from email data)'}`;
+        } else {
+            message += `Method: Access Token\n`;
+            message += `Sender Accounts: ${config.tokens.length}\n`;
+            config.tokens.forEach((t, i) => {
+                message += `\n${i + 1}. ${t.name || 'Unnamed'} <${t.email || 'No email'}>\n`;
+                message += `   Token: ${t.token ? t.token.substring(0, 20) + '...' : '(not set)'}`;
+            });
+        }
+        
+        alert(message);
+    }
+    
+    function updateConfigStatus() {
+        const statusEl = document.getElementById('configStatus');
+        if (!statusEl) return;
+        
+        const config = state.emailConfig;
+        let isConfigured = false;
+        let statusText = '';
+        
+        if (config.method === 'smtp') {
+            isConfigured = !!config.smtp.authuser && !!config.smtp.authpass;
+            statusText = isConfigured 
+                ? `Turbo-SMTP: ${config.smtp.authuser}` 
+                : 'SMTP: Not configured';
+        } else {
+            isConfigured = config.tokens.length > 0 && config.tokens.some(t => t.email && t.token);
+            statusText = isConfigured 
+                ? `Tokens: ${config.tokens.length} account${config.tokens.length !== 1 ? 's' : ''}` 
+                : 'Tokens: Not configured';
+        }
+        
+        statusEl.innerHTML = `
+            <div class="config-status-badge ${isConfigured ? 'configured' : 'not-configured'}">
+                ${isConfigured ? '✓' : '⚠️'} ${statusText}
+            </div>
+        `;
+    }
+
+    function renderMailboxes() {
+        const container = document.getElementById('mailboxContainer');
+        const mailboxes = state.mailboxesByKey[state.activeKey] || [];
+        
+        if (mailboxes.length === 0) {
+            container.innerHTML = `
+                <div class="empty-state">
+                    <div class="empty-state-icon">📭</div>
+                    <div>No mailboxes found</div>
+                </div>
+            `;
+            return;
+        }
+        
+        container.innerHTML = mailboxes.map(mailbox => {
+            const isExpanded = state.expandedMailboxes.has(mailbox.id);
+            const emailCount = mailbox.messages.length;
+            
+            return `
+                <div class="mailbox-card">
+                    <div class="mailbox-header" onclick="toggleMailbox('${mailbox.id}')">
+                        <div>
+                            <div class="mailbox-title">${mailbox.id || 'Untitled Mailbox'}</div>
+                            <div class="mailbox-meta">
+                                ${mailbox.domain ? `<span class="meta-badge">📂 ${mailbox.domain}</span>` : ''}
+                                ${mailbox.position ? `<span class="meta-badge">👤 ${mailbox.position}</span>` : ''}
+                                <span class="meta-badge">✉️ ${emailCount} email${emailCount !== 1 ? 's' : ''}</span>
+                            </div>
+                        </div>
+                        <div class="expand-icon ${isExpanded ? 'expanded' : ''}">▼</div>
+                    </div>
+                    
+                    ${isExpanded ? `
+                        <div class="mailbox-info">
+                            <div class="info-grid">
+                                ${mailbox.id ? `
+                                <div class="info-item">
+                                    <div class="info-label">Mailbox ID</div>
+                                    <div class="info-value">${mailbox.id}</div>
+                                </div>` : ''}
+                                ${mailbox.domain ? `
+                                <div class="info-item">
+                                    <div class="info-label">Domain</div>
+                                    <div class="info-value">${mailbox.domain}</div>
+                                </div>` : ''}
+                                ${mailbox.position ? `
+                                <div class="info-item">
+                                    <div class="info-label">Position</div>
+                                    <div class="info-value">${mailbox.position}</div>
+                                </div>` : ''}
+                                ${mailbox.owner && mailbox.owner.name ? `
+                                <div class="info-item">
+                                    <div class="info-label">Owner</div>
+                                    <div class="info-value">${mailbox.owner.name}${mailbox.owner.email ? ` <${mailbox.owner.email}>` : ''}</div>
+                                </div>` : ''}
+                            </div>
+                            ${mailbox.description ? `
+                            <div class="info-item" style="margin-top: 16px;">
+                                <div class="info-label">Description</div>
+                                <div class="info-value">${mailbox.description}</div>
+                            </div>` : ''}
+                            ${mailbox.expectedBriefing ? `
+                            <div class="expected-briefing">
+                                <div class="expected-briefing-label">Expected Briefing</div>
+                                <div class="expected-briefing-text">${mailbox.expectedBriefing}</div>
+                            </div>` : ''}
+                        </div>
+                        
+                        <div class="emails-container">
+                            ${mailbox.messages.map(email => renderEmail(mailbox.id, email)).join('')}
+                        </div>
+                    ` : ''}
+                </div>
+            `;
+        }).join('');
+    }
+
+    function renderEmail(mailboxId, email) {
+        const isEditing = state.editingEmail === `${mailboxId}_${email.id}`;
+        
+        const toList = (email.to || []).map(r => 
+            `<span class="email-pill">${r.name ? r.name + ' ' : ''}&lt;${r.email}&gt;</span>`
+        ).join('');
+        
+        return `
+            <div class="email-card">
+                <div class="email-header">
+                    <div class="email-subject">${email.subject || '(No Subject)'}</div>
+                    ${email.timestamp ? `
+                    <div class="email-meta-row">
+                        <span class="email-meta-label">📅 Time:</span>
+                        <span class="email-meta-value">${email.timestamp}</span>
+                    </div>` : ''}
+                    ${email.sender && (email.sender.name || email.sender.email) ? `
+                    <div class="email-meta-row">
+                        <span class="email-meta-label">📤 From:</span>
+                        <span class="email-meta-value">${email.sender.name ? email.sender.name + ' ' : ''}&lt;${email.sender.email}&gt;</span>
+                    </div>` : ''}
+                    ${email.to && email.to.length ? `
+                    <div class="email-meta-row">
+                        <span class="email-meta-label">📥 To:</span>
+                        <span class="email-meta-value">${toList}</span>
+                    </div>` : ''}
+                </div>
+                
+                ${!isEditing ? `
+                <div class="email-body">
+                    <div class="email-body-text">${email.body || '(No content)'}</div>
+                </div>
+                
+                <div class="email-actions">
+                    ${state.emailConfig.method === 'token' && state.emailConfig.tokens.length > 0 ? `
+                        <div class="sender-select-wrapper" style="flex:1;">
+                            <label class="sender-select-label">Select Sender Account</label>
+                            <select class="sender-select" id="sender-${mailboxId}-${email.id}">
+                                ${state.emailConfig.tokens.map(t => `
+                                    <option value="${t.id}">${t.name || 'Unnamed'} &lt;${t.email}&gt;</option>
+                                `).join('')}
+                            </select>
+                        </div>
+                    ` : ''}
+                    <div style="display:flex;gap:8px;">
+                        <button class="btn btn-primary" onclick="toggleEdit('${mailboxId}', '${email.id}')">✏️ Edit</button>
+                        <button class="btn btn-success" onclick='sendEmailWithSender("${mailboxId}", "${email.id}", ${JSON.stringify(email).replace(/'/g, "\\'")})'>📧 Send Email</button>
+                    </div>
+                </div>
+                ` : `
+                <form id="edit-form-${mailboxId}-${email.id}" class="edit-form" onsubmit="event.preventDefault(); saveEmail('${mailboxId}', '${email.id}');">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label class="form-label">Sender Name</label>
+                            <input type="text" name="senderName" class="form-input" value="${(email.sender && email.sender.name) || ''}">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Sender Email</label>
+                            <input type="email" name="senderEmail" class="form-input" value="${(email.sender && email.sender.email) || ''}">
+                        </div>
+                        <div class="form-group full">
+                            <label class="form-label">Recipients (comma separated emails)</label>
+                            <input type="text" name="recipients" class="form-input" value="${(email.to || []).map(r => r.email).join(', ')}">
+                        </div>
+                        <div class="form-group full">
+                            <label class="form-label">Subject</label>
+                            <input type="text" name="subject" class="form-input" value="${email.subject || ''}">
+                        </div>
+                        <div class="form-group full">
+                            <label class="form-label">Content</label>
+                            <textarea name="body" class="form-textarea">${email.body || ''}</textarea>
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-success">💾 Save</button>
+                        <button type="button" class="btn btn-secondary" onclick="toggleEdit('${mailboxId}', '${email.id}')">✖️ Cancel</button>
+                    </div>
+                </form>
+                `}
+            </div>
+        `;
+    }
+
+    function sendEmailWithSender(mailboxId, emailId, email) {
+        let selectedSender = null;
+        
+        if (state.emailConfig.method === 'token' && state.emailConfig.tokens.length > 0) {
+            const selectorEl = document.getElementById(`sender-${mailboxId}-${emailId}`);
+            selectedSender = selectorEl ? selectorEl.value : state.emailConfig.tokens[0].id;
+        }
+        
+        sendEmail(email, selectedSender);
+    }
+
+    window.addEventListener('DOMContentLoaded', async () => {
+        loadConfig();
+        updateConfigStatus();
+        renderTabs();
+        const container = document.getElementById('mailboxContainer');
+        container.innerHTML = '<div class="loading">Loading dataset...</div>';
+        await ensureLoaded(DATASETS[0]);
+        renderMailboxes();
+    });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="config-status" id="configStatus">
+                <div class="config-status-badge not-configured">⚠️ Not configured</div>
+            </div>
+            <h1>📬 Daily Smith Agent – Dataset Explorer</h1>
+            <p class="subtitle">Explore and manage email datasets with ease</p>
+            <div class="tabs" id="tabs"></div>
+        </header>
+        
+        <div class="content">
+            <div id="mailboxContainer"></div>
+        </div>
+    </div>
+
+    <!-- Configuration Modal -->
+    <div id="configModal" class="modal-overlay hidden" onclick="if(event.target === this) closeConfigModal()">
+        <div class="modal" onclick="event.stopPropagation()">
+            <div class="modal-header">
+                <button class="modal-close" onclick="closeConfigModal()" title="Close">✕</button>
+                <div class="modal-title">⚙️ Email Configuration</div>
+                <div class="modal-subtitle">Configure how emails are sent</div>
+            </div>
+            <div class="modal-body" id="configModalContent">
+                <!-- Content rendered by renderConfigModal() -->
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" onclick="closeConfigModal()">Cancel</button>
+                <button class="btn btn-success" onclick="saveEmailConfig()">💾 Save Configuration</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Action Button -->
+    <div class="config-toolbar">
+        <button class="fab" onclick="openConfigModal()" title="Email Configuration">⚙️</button>
+    </div>
+</body>
+</html>

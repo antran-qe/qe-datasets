@@ -1,0 +1,1004 @@
+{
+  "mailboxes": [
+    {
+      "id": "sales_rep_alex_mailbox",
+      "domain": "sales",
+      "position": "Sales Representative",
+      "owner": {
+        "name": "Alex Johnson",
+        "email": "alex.johnson@acme-soft.com"
+      },
+      "description": "Mailbox of a sales representative handling client follow‑ups, cross‑functional updates, newsletters, advertisements and HR announcements.",
+      "messages": [
+        {
+          "id": "alex_client_follow_up",
+          "timestamp": "2025-10-09T09:15+07:00",
+          "sender": {"name": "Carla Lee", "email": "carla.lee@clientco.com"},
+          "to": [{"name": "Alex Johnson", "email": "alex.johnson@acme-soft.com"}],
+          "cc": [],
+          "bcc": [],
+          "subject": "Re: Proposal feedback and next steps",
+          "body": "Hi Alex,\n\nThanks for sending over the revised proposal. Our team had a chance to review it and we have a few questions about the pricing tiers and support levels. Could we schedule a quick call later this week to go over the details? We are aiming to finalize our decision by next Tuesday.\n\nBest,\nCarla",
+          "attachments": []
+        },
+        {
+          "id": "alex_internal_meeting_invite",
+          "timestamp": "2025-10-08T15:00+07:00",
+          "sender": {"name": "Grace Lin", "email": "grace.lin@acme-soft.com"},
+          "to": [
+            {"name": "Alex Johnson", "email": "alex.johnson@acme-soft.com"},
+            {"name": "Dana Nguyen", "email": "dana.nguyen@acme-soft.com"}
+          ],
+          "cc": [{"name": "Mark Chen", "email": "mark.chen@acme-soft.com"}],
+          "bcc": [],
+          "subject": "Q4 Sales & Marketing Sync",
+          "body": "Hello team,\n\nTo keep our cross‑functional collaboration smooth, let's have a Q4 Sales & Marketing sync on Thursday at 3 PM. We'll review campaign performance and upcoming product launches. Please prepare any data you want to discuss.\n\nThanks,\nGrace",
+          "attachments": []
+        },
+        {
+          "id": "alex_sales_newsletter",
+          "timestamp": "2025-10-07T08:00+07:00",
+          "sender": {"name": "Sales Leadership", "email": "sales-leadership@acme-soft.com"},
+          "to": [{"name": "Alex Johnson", "email": "alex.johnson@acme-soft.com"}],
+          "cc": [],
+          "bcc": [],
+          "subject": "Monthly Sales Newsletter – September Results",
+          "body": "Good morning team,\n\nWelcome to the September edition of our Sales Newsletter. Highlights include:\n\n- Total pipeline grew by 15% compared to August\n- Top performer of the month: Alex Johnson with 120% quota attainment\n- New product training scheduled for Oct 15\n\nYou can find the full report in the attached PDF. Keep up the great work!\n\nSales Leadership",
+          "attachments": [{"filename": "sales_newsletter_sept.pdf"}]
+        },
+        {
+          "id": "alex_promo_ad",
+          "timestamp": "2025-10-07T11:20+07:00",
+          "sender": {"name": "Webinar Hosts", "email": "webinars@marketingtools.io"},
+          "to": [{"name": "Alex Johnson", "email": "alex.johnson@acme-soft.com"}],
+          "cc": [],
+          "bcc": [],
+          "subject": "Unlock your Sales Potential with AI Tools – Free Webinar",
+          "body": "Hi there!\n\nJoin our free webinar next week on using AI to close more deals. Learn from industry experts and get exclusive discounts on our platform. Register now at the link below.\n\nThis is a promotional email. You can unsubscribe at any time.",
+          "attachments": []
+        },
+        {
+          "id": "alex_hr_policy_update",
+          "timestamp": "2025-10-06T16:45+07:00",
+          "sender": {"name": "HR Department", "email": "hr@acme-soft.com"},
+          "to": [{"name": "All Employees", "email": "all@acme-soft.com"}],
+          "cc": [],
+          "bcc": [],
+          "subject": "Remote Work Policy Update – Action Required",
+          "body": "Dear team,\n\nWe are updating our remote work policy effective October 20. Please review the attached guidelines and acknowledge your understanding by replying to this email or using the HR portal by Oct 18.\n\nHighlights:\n- Employees must work from the office at least two days per week.\n- Home office stipend has been increased to $500/year.\n- New requirement to update your manager weekly on your location.\n\nKind regards,\nHR Department",
+          "attachments": [{"filename": "remote_work_policy_2025.pdf"}]
+        },
+        {
+          "id": "alex_it_alert",
+          "timestamp": "2025-10-05T13:30+07:00",
+          "sender": {"name": "IT Support", "email": "it-support@acme-soft.com"},
+          "to": [{"name": "All Employees", "email": "all@acme-soft.com"}],
+          "cc": [],
+          "bcc": [],
+          "subject": "Scheduled Maintenance on October 12",
+          "body": "Hello,\n\nThe IT team will perform maintenance on our CRM servers this Saturday from 1 AM to 4 AM. During this window, the system will be unavailable. Please save your work accordingly.\n\nThank you,\nIT Support",
+          "attachments": []
+        },
+        {
+          "id": "alex_cross_dept_event_invite",
+          "timestamp": "2025-10-04T10:00+07:00",
+          "sender": {"name": "Company Culture", "email": "culture@acme-soft.com"},
+          "to": [{"name": "Alex Johnson", "email": "alex.johnson@acme-soft.com"}],
+          "cc": [],
+          "bcc": [],
+          "subject": "Join the Charity Fun Run this Friday",
+          "body": "Hey Alex,\n\nWe're hosting our annual charity fun run on Friday at 5 PM. It's a great opportunity to connect with colleagues across departments and support a good cause. Sign up using the link below.\n\nBest,\nCompany Culture Team",
+          "attachments": []
+        },
+        {
+          "id": "alex_spam_advert",
+          "timestamp": "2025-10-04T19:40+07:00",
+          "sender": {"name": "Unknown Sender", "email": "promo@randomoffers.com"},
+          "to": [{"name": "alex.johnson@acme-soft.com", "email": "alex.johnson@acme-soft.com"}],
+          "cc": [],
+          "bcc": [],
+          "subject": "Get 90% off on new gadgets!",
+          "body": "Limited time offer! Save big on electronics, gadgets and more. Click here to claim your discount now!",
+          "attachments": []
+        }
+      ],
+      "expected_briefing": "Alex's inbox contains a client follow‑up requesting a call about proposal pricing, a cross‑functional meeting invite for a sales and marketing sync, a monthly sales newsletter summarizing September results, a promotional webinar advertisement, an HR remote work policy update requiring acknowledgement, an IT maintenance notice, a company culture charity event invite and a spam advertisement. Key tasks: schedule a call with Carla, prepare data for the Q4 sync, review the remote work policy and acknowledge it and note the IT maintenance window. Other items are informational or promotional."
+    },
+    {
+      "id": "sales_manager_sam_mailbox",
+      "domain": "sales",
+      "position": "Sales Manager",
+      "owner": {
+        "name": "Sam Patel",
+        "email": "sam.patel@acme-soft.com"
+      },
+      "description": "Mailbox of a sales manager juggling leadership updates, escalations, company‑wide announcements, newsletters, budget requests and product launches.",
+      "messages": [
+        {
+          "id": "sam_leadership_update",
+          "timestamp": "2025-10-09T08:30+07:00",
+          "sender": {"name": "CEO", "email": "ceo@acme-soft.com"},
+          "to": [
+            {"name": "Sam Patel", "email": "sam.patel@acme-soft.com"},
+            {"name": "Leadership Team", "email": "leadership@acme-soft.com"}
+          ],
+          "cc": [],
+          "bcc": [],
+          "subject": "Leadership Update: Q4 Strategy",
+          "body": "Hello team,\n\nAs we enter Q4, I want to outline our strategic priorities: accelerate enterprise sales growth, focus on customer retention and improve our product roadmap communication. Please prepare to discuss how your teams will support these objectives at our leadership meeting next Monday.\n\nBest,\nCEO",
+          "attachments": []
+        },
+        {
+          "id": "sam_client_escalation",
+          "timestamp": "2025-10-08T14:10+07:00",
+          "sender": {"name": "Maya Rodriguez", "email": "maya.rodriguez@clientco.com"},
+          "to": [{"name": "Sam Patel", "email": "sam.patel@acme-soft.com"}],
+          "cc": [{"name": "Alex Johnson", "email": "alex.johnson@acme-soft.com"}],
+          "bcc": [],
+          "subject": "Urgent: Contract issue with support response times",
+          "body": "Dear Sam,\n\nWe've been experiencing slower response times from your support team than what is outlined in our contract. Could you look into this and ensure we receive the support level we agreed upon? Our renewal decision depends on timely service.\n\nThank you,\nMaya",
+          "attachments": []
+        },
+        {
+          "id": "sam_all_hands_invite",
+          "timestamp": "2025-10-07T09:00+07:00",
+          "sender": {"name": "HR", "email": "hr@acme-soft.com"},
+          "to": [{"name": "All Employees", "email": "all@acme-soft.com"}],
+          "cc": [],
+          "bcc": [],
+          "subject": "All‑Hands Meeting – October 14",
+          "body": "Hi everyone,\n\nPlease join our company‑wide all‑hands meeting on October 14 at 10 AM. Leadership will share updates on company performance, culture initiatives and answer your questions.\n\nKind regards,\nHR",
+          "attachments": []
+        },
+        {
+          "id": "sam_newsletter_subscription",
+          "timestamp": "2025-10-06T07:45+07:00",
+          "sender": {"name": "SalesDaily", "email": "newsletter@salesdaily.io"},
+          "to": [{"name": "Sam Patel", "email": "sam.patel@acme-soft.com"}],
+          "cc": [],
+          "bcc": [],
+          "subject": "Sales Daily Digest – Trends and Insights",
+          "body": "Good morning Sam,\n\nHere’s your daily digest of sales trends and insights. Top stories: new prospecting techniques, using AI to forecast deals and industry news on B2B spending patterns.\n\nStay informed!\n\nSalesDaily Team",
+          "attachments": []
+        },
+        {
+          "id": "sam_finance_budget_request",
+          "timestamp": "2025-10-05T16:00+07:00",
+          "sender": {"name": "Finance", "email": "finance@acme-soft.com"},
+          "to": [{"name": "Sam Patel", "email": "sam.patel@acme-soft.com"}],
+          "cc": [{"name": "CFO", "email": "cfo@acme-soft.com"}],
+          "bcc": [],
+          "subject": "Budget Request for Q1 Sales Kickoff",
+          "body": "Hi Sam,\n\nWe need your proposed budget for the Q1 Sales Kickoff event by next Friday. Please outline costs for venue, travel, materials and any guest speakers. If you need assistance, let us know.\n\nRegards,\nFinance Team",
+          "attachments": []
+        },
+        {
+          "id": "sam_internal_policy_notice",
+          "timestamp": "2025-10-04T11:30+07:00",
+          "sender": {"name": "HR", "email": "hr@acme-soft.com"},
+          "to": [{"name": "Sam Patel", "email": "sam.patel@acme-soft.com"}],
+          "cc": [],
+          "bcc": [],
+          "subject": "Reminder: Use targeted distribution lists",
+          "body": "Hi Sam,\n\nAs a reminder based on our internal email best practices, please ensure you segment your audience when sending communications. According to our guidelines, targeting messages to relevant departments avoids inbox fatigue and keeps engagement high.\n\nThanks,\nHR Communications",
+          "attachments": []
+        },
+        {
+          "id": "sam_product_launch_marketing",
+          "timestamp": "2025-10-03T09:50+07:00",
+          "sender": {"name": "Product Marketing", "email": "product-marketing@acme-soft.com"},
+          "to": [
+            {"name": "Sam Patel", "email": "sam.patel@acme-soft.com"},
+            {"name": "Sales Team", "email": "sales@acme-soft.com"}
+          ],
+          "cc": [{"name": "Marketing Leadership", "email": "marketing-leadership@acme-soft.com"}],
+          "bcc": [],
+          "subject": "New Product Launch Materials Available",
+          "body": "Hi Sales Team,\n\nWe’ve uploaded the final sales pitch decks, pricing sheets and FAQ documents for the upcoming product launch. Please review and provide feedback by end of day Thursday.\n\nBest,\nProduct Marketing",
+          "attachments": [
+            {"filename": "pitch_deck_v3.pptx"},
+            {"filename": "pricing_sheet.xlsx"}
+          ]
+        }
+      ],
+      "expected_briefing": "Sam’s inbox includes a leadership update outlining Q4 sales priorities, a client escalation about support response times, an all‑hands meeting invite, a daily sales newsletter, a request from finance to submit a budget for the Q1 sales kickoff, a reminder to use targeted distribution lists as per internal email best practices and an email from product marketing with launch materials. Key actions: prepare for the Q4 strategy meeting, address the client escalation, compile the kickoff budget, segment communication lists appropriately and review the product launch materials. Other messages are informational."
+    },
+    {
+      "id": "marketing_social_media_manager_mailbox",
+      "domain": "marketing",
+      "position": "Social Media Manager",
+      "owner": {
+        "name": "Lina Nguyen",
+        "email": "lina.nguyen@acme-soft.com"
+      },
+      "description": "Mailbox of a social media manager balancing analytics reports, cross‑team collaboration, client inquiries, industry newsletters and promotional offers.",
+      "messages": [
+        {
+          "id": "lina_analytics_report",
+          "timestamp": "2025-10-09T09:00+07:00",
+          "sender": {"name": "Analytics Bot", "email": "reports@socialdash.com"},
+          "to": [{"name": "Lina Nguyen", "email": "lina.nguyen@acme-soft.com"}],
+          "cc": [],
+          "bcc": [],
+          "subject": "Weekly Social Metrics – Week 40",
+          "body": "Hi Lina,\n\nHere is your weekly social media metrics report: engagement up 8%, followers up 2%, top post was our product teaser video. See attachment for full details.\n\nThanks,\nSocialDash",
+          "attachments": [{"filename": "social_metrics_week40.pdf"}]
+        },
+        {
+          "id": "lina_cross_team_brief",
+          "timestamp": "2025-10-08T10:30+07:00",
+          "sender": {"name": "Product Manager", "email": "pm@acme-soft.com"},
+          "to": [
+            {"name": "Lina Nguyen", "email": "lina.nguyen@acme-soft.com"},
+            {"name": "Content Team", "email": "content@acme-soft.com"}
+          ],
+          "cc": [],
+          "bcc": [],
+          "subject": "Upcoming Feature Launch Briefing",
+          "body": "Hello,\n\nWe’re excited to launch the new collaboration feature next week. Please prepare social media announcements and blog posts. We’ll have a briefing tomorrow at 11 AM.\n\nRegards,\nProduct Manager",
+          "attachments": []
+        },
+        {
+          "id": "lina_client_question",
+          "timestamp": "2025-10-08T13:45+07:00",
+          "sender": {"name": "Client Agency", "email": "agency@clientco.com"},
+          "to": [{"name": "Lina Nguyen", "email": "lina.nguyen@acme-soft.com"}],
+          "cc": [],
+          "bcc": [],
+          "subject": "Inquiry: Co‑marketing campaign timeline",
+          "body": "Hi Lina,\n\nWe’re planning our Q1 co‑marketing campaign and would like to align on timelines and assets. Could we have a call next week to discuss your team’s availability and deliverables?\n\nBest,\nAgency Team",
+          "attachments": []
+        },
+        {
+          "id": "lina_industry_newsletter",
+          "timestamp": "2025-10-07T07:50+07:00",
+          "sender": {"name": "MarketingPro", "email": "newsletter@marketingpro.org"},
+          "to": [{"name": "Lina Nguyen", "email": "lina.nguyen@acme-soft.com"}],
+          "cc": [],
+          "bcc": [],
+          "subject": "MarketingPro Weekly – Trends & Insights",
+          "body": "Welcome to this week’s MarketingPro newsletter. In this issue: emerging TikTok ad formats, email segmentation best practices and case studies on viral campaigns.\n\nEnjoy reading!\n\nMarketingPro Team",
+          "attachments": []
+        },
+        {
+          "id": "lina_vendor_promo",
+          "timestamp": "2025-10-06T14:20+07:00",
+          "sender": {"name": "AdTech Solutions", "email": "offers@adtechsolutions.com"},
+          "to": [{"name": "Lina Nguyen", "email": "lina.nguyen@acme-soft.com"}],
+          "cc": [],
+          "bcc": [],
+          "subject": "Exclusive Offer: 20% off our social ad platform",
+          "body": "Hi Lina,\n\nFor a limited time, we’re offering 20% off our social advertising platform subscription. Boost your campaigns with advanced targeting and analytics. Click here to learn more.\n\nThis is a promotional email.",
+          "attachments": []
+        },
+        {
+          "id": "lina_hr_wellness_program",
+          "timestamp": "2025-10-05T11:10+07:00",
+          "sender": {"name": "HR Wellness", "email": "wellness@acme-soft.com"},
+          "to": [{"name": "All Employees", "email": "all@acme-soft.com"}],
+          "cc": [],
+          "bcc": [],
+          "subject": "New Wellness Program Enrollment",
+          "body": "Dear team,\n\nWe are launching a new wellness program including yoga classes, mental health resources and fitness reimbursements. Enroll by November 1. See the attached brochure for details.\n\nStay healthy!\nHR Wellness",
+          "attachments": [{"filename": "wellness_brochure.pdf"}]
+        },
+        {
+          "id": "lina_schedule_reminder",
+          "timestamp": "2025-10-04T09:25+07:00",
+          "sender": {"name": "Calendar Bot", "email": "calendar@acme-soft.com"},
+          "to": [{"name": "Lina Nguyen", "email": "lina.nguyen@acme-soft.com"}],
+          "cc": [],
+          "bcc": [],
+          "subject": "Reminder: Weekly Social Content Planning Meeting",
+          "body": "This is a reminder for your weekly social content planning meeting today at 2 PM with the content team.",
+          "attachments": []
+        },
+        {
+          "id": "lina_spam_discount",
+          "timestamp": "2025-10-04T18:00+07:00",
+          "sender": {"name": "Random Deals", "email": "deals@randomdeals.net"},
+          "to": [{"name": "lina.nguyen@acme-soft.com", "email": "lina.nguyen@acme-soft.com"}],
+          "cc": [],
+          "bcc": [],
+          "subject": "Hot Deal! Upgrade your wardrobe now",
+          "body": "Mega sale on clothing and accessories! 70% off sitewide. Shop now!",
+          "attachments": []
+        }
+      ],
+      "expected_briefing": "Lina’s inbox includes a weekly social metrics report, a briefing request for an upcoming feature launch, a client inquiry about co‑marketing timelines, an industry newsletter, a promotional discount from an adtech vendor, an HR wellness program announcement, a meeting reminder and a spam discount offer. Key actions: review the metrics report and prepare for the briefing, schedule a call with the client agency and decide whether to enroll in the wellness program. Other messages provide information or promotions."
+    },
+    {
+      "id": "marketing_director_omar_mailbox",
+      "domain": "marketing",
+      "position": "Marketing Director",
+      "owner": {
+        "name": "Omar Hassan",
+        "email": "omar.hassan@acme-soft.com"
+      },
+      "description": "Mailbox of a marketing director overseeing campaigns, budgets, leadership communications, newsletters and vendor outreach.",
+      "messages": [
+        {
+          "id": "omar_board_presentation_request",
+          "timestamp": "2025-10-09T10:00+07:00",
+          "sender": {"name": "CEO", "email": "ceo@acme-soft.com"},
+          "to": [{"name": "Omar Hassan", "email": "omar.hassan@acme-soft.com"}],
+          "cc": [{"name": "CMO", "email": "cmo@acme-soft.com"}],
+          "bcc": [],
+          "subject": "Request: Marketing Performance Presentation for Board",
+          "body": "Hi Omar,\n\nPlease prepare a presentation on marketing performance for our board meeting next Wednesday. Focus on ROI of recent campaigns and budget utilization.\n\nThanks,\nCEO",
+          "attachments": []
+        },
+        {
+          "id": "omar_budget_approval",
+          "timestamp": "2025-10-08T15:20+07:00",
+          "sender": {"name": "Finance", "email": "finance@acme-soft.com"},
+          "to": [{"name": "Omar Hassan", "email": "omar.hassan@acme-soft.com"}],
+          "cc": [{"name": "CMO", "email": "cmo@acme-soft.com"}],
+          "bcc": [],
+          "subject": "Approval Needed: Q1 Marketing Budget",
+          "body": "Hello Omar,\n\nWe’ve attached the proposed Q1 budget for the marketing department. Please review and approve or provide feedback by end of week.\n\nRegards,\nFinance",
+          "attachments": [{"filename": "q1_marketing_budget.xlsx"}]
+        },
+        {
+          "id": "omar_press_inquiry",
+          "timestamp": "2025-10-07T11:40+07:00",
+          "sender": {"name": "Tech News Journalist", "email": "press@technews.com"},
+          "to": [{"name": "Omar Hassan", "email": "omar.hassan@acme-soft.com"}],
+          "cc": [{"name": "PR Team", "email": "pr@acme-soft.com"}],
+          "bcc": [],
+          "subject": "Request for Comment on Industry Trends",
+          "body": "Hi Omar,\n\nI’m writing a piece on enterprise software marketing trends and would like to include a quote from you about how Acme Soft approaches omni‑channel campaigns. Could you respond with a comment by Monday?\n\nThank you,\nJane from Tech News",
+          "attachments": []
+        },
+        {
+          "id": "omar_internal_newsletter",
+          "timestamp": "2025-10-07T08:00+07:00",
+          "sender": {"name": "Internal Communications", "email": "communications@acme-soft.com"},
+          "to": [{"name": "All Managers", "email": "managers@acme-soft.com"}],
+          "cc": [],
+          "bcc": [],
+          "subject": "Manager Update Newsletter – October",
+          "body": "Greetings managers,\n\nThis monthly update covers progress toward OKRs, culture initiatives and upcoming leadership development sessions.\n\nSincerely,\nInternal Communications",
+          "attachments": []
+        },
+        {
+          "id": "omar_vendor_demo_request",
+          "timestamp": "2025-10-06T09:30+07:00",
+          "sender": {"name": "Vendor Solutions", "email": "demo@vendorsolutions.com"},
+          "to": [{"name": "Omar Hassan", "email": "omar.hassan@acme-soft.com"}],
+          "cc": [],
+          "bcc": [],
+          "subject": "Schedule a Demo: AI‑powered Attribution Platform",
+          "body": "Hi Omar,\n\nI came across Acme Soft’s marketing initiatives and thought our AI‑powered attribution platform might be a great fit. Would you be open to a short call next week to discuss?\n\nRegards,\nVendor Solutions",
+          "attachments": []
+        },
+        {
+          "id": "omar_spam_offer",
+          "timestamp": "2025-10-05T20:00+07:00",
+          "sender": {"name": "Spammy Deals", "email": "offers@spammydeals.com"},
+          "to": [{"name": "omar.hassan@acme-soft.com", "email": "omar.hassan@acme-soft.com"}],
+          "cc": [],
+          "bcc": [],
+          "subject": "Exclusive! Buy One Get One Free on Business Cards",
+          "body": "Limited time! Get double the business cards when you order now. Click here to claim your code.",
+          "attachments": []
+        }
+      ],
+      "expected_briefing": "Omar’s inbox features a request to prepare a marketing performance presentation for the board, a Q1 budget approval request with attached spreadsheet, a press inquiry seeking a comment on industry trends, a manager update newsletter, an invitation from a vendor for an AI attribution platform demo and a spam business card offer. Key actions: assemble the board presentation, review and approve the budget, draft a response for the press inquiry and decide if the vendor demo is worthwhile. Other emails are informational or spam."
+    },
+    {
+      "id": "hr_manager_anna_mailbox",
+      "domain": "human_resources",
+      "position": "HR Manager",
+      "owner": {
+        "name": "Anna Tran",
+        "email": "anna.tran@acme-soft.com"
+      },
+      "description": "Mailbox of an HR manager dealing with employee onboarding, policy updates, benefits, cross‑functional requests and newsletters.",
+      "messages": [
+        {
+          "id": "anna_new_hire_onboarding",
+          "timestamp": "2025-10-09T08:15+07:00",
+          "sender": {"name": "Recruiter", "email": "recruiter@acme-soft.com"},
+          "to": [{"name": "Anna Tran", "email": "anna.tran@acme-soft.com"}],
+          "cc": [{"name": "IT Onboarding", "email": "it-onboarding@acme-soft.com"}],
+          "bcc": [],
+          "subject": "New Hire Onboarding: Nguyen Van A starting Oct 18",
+          "body": "Hi Anna,\n\nPlease coordinate onboarding for Nguyen Van A (Software Engineer) starting Oct 18. IT Onboarding is CC’d to set up hardware and account access.\n\nThanks,\nRecruiter",
+          "attachments": []
+        },
+        {
+          "id": "anna_policy_feedback",
+          "timestamp": "2025-10-08T10:00+07:00",
+          "sender": {"name": "Employee Council", "email": "council@acme-soft.com"},
+          "to": [{"name": "Anna Tran", "email": "anna.tran@acme-soft.com"}],
+          "cc": [],
+          "bcc": [],
+          "subject": "Feedback on Remote Work Policy draft",
+          "body": "Hello Anna,\n\nWe reviewed the remote work policy draft and have some suggestions regarding home office allowances and approval workflows. Could we meet this week to discuss?\n\nBest,\nEmployee Council",
+          "attachments": []
+        },
+        {
+          "id": "anna_benefits_enrollment_reminder",
+          "timestamp": "2025-10-07T14:30+07:00",
+          "sender": {"name": "HR Benefits", "email": "benefits@acme-soft.com"},
+          "to": [{"name": "All Employees", "email": "all@acme-soft.com"}],
+          "cc": [],
+          "bcc": [],
+          "subject": "Reminder: Benefits enrollment closes Oct 20",
+          "body": "Dear employees,\n\nThis is a friendly reminder that open enrollment for health benefits closes Oct 20. Please log in to the benefits portal to update your selections.\n\nRegards,\nHR Benefits",
+          "attachments": []
+        },
+        {
+          "id": "anna_training_invite",
+          "timestamp": "2025-10-06T09:45+07:00",
+          "sender": {"name": "Learning & Development", "email": "learning@acme-soft.com"},
+          "to": [{"name": "Anna Tran", "email": "anna.tran@acme-soft.com"}],
+          "cc": [],
+          "bcc": [],
+          "subject": "Invitation: Inclusive Leadership Workshop",
+          "body": "Hi Anna,\n\nYou are invited to our Inclusive Leadership workshop next Tuesday at 3 PM. We’d appreciate your attendance and feedback on how this training aligns with HR initiatives.\n\nThanks,\nL&D Team",
+          "attachments": []
+        },
+        {
+          "id": "anna_internal_newsletter",
+          "timestamp": "2025-10-05T08:00+07:00",
+          "sender": {"name": "Internal Communications", "email": "communications@acme-soft.com"},
+          "to": [{"name": "Anna Tran", "email": "anna.tran@acme-soft.com"}],
+          "cc": [],
+          "bcc": [],
+          "subject": "Company Newsletter – October edition",
+          "body": "Hello!\n\nIn this month’s company newsletter: updates from leadership, upcoming cultural events and highlights from our community outreach.\n\nWarm regards,\nInternal Communications",
+          "attachments": []
+        },
+        {
+          "id": "anna_advertisement_email",
+          "timestamp": "2025-10-05T18:20+07:00",
+          "sender": {"name": "Office Supplies Co", "email": "sales@officesupplies.co"},
+          "to": [{"name": "anna.tran@acme-soft.com", "email": "anna.tran@acme-soft.com"}],
+          "cc": [],
+          "bcc": [],
+          "subject": "Upgrade your office chairs with our special offer",
+          "body": "Dear Anna,\n\nWe noticed you manage office resources. We’re offering ergonomic chairs at 25% off. Contact us for a quote.\n\nBest,\nOffice Supplies Co",
+          "attachments": []
+        }
+      ],
+      "expected_briefing": "Anna’s mailbox includes a new hire onboarding request, feedback from the employee council on the remote work policy, a reminder that benefits enrollment closes soon, an invitation to an inclusive leadership workshop, a company newsletter and a promotional offer for office chairs. Key actions: coordinate onboarding for Nguyen Van A, schedule a meeting with the employee council, remind employees about benefits enrollment and attend or delegate the leadership workshop. Other messages are newsletters or promotional."
+    },
+    {
+      "id": "hr_recruiter_tom_mailbox",
+      "domain": "human_resources",
+      "position": "Recruiter",
+      "owner": {
+        "name": "Tom Le",
+        "email": "tom.le@acme-soft.com"
+      },
+      "description": "Mailbox of a recruiter handling candidate communication, hiring manager coordination, newsletters, training invites and spam.",
+      "messages": [
+        {
+          "id": "tom_candidate_followup",
+          "timestamp": "2025-10-09T11:05+07:00",
+          "sender": {"name": "Nguyen Thi Minh", "email": "minh.nguyen@example.com"},
+          "to": [{"name": "Tom Le", "email": "tom.le@acme-soft.com"}],
+          "cc": [],
+          "bcc": [],
+          "subject": "Thank you for the interview",
+          "body": "Hello Tom,\n\nThank you for the opportunity to interview for the Data Analyst position. I enjoyed learning about Acme Soft and am very interested in joining the team. Please let me know if there’s any additional information I can provide.\n\nBest regards,\nMinh",
+          "attachments": []
+        },
+        {
+          "id": "tom_hiring_manager_request",
+          "timestamp": "2025-10-08T09:00+07:00",
+          "sender": {"name": "Hiring Manager", "email": "hiring@acme-soft.com"},
+          "to": [{"name": "Tom Le", "email": "tom.le@acme-soft.com"}],
+          "cc": [],
+          "bcc": [],
+          "subject": "Urgent: Need candidates for QA Engineer role",
+          "body": "Hi Tom,\n\nWe need at least three qualified candidates for the QA Engineer role by next Friday. Please prioritize this requisition and update me on your progress.\n\nThanks,\nHiring Manager",
+          "attachments": []
+        },
+        {
+          "id": "tom_training_invite",
+          "timestamp": "2025-10-07T13:30+07:00",
+          "sender": {"name": "L&D", "email": "learning@acme-soft.com"},
+          "to": [{"name": "Tom Le", "email": "tom.le@acme-soft.com"}],
+          "cc": [],
+          "bcc": [],
+          "subject": "Training: Interviewing Best Practices",
+          "body": "Hi Tom,\n\nPlease join our Interviewing Best Practices training session tomorrow at 2 PM. We’ll cover structured interviewing and reducing bias.\n\nThank you,\nL&D",
+          "attachments": []
+        },
+        {
+          "id": "tom_internal_newsletter",
+          "timestamp": "2025-10-06T08:00+07:00",
+          "sender": {"name": "Internal Communications", "email": "communications@acme-soft.com"},
+          "to": [{"name": "Tom Le", "email": "tom.le@acme-soft.com"}],
+          "cc": [],
+          "bcc": [],
+          "subject": "Company Newsletter – September edition",
+          "body": "Hello Tom,\n\nWelcome to the September edition of our company newsletter. See achievements, team spotlights and upcoming events inside.\n\nInternal Communications",
+          "attachments": []
+        },
+        {
+          "id": "tom_marketing_promo",
+          "timestamp": "2025-10-06T17:45+07:00",
+          "sender": {"name": "HR Software Vendor", "email": "promo@hrsoft.com"},
+          "to": [{"name": "tom.le@acme-soft.com", "email": "tom.le@acme-soft.com"}],
+          "cc": [],
+          "bcc": [],
+          "subject": "Improve Recruiting with AI – Webinar Invite",
+          "body": "Dear Tom,\n\nWe invite you to our free webinar about using AI in recruiting. Learn how to source candidates faster. Sign up today!\n\nThis is a promotional email.",
+          "attachments": []
+        },
+        {
+          "id": "tom_spam_offer",
+          "timestamp": "2025-10-05T22:10+07:00",
+          "sender": {"name": "Spam Co", "email": "spam@scam.com"},
+          "to": [{"name": "tom.le@acme-soft.com", "email": "tom.le@acme-soft.com"}],
+          "cc": [],
+          "bcc": [],
+          "subject": "You won a free cruise!",
+          "body": "Congratulations! You’ve been selected for a free cruise. Click here to claim your prize!",
+          "attachments": []
+        }
+      ],
+      "expected_briefing": "Tom’s mailbox includes a thank‑you note from a candidate, an urgent request from a hiring manager for QA Engineer candidates, a training invitation on interviewing best practices, the company newsletter, a promotional webinar on AI recruiting and a spam free‑cruise offer. Key actions: follow up with the candidate, source candidates for the QA role, attend the training and ignore the spam. Other messages are informational or promotional."
+    },
+    {
+      "id": "technical_support_engineer_sara_mailbox",
+      "domain": "technical_support",
+      "position": "Support Engineer",
+      "owner": {
+        "name": "Sara Vu",
+        "email": "sara.vu@acme-soft.com"
+      },
+      "description": "Mailbox of a technical support engineer handling support tickets, system alerts, internal updates, newsletters and vendor promotions.",
+      "messages": [
+        {
+          "id": "sara_support_ticket",
+          "timestamp": "2025-10-09T09:20+07:00",
+          "sender": {"name": "Customer Support System", "email": "support@acme-soft.com"},
+          "to": [{"name": "Sara Vu", "email": "sara.vu@acme-soft.com"}],
+          "cc": [],
+          "bcc": [],
+          "subject": "New Ticket #12345: Login issue reported by ClientCo",
+          "body": "Ticket details: ClientCo reports that their users cannot log in to the dashboard. Please investigate and update the ticket with your findings.\n\nSupport System",
+          "attachments": []
+        },
+        {
+          "id": "sara_system_alert",
+          "timestamp": "2025-10-09T11:40+07:00",
+          "sender": {"name": "Monitoring Service", "email": "alerts@acme-soft.com"},
+          "to": [{"name": "Sara Vu", "email": "sara.vu@acme-soft.com"}],
+          "cc": [{"name": "IT Engineering", "email": "engineering@acme-soft.com"}],
+          "bcc": [],
+          "subject": "High CPU usage on Server 8",
+          "body": "Alert: CPU usage on Server 8 has exceeded 90% for the past 10 minutes. Please check for potential performance issues.",
+          "attachments": []
+        },
+        {
+          "id": "sara_internal_update",
+          "timestamp": "2025-10-08T14:00+07:00",
+          "sender": {"name": "Support Manager", "email": "manager@acme-soft.com"},
+          "to": [
+            {"name": "Sara Vu", "email": "sara.vu@acme-soft.com"},
+            {"name": "Support Team", "email": "support@acme-soft.com"}
+          ],
+          "cc": [],
+          "bcc": [],
+          "subject": "Upcoming SLA Policy Changes",
+          "body": "Team,\n\nWe are implementing new SLA response time targets starting Nov 1. The new targets are attached. Please review and provide feedback during our meeting on Thursday.\n\nRegards,\nSupport Manager",
+          "attachments": [{"filename": "sla_policy_changes.pdf"}]
+        },
+        {
+          "id": "sara_it_maintenance",
+          "timestamp": "2025-10-07T09:30+07:00",
+          "sender": {"name": "IT", "email": "it@acme-soft.com"},
+          "to": [{"name": "All Employees", "email": "all@acme-soft.com"}],
+          "cc": [],
+          "bcc": [],
+          "subject": "Scheduled IT Maintenance – October 13",
+          "body": "We will perform scheduled maintenance on our email servers on Oct 13 from midnight to 3 AM. Expect intermittent connectivity.\n\nIT Team",
+          "attachments": []
+        },
+        {
+          "id": "sara_newsletter",
+          "timestamp": "2025-10-06T08:05+07:00",
+          "sender": {"name": "Tech Support Digest", "email": "newsletter@techsupportdigest.com"},
+          "to": [{"name": "Sara Vu", "email": "sara.vu@acme-soft.com"}],
+          "cc": [],
+          "bcc": [],
+          "subject": "Tech Support Digest – Issue 52",
+          "body": "In this week’s digest: top tips for troubleshooting network latency, new tools for remote diagnostics and community Q&A highlights.\n\nEnjoy!\nTech Support Digest",
+          "attachments": []
+        },
+        {
+          "id": "sara_vendor_offer",
+          "timestamp": "2025-10-05T12:15+07:00",
+          "sender": {"name": "Monitoring Vendor", "email": "sales@monitornow.com"},
+          "to": [{"name": "sara.vu@acme-soft.com", "email": "sara.vu@acme-soft.com"}],
+          "cc": [],
+          "bcc": [],
+          "subject": "Improve Uptime with Our New Monitoring Tool",
+          "body": "Dear Sara,\n\nWe’d like to introduce our new monitoring solution that provides 24/7 analytics and alerting. Schedule a demo to learn more.\n\nRegards,\nMonitorNow",
+          "attachments": []
+        }
+      ],
+      "expected_briefing": "Sara’s inbox contains a new support ticket about login issues, a high CPU usage alert copied to IT engineering, an internal update about upcoming SLA policy changes with an attachment, a scheduled IT maintenance notice, a tech support newsletter and a vendor offer for a monitoring tool. Key actions: investigate ticket #12345, check the high CPU alert and coordinate with engineering, review the new SLA policy and note the maintenance window. Other emails are informational or promotional."
+    },
+    {
+      "id": "technical_support_manager_john_mailbox",
+      "domain": "technical_support",
+      "position": "Support Manager",
+      "owner": {
+        "name": "John Kim",
+        "email": "john.kim@acme-soft.com"
+      },
+      "description": "Mailbox of a technical support manager overseeing escalations, policy updates, training, newsletters and vendor proposals.",
+      "messages": [
+        {
+          "id": "john_escalation_followup",
+          "timestamp": "2025-10-09T13:50+07:00",
+          "sender": {"name": "Account Manager", "email": "account@acme-soft.com"},
+          "to": [{"name": "John Kim", "email": "john.kim@acme-soft.com"}],
+          "cc": [{"name": "Support Engineer", "email": "sara.vu@acme-soft.com"}],
+          "bcc": [],
+          "subject": "Escalation: Ticket #12345 – ClientCo login issue",
+          "body": "Hi John,\n\nOur client has escalated ticket #12345. Could you ensure the team prioritizes this issue and communicates the resolution to the client promptly?\n\nThanks,\nAccount Manager",
+          "attachments": []
+        },
+        {
+          "id": "john_policy_change",
+          "timestamp": "2025-10-08T10:45+07:00",
+          "sender": {"name": "HR", "email": "hr@acme-soft.com"},
+          "to": [{"name": "John Kim", "email": "john.kim@acme-soft.com"}],
+          "cc": [],
+          "bcc": [],
+          "subject": "Reminder: Scheduled Newsletters for Teams",
+          "body": "Hi John,\n\nPer our internal communications best practices, please schedule team newsletters on a regular cadence (e.g., weekly or monthly) and use targeted lists to avoid overloading other departments.\n\nThank you,\nHR",
+          "attachments": []
+        },
+        {
+          "id": "john_training_request",
+          "timestamp": "2025-10-07T16:30+07:00",
+          "sender": {"name": "Learning & Development", "email": "learning@acme-soft.com"},
+          "to": [{"name": "John Kim", "email": "john.kim@acme-soft.com"}],
+          "cc": [],
+          "bcc": [],
+          "subject": "New Manager Training Program Enrollment",
+          "body": "Dear John,\n\nWe’re launching a training program for new managers on coaching and feedback. Please let us know if you or your team leads would like to participate.\n\nRegards,\nL&D",
+          "attachments": []
+        },
+        {
+          "id": "john_industry_digest",
+          "timestamp": "2025-10-06T07:55+07:00",
+          "sender": {"name": "Support Leaders Newsletter", "email": "newsletter@supportleaders.org"},
+          "to": [{"name": "John Kim", "email": "john.kim@acme-soft.com"}],
+          "cc": [],
+          "bcc": [],
+          "subject": "Support Leaders Digest – October issue",
+          "body": "Welcome to the October Support Leaders Digest. Topics include measuring Net Promoter Score (NPS), building high‑performing support teams and upcoming conferences.\n\nSupport Leaders Team",
+          "attachments": []
+        },
+        {
+          "id": "john_vendor_proposal",
+          "timestamp": "2025-10-05T15:40+07:00",
+          "sender": {"name": "Vendor Inc", "email": "sales@vendorinc.com"},
+          "to": [{"name": "John Kim", "email": "john.kim@acme-soft.com"}],
+          "cc": [],
+          "bcc": [],
+          "subject": "Proposal: Customer Service Platform Upgrade",
+          "body": "Hi John,\n\nWe’d like to propose an upgrade to your customer service platform that offers improved ticket routing and analytics. Attached is our proposal. Let me know if you’d like to discuss further.\n\nBest,\nVendor Inc",
+          "attachments": [{"filename": "customer_service_platform_proposal.pdf"}]
+        }
+      ],
+      "expected_briefing": "John’s mailbox includes an escalation follow‑up about a critical ticket, a reminder from HR to schedule newsletters consistently and target them properly, a training program invitation, an industry digest newsletter and a vendor proposal for a platform upgrade. Key actions: ensure the escalation is handled, plan the team newsletter cadence, decide on participation in the manager training and review the vendor proposal. The industry digest is informational."
+    },
+    {
+      "id": "customer_support_rep_julia_mailbox",
+      "domain": "customer_support",
+      "position": "Customer Service Representative",
+      "owner": {
+        "name": "Julia Pham",
+        "email": "julia.pham@acme-soft.com"
+      },
+      "description": "Mailbox of a customer service representative managing customer inquiries, policy reminders, training invites, newsletters and spam.",
+      "messages": [
+        {
+          "id": "julia_customer_inquiry",
+          "timestamp": "2025-10-09T12:10+07:00",
+          "sender": {"name": "Client User", "email": "user1@clientco.com"},
+          "to": [{"name": "Julia Pham", "email": "julia.pham@acme-soft.com"}],
+          "cc": [],
+          "bcc": [],
+          "subject": "Question about subscription renewal",
+          "body": "Hi Julia,\n\nOur subscription is due for renewal next month. Could you provide details on any loyalty discounts and how to proceed with payment?\n\nThanks,\nUser1",
+          "attachments": []
+        },
+        {
+          "id": "julia_policy_notice",
+          "timestamp": "2025-10-08T11:00+07:00",
+          "sender": {"name": "Customer Support Manager", "email": "cs-manager@acme-soft.com"},
+          "to": [
+            {"name": "Julia Pham", "email": "julia.pham@acme-soft.com"},
+            {"name": "Support Team", "email": "support@acme-soft.com"}
+          ],
+          "cc": [],
+          "bcc": [],
+          "subject": "Updated Refund Policy Effective Oct 20",
+          "body": "Team,\n\nPlease familiarize yourselves with the updated refund policy effective Oct 20. Key changes include shortened processing times and updated eligibility criteria.\n\nRegards,\nCustomer Support Manager",
+          "attachments": [{"filename": "refund_policy.pdf"}]
+        },
+        {
+          "id": "julia_training_invite",
+          "timestamp": "2025-10-07T14:45+07:00",
+          "sender": {"name": "Training Team", "email": "training@acme-soft.com"},
+          "to": [{"name": "Julia Pham", "email": "julia.pham@acme-soft.com"}],
+          "cc": [],
+          "bcc": [],
+          "subject": "Invitation: Customer Empathy Workshop",
+          "body": "Hello Julia,\n\nYou’re invited to attend the Customer Empathy workshop this Friday at 2 PM. This session will enhance your communication skills and customer satisfaction.\n\nThank you,\nTraining Team",
+          "attachments": []
+        },
+        {
+          "id": "julia_internal_newsletter",
+          "timestamp": "2025-10-06T08:15+07:00",
+          "sender": {"name": "Internal Communications", "email": "communications@acme-soft.com"},
+          "to": [{"name": "Julia Pham", "email": "julia.pham@acme-soft.com"}],
+          "cc": [],
+          "bcc": [],
+          "subject": "Company Newsletter – Customer Support Edition",
+          "body": "Hello Julia,\n\nHere’s the latest customer support edition of our company newsletter. It covers success stories, updates and recognition for top support reps.\n\nInternal Communications",
+          "attachments": []
+        },
+        {
+          "id": "julia_newsletter_subscription",
+          "timestamp": "2025-10-06T18:30+07:00",
+          "sender": {"name": "Customer Service Tips", "email": "newsletter@cstips.com"},
+          "to": [{"name": "Julia Pham", "email": "julia.pham@acme-soft.com"}],
+          "cc": [],
+          "bcc": [],
+          "subject": "Weekly Customer Service Tips – Issue 75",
+          "body": "Hi Julia,\n\nThis week’s tips cover active listening, de‑escalation strategies and time management.\n\nEnjoy!\nCustomer Service Tips",
+          "attachments": []
+        },
+        {
+          "id": "julia_spam_lottery",
+          "timestamp": "2025-10-05T21:50+07:00",
+          "sender": {"name": "Lottery Scam", "email": "lottery@scam-mail.net"},
+          "to": [{"name": "julia.pham@acme-soft.com", "email": "julia.pham@acme-soft.com"}],
+          "cc": [],
+          "bcc": [],
+          "subject": "You have won the lottery!",
+          "body": "Congratulations! You have won $1,000,000. Provide your banking details to claim your prize.",
+          "attachments": []
+        }
+      ],
+      "expected_briefing": "Julia’s inbox consists of a customer inquiry about renewal discounts, an updated refund policy notice with an attachment, an invitation to a customer empathy workshop, two newsletters (one internal and one external) and a scam lottery email. Key actions: respond to the customer inquiry, review the new refund policy, attend the workshop and disregard the scam email. Newsletters are for reference."
+    },
+    {
+      "id": "customer_support_lead_sophia_mailbox",
+      "domain": "customer_support",
+      "position": "Customer Support Lead",
+      "owner": {
+        "name": "Sophia Lam",
+        "email": "sophia.lam@acme-soft.com"
+      },
+      "description": "Mailbox of a customer support lead supervising escalations, reporting, cross‑functional alignment, newsletters and vendor pitches.",
+      "messages": [
+        {
+          "id": "sophia_escalation_request",
+          "timestamp": "2025-10-09T13:20+07:00",
+          "sender": {"name": "Account Manager", "email": "account@acme-soft.com"},
+          "to": [{"name": "Sophia Lam", "email": "sophia.lam@acme-soft.com"}],
+          "cc": [{"name": "Support Team", "email": "support@acme-soft.com"}],
+          "bcc": [],
+          "subject": "Escalated Customer Complaint – Ticket #67890",
+          "body": "Hi Sophia,\n\nPlease prioritize ticket #67890 regarding billing errors for EnterpriseCo. The customer is escalating to their executive team.\n\nThank you,\nAccount Manager",
+          "attachments": []
+        },
+        {
+          "id": "sophia_weekly_report_request",
+          "timestamp": "2025-10-08T09:30+07:00",
+          "sender": {"name": "CS Director", "email": "cs-director@acme-soft.com"},
+          "to": [{"name": "Sophia Lam", "email": "sophia.lam@acme-soft.com"}],
+          "cc": [],
+          "bcc": [],
+          "subject": "Weekly Support Metrics Needed",
+          "body": "Hi Sophia,\n\nPlease compile last week’s support metrics (ticket volume, resolution times, customer satisfaction scores) and send them to me by tomorrow morning.\n\nBest,\nCS Director",
+          "attachments": []
+        },
+        {
+          "id": "sophia_cross_func_meeting",
+          "timestamp": "2025-10-07T11:15+07:00",
+          "sender": {"name": "Product Manager", "email": "pm@acme-soft.com"},
+          "to": [
+            {"name": "Sophia Lam", "email": "sophia.lam@acme-soft.com"},
+            {"name": "Support Engineer", "email": "sara.vu@acme-soft.com"}
+          ],
+          "cc": [],
+          "bcc": [],
+          "subject": "Feature Request Discussion",
+          "body": "Hello,\n\nLet’s meet tomorrow at 4 PM to discuss the new feature request from our largest customer. We’ll need support’s input on feasibility and timeline.\n\nThanks,\nProduct Manager",
+          "attachments": []
+        },
+        {
+          "id": "sophia_newsletter",
+          "timestamp": "2025-10-06T08:00+07:00",
+          "sender": {"name": "Internal Communications", "email": "communications@acme-soft.com"},
+          "to": [{"name": "Sophia Lam", "email": "sophia.lam@acme-soft.com"}],
+          "cc": [],
+          "bcc": [],
+          "subject": "Support Team Newsletter – October edition",
+          "body": "Hello Support Team Lead,\n\nThis edition covers NPS improvements, new features in the customer portal and recognition for outstanding support agents.\n\nThanks,\nInternal Communications",
+          "attachments": []
+        },
+        {
+          "id": "sophia_vendor_pitch",
+          "timestamp": "2025-10-05T16:00+07:00",
+          "sender": {"name": "Customer Service SaaS", "email": "sales@cssaas.com"},
+          "to": [{"name": "sophia.lam@acme-soft.com", "email": "sophia.lam@acme-soft.com"}],
+          "cc": [],
+          "bcc": [],
+          "subject": "Revolutionize Customer Support with AI Chatbots",
+          "body": "Dear Sophia,\n\nWe’re offering a cutting‑edge AI chatbot solution that reduces response times by 50%. Would you like to schedule a demo?\n\nRegards,\nCustomer Service SaaS",
+          "attachments": []
+        }
+      ],
+      "expected_briefing": "Sophia’s mailbox contains an escalated customer complaint requiring priority attention, a request from the CS Director for weekly support metrics, a cross‑functional meeting invite to discuss a customer feature request, a support team newsletter and a vendor pitch for AI chatbots. Key actions: ensure the escalated ticket is addressed promptly, compile and send support metrics, attend the feature request meeting and decide whether to explore the AI chatbot offering. The newsletter is informative."
+    },
+    {
+      "id": "it_engineer_quoc_mailbox",
+      "domain": "it_engineering",
+      "position": "Software Engineer",
+      "owner": {
+        "name": "Quoc Nguyen",
+        "email": "quoc.nguyen@acme-soft.com"
+      },
+      "description": "Mailbox of a software engineer receiving code review requests, incident alerts, cross‑team coordination, newsletters and ads.",
+      "messages": [
+        {
+          "id": "quoc_code_review_request",
+          "timestamp": "2025-10-09T10:15+07:00",
+          "sender": {"name": "Peer Developer", "email": "peer.dev@acme-soft.com"},
+          "to": [{"name": "Quoc Nguyen", "email": "quoc.nguyen@acme-soft.com"}],
+          "cc": [],
+          "bcc": [],
+          "subject": "Code Review: Feature XYZ",
+          "body": "Hi Quoc,\n\nCould you review my PR for feature XYZ? It includes changes to the authentication module and unit tests. Your feedback would be appreciated by tomorrow.\n\nThanks,\nPeer Developer",
+          "attachments": []
+        },
+        {
+          "id": "quoc_incident_alert",
+          "timestamp": "2025-10-09T12:05+07:00",
+          "sender": {"name": "Incident Bot", "email": "incidents@acme-soft.com"},
+          "to": [{"name": "Quoc Nguyen", "email": "quoc.nguyen@acme-soft.com"}],
+          "cc": [{"name": "DevOps Team", "email": "devops@acme-soft.com"}],
+          "bcc": [],
+          "subject": "Incident Alert: Database latency spike",
+          "body": "Incident #7890: We’re seeing increased latency in the production database. Please investigate and mitigate.\n\nIncident Bot",
+          "attachments": []
+        },
+        {
+          "id": "quoc_standup_reminder",
+          "timestamp": "2025-10-08T08:55+07:00",
+          "sender": {"name": "Calendar", "email": "calendar@acme-soft.com"},
+          "to": [{"name": "Quoc Nguyen", "email": "quoc.nguyen@acme-soft.com"}],
+          "cc": [],
+          "bcc": [],
+          "subject": "Reminder: Daily Standup in 5 minutes",
+          "body": "Reminder: Your daily standup meeting starts at 9 AM.",
+          "attachments": []
+        },
+        {
+          "id": "quoc_product_meeting",
+          "timestamp": "2025-10-07T14:20+07:00",
+          "sender": {"name": "Product Owner", "email": "product@acme-soft.com"},
+          "to": [
+            {"name": "Quoc Nguyen", "email": "quoc.nguyen@acme-soft.com"},
+            {"name": "Dev Team", "email": "dev@acme-soft.com"}
+          ],
+          "cc": [],
+          "bcc": [],
+          "subject": "Sprint Planning Meeting Tomorrow",
+          "body": "Hi team,\n\nSprint planning is scheduled for tomorrow at 10 AM. We’ll review the backlog and finalize the sprint scope.\n\nRegards,\nProduct Owner",
+          "attachments": []
+        },
+        {
+          "id": "quoc_newsletter",
+          "timestamp": "2025-10-06T09:00+07:00",
+          "sender": {"name": "Engineering Today", "email": "newsletter@engtoday.com"},
+          "to": [{"name": "Quoc Nguyen", "email": "quoc.nguyen@acme-soft.com"}],
+          "cc": [],
+          "bcc": [],
+          "subject": "Engineering Today – October issue",
+          "body": "Hello,\n\nIn this issue: microservices best practices, serverless patterns and developer productivity tips.\n\nEnjoy reading!\nEngineering Today",
+          "attachments": []
+        },
+        {
+          "id": "quoc_advertisement",
+          "timestamp": "2025-10-05T17:30+07:00",
+          "sender": {"name": "Cloud Provider", "email": "promos@cloudservices.com"},
+          "to": [{"name": "quoc.nguyen@acme-soft.com", "email": "quoc.nguyen@acme-soft.com"}],
+          "cc": [],
+          "bcc": [],
+          "subject": "Upgrade to our new serverless platform",
+          "body": "Dear Quoc,\n\nWe’re excited to announce our new serverless platform with reduced costs and automatic scaling. Sign up now to receive a discount.\n\nCheers,\nCloud Provider",
+          "attachments": []
+        }
+      ],
+      "expected_briefing": "Quoc’s inbox includes a request to review code for a new feature, an incident alert about database latency, a daily standup reminder, a sprint planning meeting invitation, an engineering newsletter and a promotional email from a cloud provider. Key actions: complete the code review, investigate the incident, attend the standup and sprint planning meetings. Other messages are informational or promotional."
+    },
+    {
+      "id": "it_devops_jane_mailbox",
+      "domain": "it_engineering",
+      "position": "DevOps Engineer",
+      "owner": {
+        "name": "Jane Park",
+        "email": "jane.park@acme-soft.com"
+      },
+      "description": "Mailbox of a DevOps engineer dealing with deployments, incidents, internal policies, newsletters and vendor offers.",
+      "messages": [
+        {
+          "id": "jane_deployment_notice",
+          "timestamp": "2025-10-09T09:50+07:00",
+          "sender": {"name": "CI/CD Pipeline", "email": "cicd@acme-soft.com"},
+          "to": [{"name": "Jane Park", "email": "jane.park@acme-soft.com"}],
+          "cc": [],
+          "bcc": [],
+          "subject": "Deployment Successful: Release 2.5.3",
+          "body": "Deployment #23456 completed successfully. All services are operational.",
+          "attachments": []
+        },
+        {
+          "id": "jane_incident_postmortem",
+          "timestamp": "2025-10-09T12:40+07:00",
+          "sender": {"name": "Incident Commander", "email": "incidents@acme-soft.com"},
+          "to": [
+            {"name": "Jane Park", "email": "jane.park@acme-soft.com"},
+            {"name": "DevOps Team", "email": "devops@acme-soft.com"}
+          ],
+          "cc": [],
+          "bcc": [],
+          "subject": "Postmortem: Outage on Oct 8",
+          "body": "Hi team,\n\nPlease find the attached postmortem report for the outage on Oct 8. We’ll discuss root cause and action items at today’s 3 PM meeting.\n\nRegards,\nIncident Commander",
+          "attachments": [{"filename": "outage_postmortem_oct8.pdf"}]
+        },
+        {
+          "id": "jane_policy_reminder",
+          "timestamp": "2025-10-08T10:20+07:00",
+          "sender": {"name": "Compliance", "email": "compliance@acme-soft.com"},
+          "to": [{"name": "Jane Park", "email": "jane.park@acme-soft.com"}],
+          "cc": [],
+          "bcc": [],
+          "subject": "Reminder: Security Patch Policy Update",
+          "body": "Dear Jane,\n\nPlease review the updated security patch policy attached and ensure your environments are compliant.\n\nThanks,\nCompliance Team",
+          "attachments": [{"filename": "security_patch_policy.pdf"}]
+        },
+        {
+          "id": "jane_internal_newsletter",
+          "timestamp": "2025-10-07T08:00+07:00",
+          "sender": {"name": "IT Communications", "email": "it-comms@acme-soft.com"},
+          "to": [{"name": "Jane Park", "email": "jane.park@acme-soft.com"}],
+          "cc": [],
+          "bcc": [],
+          "subject": "IT Engineering Newsletter – October",
+          "body": "Hello DevOps Team,\n\nIn this issue: new infrastructure upgrades, best practices for container security and highlights from the DevOps summit.\n\nRegards,\nIT Communications",
+          "attachments": []
+        },
+        {
+          "id": "jane_cloud_offer",
+          "timestamp": "2025-10-06T17:00+07:00",
+          "sender": {"name": "Cloud Vendor", "email": "sales@cloudvendor.com"},
+          "to": [{"name": "jane.park@acme-soft.com", "email": "jane.park@acme-soft.com"}],
+          "cc": [],
+          "bcc": [],
+          "subject": "Limited Time: Free Trial of Kubernetes Managed Service",
+          "body": "Hi Jane,\n\nTry our new managed Kubernetes service for free for 60 days. Scale your clusters effortlessly and reduce operational overhead.\n\nCheers,\nCloud Vendor",
+          "attachments": []
+        }
+      ],
+      "expected_briefing": "Jane’s inbox contains a deployment success notification, a postmortem report with attachments, a reminder to review the updated security patch policy, an IT engineering newsletter and a free trial offer for a managed Kubernetes service. Key actions: read the postmortem before the meeting, review the security patch policy and consider the trial offer. The deployment notice and newsletter are informational."
+    }
+  ]
+}

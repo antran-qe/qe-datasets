@@ -1,0 +1,3295 @@
+{
+  "test_cases": [
+    {
+      "id": "sales_follow_up",
+      "domain": "sales",
+      "description": "A sales representative follows up on a potential client's inquiry for a software product.",
+      "scenario": "A one‑to‑one email thread where a sales representative at a software company follows up with a potential client who requested a demonstration.  The conversation includes scheduling a meeting and answering product questions.",
+      "messages": [
+        {
+          "sender": {
+            "name": "Nguyen Thi Minh",
+            "email": "minh.nguyen@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "Le Anh",
+              "email": "le.anh@clientcorp.com"
+            }
+          ],
+          "cc": [],
+          "bcc": [],
+          "subject": "Follow‑up on your inquiry about Acme CRM",
+          "body": "Hello Anh,\n\nThank you for your interest in Acme CRM.  I’m happy to schedule a demonstration and answer any questions you may have.  I have availability on October 12 at 10:00 AM (UTC+7) or October 13 at 3:00 PM.  Please let me know which time works best for you.\n\nBest regards,\nMinh",
+          "timestamp": "2025-10-09T09:15:00+07:00"
+        },
+        {
+          "sender": {
+            "name": "Le Anh",
+            "email": "le.anh@clientcorp.com"
+          },
+          "to": [
+            {
+              "name": "Nguyen Thi Minh",
+              "email": "minh.nguyen@acme‑soft.com"
+            }
+          ],
+          "cc": [],
+          "bcc": [],
+          "subject": "Re: Follow‑up on your inquiry about Acme CRM",
+          "body": "Hi Minh,\n\nThanks for getting back to me.  I’m available on October 12 at 10:00 AM.  Could you also provide information on pricing tiers and integration with our current billing system?\n\nRegards,\nAnh",
+          "timestamp": "2025-10-09T10:02:00+07:00"
+        },
+        {
+          "sender": {
+            "name": "Nguyen Thi Minh",
+            "email": "minh.nguyen@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "Le Anh",
+              "email": "le.anh@clientcorp.com"
+            }
+          ],
+          "cc": [],
+          "bcc": [],
+          "subject": "Re: Follow‑up on your inquiry about Acme CRM",
+          "body": "Hi Anh,\n\nGreat, I’ve scheduled the demo for October 12 at 10:00 AM (UTC+7).  I’ve attached our pricing overview and a one‑pager describing our API integration capabilities.  During the demo we can discuss how Acme CRM can connect with your billing system and answer any other questions.\n\nLooking forward to meeting you.\n\nBest,\nMinh",
+          "timestamp": "2025-10-09T10:30:00+07:00",
+          "attachments": [
+            {
+              "filename": "Acme_CRM_Pricing_2025.pdf",
+              "type": "application/pdf"
+            },
+            {
+              "filename": "API_Integration_Overview.pdf",
+              "type": "application/pdf"
+            }
+          ]
+        }
+      ],
+      "expected_briefing": "Minh contacted Anh to schedule a demonstration of Acme CRM and offered two time slots.  Anh selected October 12 at 10:00 AM and requested pricing and integration details.  Minh confirmed the meeting, sent pricing and API integration documents, and will discuss integration during the demo."
+    },
+    {
+      "id": "marketing_campaign_loop",
+      "domain": "marketing",
+      "description": "Marketing team coordinating a product‑launch campaign with multiple recipients, including CC and BCC.",
+      "scenario": "The marketing manager sends an email to the team to kick off a campaign.  Team members reply‑all with updates.  One reply includes a BCC to an external vendor to request a quote.",
+      "messages": [
+        {
+          "sender": {
+            "name": "Sarah Lee",
+            "email": "sarah.lee@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "Alice Tran",
+              "email": "alice.tran@acme‑soft.com"
+            },
+            {
+              "name": "Bob Chen",
+              "email": "bob.chen@acme‑soft.com"
+            },
+            {
+              "name": "Carina Ngo",
+              "email": "carina.ngo@acme‑soft.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Michael Pham",
+              "email": "michael.pham@acme‑soft.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Kick‑off: Q4 Product‑Launch Campaign",
+          "body": "Team,\n\nWe’re launching the Q4 campaign for our new analytics module.  Please review the attached briefing and provide updates on your deliverables by tomorrow.  Michael (our marketing director) is CC’d for visibility.\n\nThanks,\nSarah",
+          "timestamp": "2025-10-08T14:00:00+07:00",
+          "attachments": [
+            {
+              "filename": "Q4_Campaign_Briefing.docx",
+              "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+            }
+          ]
+        },
+        {
+          "sender": {
+            "name": "Alice Tran",
+            "email": "alice.tran@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "Sarah Lee",
+              "email": "sarah.lee@acme‑soft.com"
+            },
+            {
+              "name": "Bob Chen",
+              "email": "bob.chen@acme‑soft.com"
+            },
+            {
+              "name": "Carina Ngo",
+              "email": "carina.ngo@acme‑soft.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Michael Pham",
+              "email": "michael.pham@acme‑soft.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: Kick‑off: Q4 Product‑Launch Campaign",
+          "body": "Hi everyone,\n\nI’ve reviewed the briefing and will have the preliminary design mockups ready by end of day today.  I’ll share a link to the Figma file once it’s ready.\n\nRegards,\nAlice",
+          "timestamp": "2025-10-08T15:25:00+07:00"
+        },
+        {
+          "sender": {
+            "name": "Bob Chen",
+            "email": "bob.chen@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "Sarah Lee",
+              "email": "sarah.lee@acme‑soft.com"
+            },
+            {
+              "name": "Alice Tran",
+              "email": "alice.tran@acme‑soft.com"
+            },
+            {
+              "name": "Carina Ngo",
+              "email": "carina.ngo@acme‑soft.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Michael Pham",
+              "email": "michael.pham@acme‑soft.com"
+            }
+          ],
+          "bcc": [
+            {
+              "name": "Vendor Quote",
+              "email": "quotes@designvendor.com"
+            }
+          ],
+          "subject": "Re: Kick‑off: Q4 Product‑Launch Campaign",
+          "body": "Hello all,\n\nI’ll be drafting the email copy and social posts today.  I’ve blind‑copied our design vendor to request a quote for the landing page graphics.\n\n– Bob",
+          "timestamp": "2025-10-08T16:00:00+07:00"
+        },
+        {
+          "sender": {
+            "name": "Carina Ngo",
+            "email": "carina.ngo@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "Sarah Lee",
+              "email": "sarah.lee@acme‑soft.com"
+            },
+            {
+              "name": "Alice Tran",
+              "email": "alice.tran@acme‑soft.com"
+            },
+            {
+              "name": "Bob Chen",
+              "email": "bob.chen@acme‑soft.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Michael Pham",
+              "email": "michael.pham@acme‑soft.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: Kick‑off: Q4 Product‑Launch Campaign",
+          "body": "Team,\n\nI’ll handle paid media and analytics.  I’ve started outlining the media plan and will share key metrics at tomorrow’s stand‑up.\n\nRegards,\nCarina",
+          "timestamp": "2025-10-08T17:10:00+07:00"
+        }
+      ],
+      "expected_briefing": "Sarah kicked off the Q4 product‑launch campaign, CC’ing the marketing director for visibility and requesting deliverable updates.  Alice will provide design mockups, Bob is drafting email and social copy and has BCC’d a vendor for a quote, and Carina is developing the paid‑media and analytics plan."
+    },
+    {
+      "id": "hr_hiring_loop",
+      "domain": "human_resources",
+      "description": "Hiring process email thread with interview scheduling, CC to hiring manager and BCC to assistant.",
+      "scenario": "An HR recruiter sends a candidate an interview invitation and CCs the hiring manager.  The candidate replies to confirm availability.  The recruiter uses BCC to include an HR assistant for scheduling.",
+      "messages": [
+        {
+          "sender": {
+            "name": "Hoang Vu",
+            "email": "hoang.vu@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "Tran Binh",
+              "email": "tran.binh@example.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Jessica Kim",
+              "email": "jessica.kim@acme‑soft.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Interview invitation – Senior Data Analyst position",
+          "body": "Dear Binh,\n\nThank you for applying for the Senior Data Analyst role.  We would like to invite you to a final interview with our hiring manager, Jessica Kim (CC’d), and a panel from the analytics team.  The interview will take approximately 60 minutes.  Please let us know your availability on October 15 or October 16.\n\nSincerely,\nHoang\nRecruiter – Acme Soft",
+          "timestamp": "2025-10-07T11:20:00+07:00"
+        },
+        {
+          "sender": {
+            "name": "Tran Binh",
+            "email": "tran.binh@example.com"
+          },
+          "to": [
+            {
+              "name": "Hoang Vu",
+              "email": "hoang.vu@acme‑soft.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Jessica Kim",
+              "email": "jessica.kim@acme‑soft.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: Interview invitation – Senior Data Analyst position",
+          "body": "Hello Hoang,\n\nThank you for the opportunity.  I am available on October 15 after 1:00 PM.  Please let me know if that works for you and Jessica.\n\nBest regards,\nBinh",
+          "timestamp": "2025-10-07T13:05:00+07:00"
+        },
+        {
+          "sender": {
+            "name": "Hoang Vu",
+            "email": "hoang.vu@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "Tran Binh",
+              "email": "tran.binh@example.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Jessica Kim",
+              "email": "jessica.kim@acme‑soft.com"
+            }
+          ],
+          "bcc": [
+            {
+              "name": "Ngoc Tran",
+              "email": "ngoc.tran@acme‑soft.com"
+            }
+          ],
+          "subject": "Re: Interview invitation – Senior Data Analyst position",
+          "body": "Hi Binh,\n\nOctober 15 at 2:00 PM (UTC+7) works for everyone.  I’ve blind‑copied our HR assistant, Ngoc Tran, who will send a calendar invitation and arrange the video conference link.  Looking forward to meeting you.\n\nBest,\nHoang",
+          "timestamp": "2025-10-07T14:10:00+07:00"
+        }
+      ],
+      "expected_briefing": "Hoang invited Binh to a final interview for the Senior Data Analyst role and CC’d hiring manager Jessica.  Binh confirmed availability on October 15 after 1:00 PM.  Hoang scheduled the interview for October 15 at 2:00 PM and BCC’d HR assistant Ngoc Tran to send the calendar invitation."
+    },
+    {
+      "id": "technical_support_thread",
+      "domain": "technical_support",
+      "description": "A software engineer contacts cloud support about a production issue; multiple replies include CC and reply‑all.",
+      "scenario": "An engineer reports a production API outage to a cloud provider’s support team.  The conversation includes CC’ing the engineer’s team lead, support replies with troubleshooting steps, and the engineer replies to all to confirm resolution.",
+      "messages": [
+        {
+          "sender": {
+            "name": "Linh Pham",
+            "email": "linh.pham@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "Cloud Support",
+              "email": "support@cloudservice.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Team Lead",
+              "email": "teamlead@acme‑soft.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "URGENT: Production API returning 500 errors",
+          "body": "Hello support team,\n\nOur production environment is experiencing 500 Internal Server Error responses from your API since 08:00 AM.  This is impacting our customers.  We have confirmed the issue persists across different endpoints and regions.  Please advise urgently.\n\nBest,\nLinh Pham\nSoftware Engineer",
+          "timestamp": "2025-10-09T08:35:00+07:00"
+        },
+        {
+          "sender": {
+            "name": "Cloud Support",
+            "email": "support@cloudservice.com"
+          },
+          "to": [
+            {
+              "name": "Linh Pham",
+              "email": "linh.pham@acme‑soft.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Team Lead",
+              "email": "teamlead@acme‑soft.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: URGENT: Production API returning 500 errors",
+          "body": "Hi Linh,\n\nThank you for reaching out.  Our operations team is investigating the 500 errors.  We will update you within 30 minutes.  In the meantime, could you provide the Request ID from your latest call to the API?\n\nRegards,\nRavi\nCloud Support Engineer",
+          "timestamp": "2025-10-09T08:50:00+07:00"
+        },
+        {
+          "sender": {
+            "name": "Linh Pham",
+            "email": "linh.pham@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "Cloud Support",
+              "email": "support@cloudservice.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Team Lead",
+              "email": "teamlead@acme‑soft.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: URGENT: Production API returning 500 errors",
+          "body": "Hi Ravi,\n\nHere are two recent Request IDs: 6f29cb12‑a0f0 and 8d4e91f3‑b512.  Please let me know if you need any additional information.\n\nThanks,\nLinh",
+          "timestamp": "2025-10-09T09:00:00+07:00"
+        },
+        {
+          "sender": {
+            "name": "Cloud Support",
+            "email": "support@cloudservice.com"
+          },
+          "to": [
+            {
+              "name": "Linh Pham",
+              "email": "linh.pham@acme‑soft.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Team Lead",
+              "email": "teamlead@acme‑soft.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: URGENT: Production API returning 500 errors",
+          "body": "Hi Linh,\n\nOur operations team discovered a misconfigured load balancer in your region causing the 500 errors.  The configuration has been corrected and monitoring shows recovery.  Could you please confirm your application is now functioning correctly?\n\nBest,\nRavi",
+          "timestamp": "2025-10-09T09:20:00+07:00"
+        },
+        {
+          "sender": {
+            "name": "Linh Pham",
+            "email": "linh.pham@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "Cloud Support",
+              "email": "support@cloudservice.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Team Lead",
+              "email": "teamlead@acme‑soft.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: URGENT: Production API returning 500 errors",
+          "body": "Ravi,\n\nThank you for the update.  Our monitoring is showing normal responses again and error rates have dropped to zero.  We appreciate the quick resolution.\n\nBest,\nLinh",
+          "timestamp": "2025-10-09T09:30:00+07:00"
+        }
+      ],
+      "expected_briefing": "Linh reported a production API outage to the cloud provider and CC’d their team lead.  Support acknowledged and requested Request IDs.  Linh provided the IDs.  Support identified and fixed a misconfigured load balancer, and Linh confirmed that the service has returned to normal."
+    },
+    {
+      "id": "customer_support_case",
+      "domain": "customer_support",
+      "description": "Customer complaint escalated to product management with reply‑all and CC/BCC for quality assurance.",
+      "scenario": "A customer emails the support team about a billing error.  The support agent acknowledges the issue, escalates to the product manager, CC’s the quality team, and BCC’s the training lead for follow‑up.  The product manager replies‑all with a resolution and apology.",
+      "messages": [
+        {
+          "sender": {
+            "name": "John Nguyen",
+            "email": "john.nguyen@example.com"
+          },
+          "to": [
+            {
+              "name": "Support",
+              "email": "support@acme‑soft.com"
+            }
+          ],
+          "cc": [],
+          "bcc": [],
+          "subject": "Incorrect charge on my account – urgent assistance required",
+          "body": "Hello,\n\nI was charged twice for my monthly subscription on October 1.  Please investigate and refund the extra charge.  My account ID is 458790.\n\nThank you,\nJohn Nguyen",
+          "timestamp": "2025-10-06T09:45:00+07:00"
+        },
+        {
+          "sender": {
+            "name": "Emily Lam",
+            "email": "emily.lam@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "John Nguyen",
+              "email": "john.nguyen@example.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "David Wong",
+              "email": "david.wong@acme‑soft.com"
+            }
+          ],
+          "bcc": [
+            {
+              "name": "Training Lead",
+              "email": "training@acme‑soft.com"
+            }
+          ],
+          "subject": "Re: Incorrect charge on my account – urgent assistance required",
+          "body": "Hi John,\n\nI apologize for the duplicate charge.  I’ve opened support case #CS‑10312 and escalated it to our product manager, David Wong (CC’d).  I’ve also blind‑copied our training lead to ensure agents are informed.  We’ll investigate and update you shortly.\n\nSincerely,\nEmily Lam\nCustomer Support",
+          "timestamp": "2025-10-06T10:05:00+07:00"
+        },
+        {
+          "sender": {
+            "name": "David Wong",
+            "email": "david.wong@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "John Nguyen",
+              "email": "john.nguyen@example.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Emily Lam",
+              "email": "emily.lam@acme‑soft.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: Incorrect charge on my account – urgent assistance required",
+          "body": "Hello John,\n\nWe identified a bug in our billing system that caused some accounts, including yours, to be charged twice.  We have processed a refund of the extra charge, which should appear on your statement within 3–5 business days.  We sincerely apologize for the inconvenience and have implemented additional checks to prevent this issue from recurring.\n\nBest regards,\nDavid Wong\nProduct Manager",
+          "timestamp": "2025-10-06T11:00:00+07:00"
+        }
+      ],
+      "expected_briefing": "Customer John Nguyen reported a duplicate subscription charge.  Support agent Emily Lam opened case #CS‑10312, CC’d product manager David Wong for escalation and BCC’d the training lead.  David identified a billing bug, issued a refund, and apologized, noting preventative measures."
+    },
+    {
+      "id": "it_engineering_discussion",
+      "domain": "it_engineering",
+      "description": "An internal engineering discussion about a deployment issue involving multiple teams with reply‑all communications.",
+      "scenario": "DevOps engineer Michael kicks off an email thread about a failed deployment.  The thread includes developers, QA engineers, and operations staff.  Team members reply‑all with logs, analysis, and an eventual fix.",
+      "messages": [
+        {
+          "sender": {
+            "name": "Michael Nguyen",
+            "email": "michael.nguyen@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "Deployments Mailing List",
+              "email": "deploy@acme‑soft.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Release Manager",
+              "email": "release.manager@acme‑soft.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Deployment failure on staging – build 2025.10.05",
+          "body": "Team,\n\nThe 2025.10.05 build failed to deploy on the staging cluster at 11:30 AM.  The deployment pipeline reported a timeout while applying database migrations.  Please investigate and share any findings.\n\nRegards,\nMichael",
+          "timestamp": "2025-10-05T11:45:00+07:00"
+        },
+        {
+          "sender": {
+            "name": "Linh Vu",
+            "email": "linh.vu@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "Deployments Mailing List",
+              "email": "deploy@acme‑soft.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Release Manager",
+              "email": "release.manager@acme‑soft.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: Deployment failure on staging – build 2025.10.05",
+          "body": "Hi all,\n\nI checked the deployment logs.  The database migration script hung on adding an index due to a locked table.  I’m investigating which process held the lock.  Will update shortly.\n\n– Linh",
+          "timestamp": "2025-10-05T12:10:00+07:00"
+        },
+        {
+          "sender": {
+            "name": "Anita Kim",
+            "email": "anita.kim@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "Deployments Mailing List",
+              "email": "deploy@acme‑soft.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Release Manager",
+              "email": "release.manager@acme‑soft.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: Deployment failure on staging – build 2025.10.05",
+          "body": "Team,\n\nQA noticed a batch job running on staging at the same time, which may have locked the table.  Suggest pausing batch jobs during deployment.  \n\n– Anita",
+          "timestamp": "2025-10-05T12:25:00+07:00"
+        },
+        {
+          "sender": {
+            "name": "Linh Vu",
+            "email": "linh.vu@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "Deployments Mailing List",
+              "email": "deploy@acme‑soft.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Release Manager",
+              "email": "release.manager@acme‑soft.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: Deployment failure on staging – build 2025.10.05",
+          "body": "Update: found that the data‑cleanup batch job held the lock.  I terminated the job and re‑ran the migration manually; it completed successfully.  Recommend scheduling batch jobs outside of deployment windows to avoid this conflict.\n\n– Linh",
+          "timestamp": "2025-10-05T12:50:00+07:00"
+        },
+        {
+          "sender": {
+            "name": "Michael Nguyen",
+            "email": "michael.nguyen@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "Deployments Mailing List",
+              "email": "deploy@acme‑soft.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Release Manager",
+              "email": "release.manager@acme‑soft.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: Deployment failure on staging – build 2025.10.05",
+          "body": "Thanks everyone for the quick investigation.  We will update our deployment checklist to pause batch jobs before running migrations.  The build has now been deployed successfully.\n\n– Michael",
+          "timestamp": "2025-10-05T13:05:00+07:00"
+        }
+      ],
+      "expected_briefing": "Michael reported a failed deployment on the staging cluster due to migration timeouts.  Linh identified a locked table caused by a batch job.  Anita confirmed QA observed a concurrent batch job and recommended pausing it.  Linh terminated the job and completed the migration manually.  Michael confirmed the build deployed successfully and will update the deployment checklist to pause batch jobs."
+    },
+    {
+      "id": "sales_proposal_revision",
+      "domain": "sales",
+      "description": "Revised sales proposal shared with a prospective client, involving legal and internal counsel.",
+      "scenario": "After initial negotiations, the sales representative sends a revised proposal to the client.  The rep CCs the company’s legal team and blind‑copies internal counsel to review the terms.  The client responds with a minor request, and the rep confirms acceptance.",
+      "messages": [
+        {
+          "sender": {
+            "name": "Thao Nguyen",
+            "email": "thao.nguyen@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "Kevin Dao",
+              "email": "kevin.dao@clientcorp.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Legal Team",
+              "email": "legal@acme‑soft.com"
+            }
+          ],
+          "bcc": [
+            {
+              "name": "Internal Counsel",
+              "email": "counsel@acme‑soft.com"
+            }
+          ],
+          "subject": "Revised proposal for enterprise license",
+          "body": "Hello Kevin,\n\nThank you for your feedback on the initial proposal.  Attached is the revised proposal reflecting the updated pricing and service levels we discussed.  Key changes include a shorter payment term and the addition of a disaster‑recovery clause.  Legal is CC’d for review and internal counsel is blind‑copied.  Please let me know if you have any questions or if you are ready to proceed.\n\nBest regards,\nThao",
+          "timestamp": "2025-10-04T10:00:00+07:00",
+          "attachments": [
+            {
+              "filename": "Enterprise_Proposal_v2.docx",
+              "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+            }
+          ]
+        },
+        {
+          "sender": {
+            "name": "Kevin Dao",
+            "email": "kevin.dao@clientcorp.com"
+          },
+          "to": [
+            {
+              "name": "Thao Nguyen",
+              "email": "thao.nguyen@acme‑soft.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Legal Team",
+              "email": "legal@acme‑soft.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: Revised proposal for enterprise license",
+          "body": "Hi Thao,\n\nThanks for sending the revised proposal.  The terms look good overall.  Could we extend the support hours from 7 p.m. to 9 p.m. as part of the service level?  Once that’s adjusted, I’m prepared to sign.\n\nRegards,\nKevin",
+          "timestamp": "2025-10-04T13:30:00+07:00"
+        },
+        {
+          "sender": {
+            "name": "Thao Nguyen",
+            "email": "thao.nguyen@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "Kevin Dao",
+              "email": "kevin.dao@clientcorp.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Legal Team",
+              "email": "legal@acme‑soft.com"
+            }
+          ],
+          "bcc": [
+            {
+              "name": "Internal Counsel",
+              "email": "counsel@acme‑soft.com"
+            }
+          ],
+          "subject": "Re: Revised proposal for enterprise license",
+          "body": "Kevin,\n\nWe’re happy to accommodate the extended support hours to 9 p.m.  I’ll have our legal team update the proposal accordingly and send it for signature.  Thanks for confirming your interest.\n\nSincerely,\nThao",
+          "timestamp": "2025-10-04T14:15:00+07:00"
+        }
+      ],
+      "expected_briefing": "Thao sent Kevin a revised enterprise proposal, CC’ing legal and BCC’ing internal counsel.  Kevin requested extended support hours from 7 p.m. to 9 p.m.  Thao agreed to the change and will update the proposal for signature."
+    },
+    {
+      "id": "sales_discount_negotiation",
+      "domain": "sales",
+      "description": "Client negotiates a discount on a bulk purchase, involving finance approvals.",
+      "scenario": "A prospective client negotiates a discount for a bulk software purchase.  The sales rep coordinates with the finance manager (CC’d) to approve the discount, while the client and rep exchange several short and long messages clarifying the terms.",
+      "messages": [
+        {
+          "sender": {
+            "name": "Khanh Le",
+            "email": "khanh.le@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "Mai Truong",
+              "email": "mai.truong@clientcorp.com"
+            }
+          ],
+          "cc": [],
+          "bcc": [],
+          "subject": "Quote for 250 enterprise seats",
+          "body": "Hi Mai,\n\nThank you for considering Acme Soft for your organization.  Attached is the quote for 250 enterprise seats at our standard rate.  Please let me know if you have any questions or need adjustments.\n\nBest,\nKhanh",
+          "timestamp": "2025-09-30T09:00:00+07:00",
+          "attachments": [
+            {
+              "filename": "Quote_250_Seats.pdf",
+              "type": "application/pdf"
+            }
+          ]
+        },
+        {
+          "sender": {
+            "name": "Mai Truong",
+            "email": "mai.truong@clientcorp.com"
+          },
+          "to": [
+            {
+              "name": "Khanh Le",
+              "email": "khanh.le@acme‑soft.com"
+            }
+          ],
+          "cc": [],
+          "bcc": [],
+          "subject": "Re: Quote for 250 enterprise seats",
+          "body": "Hi Khanh,\n\nThanks for the quote.  Given the volume of seats, is there room for a 15% discount?  We’re also exploring a multi‑year commitment which may warrant a better rate.\n\nRegards,\nMai",
+          "timestamp": "2025-09-30T10:15:00+07:00"
+        },
+        {
+          "sender": {
+            "name": "Khanh Le",
+            "email": "khanh.le@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "Mai Truong",
+              "email": "mai.truong@clientcorp.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Finance Manager",
+              "email": "finance@acme‑soft.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: Quote for 250 enterprise seats",
+          "body": "Mai,\n\nI appreciate your interest in a multi‑year commitment.  I’ve CC’d our finance manager to evaluate a 15% discount on a 3‑year agreement.  We value long‑term partnerships and will do our best to accommodate.\n\nBest,\nKhanh",
+          "timestamp": "2025-09-30T10:45:00+07:00"
+        },
+        {
+          "sender": {
+            "name": "Finance Manager",
+            "email": "finance@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "Mai Truong",
+              "email": "mai.truong@clientcorp.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Khanh Le",
+              "email": "khanh.le@acme‑soft.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: Quote for 250 enterprise seats",
+          "body": "Hello Mai,\n\nAfter reviewing the numbers, we can offer a 12% discount for a 3‑year commitment on 250 seats.  This special pricing maintains our service levels and includes priority support.  Please let us know if this works for you.\n\nSincerely,\nLinh – Finance Manager",
+          "timestamp": "2025-09-30T11:30:00+07:00"
+        },
+        {
+          "sender": {
+            "name": "Mai Truong",
+            "email": "mai.truong@clientcorp.com"
+          },
+          "to": [
+            {
+              "name": "Khanh Le",
+              "email": "khanh.le@acme‑soft.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Finance Manager",
+              "email": "finance@acme‑soft.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: Quote for 250 enterprise seats",
+          "body": "Hello Linh and Khanh,\n\nThank you for the revised offer.  A 12% discount on a 3‑year term is acceptable.  Please send the final agreement for signature.\n\nRegards,\nMai",
+          "timestamp": "2025-09-30T12:00:00+07:00"
+        }
+      ],
+      "expected_briefing": "Khanh provided a quote for 250 seats.  Mai requested a 15% discount and considered a multi‑year commitment.  Khanh looped in the finance manager, who approved a 12% discount for a 3‑year term.  Mai accepted the offer and requested the final agreement."
+    },
+    {
+      "id": "sales_contract_signature",
+      "domain": "sales",
+      "description": "Finalizing contract signature with client and internal stakeholders via reply‑all and BCC.",
+      "scenario": "Once the terms are agreed, the sales rep distributes the final contract to the client and internal stakeholders for signature.  The finance team is blind‑copied for revenue recognition.  The client signs and returns the contract using reply‑all.",
+      "messages": [
+        {
+          "sender": {
+            "name": "Yen Ho",
+            "email": "yen.ho@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "Lisa Park",
+              "email": "lisa.park@clientcorp.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Implementation Lead",
+              "email": "implementation@acme‑soft.com"
+            }
+          ],
+          "bcc": [
+            {
+              "name": "Finance",
+              "email": "revenue@acme‑soft.com"
+            }
+          ],
+          "subject": "Final contract for signature – enterprise agreement",
+          "body": "Hi Lisa,\n\nAttached is the final enterprise agreement reflecting our agreed‑upon terms.  Please review and, if acceptable, sign and reply‑all with the executed document.  Our implementation lead is CC’d to begin onboarding once we have your signature.  Finance is blind‑copied for revenue tracking.\n\nThank you,\nYen",
+          "timestamp": "2025-10-02T09:20:00+07:00",
+          "attachments": [
+            {
+              "filename": "Enterprise_Agreement_Final.pdf",
+              "type": "application/pdf"
+            }
+          ]
+        },
+        {
+          "sender": {
+            "name": "Lisa Park",
+            "email": "lisa.park@clientcorp.com"
+          },
+          "to": [
+            {
+              "name": "Yen Ho",
+              "email": "yen.ho@acme‑soft.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Implementation Lead",
+              "email": "implementation@acme‑soft.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: Final contract for signature – enterprise agreement",
+          "body": "Hi Yen,\n\nWe’ve reviewed the contract and everything looks correct.  Attached is the signed agreement.  Looking forward to working with your team on implementation.\n\nBest,\nLisa",
+          "timestamp": "2025-10-02T11:00:00+07:00",
+          "attachments": [
+            {
+              "filename": "Enterprise_Agreement_Signed.pdf",
+              "type": "application/pdf"
+            }
+          ]
+        },
+        {
+          "sender": {
+            "name": "Yen Ho",
+            "email": "yen.ho@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "Lisa Park",
+              "email": "lisa.park@clientcorp.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Implementation Lead",
+              "email": "implementation@acme‑soft.com"
+            }
+          ],
+          "bcc": [
+            {
+              "name": "Finance",
+              "email": "revenue@acme‑soft.com"
+            }
+          ],
+          "subject": "Re: Final contract for signature – enterprise agreement",
+          "body": "Lisa,\n\nThank you for the executed agreement.  Our implementation lead will reach out to schedule the kickoff meeting.  Welcome aboard!\n\nRegards,\nYen",
+          "timestamp": "2025-10-02T11:30:00+07:00"
+        }
+      ],
+      "expected_briefing": "Yen sent the final enterprise agreement to Lisa, CC’ing the implementation lead and BCC’ing finance.  Lisa reviewed, signed, and replied‑all with the executed contract.  Yen acknowledged receipt and indicated that the implementation team will schedule a kickoff meeting."
+    },
+    {
+      "id": "sales_onboarding_support",
+      "domain": "sales",
+      "description": "Sales representative introduces new customer to the support team for onboarding.",
+      "scenario": "Following a closed deal, the sales rep introduces the customer to the support and onboarding team.  The rep sends a detailed welcome message with implementation steps and CCs the onboarding manager.  The customer replies with questions, and support responds with next steps.",
+      "messages": [
+        {
+          "sender": {
+            "name": "An Nguyen",
+            "email": "an.nguyen@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "Huyen Tran",
+              "email": "huyen.tran@clientcorp.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Onboarding Manager",
+              "email": "onboarding@acme‑soft.com"
+            },
+            {
+              "name": "Support",
+              "email": "support@acme‑soft.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Welcome to Acme – onboarding and next steps",
+          "body": "Hello Huyen,\n\nCongratulations on joining the Acme family!  This email serves as your onboarding guide.  Over the next few weeks, our onboarding manager and support team (CC’d) will help you configure your environment, train your team, and migrate your data.  Attached is a comprehensive onboarding checklist and a project plan outlining milestones and responsible parties.  Please review and let us know if you have any questions.  We look forward to working with you.\n\nKind regards,\nAn",
+          "timestamp": "2025-10-03T09:00:00+07:00",
+          "attachments": [
+            {
+              "filename": "Onboarding_Checklist.pdf",
+              "type": "application/pdf"
+            },
+            {
+              "filename": "Project_Plan.xlsx",
+              "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+            }
+          ]
+        },
+        {
+          "sender": {
+            "name": "Huyen Tran",
+            "email": "huyen.tran@clientcorp.com"
+          },
+          "to": [
+            {
+              "name": "An Nguyen",
+              "email": "an.nguyen@acme‑soft.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Onboarding Manager",
+              "email": "onboarding@acme‑soft.com"
+            },
+            {
+              "name": "Support",
+              "email": "support@acme‑soft.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: Welcome to Acme – onboarding and next steps",
+          "body": "Hi An and team,\n\nThank you for the warm welcome and the detailed materials.  I have a few questions about data migration timing and user training sessions: when can we schedule the first training, and how long does the migration usually take?\n\nBest,\nHuyen",
+          "timestamp": "2025-10-03T10:20:00+07:00"
+        },
+        {
+          "sender": {
+            "name": "Onboarding Manager",
+            "email": "onboarding@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "Huyen Tran",
+              "email": "huyen.tran@clientcorp.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "An Nguyen",
+              "email": "an.nguyen@acme‑soft.com"
+            },
+            {
+              "name": "Support",
+              "email": "support@acme‑soft.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: Welcome to Acme – onboarding and next steps",
+          "body": "Hi Huyen,\n\nWelcome again!  Typically, data migration takes approximately one week, depending on the volume.  We can schedule the first training session as early as October 6 at 3:00 PM (UTC+7).  Let me know if that time works or suggest an alternative.  We’ll assign a migration specialist to your account and share a timeline shortly.\n\nBest regards,\nLan – Onboarding Manager",
+          "timestamp": "2025-10-03T11:00:00+07:00"
+        }
+      ],
+      "expected_briefing": "An welcomed new customer Huyen, providing a detailed onboarding guide and attaching a checklist and project plan while CC’ing the onboarding manager and support.  Huyen asked about training and migration timelines.  Onboarding manager Lan explained that migration typically takes a week and offered a training session on October 6 at 3:00 PM."
+    },
+    {
+      "id": "marketing_social_media_strategy",
+      "domain": "marketing",
+      "description": "Developing a social media strategy with cross‑functional input and BCC to an external influencer.",
+      "scenario": "The social media lead proposes a comprehensive strategy for an upcoming product launch.  She CCs the content writer and design lead and blind‑copies a contracted influencer to keep them informed.  Team members reply‑all with feedback and resource requests.",
+      "messages": [
+        {
+          "sender": {
+            "name": "Trang Ho",
+            "email": "trang.ho@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "Content Writer",
+              "email": "content@acme‑soft.com"
+            },
+            {
+              "name": "Design Lead",
+              "email": "design@acme‑soft.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Marketing Director",
+              "email": "michael.pham@acme‑soft.com"
+            }
+          ],
+          "bcc": [
+            {
+              "name": "Influencer Partner",
+              "email": "influencer@socialmedia.com"
+            }
+          ],
+          "subject": "Social media strategy for October launch",
+          "body": "Hi team,\n\nAttached is a detailed social media strategy for our October product launch.  It includes daily posting schedules, platform‑specific messaging, hashtag research, and target engagement metrics.  I’d appreciate your feedback on the creative direction and any resource needs.  Our influencer partner is blind‑copied so they can align their content calendar with ours.\n\nThanks,\nTrang",
+          "timestamp": "2025-09-20T09:00:00+07:00",
+          "attachments": [
+            {
+              "filename": "Social_Media_Strategy.pdf",
+              "type": "application/pdf"
+            }
+          ]
+        },
+        {
+          "sender": {
+            "name": "Content Writer",
+            "email": "content@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "Trang Ho",
+              "email": "trang.ho@acme‑soft.com"
+            },
+            {
+              "name": "Design Lead",
+              "email": "design@acme‑soft.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Marketing Director",
+              "email": "michael.pham@acme‑soft.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: Social media strategy for October launch",
+          "body": "Hi Trang,\n\nThe strategy looks solid.  I’ll start drafting post copy based on your guidelines.  Could you clarify the tone for LinkedIn versus Instagram?  Should it be more professional on LinkedIn and casual on Instagram?\n\n– Quang",
+          "timestamp": "2025-09-20T10:15:00+07:00"
+        },
+        {
+          "sender": {
+            "name": "Design Lead",
+            "email": "design@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "Trang Ho",
+              "email": "trang.ho@acme‑soft.com"
+            },
+            {
+              "name": "Content Writer",
+              "email": "content@acme‑soft.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Marketing Director",
+              "email": "michael.pham@acme‑soft.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: Social media strategy for October launch",
+          "body": "Hello all,\n\nWe’ll need additional graphics resources to support the daily posting schedule.  I recommend hiring a freelance designer for the month of October.  Please let me know if budget allows.\n\nThanks,\nLiem",
+          "timestamp": "2025-09-20T11:00:00+07:00"
+        },
+        {
+          "sender": {
+            "name": "Trang Ho",
+            "email": "trang.ho@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "Content Writer",
+              "email": "content@acme‑soft.com"
+            },
+            {
+              "name": "Design Lead",
+              "email": "design@acme‑soft.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Marketing Director",
+              "email": "michael.pham@acme‑soft.com"
+            }
+          ],
+          "bcc": [
+            {
+              "name": "Influencer Partner",
+              "email": "influencer@socialmedia.com"
+            }
+          ],
+          "subject": "Re: Social media strategy for October launch",
+          "body": "Hi team,\n\nQuang, for LinkedIn let’s keep a professional tone highlighting thought leadership and case studies, while Instagram can be more playful and visual.  Liem, I’ll discuss the freelance designer budget with Michael and let you know.  Thanks for the input.\n\n– Trang",
+          "timestamp": "2025-09-20T13:00:00+07:00"
+        }
+      ],
+      "expected_briefing": "Trang shared a comprehensive social media strategy with content and design teams, CC’ing the marketing director and BCC’ing an influencer partner.  Content writer Quang sought clarity on tone across platforms; design lead Liem requested an extra graphic resource.  Trang clarified tone guidelines and will review the freelance budget with the director."
+    },
+    {
+      "id": "marketing_press_release",
+      "domain": "marketing",
+      "description": "Press release draft circulated to executives and legal for approval, including a long content body.",
+      "scenario": "The PR manager drafts a press release for a strategic partnership announcement.  She sends the draft to the CEO and legal team for approval, attaching the document.  Executives reply with edits and a request for additional quotes.  Legal confirms compliance.",
+      "messages": [
+        {
+          "sender": {
+            "name": "Diep Pham",
+            "email": "diep.pham@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "CEO",
+              "email": "ceo@acme‑soft.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Legal Counsel",
+              "email": "legal@acme‑soft.com"
+            },
+            {
+              "name": "VP of Marketing",
+              "email": "vp.marketing@acme‑soft.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Draft press release: strategic partnership with TechNova",
+          "body": "Dear all,\n\nPlease find attached a draft of our press release announcing the strategic partnership with TechNova.  The release highlights the collaboration benefits, market impact, and mutual commitment to innovation.  Key sections include: an introductory paragraph detailing the partnership, quotes from both CEOs, and a closing section on future plans.  \n\nI welcome your edits and suggestions, particularly on the quotes and the positioning of our shared vision.  Legal, please review for compliance with disclosure requirements.\n\nBest regards,\nDiep",
+          "timestamp": "2025-09-15T14:30:00+07:00",
+          "attachments": [
+            {
+              "filename": "Press_Release_Draft.docx",
+              "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+            }
+          ]
+        },
+        {
+          "sender": {
+            "name": "CEO",
+            "email": "ceo@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "Diep Pham",
+              "email": "diep.pham@acme‑soft.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Legal Counsel",
+              "email": "legal@acme‑soft.com"
+            },
+            {
+              "name": "VP of Marketing",
+              "email": "vp.marketing@acme‑soft.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: Draft press release: strategic partnership with TechNova",
+          "body": "Hi Diep,\n\nOverall the draft is strong.  Please add a quote from our CTO emphasising the technical synergy between our platforms.  Also, mention the expected timeline for integration in the closing section.\n\nRegards,\nThanh (CEO)",
+          "timestamp": "2025-09-15T16:00:00+07:00"
+        },
+        {
+          "sender": {
+            "name": "Legal Counsel",
+            "email": "legal@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "Diep Pham",
+              "email": "diep.pham@acme‑soft.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "CEO",
+              "email": "ceo@acme‑soft.com"
+            },
+            {
+              "name": "VP of Marketing",
+              "email": "vp.marketing@acme‑soft.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: Draft press release: strategic partnership with TechNova",
+          "body": "Diep,\n\nFrom a legal standpoint the draft looks compliant.  Ensure we avoid forward‑looking statements about revenue projections.  Otherwise there are no objections.\n\n– Bao, Legal Counsel",
+          "timestamp": "2025-09-15T16:15:00+07:00"
+        },
+        {
+          "sender": {
+            "name": "Diep Pham",
+            "email": "diep.pham@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "CEO",
+              "email": "ceo@acme‑soft.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Legal Counsel",
+              "email": "legal@acme‑soft.com"
+            },
+            {
+              "name": "VP of Marketing",
+              "email": "vp.marketing@acme‑soft.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: Draft press release: strategic partnership with TechNova",
+          "body": "Dear all,\n\nThank you for the feedback.  I’ve added a quote from our CTO highlighting the technical synergy and included the integration timeline in the closing section.  I’ve also removed any forward‑looking revenue statements per legal’s advice.  Attached is the revised draft for final approval.\n\nRegards,\nDiep",
+          "timestamp": "2025-09-15T17:30:00+07:00",
+          "attachments": [
+            {
+              "filename": "Press_Release_Draft_Rev1.docx",
+              "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+            }
+          ]
+        }
+      ],
+      "expected_briefing": "Diep circulated a draft press release about a strategic partnership, CC’ing the CEO, legal counsel and VP of marketing.  The CEO requested adding a CTO quote and an integration timeline; legal counsel approved the draft with caution against revenue projections.  Diep revised the draft accordingly and sent it for final approval."
+    },
+    {
+      "id": "marketing_budget_approval",
+      "domain": "marketing",
+      "description": "Requesting budget approval for an advertising campaign, with finance CC’d.",
+      "scenario": "The marketing manager requests additional budget for a digital advertising campaign.  She CCs the finance controller to justify spend and includes cost breakdowns.  Finance responds with approval and conditions.  The manager thanks everyone and moves forward.",
+      "messages": [
+        {
+          "sender": {
+            "name": "Lan Nguyen",
+            "email": "lan.nguyen@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "CFO",
+              "email": "cfo@acme‑soft.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Finance Controller",
+              "email": "finance.controller@acme‑soft.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Request for additional advertising budget – Q4",
+          "body": "Dear CFO,\n\nOur Q4 digital advertising campaign has outperformed expectations, and we’re requesting an additional $50,000 to scale high‑performing channels.  Please see the attached ROI analysis detailing cost per acquisition and projected returns.  Finance controller is CC’d for transparency.\n\nSincerely,\nLan – Marketing Manager",
+          "timestamp": "2025-09-25T09:00:00+07:00",
+          "attachments": [
+            {
+              "filename": "ROI_Analysis_Q4.xlsx",
+              "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+            }
+          ]
+        },
+        {
+          "sender": {
+            "name": "Finance Controller",
+            "email": "finance.controller@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "CFO",
+              "email": "cfo@acme‑soft.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Lan Nguyen",
+              "email": "lan.nguyen@acme‑soft.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: Request for additional advertising budget – Q4",
+          "body": "Hello,\n\nBased on the ROI analysis, the cost per acquisition remains within acceptable thresholds.  I support the request but recommend capping additional spend at $45,000.  Please confirm.\n\nRegards,\nMinh – Finance Controller",
+          "timestamp": "2025-09-25T10:10:00+07:00"
+        },
+        {
+          "sender": {
+            "name": "CFO",
+            "email": "cfo@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "Lan Nguyen",
+              "email": "lan.nguyen@acme‑soft.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Finance Controller",
+              "email": "finance.controller@acme‑soft.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: Request for additional advertising budget – Q4",
+          "body": "Lan,\n\nYou are approved for an additional $45,000 in advertising budget, subject to continued monitoring of ROI.  Please provide weekly performance updates.\n\nThanks,\nHien – CFO",
+          "timestamp": "2025-09-25T11:00:00+07:00"
+        },
+        {
+          "sender": {
+            "name": "Lan Nguyen",
+            "email": "lan.nguyen@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "CFO",
+              "email": "cfo@acme‑soft.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Finance Controller",
+              "email": "finance.controller@acme‑soft.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: Request for additional advertising budget – Q4",
+          "body": "Dear Hien,\n\nThank you for the approval.  We will proceed with the additional $45,000 budget and send weekly performance updates as requested.\n\nSincerely,\nLan",
+          "timestamp": "2025-09-25T11:20:00+07:00"
+        }
+      ],
+      "expected_briefing": "Lan requested an additional $50k for Q4 advertising, CC’ing the finance controller and attaching an ROI analysis.  The controller recommended a $45k cap, and CFO Hien approved $45k contingent on weekly performance updates.  Lan acknowledged and will proceed accordingly."
+    },
+    {
+      "id": "marketing_event_planning",
+      "domain": "marketing",
+      "description": "Coordinating a conference event with external vendors and internal stakeholders.",
+      "scenario": "The events coordinator plans a client conference.  She sends an initial logistics email to internal stakeholders, CCs the procurement manager, and blind‑copies the preferred venue vendor for pricing.  Team members reply‑all with schedules and requirements.",
+      "messages": [
+        {
+          "sender": {
+            "name": "Thu Le",
+            "email": "thu.le@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "Sales Team",
+              "email": "sales@acme‑soft.com"
+            },
+            {
+              "name": "Marketing Team",
+              "email": "marketing@acme‑soft.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Procurement Manager",
+              "email": "procurement@acme‑soft.com"
+            }
+          ],
+          "bcc": [
+            {
+              "name": "Venue Vendor",
+              "email": "events@hotelgrand.com"
+            }
+          ],
+          "subject": "Planning the Acme Client Conference – November 2025",
+          "body": "Hello team,\n\nWe are organizing our annual client conference for November 20–22 in Ho Chi Minh City.  Please provide your availability, session topics, and any specific requirements (AV, breakout rooms, etc.) by next Tuesday.  Procurement is CC’d for budget alignment, and our preferred venue is blind‑copied to start drafting a proposal.  Attached is a preliminary agenda.\n\nThank you,\nThu – Events Coordinator",
+          "timestamp": "2025-09-18T09:30:00+07:00",
+          "attachments": [
+            {
+              "filename": "Preliminary_Agenda.pdf",
+              "type": "application/pdf"
+            }
+          ]
+        },
+        {
+          "sender": {
+            "name": "Sales Team",
+            "email": "sales@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "Thu Le",
+              "email": "thu.le@acme‑soft.com"
+            },
+            {
+              "name": "Marketing Team",
+              "email": "marketing@acme‑soft.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Procurement Manager",
+              "email": "procurement@acme‑soft.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: Planning the Acme Client Conference – November 2025",
+          "body": "Hi Thu,\n\nSales is available on all proposed dates.  We would like to host a breakout session on customer success stories.  We’ll need a room that can seat 50 participants with a projector.\n\nThanks,\nThe Sales Team",
+          "timestamp": "2025-09-18T11:00:00+07:00"
+        },
+        {
+          "sender": {
+            "name": "Marketing Team",
+            "email": "marketing@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "Thu Le",
+              "email": "thu.le@acme‑soft.com"
+            },
+            {
+              "name": "Sales Team",
+              "email": "sales@acme‑soft.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Procurement Manager",
+              "email": "procurement@acme‑soft.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: Planning the Acme Client Conference – November 2025",
+          "body": "Hi all,\n\nMarketing proposes a keynote on trends in digital transformation.  We’ll need a plenary hall for 200 attendees with stage lighting.  Please also ensure we have a photo booth area.\n\nRegards,\nMarketing Team",
+          "timestamp": "2025-09-18T12:20:00+07:00"
+        },
+        {
+          "sender": {
+            "name": "Thu Le",
+            "email": "thu.le@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "Sales Team",
+              "email": "sales@acme‑soft.com"
+            },
+            {
+              "name": "Marketing Team",
+              "email": "marketing@acme‑soft.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Procurement Manager",
+              "email": "procurement@acme‑soft.com"
+            }
+          ],
+          "bcc": [
+            {
+              "name": "Venue Vendor",
+              "email": "events@hotelgrand.com"
+            }
+          ],
+          "subject": "Re: Planning the Acme Client Conference – November 2025",
+          "body": "Thanks for your input.  I’ll compile your requirements and share them with the venue.  Procurement, please prepare a preliminary budget based on last year’s costs plus our new requests.\n\nBest,\nThu",
+          "timestamp": "2025-09-18T14:00:00+07:00"
+        }
+      ],
+      "expected_briefing": "Thu initiated planning for the November client conference, CC’ing procurement and BCC’ing the preferred venue.  Sales requested a breakout room for 50 attendees; marketing proposed a keynote and requested a plenary hall and photo booth.  Thu will compile requirements and asked procurement for a preliminary budget."
+    },
+    {
+      "id": "hr_onboarding_process",
+      "domain": "human_resources",
+      "description": "Onboarding email providing orientation schedule and handbook to a new employee.",
+      "scenario": "HR welcomes a new employee with orientation details, CCs the hiring manager, and BCCs IT to set up access.  The email includes a long orientation agenda and an employee handbook attachment.  The employee replies with acknowledgment.",
+      "messages": [
+        {
+          "sender": {
+            "name": "Thu Phan",
+            "email": "thu.phan@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "Ngoc Le",
+              "email": "ngoc.le@acme‑soft.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Hiring Manager",
+              "email": "jessica.kim@acme‑soft.com"
+            }
+          ],
+          "bcc": [
+            {
+              "name": "IT Support",
+              "email": "it@acme‑soft.com"
+            }
+          ],
+          "subject": "Welcome to Acme – your first week schedule and resources",
+          "body": "Dear Ngoc,\n\nWelcome to Acme!  We are excited to have you join the Data Analytics team as a Data Scientist.\n\nOrientation Schedule:\n* Day 1: HR orientation and benefits overview (9:00 AM – 11:00 AM)\n* Day 2: IT setup and security training (10:00 AM – 12:00 PM)\n* Day 3: Team introduction and project overview (2:00 PM – 4:00 PM)\n\nYou’ll also receive an invitation to our employee portal.  Please review the attached employee handbook before your first day; it includes policies on time off, performance reviews, and professional development.  The hiring manager is CC’d, and IT is blind‑copied to prepare your workstation and accounts.\n\nIf you have any questions before your start date, feel free to reach out.\n\nWarm regards,\nThu\nHR Coordinator",
+          "timestamp": "2025-09-28T15:00:00+07:00",
+          "attachments": [
+            {
+              "filename": "Employee_Handbook.pdf",
+              "type": "application/pdf"
+            }
+          ]
+        },
+        {
+          "sender": {
+            "name": "Ngoc Le",
+            "email": "ngoc.le@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "Thu Phan",
+              "email": "thu.phan@acme‑soft.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Hiring Manager",
+              "email": "jessica.kim@acme‑soft.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: Welcome to Acme – your first week schedule and resources",
+          "body": "Hello Thu,\n\nThank you for the warm welcome and detailed schedule.  I’ve reviewed the handbook and am excited to start.  See you on my first day!\n\nBest,\nNgoc",
+          "timestamp": "2025-09-28T16:10:00+07:00"
+        }
+      ],
+      "expected_briefing": "HR coordinator Thu welcomed new hire Ngoc to the Data Analytics team, CC’ing the hiring manager and BCC’ing IT for setup.  Thu provided a multi‑day orientation schedule and attached the employee handbook.  Ngoc acknowledged receipt and expressed excitement."
+    },
+    {
+      "id": "hr_performance_review",
+      "domain": "human_resources",
+      "description": "Scheduling a performance review meeting with manager and employee, BCC’ing HR director.",
+      "scenario": "HR schedules a performance review, inviting both the employee and their manager.  The HR assistant BCCs the HR director for oversight.  The manager proposes an alternative time, and HR confirms the new slot.",
+      "messages": [
+        {
+          "sender": {
+            "name": "HR Assistant",
+            "email": "hrassistant@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "Employee",
+              "email": "linh.vu@acme‑soft.com"
+            },
+            {
+              "name": "Manager",
+              "email": "michael.nguyen@acme‑soft.com"
+            }
+          ],
+          "cc": [],
+          "bcc": [
+            {
+              "name": "HR Director",
+              "email": "hrdirector@acme‑soft.com"
+            }
+          ],
+          "subject": "Performance review scheduling",
+          "body": "Hello Linh and Michael,\n\nIt’s time for Linh’s semi‑annual performance review.  I’d like to schedule a 45‑minute meeting on October 20 at 10:00 AM (UTC+7).  Please let me know if this time works or suggest alternatives.\n\nThank you,\nQuyen – HR Assistant",
+          "timestamp": "2025-09-21T09:00:00+07:00"
+        },
+        {
+          "sender": {
+            "name": "Michael Nguyen",
+            "email": "michael.nguyen@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "HR Assistant",
+              "email": "hrassistant@acme‑soft.com"
+            },
+            {
+              "name": "Employee",
+              "email": "linh.vu@acme‑soft.com"
+            }
+          ],
+          "cc": [],
+          "bcc": [
+            {
+              "name": "HR Director",
+              "email": "hrdirector@acme‑soft.com"
+            }
+          ],
+          "subject": "Re: Performance review scheduling",
+          "body": "Hi Quyen and Linh,\n\nOctober 20 at 10:00 AM conflicts with our team sprint review.  Could we move the performance review to October 21 at 2:00 PM?\n\nThanks,\nMichael",
+          "timestamp": "2025-09-21T10:15:00+07:00"
+        },
+        {
+          "sender": {
+            "name": "HR Assistant",
+            "email": "hrassistant@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "Employee",
+              "email": "linh.vu@acme‑soft.com"
+            },
+            {
+              "name": "Manager",
+              "email": "michael.nguyen@acme‑soft.com"
+            }
+          ],
+          "cc": [],
+          "bcc": [
+            {
+              "name": "HR Director",
+              "email": "hrdirector@acme‑soft.com"
+            }
+          ],
+          "subject": "Re: Performance review scheduling",
+          "body": "Hi Michael and Linh,\n\nOctober 21 at 2:00 PM is confirmed for the performance review.  I’ll send a calendar invitation shortly.\n\nBest,\nQuyen",
+          "timestamp": "2025-09-21T11:00:00+07:00"
+        }
+      ],
+      "expected_briefing": "HR assistant Quyen proposed a performance review meeting on October 20 and BCC’d the HR director.  Manager Michael requested rescheduling to October 21 at 2:00 PM due to a conflict.  Quyen confirmed the new time and will send a calendar invite."
+    },
+    {
+      "id": "hr_policy_update",
+      "domain": "human_resources",
+      "description": "Company policy update emailed to all employees, with legal blind‑copied.",
+      "scenario": "HR announces an updated remote‑work policy to all staff.  The long email outlines new guidelines on flexible hours, equipment reimbursement, and security.  Legal is BCC’d for record keeping.  There is no reply expected.",
+      "messages": [
+        {
+          "sender": {
+            "name": "HR Director",
+            "email": "hrdirector@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "All Employees",
+              "email": "staff@acme‑soft.com"
+            }
+          ],
+          "cc": [],
+          "bcc": [
+            {
+              "name": "Legal Counsel",
+              "email": "legal@acme‑soft.com"
+            }
+          ],
+          "subject": "Updated remote‑work policy effective November 1",
+          "body": "Dear team,\n\nWe are pleased to announce updates to our remote‑work policy effective November 1.  Highlights include: (1) Flexible working hours: employees may begin work anytime between 7:00 AM and 10:00 AM, provided core hours of 10:00 AM–3:00 PM are maintained; (2) Equipment reimbursement: employees may expense up to VND 4 million per year for home office equipment; (3) Security: all remote access must occur via VPN and two‑factor authentication.\n\nPlease read the attached policy document for full details, and reach out to your manager or HR representative with questions.\n\nRegards,\nLan – HR Director",
+          "timestamp": "2025-10-01T08:00:00+07:00",
+          "attachments": [
+            {
+              "filename": "Remote_Work_Policy.pdf",
+              "type": "application/pdf"
+            }
+          ]
+        }
+      ],
+      "expected_briefing": "HR Director Lan emailed all employees a detailed update to the remote‑work policy, highlighting flexible hours, equipment reimbursement, and security requirements.  Legal was BCC’d.  Employees are instructed to review the attached policy and direct questions to HR."
+    },
+    {
+      "id": "hr_benefits_enrollment",
+      "domain": "human_resources",
+      "description": "Announcement of benefits enrollment period and instructions, with attachments.",
+      "scenario": "HR informs employees of the upcoming benefits enrollment period.  The email contains long explanatory content about available plans, deadlines, and enrollment instructions.  Benefit documents are attached.  Employees reply with quick acknowledgments or questions.",
+      "messages": [
+        {
+          "sender": {
+            "name": "Benefits Coordinator",
+            "email": "benefits@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "All Employees",
+              "email": "staff@acme‑soft.com"
+            }
+          ],
+          "cc": [],
+          "bcc": [],
+          "subject": "Open enrollment for 2026 benefits starts October 10",
+          "body": "Dear colleagues,\n\nOpen enrollment for the 2026 benefits year will run from October 10 to October 24.  During this period, you may enroll in or make changes to health, dental, vision, and retirement plans.  Please review the attached benefits guide for detailed plan descriptions, premium costs, and enrollment instructions.  Key points:\n\n* If you do not make changes, your current elections will carry over.\n* FSA/HSA contributions must be re‑elected each year.\n* Enrollment must be completed in the HR portal by 5:00 PM on October 24.\n\nWe will host virtual Q&A sessions on October 11 and October 17.  If you have questions, reply to this email or contact the benefits team.\n\nThank you,\nTrang – Benefits Coordinator",
+          "timestamp": "2025-10-05T09:00:00+07:00",
+          "attachments": [
+            {
+              "filename": "2026_Benefits_Guide.pdf",
+              "type": "application/pdf"
+            }
+          ]
+        },
+        {
+          "sender": {
+            "name": "Employee",
+            "email": "duy.nguyen@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "Benefits Coordinator",
+              "email": "benefits@acme‑soft.com"
+            }
+          ],
+          "cc": [],
+          "bcc": [],
+          "subject": "Re: Open enrollment for 2026 benefits starts October 10",
+          "body": "Hi Trang,\n\nThank you for the information.  Could you clarify if we can increase our HSA contributions mid‑year, or only during open enrollment?\n\nBest,\nDuy",
+          "timestamp": "2025-10-05T10:30:00+07:00"
+        },
+        {
+          "sender": {
+            "name": "Benefits Coordinator",
+            "email": "benefits@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "Employee",
+              "email": "duy.nguyen@acme‑soft.com"
+            }
+          ],
+          "cc": [],
+          "bcc": [],
+          "subject": "Re: Open enrollment for 2026 benefits starts October 10",
+          "body": "Hi Duy,\n\nHSA contribution amounts can only be changed during open enrollment or following a qualifying life event.  Please let us know if you have further questions.\n\nRegards,\nTrang",
+          "timestamp": "2025-10-05T11:00:00+07:00"
+        }
+      ],
+      "expected_briefing": "Benefits coordinator Trang announced the 2026 benefits enrollment period with detailed instructions and an attached guide.  Employee Duy asked whether HSA contributions can be increased mid‑year; Trang clarified that changes are allowed only during open enrollment or after qualifying events."
+    },
+    {
+      "id": "technical_support_license_activation",
+      "domain": "technical_support",
+      "description": "Customer cannot activate newly purchased software license; support interacts with licensing and QA teams.",
+      "scenario": "A corporate IT administrator emails the software vendor’s technical support because an activation key fails to register.  Support replies, CC’ing the licensing team, requesting system logs.  After receiving logs, licensing identifies a server clock drift issue; the admin corrects the time and confirms activation works.  The support agent BCC’s QA to document the bug.",
+      "messages": [
+        {
+          "sender": {
+            "name": "IT Administrator",
+            "email": "minh.tran@bigbank.com"
+          },
+          "to": [
+            {
+              "name": "Technical Support",
+              "email": "support@vendor.com"
+            }
+          ],
+          "cc": [],
+          "bcc": [],
+          "subject": "Cannot activate enterprise license on new server",
+          "body": "Hello Support,\n\nWe purchased an enterprise license for your software and are attempting to activate it on our production server.  When we enter the activation key, the software displays an error: “Invalid key or activation server unreachable.”  Internet connectivity is working from the server.  Please advise.\n\nRegards,\nMinh\nCorporate IT Administrator",
+          "timestamp": "2025-10-07T09:15:00+07:00"
+        },
+        {
+          "sender": {
+            "name": "Support Agent",
+            "email": "support@vendor.com"
+          },
+          "to": [
+            {
+              "name": "Minh Tran",
+              "email": "minh.tran@bigbank.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Licensing Team",
+              "email": "licensing@vendor.com"
+            }
+          ],
+          "bcc": [
+            {
+              "name": "QA Lead",
+              "email": "qa@vendor.com"
+            }
+          ],
+          "subject": "Re: Cannot activate enterprise license on new server",
+          "body": "Hi Minh,\n\nThank you for contacting us.  I have CC’d our licensing team and blind‑copied QA so they can log this issue.  Could you please provide the server’s system logs from the last activation attempt and confirm the operating system version?  This will help us diagnose the problem.\n\nSincerely,\nArun\nTechnical Support",
+          "timestamp": "2025-10-07T09:40:00+07:00"
+        },
+        {
+          "sender": {
+            "name": "IT Administrator",
+            "email": "minh.tran@bigbank.com"
+          },
+          "to": [
+            {
+              "name": "Support Agent",
+              "email": "support@vendor.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Licensing Team",
+              "email": "licensing@vendor.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: Cannot activate enterprise license on new server",
+          "body": "Hi Arun,\n\nAttached are the system logs you requested.  The server is running CentOS 9 with all updates applied.  Let me know if you need any other information.\n\nBest,\nMinh",
+          "timestamp": "2025-10-07T10:05:00+07:00",
+          "attachments": [
+            {
+              "filename": "activation_logs.txt",
+              "type": "text/plain"
+            }
+          ]
+        },
+        {
+          "sender": {
+            "name": "Licensing Engineer",
+            "email": "licensing@vendor.com"
+          },
+          "to": [
+            {
+              "name": "Minh Tran",
+              "email": "minh.tran@bigbank.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Support Agent",
+              "email": "support@vendor.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: Cannot activate enterprise license on new server",
+          "body": "Hello Minh,\n\nThank you for the logs.  We see the server time is seven minutes behind UTC; our activation server enforces a strict time window for security reasons.  Please synchronize your server clock with an NTP source and try activating again.\n\nBest regards,\nMai\nLicensing Team",
+          "timestamp": "2025-10-07T10:30:00+07:00"
+        },
+        {
+          "sender": {
+            "name": "IT Administrator",
+            "email": "minh.tran@bigbank.com"
+          },
+          "to": [
+            {
+              "name": "Support Agent",
+              "email": "support@vendor.com"
+            },
+            {
+              "name": "Licensing Team",
+              "email": "licensing@vendor.com"
+            }
+          ],
+          "cc": [],
+          "bcc": [],
+          "subject": "Re: Cannot activate enterprise license on new server",
+          "body": "Hi Mai and Arun,\n\nWe corrected the server time and the license activated successfully.  Thank you for your assistance.\n\nRegards,\nMinh",
+          "timestamp": "2025-10-07T11:00:00+07:00"
+        }
+      ],
+      "expected_briefing": "Corporate IT admin Minh couldn’t activate a new enterprise license and emailed support.  Support agent Arun CC’d licensing and blind‑copied QA, requesting system logs.  After reviewing the logs, licensing engineer Mai found the server clock drifted behind UTC, causing the activation server to reject the key.  Minh synchronized the server time, and activation succeeded."
+    },
+    {
+      "id": "technical_support_security_alert",
+      "domain": "technical_support",
+      "description": "Security alert regarding malware detected by an endpoint; support engages security team and client’s IT lead.",
+      "scenario": "An endpoint security system flags a malware infection on a client workstation.  The client’s IT lead emails support with the alert details.  Support involves the vendor’s security team via CC, requests quarantine actions, and provides a removal tool.  The IT lead acknowledges and later confirms the system is clean.",
+      "messages": [
+        {
+          "sender": {
+            "name": "Client IT Lead",
+            "email": "tam.vo@clientcorp.com"
+          },
+          "to": [
+            {
+              "name": "Security Support",
+              "email": "security@antivirus.com"
+            }
+          ],
+          "cc": [],
+          "bcc": [],
+          "subject": "Endpoint malware alert on workstation 17",
+          "body": "Hello,\n\nOur security console reports “Trojan.Win32.Generic” detected on workstation 17 (hostname: HQ-PC-17).  The alert shows the file C:\\\\temp\\\\invoice.doc.exe but quarantine status is unknown.  Please advise on containment and removal steps.  I’ve attached the alert screenshot.\n\nThanks,\nTam\nIT Lead",
+          "timestamp": "2025-10-02T08:20:00+07:00",
+          "attachments": [
+            {
+              "filename": "alert_screenshot.png",
+              "type": "image/png"
+            }
+          ]
+        },
+        {
+          "sender": {
+            "name": "Security Support Agent",
+            "email": "security@antivirus.com"
+          },
+          "to": [
+            {
+              "name": "Tam Vo",
+              "email": "tam.vo@clientcorp.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Threat Response Team",
+              "email": "threatresponse@antivirus.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: Endpoint malware alert on workstation 17",
+          "body": "Hi Tam,\n\nThank you for the alert.  I’ve CC’d our threat response team.  Please immediately isolate HQ-PC-17 from the network.  Run a full scan with our latest definition files and apply the removal tool attached to this email.  After cleanup, send us the scan log for review.\n\nRegards,\nSara\nSecurity Support",
+          "timestamp": "2025-10-02T08:45:00+07:00",
+          "attachments": [
+            {
+              "filename": "malware_removal_tool.zip",
+              "type": "application/zip"
+            }
+          ]
+        },
+        {
+          "sender": {
+            "name": "Client IT Lead",
+            "email": "tam.vo@clientcorp.com"
+          },
+          "to": [
+            {
+              "name": "Security Support Agent",
+              "email": "security@antivirus.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Threat Response Team",
+              "email": "threatresponse@antivirus.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: Endpoint malware alert on workstation 17",
+          "body": "Sara,\n\nWe disconnected HQ-PC-17 from the network and ran the full scan.  The removal tool detected and removed the Trojan.  Attached is the scan log.\n\nBest,\nTam",
+          "timestamp": "2025-10-02T10:15:00+07:00",
+          "attachments": [
+            {
+              "filename": "scan_log.txt",
+              "type": "text/plain"
+            }
+          ]
+        },
+        {
+          "sender": {
+            "name": "Threat Response Analyst",
+            "email": "threatresponse@antivirus.com"
+          },
+          "to": [
+            {
+              "name": "Tam Vo",
+              "email": "tam.vo@clientcorp.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Security Support Agent",
+              "email": "security@antivirus.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: Endpoint malware alert on workstation 17",
+          "body": "Hello Tam,\n\nThank you for the scan log.  The removal tool fully cleaned the Trojan; no residual malicious files remain.  Please reconnect HQ-PC-17 to the network and update the endpoint agent.  We’ll continue monitoring and will contact you if further action is needed.\n\nRegards,\nBen\nThreat Response Analyst",
+          "timestamp": "2025-10-02T11:00:00+07:00"
+        }
+      ],
+      "expected_briefing": "Client IT lead Tam reported a Trojan alert on workstation HQ-PC-17 with a screenshot.  Security support agent Sara CC’d the threat response team, advising isolation, a full scan, and using the attached removal tool.  Tam followed instructions, ran the scan, and sent the log.  Threat analyst Ben confirmed the Trojan was removed and advised reconnecting the workstation."
+    },
+    {
+      "id": "technical_support_feature_request",
+      "domain": "technical_support",
+      "description": "Feature request for an existing product, with product manager involvement and attachments.",
+      "scenario": "A software developer requests a new API endpoint from the vendor’s support team.  The support agent CC’s the product manager for evaluation.  After discussing in replies, the product manager outlines the roadmap and attaches a draft design document.  The developer acknowledges and asks to be included in beta testing.",
+      "messages": [
+        {
+          "sender": {
+            "name": "Software Developer",
+            "email": "hung.le@startup.com"
+          },
+          "to": [
+            {
+              "name": "Support",
+              "email": "support@platform.io"
+            }
+          ],
+          "cc": [],
+          "bcc": [],
+          "subject": "Feature request: bulk user import API endpoint",
+          "body": "Hi,\n\nOur team is integrating your platform and would greatly benefit from an API endpoint that allows bulk user import.  Currently we must create users one by one, which is inefficient.  Does your roadmap include such a feature?\n\nThanks,\nHung",
+          "timestamp": "2025-09-28T15:05:00+07:00"
+        },
+        {
+          "sender": {
+            "name": "Support Specialist",
+            "email": "support@platform.io"
+          },
+          "to": [
+            {
+              "name": "Hung Le",
+              "email": "hung.le@startup.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Product Manager",
+              "email": "pm@platform.io"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: Feature request: bulk user import API endpoint",
+          "body": "Hi Hung,\n\nThank you for the suggestion.  I have CC’d our product manager to evaluate this feature request.  They will provide insight into our roadmap and any possible workarounds in the meantime.\n\nBest,\nIsabel",
+          "timestamp": "2025-09-28T15:25:00+07:00"
+        },
+        {
+          "sender": {
+            "name": "Product Manager",
+            "email": "pm@platform.io"
+          },
+          "to": [
+            {
+              "name": "Hung Le",
+              "email": "hung.le@startup.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Support Specialist",
+              "email": "support@platform.io"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: Feature request: bulk user import API endpoint",
+          "body": "Hi Hung,\n\nWe agree that a bulk import API would improve developer productivity.  This feature is planned for our Q1 2026 release.  I’ve attached a draft specification outlining the endpoint structure and expected authentication details.  We’d appreciate your feedback.\n\nRegards,\nJenna – Product Manager",
+          "timestamp": "2025-09-29T09:00:00+07:00",
+          "attachments": [
+            {
+              "filename": "bulk_import_api_spec.pdf",
+              "type": "application/pdf"
+            }
+          ]
+        },
+        {
+          "sender": {
+            "name": "Software Developer",
+            "email": "hung.le@startup.com"
+          },
+          "to": [
+            {
+              "name": "Product Manager",
+              "email": "pm@platform.io"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Support Specialist",
+              "email": "support@platform.io"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: Feature request: bulk user import API endpoint",
+          "body": "Hi Jenna,\n\nThank you for including the draft specification.  The design looks solid and aligns with our needs.  We would be interested in participating in any beta testing.  Please let us know when the beta is available.\n\nBest,\nHung",
+          "timestamp": "2025-09-29T09:30:00+07:00"
+        }
+      ],
+      "expected_briefing": "Developer Hung Le requested a bulk user import API from the platform provider.  Support specialist Isabel CC’d product manager Jenna.  Jenna replied with a roadmap update, indicating the feature is planned for Q1 2026, and attached a draft API specification.  Hung reviewed the spec and expressed interest in beta testing."
+    },
+    {
+      "id": "technical_support_sla_violation",
+      "domain": "technical_support",
+      "description": "Escalation of repeated service level agreement (SLA) violations for uptime; includes multiple stakeholders and management.",
+      "scenario": "A large enterprise customer reports repeated downtime incidents that violate the provider’s SLA.  The client’s operations manager emails support with a summary of incidents, CC’ing their CTO.  The support team acknowledges, CC’s their account manager and operations director.  An incident report is attached.  Management replies to all with an action plan and credits to the customer.",
+      "messages": [
+        {
+          "sender": {
+            "name": "Operations Manager",
+            "email": "lan.pham@enterprise.com"
+          },
+          "to": [
+            {
+              "name": "Customer Success",
+              "email": "success@saasprovider.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "CTO",
+              "email": "cto@enterprise.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "SLA violation: repeated downtime over past quarter",
+          "body": "Hello,\n\nOver the past quarter, our team has experienced three separate downtime incidents totaling 14 hours, exceeding the 99.9% uptime SLA.  These outages have impacted our critical business operations.  Attached is a timeline of incidents and associated service tickets.  We request a detailed explanation of root causes and a plan to prevent further violations.  We also expect SLA credits as outlined in our contract.\n\nSincerely,\nLan\nOperations Manager",
+          "timestamp": "2025-10-01T14:20:00+07:00",
+          "attachments": [
+            {
+              "filename": "downtime_incidents.xlsx",
+              "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+            }
+          ]
+        },
+        {
+          "sender": {
+            "name": "Customer Success Manager",
+            "email": "success@saasprovider.com"
+          },
+          "to": [
+            {
+              "name": "Lan Pham",
+              "email": "lan.pham@enterprise.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "CTO",
+              "email": "cto@enterprise.com"
+            },
+            {
+              "name": "Account Manager",
+              "email": "account@saasprovider.com"
+            },
+            {
+              "name": "Operations Director",
+              "email": "opsdirector@saasprovider.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: SLA violation: repeated downtime over past quarter",
+          "body": "Hello Lan,\n\nWe apologize for the inconvenience caused by these incidents.  I have CC’d your account manager and our operations director to ensure we provide a comprehensive response.  We are reviewing the timeline you provided and will share a full root-cause analysis and remediation plan within two business days.  We will also calculate the applicable SLA credits.\n\nThank you for your patience,\nPhoebe\nCustomer Success Manager",
+          "timestamp": "2025-10-01T14:50:00+07:00"
+        },
+        {
+          "sender": {
+            "name": "Operations Director",
+            "email": "opsdirector@saasprovider.com"
+          },
+          "to": [
+            {
+              "name": "Lan Pham",
+              "email": "lan.pham@enterprise.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "CTO",
+              "email": "cto@enterprise.com"
+            },
+            {
+              "name": "Customer Success Manager",
+              "email": "success@saasprovider.com"
+            },
+            {
+              "name": "Account Manager",
+              "email": "account@saasprovider.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: SLA violation: repeated downtime over past quarter",
+          "body": "Hello Lan,\n\nWe take these SLA violations seriously.  Attached is our incident report detailing the causes of the outages, including a database cluster failure, a network routing error, and a scheduled maintenance that overran.  We have implemented corrective actions: redundant clusters deployed, route stabilization procedures, and improved maintenance scheduling.  We will credit your account for 20% of last quarter’s subscription fees.\n\nRegards,\nDiep\nOperations Director",
+          "timestamp": "2025-10-03T10:00:00+07:00",
+          "attachments": [
+            {
+              "filename": "incident_report.pdf",
+              "type": "application/pdf"
+            }
+          ]
+        },
+        {
+          "sender": {
+            "name": "Account Manager",
+            "email": "account@saasprovider.com"
+          },
+          "to": [
+            {
+              "name": "Lan Pham",
+              "email": "lan.pham@enterprise.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "CTO",
+              "email": "cto@enterprise.com"
+            },
+            {
+              "name": "Customer Success Manager",
+              "email": "success@saasprovider.com"
+            },
+            {
+              "name": "Operations Director",
+              "email": "opsdirector@saasprovider.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: SLA violation: repeated downtime over past quarter",
+          "body": "Hi Lan,\n\nAs your account manager, I will ensure the proposed credit is applied to your invoice and will be your point of contact for any further concerns.  Please accept our apologies for the disruptions, and feel free to reach out directly with any additional questions.\n\nBest,\nTam\nAccount Manager",
+          "timestamp": "2025-10-03T11:30:00+07:00"
+        }
+      ],
+      "expected_briefing": "Enterprise operations manager Lan Pham reported repeated downtime incidents violating the 99.9% uptime SLA and attached a timeline of outages.  Customer success manager Phoebe apologized and CC’d account and operations leaders.  Operations director Diep sent a detailed incident report, described corrective actions, and offered a 20% credit.  Account manager Tam confirmed the credit and acted as the ongoing point of contact."
+    },
+    {
+      "id": "customer_support_refund_request",
+      "domain": "customer_support",
+      "description": "Refund request for defective hardware with escalation and attachments.",
+      "scenario": "A customer requests a refund after receiving a defective device.  The support agent acknowledges and CCs logistics to verify serial numbers.  Logistics confirms the defect and sends return instructions.  The support agent replies to all with refund details and BCCs QA for quality tracking.",
+      "messages": [
+        {
+          "sender": {
+            "name": "Nguyen Phuong",
+            "email": "phuong.nguyen@example.com"
+          },
+          "to": [
+            {
+              "name": "Hardware Support",
+              "email": "support@hardwareco.com"
+            }
+          ],
+          "cc": [],
+          "bcc": [],
+          "subject": "Defective thermostat – requesting refund",
+          "body": "Hello,\n\nI purchased a SmartTherm thermostat from your site last week (order #ST12345).  The unit displays an error code and will not connect to Wi‑Fi.  I would like to return it for a refund.  Attached are photos of the error screen and the serial number sticker.\n\nThank you,\nPhuong",
+          "timestamp": "2025-09-20T08:30:00+07:00",
+          "attachments": [
+            {
+              "filename": "thermostat_error.jpg",
+              "type": "image/jpeg"
+            },
+            {
+              "filename": "serial_number.jpg",
+              "type": "image/jpeg"
+            }
+          ]
+        },
+        {
+          "sender": {
+            "name": "Support Agent",
+            "email": "support@hardwareco.com"
+          },
+          "to": [
+            {
+              "name": "Nguyen Phuong",
+              "email": "phuong.nguyen@example.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Logistics Team",
+              "email": "logistics@hardwareco.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: Defective thermostat – requesting refund",
+          "body": "Hi Phuong,\n\nI’m sorry to hear about the defective thermostat.  I have CC’d our logistics team to verify the serial number and defect.  They will respond shortly with return instructions.  Once confirmed, we will process your refund.\n\nSincerely,\nLe\nCustomer Support",
+          "timestamp": "2025-09-20T09:00:00+07:00"
+        },
+        {
+          "sender": {
+            "name": "Logistics Specialist",
+            "email": "logistics@hardwareco.com"
+          },
+          "to": [
+            {
+              "name": "Nguyen Phuong",
+              "email": "phuong.nguyen@example.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Support Agent",
+              "email": "support@hardwareco.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: Defective thermostat – requesting refund",
+          "body": "Hi Phuong,\n\nWe’ve verified that the serial number corresponds to a batch with a known Wi‑Fi module defect.  Please ship the thermostat to our return center using the prepaid label attached.  Once we receive the unit, we will notify support to process your refund.\n\nBest,\nHanh\nLogistics Specialist",
+          "timestamp": "2025-09-20T10:15:00+07:00",
+          "attachments": [
+            {
+              "filename": "return_label.pdf",
+              "type": "application/pdf"
+            }
+          ]
+        },
+        {
+          "sender": {
+            "name": "Support Agent",
+            "email": "support@hardwareco.com"
+          },
+          "to": [
+            {
+              "name": "Nguyen Phuong",
+              "email": "phuong.nguyen@example.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Logistics Specialist",
+              "email": "logistics@hardwareco.com"
+            }
+          ],
+          "bcc": [
+            {
+              "name": "Quality Assurance",
+              "email": "qa@hardwareco.com"
+            }
+          ],
+          "subject": "Re: Defective thermostat – requesting refund",
+          "body": "Hi Phuong,\n\nThank you for shipping the thermostat.  Once logistics confirms receipt, we will issue a full refund of VND 1,200,000 to your original payment method.  You will receive a notification when the refund is processed.\n\nSincerely,\nLe",
+          "timestamp": "2025-09-21T16:45:00+07:00"
+        }
+      ],
+      "expected_briefing": "Customer Phuong reported a defective SmartTherm thermostat and requested a refund, attaching photos of the error and serial number.  Support agent Le CC’d the logistics team.  Logistics specialist Hanh verified the defect and provided a prepaid return label.  Le replied to all, BCC’ing QA, confirming that Phuong’s refund would be issued once the unit is received."
+    },
+    {
+      "id": "customer_support_subscription_change",
+      "domain": "customer_support",
+      "description": "Subscription downgrade request with internal escalation and reply‑all coordination.",
+      "scenario": "A customer requests to downgrade their subscription from premium to standard.  Support acknowledges and CCs billing for proration.  Billing calculates the new rate and provides a refund.  Support replies‑all to confirm the downgrade.  The manager is BCC’d for quality monitoring.",
+      "messages": [
+        {
+          "sender": {
+            "name": "Loan Nguyen",
+            "email": "loan.nguyen@example.com"
+          },
+          "to": [
+            {
+              "name": "Support",
+              "email": "help@streamingco.com"
+            }
+          ],
+          "cc": [],
+          "bcc": [],
+          "subject": "Request to downgrade subscription from Premium to Standard",
+          "body": "Hi team,\n\nI would like to downgrade my streaming subscription from Premium to Standard effective immediately.  Please let me know how the proration will work and whether I’ll receive a refund for the remaining days of my current cycle.\n\nThank you,\nLoan",
+          "timestamp": "2025-09-25T11:00:00+07:00"
+        },
+        {
+          "sender": {
+            "name": "Support Representative",
+            "email": "help@streamingco.com"
+          },
+          "to": [
+            {
+              "name": "Loan Nguyen",
+              "email": "loan.nguyen@example.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Billing Team",
+              "email": "billing@streamingco.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: Request to downgrade subscription from Premium to Standard",
+          "body": "Hi Loan,\n\nThank you for reaching out.  I have CC’d our billing team to calculate the prorated refund for the remaining days of your Premium subscription.  They will provide details shortly.\n\nBest,\nQuang\nSupport Representative",
+          "timestamp": "2025-09-25T11:20:00+07:00"
+        },
+        {
+          "sender": {
+            "name": "Billing Specialist",
+            "email": "billing@streamingco.com"
+          },
+          "to": [
+            {
+              "name": "Loan Nguyen",
+              "email": "loan.nguyen@example.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Support Representative",
+              "email": "help@streamingco.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: Request to downgrade subscription from Premium to Standard",
+          "body": "Hi Loan,\n\nYour Premium subscription runs until October 24.  Downgrading today will refund you VND 75,000 for the unused portion of this cycle.  Your new Standard rate of VND 120,000 per month will start immediately.  I have processed the refund and updated your account.\n\nRegards,\nKhang\nBilling Specialist",
+          "timestamp": "2025-09-25T12:00:00+07:00"
+        },
+        {
+          "sender": {
+            "name": "Support Representative",
+            "email": "help@streamingco.com"
+          },
+          "to": [
+            {
+              "name": "Loan Nguyen",
+              "email": "loan.nguyen@example.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Billing Specialist",
+              "email": "billing@streamingco.com"
+            }
+          ],
+          "bcc": [
+            {
+              "name": "Customer Support Manager",
+              "email": "manager@streamingco.com"
+            }
+          ],
+          "subject": "Re: Request to downgrade subscription from Premium to Standard",
+          "body": "Hi Loan,\n\nWe have completed the downgrade and processed your prorated refund.  Your next billing cycle on October 24 will reflect the Standard rate.  If there’s anything else we can assist you with, please let us know.\n\nKind regards,\nQuang",
+          "timestamp": "2025-09-25T12:30:00+07:00"
+        }
+      ],
+      "expected_briefing": "Subscriber Loan Nguyen requested to downgrade from Premium to Standard.  Support rep Quang CC’d billing specialist Khang to calculate the prorated refund.  Khang provided the refund amount and new rate and processed the change.  Quang replied to all, BCC’ing the support manager, confirming the downgrade and new billing cycle."
+    },
+    {
+      "id": "customer_support_compliment_loop",
+      "domain": "customer_support",
+      "description": "A positive customer compliment escalates to management; includes reply‑all thanks and CC.",
+      "scenario": "A customer sends a heartfelt thank-you email praising a support representative.  The representative replies with gratitude and CCs their manager.  The manager replies‑all thanking the customer and acknowledging the representative’s service.  The HR department is BCC’d so the compliment can be recorded.",
+      "messages": [
+        {
+          "sender": {
+            "name": "Happy Customer",
+            "email": "happy.customer@example.com"
+          },
+          "to": [
+            {
+              "name": "Support",
+              "email": "support@firm.com"
+            }
+          ],
+          "cc": [],
+          "bcc": [],
+          "subject": "Thank you for exceptional support!",
+          "body": "Hello,\n\nI want to express my sincere appreciation for the outstanding support I received from your representative, Minh.  They resolved my complex issue with patience and professionalism.  Please pass along my thanks to Minh and your management team.\n\nWarm regards,\nHa",
+          "timestamp": "2025-10-03T09:00:00+07:00"
+        },
+        {
+          "sender": {
+            "name": "Minh – Support Representative",
+            "email": "minh@firm.com"
+          },
+          "to": [
+            {
+              "name": "Happy Customer",
+              "email": "happy.customer@example.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Support Manager",
+              "email": "manager@firm.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: Thank you for exceptional support!",
+          "body": "Hi Ha,\n\nThank you for your kind words!  I’m thrilled that I could help resolve your issue.  I have CC’d my manager so they can see your feedback.  We appreciate your business and are here if you need anything else.\n\nWarm regards,\nMinh",
+          "timestamp": "2025-10-03T09:20:00+07:00"
+        },
+        {
+          "sender": {
+            "name": "Support Manager",
+            "email": "manager@firm.com"
+          },
+          "to": [
+            {
+              "name": "Happy Customer",
+              "email": "happy.customer@example.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Minh – Support Representative",
+              "email": "minh@firm.com"
+            }
+          ],
+          "bcc": [
+            {
+              "name": "HR Records",
+              "email": "hr@firm.com"
+            }
+          ],
+          "subject": "Re: Thank you for exceptional support!",
+          "body": "Hello Ha,\n\nThank you for acknowledging Minh’s excellent support.  We strive to provide top‑notch service and appreciate your recognition.  I’ve blind‑copied our HR department to record Minh’s performance.  Please let us know if we can assist you further.\n\nBest regards,\nLy\nSupport Manager",
+          "timestamp": "2025-10-03T09:45:00+07:00"
+        }
+      ],
+      "expected_briefing": "Happy customer Ha wrote to thank support representative Minh for exceptional service.  Minh replied graciously and CC’d their manager.  Support manager Ly replied‑all, thanking Ha and blind‑copied HR to document Minh’s performance."
+    },
+    {
+      "id": "customer_support_outage_notification",
+      "domain": "customer_support",
+      "description": "Customer support sends a proactive outage notification and handles follow-up questions with reply‑all.",
+      "scenario": "Support notifies customers of an upcoming scheduled maintenance and potential downtime.  Customers reply with clarifications.  Support provides updates and CCs the operations team.  Another customer BCC’s legal counsel in the conversation.",
+      "messages": [
+        {
+          "sender": {
+            "name": "Support Operations",
+            "email": "support@xyzplatform.com"
+          },
+          "to": [
+            {
+              "name": "All Customers",
+              "email": "customers@xyzplatform.com"
+            }
+          ],
+          "cc": [],
+          "bcc": [],
+          "subject": "Scheduled maintenance on October 10 – possible downtime",
+          "body": "Dear customers,\n\nWe will perform scheduled maintenance on October 10 from 1:00 AM to 3:00 AM UTC.  During this time, services may be intermittently unavailable.  We apologize for any inconvenience and will work to minimize disruption.  Feel free to reply to this email with questions or concerns.\n\nSincerely,\nSupport Operations Team",
+          "timestamp": "2025-10-08T09:00:00+07:00"
+        },
+        {
+          "sender": {
+            "name": "Customer A",
+            "email": "clientA@example.com"
+          },
+          "to": [
+            {
+              "name": "Support Operations",
+              "email": "support@xyzplatform.com"
+            }
+          ],
+          "cc": [],
+          "bcc": [],
+          "subject": "Re: Scheduled maintenance on October 10 – possible downtime",
+          "body": "Hi,\n\nWill this maintenance affect API calls?  We have automated jobs scheduled around that time.\n\nThanks,\nClient A",
+          "timestamp": "2025-10-08T10:00:00+07:00"
+        },
+        {
+          "sender": {
+            "name": "Support Operations",
+            "email": "support@xyzplatform.com"
+          },
+          "to": [
+            {
+              "name": "Customer A",
+              "email": "clientA@example.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Operations Team",
+              "email": "ops@xyzplatform.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: Scheduled maintenance on October 10 – possible downtime",
+          "body": "Hello Client A,\n\nAPI endpoints will be unavailable for up to 15 minutes during the maintenance window.  We recommend adjusting your job schedule accordingly. \n\nBest,\nSupport Operations",
+          "timestamp": "2025-10-08T10:20:00+07:00"
+        },
+        {
+          "sender": {
+            "name": "Customer B",
+            "email": "clientB@example.com"
+          },
+          "to": [
+            {
+              "name": "Support Operations",
+              "email": "support@xyzplatform.com"
+            }
+          ],
+          "cc": [],
+          "bcc": [
+            {
+              "name": "Legal Counsel",
+              "email": "legal@clientB.com"
+            }
+          ],
+          "subject": "Re: Scheduled maintenance on October 10 – possible downtime",
+          "body": "Support Team,\n\nOur contract stipulates a minimum of 99.5% uptime.  Please confirm this maintenance does not violate the SLA.  I’ve blind‑copied our legal counsel.\n\nRegards,\nClient B",
+          "timestamp": "2025-10-08T11:00:00+07:00"
+        },
+        {
+          "sender": {
+            "name": "Support Operations",
+            "email": "support@xyzplatform.com"
+          },
+          "to": [
+            {
+              "name": "Customer B",
+              "email": "clientB@example.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Operations Team",
+              "email": "ops@xyzplatform.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: Scheduled maintenance on October 10 – possible downtime",
+          "body": "Hello Client B,\n\nThank you for your message.  The maintenance has been scheduled outside of peak usage hours and should not cause downtime exceeding 1% of monthly uptime, so it remains within the 99.5% SLA.  Please see the attached SLA calculation reference. \n\nBest regards,\nSupport Operations",
+          "timestamp": "2025-10-08T11:30:00+07:00",
+          "attachments": [
+            {
+              "filename": "SLA_calculation.pdf",
+              "type": "application/pdf"
+            }
+          ]
+        }
+      ],
+      "expected_briefing": "Support operations informed all customers of scheduled maintenance that may cause brief downtime.  Client A asked about API impact; support responded with a 15‑minute outage and CC’d operations.  Client B expressed concern about SLA compliance and blind‑copied their legal counsel.  Support reassured Client B that uptime would remain above 99.5% and attached an SLA calculation reference."
+    },
+    {
+      "id": "customer_support_order_status_loop",
+      "domain": "customer_support",
+      "description": "Order status inquiry that loops in fulfillment and resolves with tracking information.",
+      "scenario": "A customer inquires about a delayed order.  Support agent acknowledges and CCs fulfillment.  Fulfillment provides tracking information and cause of delay.  Support replies‑all with the details and BCCs the support lead for quality monitoring.",
+      "messages": [
+        {
+          "sender": {
+            "name": "Anh Bui",
+            "email": "anh.bui@example.com"
+          },
+          "to": [
+            {
+              "name": "Online Store Support",
+              "email": "support@onlinestore.com"
+            }
+          ],
+          "cc": [],
+          "bcc": [],
+          "subject": "Order #987654321 – status inquiry",
+          "body": "Hello,\n\nI placed order #987654321 on September 30, but it has not shipped yet.  Can you provide an update?\n\nThanks,\nAnh",
+          "timestamp": "2025-10-03T13:00:00+07:00"
+        },
+        {
+          "sender": {
+            "name": "Support Specialist",
+            "email": "support@onlinestore.com"
+          },
+          "to": [
+            {
+              "name": "Anh Bui",
+              "email": "anh.bui@example.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Fulfillment Team",
+              "email": "fulfillment@onlinestore.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: Order #987654321 – status inquiry",
+          "body": "Hi Anh,\n\nI’m sorry for the delay with your order.  I’ve CC’d our fulfillment team to look into this and provide tracking information.\n\nBest,\nThuy\nSupport Specialist",
+          "timestamp": "2025-10-03T13:20:00+07:00"
+        },
+        {
+          "sender": {
+            "name": "Fulfillment Coordinator",
+            "email": "fulfillment@onlinestore.com"
+          },
+          "to": [
+            {
+              "name": "Anh Bui",
+              "email": "anh.bui@example.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Support Specialist",
+              "email": "support@onlinestore.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: Order #987654321 – status inquiry",
+          "body": "Hello Anh,\n\nYour order experienced a delay due to high demand.  It shipped today via ViettelPost; the tracking number is VT123456789VN.  Estimated delivery is October 7.  We apologize for the inconvenience.\n\nRegards,\nHao\nFulfillment Coordinator",
+          "timestamp": "2025-10-03T14:00:00+07:00"
+        },
+        {
+          "sender": {
+            "name": "Support Specialist",
+            "email": "support@onlinestore.com"
+          },
+          "to": [
+            {
+              "name": "Anh Bui",
+              "email": "anh.bui@example.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Fulfillment Coordinator",
+              "email": "fulfillment@onlinestore.com"
+            }
+          ],
+          "bcc": [
+            {
+              "name": "Support Team Lead",
+              "email": "lead@onlinestore.com"
+            }
+          ],
+          "subject": "Re: Order #987654321 – status inquiry",
+          "body": "Hi Anh,\n\nThank you for your patience.  Your order has shipped via ViettelPost with tracking number VT123456789VN.  Delivery is expected by October 7.  We’re sorry for the delay and appreciate your understanding.\n\nBest,\nThuy",
+          "timestamp": "2025-10-03T14:20:00+07:00"
+        }
+      ],
+      "expected_briefing": "Customer Anh Bui inquired about delayed order #987654321.  Support specialist Thuy CC’d the fulfillment team.  Fulfillment coordinator Hao provided the tracking number and explained the delay.  Thuy replied‑all with the tracking details, BCC’ing the support team lead for quality monitoring."
+    },
+    {
+      "id": "it_engineering_security_patch",
+      "domain": "it_engineering",
+      "description": "An urgent security patch email thread with coordination among developers, security, and operations.",
+      "scenario": "The security team notifies engineering of a critical vulnerability requiring a patch.  Developers reply‑all with a plan to implement, QA schedules testing, and operations prepares deployment.  The thread contains attachments and uses CC/BCC appropriately.",
+      "messages": [
+        {
+          "sender": {
+            "name": "Security Officer",
+            "email": "security.officer@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "Engineering Team",
+              "email": "eng@acme‑soft.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "CTO",
+              "email": "cto@acme‑soft.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "URGENT: Critical security vulnerability discovered",
+          "body": "Team,\n\nWe have identified a critical vulnerability in our authentication module that allows privilege escalation.  Immediate patching is required.  Attached is the vulnerability report.  Please prioritize a fix and coordinate with QA and operations.\n\nRegards,\nLinh\nSecurity Officer",
+          "timestamp": "2025-10-06T09:00:00+07:00",
+          "attachments": [
+            {
+              "filename": "vulnerability_report.pdf",
+              "type": "application/pdf"
+            }
+          ]
+        },
+        {
+          "sender": {
+            "name": "Lead Developer",
+            "email": "lead.dev@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "Security Officer",
+              "email": "security.officer@acme‑soft.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Engineering Team",
+              "email": "eng@acme‑soft.com"
+            },
+            {
+              "name": "QA Team",
+              "email": "qa@acme‑soft.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: URGENT: Critical security vulnerability discovered",
+          "body": "Hi Linh,\n\nThank you for the report.  Our team is reviewing the code and will develop a patch today.  I have CC’d QA so they can prepare test cases.\n\nThanks,\nKhanh\nLead Developer",
+          "timestamp": "2025-10-06T09:20:00+07:00"
+        },
+        {
+          "sender": {
+            "name": "QA Manager",
+            "email": "qa@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "Lead Developer",
+              "email": "lead.dev@acme‑soft.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Security Officer",
+              "email": "security.officer@acme‑soft.com"
+            },
+            {
+              "name": "Operations Team",
+              "email": "ops@acme‑soft.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: URGENT: Critical security vulnerability discovered",
+          "body": "Hi Khanh,\n\nQA will prioritize testing the patch as soon as it’s ready.  I have CC’d operations so they can schedule deployment once testing is complete.\n\nBest,\nLan\nQA Manager",
+          "timestamp": "2025-10-06T09:45:00+07:00"
+        },
+        {
+          "sender": {
+            "name": "Operations Lead",
+            "email": "ops@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "Lead Developer",
+              "email": "lead.dev@acme‑soft.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "QA Manager",
+              "email": "qa@acme‑soft.com"
+            },
+            {
+              "name": "Security Officer",
+              "email": "security.officer@acme‑soft.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: URGENT: Critical security vulnerability discovered",
+          "body": "Team,\n\nOperations will be on standby to deploy the patch as soon as QA gives the green light.  Let’s coordinate to minimize downtime.\n\nThanks,\nThu\nOperations Lead",
+          "timestamp": "2025-10-06T10:15:00+07:00"
+        },
+        {
+          "sender": {
+            "name": "Lead Developer",
+            "email": "lead.dev@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "QA Manager",
+              "email": "qa@acme‑soft.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Security Officer",
+              "email": "security.officer@acme‑soft.com"
+            },
+            {
+              "name": "Operations Lead",
+              "email": "ops@acme‑soft.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: URGENT: Critical security vulnerability discovered",
+          "body": "Patch is ready.  Please see attached diff and apply to the authentication module.\n\n– Khanh",
+          "timestamp": "2025-10-06T11:30:00+07:00",
+          "attachments": [
+            {
+              "filename": "auth_patch.diff",
+              "type": "text/x-diff"
+            }
+          ]
+        },
+        {
+          "sender": {
+            "name": "QA Manager",
+            "email": "qa@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "Operations Lead",
+              "email": "ops@acme‑soft.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Lead Developer",
+              "email": "lead.dev@acme‑soft.com"
+            },
+            {
+              "name": "Security Officer",
+              "email": "security.officer@acme‑soft.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: URGENT: Critical security vulnerability discovered",
+          "body": "Patch tested successfully on staging.  Operations may deploy to production during the next maintenance window.\n\n– Lan",
+          "timestamp": "2025-10-06T13:00:00+07:00"
+        },
+        {
+          "sender": {
+            "name": "Operations Lead",
+            "email": "ops@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "Engineering Team",
+              "email": "eng@acme‑soft.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "CTO",
+              "email": "cto@acme‑soft.com"
+            },
+            {
+              "name": "Security Officer",
+              "email": "security.officer@acme‑soft.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: URGENT: Critical security vulnerability discovered",
+          "body": "Patch has been deployed to production with zero downtime.  All systems operational.  Thanks to everyone involved for the quick turnaround.\n\n– Thu",
+          "timestamp": "2025-10-06T14:00:00+07:00"
+        }
+      ],
+      "expected_briefing": "Security officer Linh alerted engineering to a critical vulnerability, CC’ing the CTO.  Lead developer Khanh acknowledged and CC’d QA.  QA manager Lan looped in operations.  After collaboration, Khanh delivered the patch, QA validated it, and operations deployed it during the maintenance window, updating all stakeholders."
+    },
+    {
+      "id": "it_engineering_architecture_discussion",
+      "domain": "it_engineering",
+      "description": "Architectural design discussion across engineering, product, and executive teams with attachments and BCC.",
+      "scenario": "A senior architect proposes adopting a microservices architecture.  They email engineering leads and CC product and the CTO.  Various stakeholders reply‑all raising concerns about complexity, deployment, and timelines.  An external consultant is BCC’d for a preliminary opinion.  The conversation includes an attached high-level design diagram.",
+      "messages": [
+        {
+          "sender": {
+            "name": "Senior Architect",
+            "email": "architect@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "Engineering Leads",
+              "email": "eng-leads@acme‑soft.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Product Director",
+              "email": "product@acme‑soft.com"
+            },
+            {
+              "name": "CTO",
+              "email": "cto@acme‑soft.com"
+            }
+          ],
+          "bcc": [
+            {
+              "name": "Consultant",
+              "email": "consultant@techadvisors.com"
+            }
+          ],
+          "subject": "Proposal: Transition to microservices architecture",
+          "body": "Team,\n\nOur monolithic architecture is hindering scalability and development velocity.  I propose transitioning to a microservices architecture.  Attached is a high-level design diagram outlining service boundaries and communication patterns.  I welcome your feedback.\n\n– Bao\nSenior Architect",
+          "timestamp": "2025-10-04T10:00:00+07:00",
+          "attachments": [
+            {
+              "filename": "microservices_overview.png",
+              "type": "image/png"
+            }
+          ]
+        },
+        {
+          "sender": {
+            "name": "Backend Lead",
+            "email": "backend@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "Senior Architect",
+              "email": "architect@acme‑soft.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Engineering Leads",
+              "email": "eng-leads@acme‑soft.com"
+            },
+            {
+              "name": "Product Director",
+              "email": "product@acme‑soft.com"
+            },
+            {
+              "name": "CTO",
+              "email": "cto@acme‑soft.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: Proposal: Transition to microservices architecture",
+          "body": "Hi Bao,\n\nWhile microservices offer benefits, they introduce complexity around deployment, service discovery, and monitoring.  We need to ensure we have the infrastructure and expertise to manage this shift.  Do we have a phased migration plan?\n\n– Duc\nBackend Lead",
+          "timestamp": "2025-10-04T11:15:00+07:00"
+        },
+        {
+          "sender": {
+            "name": "Product Director",
+            "email": "product@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "Senior Architect",
+              "email": "architect@acme‑soft.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Engineering Leads",
+              "email": "eng-leads@acme‑soft.com"
+            },
+            {
+              "name": "CTO",
+              "email": "cto@acme‑soft.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: Proposal: Transition to microservices architecture",
+          "body": "Bao,\n\nFrom a product perspective, we need to consider the impact on our release schedule.  How will this migration affect feature delivery timelines?\n\n– Mai\nProduct Director",
+          "timestamp": "2025-10-04T12:00:00+07:00"
+        },
+        {
+          "sender": {
+            "name": "Consultant",
+            "email": "consultant@techadvisors.com"
+          },
+          "to": [
+            {
+              "name": "Senior Architect",
+              "email": "architect@acme‑soft.com"
+            }
+          ],
+          "cc": [],
+          "bcc": [],
+          "subject": "Re: Proposal: Transition to microservices architecture",
+          "body": "Bao,\n\nThank you for sharing your proposal.  From an external perspective, a microservices approach can bring resilience and scalability, but success depends on robust DevOps practices.  I recommend starting with one or two services as a proof of concept.\n\n– Ryan\nConsultant (blind-copied on original proposal)",
+          "timestamp": "2025-10-04T12:30:00+07:00"
+        },
+        {
+          "sender": {
+            "name": "Senior Architect",
+            "email": "architect@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "Engineering Leads",
+              "email": "eng-leads@acme‑soft.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Product Director",
+              "email": "product@acme‑soft.com"
+            },
+            {
+              "name": "CTO",
+              "email": "cto@acme‑soft.com"
+            }
+          ],
+          "bcc": [
+            {
+              "name": "Consultant",
+              "email": "consultant@techadvisors.com"
+            }
+          ],
+          "subject": "Re: Proposal: Transition to microservices architecture",
+          "body": "Thanks for the feedback everyone.  I suggest we run a pilot migration of the user profile service.  We’ll outline a phased plan and determine impacts on release timelines.  I’ve blind-copied our consultant again for input on the pilot.\n\n– Bao",
+          "timestamp": "2025-10-04T13:00:00+07:00"
+        }
+      ],
+      "expected_briefing": "Senior architect Bao proposed transitioning to microservices and shared a design diagram, CC’ing product and the CTO and BCC’ing an external consultant.  Backend lead Duc raised concerns about complexity and infrastructure.  Product director Mai asked about release schedules.  Consultant Ryan (via BCC) suggested starting with a proof of concept.  Bao responded proposing a pilot migration and re‑included the consultant via BCC."
+    },
+    {
+      "id": "it_engineering_incident_postmortem",
+      "domain": "it_engineering",
+      "description": "Postmortem meeting coordination following a major outage, involving reply‑all and attachments.",
+      "scenario": "After a major outage, engineering schedules a postmortem meeting.  The incident commander emails stakeholders to schedule the meeting and attach the draft incident timeline.  Participants reply‑all indicating availability.  The final email includes the meeting invite, with BCC to compliance for record keeping.",
+      "messages": [
+        {
+          "sender": {
+            "name": "Incident Commander",
+            "email": "commander@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "Stakeholder List",
+              "email": "stakeholders@acme‑soft.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "CTO",
+              "email": "cto@acme‑soft.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Postmortem meeting for October 1 outage",
+          "body": "Team,\n\nPlease review the attached draft timeline for the October 1 outage.  I’d like to schedule a postmortem meeting this week.  Let me know your availability on October 3 or 4.\n\nThanks,\nChau\nIncident Commander",
+          "timestamp": "2025-10-02T09:00:00+07:00",
+          "attachments": [
+            {
+              "filename": "outage_timeline.docx",
+              "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+            }
+          ]
+        },
+        {
+          "sender": {
+            "name": "Developer",
+            "email": "dev@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "Incident Commander",
+              "email": "commander@acme‑soft.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Stakeholder List",
+              "email": "stakeholders@acme‑soft.com"
+            },
+            {
+              "name": "CTO",
+              "email": "cto@acme‑soft.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: Postmortem meeting for October 1 outage",
+          "body": "Chau,\n\nI’m available on October 3 after 2 PM.\n\n– Long",
+          "timestamp": "2025-10-02T09:20:00+07:00"
+        },
+        {
+          "sender": {
+            "name": "QA Lead",
+            "email": "qa@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "Incident Commander",
+              "email": "commander@acme‑soft.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Stakeholder List",
+              "email": "stakeholders@acme‑soft.com"
+            },
+            {
+              "name": "CTO",
+              "email": "cto@acme‑soft.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: Postmortem meeting for October 1 outage",
+          "body": "Chau,\n\nOctober 4 works for me after 10 AM.\n\n– Son",
+          "timestamp": "2025-10-02T09:35:00+07:00"
+        },
+        {
+          "sender": {
+            "name": "Incident Commander",
+            "email": "commander@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "Stakeholder List",
+              "email": "stakeholders@acme‑soft.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "CTO",
+              "email": "cto@acme‑soft.com"
+            }
+          ],
+          "bcc": [
+            {
+              "name": "Compliance Officer",
+              "email": "compliance@acme‑soft.com"
+            }
+          ],
+          "subject": "Re: Postmortem meeting for October 1 outage",
+          "body": "Thanks for your responses.  We will schedule the postmortem on October 3 at 3 PM.  I’ve attached a calendar invite.  Compliance is blind‑copied for record keeping.\n\nRegards,\nChau",
+          "timestamp": "2025-10-02T10:00:00+07:00",
+          "attachments": [
+            {
+              "filename": "postmortem_invite.ics",
+              "type": "text/calendar"
+            }
+          ]
+        }
+      ],
+      "expected_briefing": "Incident commander Chau coordinated a postmortem meeting after the October 1 outage.  Chau sent a draft timeline and asked for availability.  Developer Long and QA lead Son replied‑all with preferred times.  Chau scheduled the meeting for October 3 at 3 PM, attaching a calendar invite and BCC’ing compliance for records."
+    },
+    {
+      "id": "it_engineering_code_review_loop",
+      "domain": "it_engineering",
+      "description": "Code review request and discussion among developers, including comments and attachments.",
+      "scenario": "A developer submits a new feature for code review.  The code reviewer replies with comments and attaches suggested changes.  The developer responds to all with updated code, and the reviewer approves.  The team lead is CC’d throughout the process.",
+      "messages": [
+        {
+          "sender": {
+            "name": "Feature Developer",
+            "email": "dev.feature@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "Code Reviewer",
+              "email": "reviewer@acme‑soft.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Team Lead",
+              "email": "lead@acme‑soft.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Code review request: add payment gateway integration",
+          "body": "Hello,\n\nI have implemented the payment gateway integration feature.  Please review the attached patch file and let me know if any changes are required.\n\nThanks,\nHai",
+          "timestamp": "2025-09-27T14:00:00+07:00",
+          "attachments": [
+            {
+              "filename": "payment_gateway_patch.diff",
+              "type": "text/x-diff"
+            }
+          ]
+        },
+        {
+          "sender": {
+            "name": "Code Reviewer",
+            "email": "reviewer@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "Feature Developer",
+              "email": "dev.feature@acme‑soft.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Team Lead",
+              "email": "lead@acme‑soft.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: Code review request: add payment gateway integration",
+          "body": "Hi Hai,\n\nThank you for the submission.  Overall the code looks good.  I have a few suggestions: please abstract the payment provider into its own service and add unit tests for error handling.  I have attached a diff with my recommended changes.\n\nBest,\nTrang",
+          "timestamp": "2025-09-27T15:00:00+07:00",
+          "attachments": [
+            {
+              "filename": "review_comments.diff",
+              "type": "text/x-diff"
+            }
+          ]
+        },
+        {
+          "sender": {
+            "name": "Feature Developer",
+            "email": "dev.feature@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "Code Reviewer",
+              "email": "reviewer@acme‑soft.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Team Lead",
+              "email": "lead@acme‑soft.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: Code review request: add payment gateway integration",
+          "body": "Trang,\n\nThank you for the feedback.  I have implemented the suggested abstractions and added unit tests.  Please find the updated patch attached.\n\nBest,\nHai",
+          "timestamp": "2025-09-27T16:00:00+07:00",
+          "attachments": [
+            {
+              "filename": "updated_payment_gateway_patch.diff",
+              "type": "text/x-diff"
+            }
+          ]
+        },
+        {
+          "sender": {
+            "name": "Code Reviewer",
+            "email": "reviewer@acme‑soft.com"
+          },
+          "to": [
+            {
+              "name": "Feature Developer",
+              "email": "dev.feature@acme‑soft.com"
+            }
+          ],
+          "cc": [
+            {
+              "name": "Team Lead",
+              "email": "lead@acme‑soft.com"
+            }
+          ],
+          "bcc": [],
+          "subject": "Re: Code review request: add payment gateway integration",
+          "body": "Hi Hai,\n\nThe updates look great.  I approve this change.  We can merge the feature into the main branch.\n\nBest,\nTrang",
+          "timestamp": "2025-09-27T16:30:00+07:00"
+        }
+      ],
+      "expected_briefing": "Developer Hai submitted a code review request for a payment gateway integration and CC’d team lead.  Reviewer Trang provided suggestions and attached comments.  Hai updated the code and attached an updated patch.  Trang approved the updated code, concluding the review."
+    }
+  ]
+}
