@@ -1,0 +1,960 @@
+BEGIN:VCALENDAR
+PRODID:-//AI Assistant//Simulated Head of Eng Calendar//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:392a611f-1518-416d-a61b-fb6079384b4b@company.example
+DTSTAMP:20251016T070809Z
+SUMMARY:QA Strategy
+DTSTART:20251020T030000Z
+DTEND:20251020T041500Z
+LOCATION:Zoom
+DESCRIPTION:Organizer: Product Ops <product.ops@company.example>\\nPrimar
+ y: Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\\nAtt
+ endees: Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\
+ , Quyen Do <quyen.do@company.example>\, Huy Le <huy.le@company.example>\
+ , Linh Pham <linh.pham@company.example>\\nLocal Time (Asia/Ho_Chi_Minh):
+  2025-10-20 10:00–11:15
+ORGANIZER;CN=Product Ops:mailto:product.ops@company.example
+ATTENDEE;CN=Alex Nguyen (Head of Engineering);ROLE=REQ-PARTICIPANT:mailto
+ :alex.nguyen@company.example
+ATTENDEE;CN=Quyen Do;ROLE=REQ-PARTICIPANT:mailto:quyen.do@company.example
+ATTENDEE;CN=Huy Le;ROLE=REQ-PARTICIPANT:mailto:huy.le@company.example
+ATTENDEE;CN=Linh Pham;ROLE=REQ-PARTICIPANT:mailto:linh.pham@company.examp
+ le
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:6893fb6e-d0aa-4759-8bd1-7e0d6eeecc09@company.example
+DTSTAMP:20251016T070809Z
+SUMMARY:QA Strategy
+DTSTART:20251020T080000Z
+DTEND:20251020T082500Z
+LOCATION:Google Meet
+DESCRIPTION:Organizer: CTO Office <cto.office@company.example>\\nPrimary:
+  Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\\nAtten
+ dees: Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\, 
+ Quyen Do <quyen.do@company.example>\, Trang Nguyen <trang.nguyen@company
+ .example>\, Minh Tran <minh.tran@company.example>\\nLocal Time (Asia/Ho_
+ Chi_Minh): 2025-10-20 15:00–15:25
+ORGANIZER;CN=CTO Office:mailto:cto.office@company.example
+ATTENDEE;CN=Alex Nguyen (Head of Engineering);ROLE=REQ-PARTICIPANT:mailto
+ :alex.nguyen@company.example
+ATTENDEE;CN=Quyen Do;ROLE=REQ-PARTICIPANT:mailto:quyen.do@company.example
+ATTENDEE;CN=Trang Nguyen;ROLE=REQ-PARTICIPANT:mailto:trang.nguyen@company
+ .example
+ATTENDEE;CN=Minh Tran;ROLE=REQ-PARTICIPANT:mailto:minh.tran@company.examp
+ le
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:5695035d-34c8-4be1-b847-fccded182491@company.example
+DTSTAMP:20251016T070809Z
+SUMMARY:Vendor Evaluation
+DTSTART:20251020T104500Z
+DTEND:20251020T111500Z
+LOCATION:Google Meet
+DESCRIPTION:Organizer: Recruiting <recruiting@company.example>\\nPrimary:
+  Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\\nAtten
+ dees: Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\, 
+ Minh Tran <minh.tran@company.example>\, Huy Le <huy.le@company.example>\
+ , Kiet Ho <kiet.ho@company.example>\, Trang Nguyen <trang.nguyen@company
+ .example>\\nLocal Time (Asia/Ho_Chi_Minh): 2025-10-20 17:45–18:15
+ORGANIZER;CN=Recruiting:mailto:recruiting@company.example
+ATTENDEE;CN=Alex Nguyen (Head of Engineering);ROLE=REQ-PARTICIPANT:mailto
+ :alex.nguyen@company.example
+ATTENDEE;CN=Minh Tran;ROLE=REQ-PARTICIPANT:mailto:minh.tran@company.examp
+ le
+ATTENDEE;CN=Huy Le;ROLE=REQ-PARTICIPANT:mailto:huy.le@company.example
+ATTENDEE;CN=Kiet Ho;ROLE=REQ-PARTICIPANT:mailto:kiet.ho@company.example
+ATTENDEE;CN=Trang Nguyen;ROLE=REQ-PARTICIPANT:mailto:trang.nguyen@company
+ .example
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:d6fcf930-19f2-4cd1-b4e2-25b3ee4b7850@company.example
+DTSTAMP:20251016T070809Z
+SUMMARY:Staff 1:1
+DTSTART:20251020T053000Z
+DTEND:20251020T055500Z
+LOCATION:Da Nang - Conf B
+DESCRIPTION:Organizer: CTO Office <cto.office@company.example>\\nPrimary:
+  Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\\nAtten
+ dees: Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\, 
+ Linh Pham <linh.pham@company.example>\, Thao Vo <thao.vo@company.example
+ >\, Trang Nguyen <trang.nguyen@company.example>\, Dat Bui <dat.bui@compa
+ ny.example>\, Huy Le <huy.le@company.example>\\nLocal Time (Asia/Ho_Chi_
+ Minh): 2025-10-20 12:30–12:55
+ORGANIZER;CN=CTO Office:mailto:cto.office@company.example
+ATTENDEE;CN=Alex Nguyen (Head of Engineering);ROLE=REQ-PARTICIPANT:mailto
+ :alex.nguyen@company.example
+ATTENDEE;CN=Linh Pham;ROLE=REQ-PARTICIPANT:mailto:linh.pham@company.examp
+ le
+ATTENDEE;CN=Thao Vo;ROLE=REQ-PARTICIPANT:mailto:thao.vo@company.example
+ATTENDEE;CN=Trang Nguyen;ROLE=REQ-PARTICIPANT:mailto:trang.nguyen@company
+ .example
+ATTENDEE;CN=Dat Bui;ROLE=REQ-PARTICIPANT:mailto:dat.bui@company.example
+ATTENDEE;CN=Huy Le;ROLE=REQ-PARTICIPANT:mailto:huy.le@company.example
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:c55dfc35-b020-4413-a624-f1121809e987@company.example
+DTSTAMP:20251016T070809Z
+SUMMARY:Design Review
+DTSTART:20251020T090000Z
+DTEND:20251020T095000Z
+LOCATION:Zoom
+DESCRIPTION:Organizer: CTO Office <cto.office@company.example>\\nPrimary:
+  Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\\nAtten
+ dees: Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\, 
+ Bao Lam <bao.lam@company.example>\, Thao Vo <thao.vo@company.example>\, 
+ Quyen Do <quyen.do@company.example>\, Trang Nguyen <trang.nguyen@company
+ .example>\\nLocal Time (Asia/Ho_Chi_Minh): 2025-10-20 16:00–16:50
+ORGANIZER;CN=CTO Office:mailto:cto.office@company.example
+ATTENDEE;CN=Alex Nguyen (Head of Engineering);ROLE=REQ-PARTICIPANT:mailto
+ :alex.nguyen@company.example
+ATTENDEE;CN=Bao Lam;ROLE=REQ-PARTICIPANT:mailto:bao.lam@company.example
+ATTENDEE;CN=Thao Vo;ROLE=REQ-PARTICIPANT:mailto:thao.vo@company.example
+ATTENDEE;CN=Quyen Do;ROLE=REQ-PARTICIPANT:mailto:quyen.do@company.example
+ATTENDEE;CN=Trang Nguyen;ROLE=REQ-PARTICIPANT:mailto:trang.nguyen@company
+ .example
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2cc057bc-45f0-4aa3-88e5-b011c52b3aa5@company.example
+DTSTAMP:20251016T070809Z
+SUMMARY:Platform Governance Board
+DTSTART:20251020T053000Z
+DTEND:20251020T055500Z
+LOCATION:Da Nang - Conf B
+DESCRIPTION:Organizer: Finance <finance@company.example>\\nPrimary: Alex 
+ Nguyen (Head of Engineering) <alex.nguyen@company.example>\\nAttendees: 
+ Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\, Linh P
+ ham <linh.pham@company.example>\, Kiet Ho <kiet.ho@company.example>\, Da
+ t Bui <dat.bui@company.example>\\nLocal Time (Asia/Ho_Chi_Minh): 2025-10
+ -20 12:30–12:55
+ORGANIZER;CN=Finance:mailto:finance@company.example
+ATTENDEE;CN=Alex Nguyen (Head of Engineering);ROLE=REQ-PARTICIPANT:mailto
+ :alex.nguyen@company.example
+ATTENDEE;CN=Linh Pham;ROLE=REQ-PARTICIPANT:mailto:linh.pham@company.examp
+ le
+ATTENDEE;CN=Kiet Ho;ROLE=REQ-PARTICIPANT:mailto:kiet.ho@company.example
+ATTENDEE;CN=Dat Bui;ROLE=REQ-PARTICIPANT:mailto:dat.bui@company.example
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:c81e7e99-7b29-4ded-a8cd-22a698acc8e3@company.example
+DTSTAMP:20251016T070809Z
+SUMMARY:QA Strategy
+DTSTART:20251020T071500Z
+DTEND:20251020T080000Z
+LOCATION:Da Nang - Conf B
+DESCRIPTION:Organizer: Product Ops <product.ops@company.example>\\nPrimar
+ y: Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\\nAtt
+ endees: Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\
+ , Dat Bui <dat.bui@company.example>\, Linh Pham <linh.pham@company.examp
+ le>\, Huy Le <huy.le@company.example>\\nLocal Time (Asia/Ho_Chi_Minh): 2
+ 025-10-20 14:15–15:00
+ORGANIZER;CN=Product Ops:mailto:product.ops@company.example
+ATTENDEE;CN=Alex Nguyen (Head of Engineering);ROLE=REQ-PARTICIPANT:mailto
+ :alex.nguyen@company.example
+ATTENDEE;CN=Dat Bui;ROLE=REQ-PARTICIPANT:mailto:dat.bui@company.example
+ATTENDEE;CN=Linh Pham;ROLE=REQ-PARTICIPANT:mailto:linh.pham@company.examp
+ le
+ATTENDEE;CN=Huy Le;ROLE=REQ-PARTICIPANT:mailto:huy.le@company.example
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:8bda99fc-eabb-423f-8c27-a1d3a4d2e12a@company.example
+DTSTAMP:20251016T070809Z
+SUMMARY:Staff 1:1
+DTSTART:20251020T051500Z
+DTEND:20251020T060500Z
+LOCATION:Google Meet
+DESCRIPTION:Organizer: Recruiting <recruiting@company.example>\\nPrimary:
+  Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\\nAtten
+ dees: Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\, 
+ Trang Nguyen <trang.nguyen@company.example>\, Quyen Do <quyen.do@company
+ .example>\, Thao Vo <thao.vo@company.example>\, Kiet Ho <kiet.ho@company
+ .example>\\nLocal Time (Asia/Ho_Chi_Minh): 2025-10-20 12:15–13:05
+ORGANIZER;CN=Recruiting:mailto:recruiting@company.example
+ATTENDEE;CN=Alex Nguyen (Head of Engineering);ROLE=REQ-PARTICIPANT:mailto
+ :alex.nguyen@company.example
+ATTENDEE;CN=Trang Nguyen;ROLE=REQ-PARTICIPANT:mailto:trang.nguyen@company
+ .example
+ATTENDEE;CN=Quyen Do;ROLE=REQ-PARTICIPANT:mailto:quyen.do@company.example
+ATTENDEE;CN=Thao Vo;ROLE=REQ-PARTICIPANT:mailto:thao.vo@company.example
+ATTENDEE;CN=Kiet Ho;ROLE=REQ-PARTICIPANT:mailto:kiet.ho@company.example
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:fd7e98c5-ff54-4c41-8dd8-d12fc5454ad6@company.example
+DTSTAMP:20251016T070809Z
+SUMMARY:Hiring Interview
+DTSTART:20251020T023000Z
+DTEND:20251020T032000Z
+LOCATION:Da Nang - Conf B
+DESCRIPTION:Organizer: Product Ops <product.ops@company.example>\\nPrimar
+ y: Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\\nAtt
+ endees: Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\
+ , Quyen Do <quyen.do@company.example>\, Thao Vo <thao.vo@company.example
+ >\\nLocal Time (Asia/Ho_Chi_Minh): 2025-10-20 09:30–10:20
+ORGANIZER;CN=Product Ops:mailto:product.ops@company.example
+ATTENDEE;CN=Alex Nguyen (Head of Engineering);ROLE=REQ-PARTICIPANT:mailto
+ :alex.nguyen@company.example
+ATTENDEE;CN=Quyen Do;ROLE=REQ-PARTICIPANT:mailto:quyen.do@company.example
+ATTENDEE;CN=Thao Vo;ROLE=REQ-PARTICIPANT:mailto:thao.vo@company.example
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:991cc722-de44-4273-afcb-9b505ad496bf@company.example
+DTSTAMP:20251016T070809Z
+SUMMARY:SRE Capacity Review
+DTSTART:20251021T084500Z
+DTEND:20251021T091500Z
+LOCATION:HCMC - Floor 10 - War Room
+DESCRIPTION:Organizer: Product Ops <product.ops@company.example>\\nPrimar
+ y: Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\\nAtt
+ endees: Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\
+ , Quyen Do <quyen.do@company.example>\, Trang Nguyen <trang.nguyen@compa
+ ny.example>\, Dat Bui <dat.bui@company.example>\\nLocal Time (Asia/Ho_Ch
+ i_Minh): 2025-10-21 15:45–16:15
+ORGANIZER;CN=Product Ops:mailto:product.ops@company.example
+ATTENDEE;CN=Alex Nguyen (Head of Engineering);ROLE=REQ-PARTICIPANT:mailto
+ :alex.nguyen@company.example
+ATTENDEE;CN=Quyen Do;ROLE=REQ-PARTICIPANT:mailto:quyen.do@company.example
+ATTENDEE;CN=Trang Nguyen;ROLE=REQ-PARTICIPANT:mailto:trang.nguyen@company
+ .example
+ATTENDEE;CN=Dat Bui;ROLE=REQ-PARTICIPANT:mailto:dat.bui@company.example
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:e636080b-dbbe-4206-bd15-536189c19dd4@company.example
+DTSTAMP:20251016T070809Z
+SUMMARY:OKR Check-in
+DTSTART:20251021T083000Z
+DTEND:20251021T090000Z
+LOCATION:Da Nang - Conf B
+DESCRIPTION:Organizer: Recruiting <recruiting@company.example>\\nPrimary:
+  Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\\nAtten
+ dees: Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\, 
+ Linh Pham <linh.pham@company.example>\, Minh Tran <minh.tran@company.exa
+ mple>\, Bao Lam <bao.lam@company.example>\, Tuan Anh <tuan.anh@company.e
+ xample>\, Thao Vo <thao.vo@company.example>\\nLocal Time (Asia/Ho_Chi_Mi
+ nh): 2025-10-21 15:30–16:00
+ORGANIZER;CN=Recruiting:mailto:recruiting@company.example
+ATTENDEE;CN=Alex Nguyen (Head of Engineering);ROLE=REQ-PARTICIPANT:mailto
+ :alex.nguyen@company.example
+ATTENDEE;CN=Linh Pham;ROLE=REQ-PARTICIPANT:mailto:linh.pham@company.examp
+ le
+ATTENDEE;CN=Minh Tran;ROLE=REQ-PARTICIPANT:mailto:minh.tran@company.examp
+ le
+ATTENDEE;CN=Bao Lam;ROLE=REQ-PARTICIPANT:mailto:bao.lam@company.example
+ATTENDEE;CN=Tuan Anh;ROLE=REQ-PARTICIPANT:mailto:tuan.anh@company.example
+ATTENDEE;CN=Thao Vo;ROLE=REQ-PARTICIPANT:mailto:thao.vo@company.example
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:30be9467-3901-42e5-82d8-3894559ae643@company.example
+DTSTAMP:20251016T070809Z
+SUMMARY:Architecture Deep Dive
+DTSTART:20251021T080000Z
+DTEND:20251021T085000Z
+LOCATION:Da Nang - Conf B
+DESCRIPTION:Organizer: Recruiting <recruiting@company.example>\\nPrimary:
+  Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\\nAtten
+ dees: Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\, 
+ Trang Nguyen <trang.nguyen@company.example>\, Dat Bui <dat.bui@company.e
+ xample>\, Minh Tran <minh.tran@company.example>\, Thao Vo <thao.vo@compa
+ ny.example>\, Kiet Ho <kiet.ho@company.example>\\nLocal Time (Asia/Ho_Ch
+ i_Minh): 2025-10-21 15:00–15:50
+ORGANIZER;CN=Recruiting:mailto:recruiting@company.example
+ATTENDEE;CN=Alex Nguyen (Head of Engineering);ROLE=REQ-PARTICIPANT:mailto
+ :alex.nguyen@company.example
+ATTENDEE;CN=Trang Nguyen;ROLE=REQ-PARTICIPANT:mailto:trang.nguyen@company
+ .example
+ATTENDEE;CN=Dat Bui;ROLE=REQ-PARTICIPANT:mailto:dat.bui@company.example
+ATTENDEE;CN=Minh Tran;ROLE=REQ-PARTICIPANT:mailto:minh.tran@company.examp
+ le
+ATTENDEE;CN=Thao Vo;ROLE=REQ-PARTICIPANT:mailto:thao.vo@company.example
+ATTENDEE;CN=Kiet Ho;ROLE=REQ-PARTICIPANT:mailto:kiet.ho@company.example
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:fda3b5db-c31d-4e1f-a916-7393daa39093@company.example
+DTSTAMP:20251016T070809Z
+SUMMARY:Platform Governance Board
+DTSTART:20251021T103000Z
+DTEND:20251021T113000Z
+LOCATION:Zoom
+DESCRIPTION:Organizer: SRE On-Call <sre.oncall@company.example>\\nPrimary
+ : Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\\nAtte
+ ndees: Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\,
+  Linh Pham <linh.pham@company.example>\, Dat Bui <dat.bui@company.exampl
+ e>\, Kiet Ho <kiet.ho@company.example>\, Bao Lam <bao.lam@company.exampl
+ e>\\nLocal Time (Asia/Ho_Chi_Minh): 2025-10-21 17:30–18:30
+ORGANIZER;CN=SRE On-Call:mailto:sre.oncall@company.example
+ATTENDEE;CN=Alex Nguyen (Head of Engineering);ROLE=REQ-PARTICIPANT:mailto
+ :alex.nguyen@company.example
+ATTENDEE;CN=Linh Pham;ROLE=REQ-PARTICIPANT:mailto:linh.pham@company.examp
+ le
+ATTENDEE;CN=Dat Bui;ROLE=REQ-PARTICIPANT:mailto:dat.bui@company.example
+ATTENDEE;CN=Kiet Ho;ROLE=REQ-PARTICIPANT:mailto:kiet.ho@company.example
+ATTENDEE;CN=Bao Lam;ROLE=REQ-PARTICIPANT:mailto:bao.lam@company.example
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:8656c8c1-06b8-4246-a0b2-cc864476c7be@company.example
+DTSTAMP:20251016T070809Z
+SUMMARY:OKR Check-in
+DTSTART:20251021T061500Z
+DTEND:20251021T071500Z
+LOCATION:Hanoi - Conf A
+DESCRIPTION:Organizer: CTO Office <cto.office@company.example>\\nPrimary:
+  Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\\nAtten
+ dees: Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\, 
+ Trang Nguyen <trang.nguyen@company.example>\, Quyen Do <quyen.do@company
+ .example>\, Huy Le <huy.le@company.example>\, Tuan Anh <tuan.anh@company
+ .example>\\nLocal Time (Asia/Ho_Chi_Minh): 2025-10-21 13:15–14:15
+ORGANIZER;CN=CTO Office:mailto:cto.office@company.example
+ATTENDEE;CN=Alex Nguyen (Head of Engineering);ROLE=REQ-PARTICIPANT:mailto
+ :alex.nguyen@company.example
+ATTENDEE;CN=Trang Nguyen;ROLE=REQ-PARTICIPANT:mailto:trang.nguyen@company
+ .example
+ATTENDEE;CN=Quyen Do;ROLE=REQ-PARTICIPANT:mailto:quyen.do@company.example
+ATTENDEE;CN=Huy Le;ROLE=REQ-PARTICIPANT:mailto:huy.le@company.example
+ATTENDEE;CN=Tuan Anh;ROLE=REQ-PARTICIPANT:mailto:tuan.anh@company.example
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:4162ab8f-bdf3-454d-9977-1c549c61c726@company.example
+DTSTAMP:20251016T070809Z
+SUMMARY:Incident Postmortem
+DTSTART:20251021T100000Z
+DTEND:20251021T110000Z
+LOCATION:Zoom
+DESCRIPTION:Organizer: Product Ops <product.ops@company.example>\\nPrimar
+ y: Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\\nAtt
+ endees: Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\
+ , Minh Tran <minh.tran@company.example>\, Linh Pham <linh.pham@company.e
+ xample>\, Thao Vo <thao.vo@company.example>\, Kiet Ho <kiet.ho@company.e
+ xample>\, Huy Le <huy.le@company.example>\\nLocal Time (Asia/Ho_Chi_Minh
+ ): 2025-10-21 17:00–18:00
+ORGANIZER;CN=Product Ops:mailto:product.ops@company.example
+ATTENDEE;CN=Alex Nguyen (Head of Engineering);ROLE=REQ-PARTICIPANT:mailto
+ :alex.nguyen@company.example
+ATTENDEE;CN=Minh Tran;ROLE=REQ-PARTICIPANT:mailto:minh.tran@company.examp
+ le
+ATTENDEE;CN=Linh Pham;ROLE=REQ-PARTICIPANT:mailto:linh.pham@company.examp
+ le
+ATTENDEE;CN=Thao Vo;ROLE=REQ-PARTICIPANT:mailto:thao.vo@company.example
+ATTENDEE;CN=Kiet Ho;ROLE=REQ-PARTICIPANT:mailto:kiet.ho@company.example
+ATTENDEE;CN=Huy Le;ROLE=REQ-PARTICIPANT:mailto:huy.le@company.example
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:9fe7ff25-11f9-4b7e-b3eb-b46752037ea4@company.example
+DTSTAMP:20251016T070809Z
+SUMMARY:All-Hands Prep
+DTSTART:20251021T050000Z
+DTEND:20251021T052500Z
+LOCATION:Hanoi - Conf A
+DESCRIPTION:Organizer: SRE On-Call <sre.oncall@company.example>\\nPrimary
+ : Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\\nAtte
+ ndees: Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\,
+  Linh Pham <linh.pham@company.example>\, Trang Nguyen <trang.nguyen@comp
+ any.example>\, Huy Le <huy.le@company.example>\, Bao Lam <bao.lam@compan
+ y.example>\, Thao Vo <thao.vo@company.example>\\nLocal Time (Asia/Ho_Chi
+ _Minh): 2025-10-21 12:00–12:25
+ORGANIZER;CN=SRE On-Call:mailto:sre.oncall@company.example
+ATTENDEE;CN=Alex Nguyen (Head of Engineering);ROLE=REQ-PARTICIPANT:mailto
+ :alex.nguyen@company.example
+ATTENDEE;CN=Linh Pham;ROLE=REQ-PARTICIPANT:mailto:linh.pham@company.examp
+ le
+ATTENDEE;CN=Trang Nguyen;ROLE=REQ-PARTICIPANT:mailto:trang.nguyen@company
+ .example
+ATTENDEE;CN=Huy Le;ROLE=REQ-PARTICIPANT:mailto:huy.le@company.example
+ATTENDEE;CN=Bao Lam;ROLE=REQ-PARTICIPANT:mailto:bao.lam@company.example
+ATTENDEE;CN=Thao Vo;ROLE=REQ-PARTICIPANT:mailto:thao.vo@company.example
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:7a7028c8-6a23-4603-a24c-a882d8cf5712@company.example
+DTSTAMP:20251016T070809Z
+SUMMARY:Roadmap Prioritization
+DTSTART:20251021T043000Z
+DTEND:20251021T053000Z
+LOCATION:Da Nang - Conf B
+DESCRIPTION:Organizer: Finance <finance@company.example>\\nPrimary: Alex 
+ Nguyen (Head of Engineering) <alex.nguyen@company.example>\\nAttendees: 
+ Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\, Quyen 
+ Do <quyen.do@company.example>\, Trang Nguyen <trang.nguyen@company.examp
+ le>\, Bao Lam <bao.lam@company.example>\, Thao Vo <thao.vo@company.examp
+ le>\, Huy Le <huy.le@company.example>\\nLocal Time (Asia/Ho_Chi_Minh): 2
+ 025-10-21 11:30–12:30
+ORGANIZER;CN=Finance:mailto:finance@company.example
+ATTENDEE;CN=Alex Nguyen (Head of Engineering);ROLE=REQ-PARTICIPANT:mailto
+ :alex.nguyen@company.example
+ATTENDEE;CN=Quyen Do;ROLE=REQ-PARTICIPANT:mailto:quyen.do@company.example
+ATTENDEE;CN=Trang Nguyen;ROLE=REQ-PARTICIPANT:mailto:trang.nguyen@company
+ .example
+ATTENDEE;CN=Bao Lam;ROLE=REQ-PARTICIPANT:mailto:bao.lam@company.example
+ATTENDEE;CN=Thao Vo;ROLE=REQ-PARTICIPANT:mailto:thao.vo@company.example
+ATTENDEE;CN=Huy Le;ROLE=REQ-PARTICIPANT:mailto:huy.le@company.example
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:65bc972e-18ca-4d83-9910-5559e9b7f8e1@company.example
+DTSTAMP:20251016T070809Z
+SUMMARY:Design Review
+DTSTART:20251022T074500Z
+DTEND:20251022T084500Z
+LOCATION:Teams
+DESCRIPTION:Organizer: Recruiting <recruiting@company.example>\\nPrimary:
+  Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\\nAtten
+ dees: Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\, 
+ Quyen Do <quyen.do@company.example>\, Bao Lam <bao.lam@company.example>\
+ \nLocal Time (Asia/Ho_Chi_Minh): 2025-10-22 14:45–15:45
+ORGANIZER;CN=Recruiting:mailto:recruiting@company.example
+ATTENDEE;CN=Alex Nguyen (Head of Engineering);ROLE=REQ-PARTICIPANT:mailto
+ :alex.nguyen@company.example
+ATTENDEE;CN=Quyen Do;ROLE=REQ-PARTICIPANT:mailto:quyen.do@company.example
+ATTENDEE;CN=Bao Lam;ROLE=REQ-PARTICIPANT:mailto:bao.lam@company.example
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:f09db222-9f9a-4cb5-ba5d-3e5c4ba3384b@company.example
+DTSTAMP:20251016T070809Z
+SUMMARY:Incident Postmortem
+DTSTART:20251022T021500Z
+DTEND:20251022T031500Z
+LOCATION:Zoom
+DESCRIPTION:Organizer: PMO <pmo@company.example>\\nPrimary: Alex Nguyen (
+ Head of Engineering) <alex.nguyen@company.example>\\nAttendees: Alex Ngu
+ yen (Head of Engineering) <alex.nguyen@company.example>\, Linh Pham <lin
+ h.pham@company.example>\, Minh Tran <minh.tran@company.example>\\nLocal 
+ Time (Asia/Ho_Chi_Minh): 2025-10-22 09:15–10:15
+ORGANIZER;CN=PMO:mailto:pmo@company.example
+ATTENDEE;CN=Alex Nguyen (Head of Engineering);ROLE=REQ-PARTICIPANT:mailto
+ :alex.nguyen@company.example
+ATTENDEE;CN=Linh Pham;ROLE=REQ-PARTICIPANT:mailto:linh.pham@company.examp
+ le
+ATTENDEE;CN=Minh Tran;ROLE=REQ-PARTICIPANT:mailto:minh.tran@company.examp
+ le
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:8ffb276b-4786-4527-9258-d76c0e10334a@company.example
+DTSTAMP:20251016T070809Z
+SUMMARY:QA Strategy
+DTSTART:20251022T023000Z
+DTEND:20251022T025500Z
+LOCATION:Google Meet
+DESCRIPTION:Organizer: Security Team <security@company.example>\\nPrimary
+ : Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\\nAtte
+ ndees: Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\,
+  Dat Bui <dat.bui@company.example>\, Tuan Anh <tuan.anh@company.example>
+ \, Quyen Do <quyen.do@company.example>\\nLocal Time (Asia/Ho_Chi_Minh): 
+ 2025-10-22 09:30–09:55
+ORGANIZER;CN=Security Team:mailto:security@company.example
+ATTENDEE;CN=Alex Nguyen (Head of Engineering);ROLE=REQ-PARTICIPANT:mailto
+ :alex.nguyen@company.example
+ATTENDEE;CN=Dat Bui;ROLE=REQ-PARTICIPANT:mailto:dat.bui@company.example
+ATTENDEE;CN=Tuan Anh;ROLE=REQ-PARTICIPANT:mailto:tuan.anh@company.example
+ATTENDEE;CN=Quyen Do;ROLE=REQ-PARTICIPANT:mailto:quyen.do@company.example
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:233ae3b4-aeff-4b60-9866-f58196b4b88a@company.example
+DTSTAMP:20251016T070809Z
+SUMMARY:Security Review
+DTSTART:20251022T091500Z
+DTEND:20251022T104500Z
+LOCATION:HCMC - Floor 10 - War Room
+DESCRIPTION:Organizer: Recruiting <recruiting@company.example>\\nPrimary:
+  Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\\nAtten
+ dees: Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\, 
+ Quyen Do <quyen.do@company.example>\, Linh Pham <linh.pham@company.examp
+ le>\, Trang Nguyen <trang.nguyen@company.example>\, Thao Vo <thao.vo@com
+ pany.example>\, Bao Lam <bao.lam@company.example>\\nLocal Time (Asia/Ho_
+ Chi_Minh): 2025-10-22 16:15–17:45
+ORGANIZER;CN=Recruiting:mailto:recruiting@company.example
+ATTENDEE;CN=Alex Nguyen (Head of Engineering);ROLE=REQ-PARTICIPANT:mailto
+ :alex.nguyen@company.example
+ATTENDEE;CN=Quyen Do;ROLE=REQ-PARTICIPANT:mailto:quyen.do@company.example
+ATTENDEE;CN=Linh Pham;ROLE=REQ-PARTICIPANT:mailto:linh.pham@company.examp
+ le
+ATTENDEE;CN=Trang Nguyen;ROLE=REQ-PARTICIPANT:mailto:trang.nguyen@company
+ .example
+ATTENDEE;CN=Thao Vo;ROLE=REQ-PARTICIPANT:mailto:thao.vo@company.example
+ATTENDEE;CN=Bao Lam;ROLE=REQ-PARTICIPANT:mailto:bao.lam@company.example
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:99414ae5-0d12-4fd3-98f1-eeb65c081383@company.example
+DTSTAMP:20251016T070809Z
+SUMMARY:Roadmap Prioritization
+DTSTART:20251022T084500Z
+DTEND:20251022T101500Z
+LOCATION:Da Nang - Conf B
+DESCRIPTION:Organizer: SRE On-Call <sre.oncall@company.example>\\nPrimary
+ : Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\\nAtte
+ ndees: Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\,
+  Linh Pham <linh.pham@company.example>\, Minh Tran <minh.tran@company.ex
+ ample>\\nLocal Time (Asia/Ho_Chi_Minh): 2025-10-22 15:45–17:15
+ORGANIZER;CN=SRE On-Call:mailto:sre.oncall@company.example
+ATTENDEE;CN=Alex Nguyen (Head of Engineering);ROLE=REQ-PARTICIPANT:mailto
+ :alex.nguyen@company.example
+ATTENDEE;CN=Linh Pham;ROLE=REQ-PARTICIPANT:mailto:linh.pham@company.examp
+ le
+ATTENDEE;CN=Minh Tran;ROLE=REQ-PARTICIPANT:mailto:minh.tran@company.examp
+ le
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:c05f7af9-e609-4372-948e-151a359ac019@company.example
+DTSTAMP:20251016T070809Z
+SUMMARY:Tech Debt Triage
+DTSTART:20251022T070000Z
+DTEND:20251022T073000Z
+LOCATION:Google Meet
+DESCRIPTION:Organizer: PMO <pmo@company.example>\\nPrimary: Alex Nguyen (
+ Head of Engineering) <alex.nguyen@company.example>\\nAttendees: Alex Ngu
+ yen (Head of Engineering) <alex.nguyen@company.example>\, Trang Nguyen <
+ trang.nguyen@company.example>\, Tuan Anh <tuan.anh@company.example>\, Hu
+ y Le <huy.le@company.example>\\nLocal Time (Asia/Ho_Chi_Minh): 2025-10-2
+ 2 14:00–14:30
+ORGANIZER;CN=PMO:mailto:pmo@company.example
+ATTENDEE;CN=Alex Nguyen (Head of Engineering);ROLE=REQ-PARTICIPANT:mailto
+ :alex.nguyen@company.example
+ATTENDEE;CN=Trang Nguyen;ROLE=REQ-PARTICIPANT:mailto:trang.nguyen@company
+ .example
+ATTENDEE;CN=Tuan Anh;ROLE=REQ-PARTICIPANT:mailto:tuan.anh@company.example
+ATTENDEE;CN=Huy Le;ROLE=REQ-PARTICIPANT:mailto:huy.le@company.example
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:c807f74c-8143-4894-954a-1d07270c063f@company.example
+DTSTAMP:20251016T070809Z
+SUMMARY:Architecture Deep Dive
+DTSTART:20251022T064500Z
+DTEND:20251022T071500Z
+LOCATION:Zoom
+DESCRIPTION:Organizer: Finance <finance@company.example>\\nPrimary: Alex 
+ Nguyen (Head of Engineering) <alex.nguyen@company.example>\\nAttendees: 
+ Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\, Tuan A
+ nh <tuan.anh@company.example>\, Trang Nguyen <trang.nguyen@company.examp
+ le>\\nLocal Time (Asia/Ho_Chi_Minh): 2025-10-22 13:45–14:15
+ORGANIZER;CN=Finance:mailto:finance@company.example
+ATTENDEE;CN=Alex Nguyen (Head of Engineering);ROLE=REQ-PARTICIPANT:mailto
+ :alex.nguyen@company.example
+ATTENDEE;CN=Tuan Anh;ROLE=REQ-PARTICIPANT:mailto:tuan.anh@company.example
+ATTENDEE;CN=Trang Nguyen;ROLE=REQ-PARTICIPANT:mailto:trang.nguyen@company
+ .example
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:ace99666-d4f4-4c75-a3d3-0877c88df249@company.example
+DTSTAMP:20251016T070809Z
+SUMMARY:All-Hands Prep
+DTSTART:20251022T100000Z
+DTEND:20251022T102500Z
+LOCATION:Google Meet
+DESCRIPTION:Organizer: Finance <finance@company.example>\\nPrimary: Alex 
+ Nguyen (Head of Engineering) <alex.nguyen@company.example>\\nAttendees: 
+ Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\, Huy Le
+  <huy.le@company.example>\, Kiet Ho <kiet.ho@company.example>\, Tuan Anh
+  <tuan.anh@company.example>\\nLocal Time (Asia/Ho_Chi_Minh): 2025-10-22 
+ 17:00–17:25
+ORGANIZER;CN=Finance:mailto:finance@company.example
+ATTENDEE;CN=Alex Nguyen (Head of Engineering);ROLE=REQ-PARTICIPANT:mailto
+ :alex.nguyen@company.example
+ATTENDEE;CN=Huy Le;ROLE=REQ-PARTICIPANT:mailto:huy.le@company.example
+ATTENDEE;CN=Kiet Ho;ROLE=REQ-PARTICIPANT:mailto:kiet.ho@company.example
+ATTENDEE;CN=Tuan Anh;ROLE=REQ-PARTICIPANT:mailto:tuan.anh@company.example
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:5fa2df48-b628-46e7-a68c-f0d3719ed472@company.example
+DTSTAMP:20251016T070809Z
+SUMMARY:Platform Governance Board
+DTSTART:20251022T080000Z
+DTEND:20251022T083000Z
+LOCATION:Teams
+DESCRIPTION:Organizer: Recruiting <recruiting@company.example>\\nPrimary:
+  Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\\nAtten
+ dees: Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\, 
+ Kiet Ho <kiet.ho@company.example>\, Dat Bui <dat.bui@company.example>\\n
+ Local Time (Asia/Ho_Chi_Minh): 2025-10-22 15:00–15:30
+ORGANIZER;CN=Recruiting:mailto:recruiting@company.example
+ATTENDEE;CN=Alex Nguyen (Head of Engineering);ROLE=REQ-PARTICIPANT:mailto
+ :alex.nguyen@company.example
+ATTENDEE;CN=Kiet Ho;ROLE=REQ-PARTICIPANT:mailto:kiet.ho@company.example
+ATTENDEE;CN=Dat Bui;ROLE=REQ-PARTICIPANT:mailto:dat.bui@company.example
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:699e9645-04c0-4202-a6d9-8fe16b9aa595@company.example
+DTSTAMP:20251016T070809Z
+SUMMARY:Performance Calibration
+DTSTART:20251023T104500Z
+DTEND:20251023T111500Z
+LOCATION:Zoom
+DESCRIPTION:Organizer: PMO <pmo@company.example>\\nPrimary: Alex Nguyen (
+ Head of Engineering) <alex.nguyen@company.example>\\nAttendees: Alex Ngu
+ yen (Head of Engineering) <alex.nguyen@company.example>\, Quyen Do <quye
+ n.do@company.example>\, Minh Tran <minh.tran@company.example>\, Trang Ng
+ uyen <trang.nguyen@company.example>\, Thao Vo <thao.vo@company.example>\
+ \nLocal Time (Asia/Ho_Chi_Minh): 2025-10-23 17:45–18:15
+ORGANIZER;CN=PMO:mailto:pmo@company.example
+ATTENDEE;CN=Alex Nguyen (Head of Engineering);ROLE=REQ-PARTICIPANT:mailto
+ :alex.nguyen@company.example
+ATTENDEE;CN=Quyen Do;ROLE=REQ-PARTICIPANT:mailto:quyen.do@company.example
+ATTENDEE;CN=Minh Tran;ROLE=REQ-PARTICIPANT:mailto:minh.tran@company.examp
+ le
+ATTENDEE;CN=Trang Nguyen;ROLE=REQ-PARTICIPANT:mailto:trang.nguyen@company
+ .example
+ATTENDEE;CN=Thao Vo;ROLE=REQ-PARTICIPANT:mailto:thao.vo@company.example
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:9172a035-0a90-4750-ad8d-2f5f0d54b2cc@company.example
+DTSTAMP:20251016T070809Z
+SUMMARY:OKR Check-in
+DTSTART:20251023T024500Z
+DTEND:20251023T034500Z
+LOCATION:Zoom
+DESCRIPTION:Organizer: Recruiting <recruiting@company.example>\\nPrimary:
+  Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\\nAtten
+ dees: Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\, 
+ Minh Tran <minh.tran@company.example>\, Trang Nguyen <trang.nguyen@compa
+ ny.example>\, Linh Pham <linh.pham@company.example>\\nLocal Time (Asia/H
+ o_Chi_Minh): 2025-10-23 09:45–10:45
+ORGANIZER;CN=Recruiting:mailto:recruiting@company.example
+ATTENDEE;CN=Alex Nguyen (Head of Engineering);ROLE=REQ-PARTICIPANT:mailto
+ :alex.nguyen@company.example
+ATTENDEE;CN=Minh Tran;ROLE=REQ-PARTICIPANT:mailto:minh.tran@company.examp
+ le
+ATTENDEE;CN=Trang Nguyen;ROLE=REQ-PARTICIPANT:mailto:trang.nguyen@company
+ .example
+ATTENDEE;CN=Linh Pham;ROLE=REQ-PARTICIPANT:mailto:linh.pham@company.examp
+ le
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:399b66b6-cbb2-41f8-ab2e-4a31cb919ff7@company.example
+DTSTAMP:20251016T070809Z
+SUMMARY:Tech Debt Triage
+DTSTART:20251023T031500Z
+DTEND:20251023T040500Z
+LOCATION:Da Nang - Conf B
+DESCRIPTION:Organizer: Recruiting <recruiting@company.example>\\nPrimary:
+  Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\\nAtten
+ dees: Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\, 
+ Bao Lam <bao.lam@company.example>\, Minh Tran <minh.tran@company.example
+ >\, Linh Pham <linh.pham@company.example>\\nLocal Time (Asia/Ho_Chi_Minh
+ ): 2025-10-23 10:15–11:05
+ORGANIZER;CN=Recruiting:mailto:recruiting@company.example
+ATTENDEE;CN=Alex Nguyen (Head of Engineering);ROLE=REQ-PARTICIPANT:mailto
+ :alex.nguyen@company.example
+ATTENDEE;CN=Bao Lam;ROLE=REQ-PARTICIPANT:mailto:bao.lam@company.example
+ATTENDEE;CN=Minh Tran;ROLE=REQ-PARTICIPANT:mailto:minh.tran@company.examp
+ le
+ATTENDEE;CN=Linh Pham;ROLE=REQ-PARTICIPANT:mailto:linh.pham@company.examp
+ le
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:d05e4716-2cef-4608-aee0-28bbc75c49ae@company.example
+DTSTAMP:20251016T070809Z
+SUMMARY:Budget Planning
+DTSTART:20251023T103000Z
+DTEND:20251023T111500Z
+LOCATION:HCMC - Floor 10 - War Room
+DESCRIPTION:Organizer: PMO <pmo@company.example>\\nPrimary: Alex Nguyen (
+ Head of Engineering) <alex.nguyen@company.example>\\nAttendees: Alex Ngu
+ yen (Head of Engineering) <alex.nguyen@company.example>\, Quyen Do <quye
+ n.do@company.example>\, Dat Bui <dat.bui@company.example>\, Kiet Ho <kie
+ t.ho@company.example>\, Linh Pham <linh.pham@company.example>\\nLocal Ti
+ me (Asia/Ho_Chi_Minh): 2025-10-23 17:30–18:15
+ORGANIZER;CN=PMO:mailto:pmo@company.example
+ATTENDEE;CN=Alex Nguyen (Head of Engineering);ROLE=REQ-PARTICIPANT:mailto
+ :alex.nguyen@company.example
+ATTENDEE;CN=Quyen Do;ROLE=REQ-PARTICIPANT:mailto:quyen.do@company.example
+ATTENDEE;CN=Dat Bui;ROLE=REQ-PARTICIPANT:mailto:dat.bui@company.example
+ATTENDEE;CN=Kiet Ho;ROLE=REQ-PARTICIPANT:mailto:kiet.ho@company.example
+ATTENDEE;CN=Linh Pham;ROLE=REQ-PARTICIPANT:mailto:linh.pham@company.examp
+ le
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:f00aa11b-c3eb-4696-a7b4-57720bcd6661@company.example
+DTSTAMP:20251016T070809Z
+SUMMARY:Hiring Interview
+DTSTART:20251023T070000Z
+DTEND:20251023T072500Z
+LOCATION:Hanoi - Conf A
+DESCRIPTION:Organizer: Recruiting <recruiting@company.example>\\nPrimary:
+  Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\\nAtten
+ dees: Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\, 
+ Linh Pham <linh.pham@company.example>\, Trang Nguyen <trang.nguyen@compa
+ ny.example>\\nLocal Time (Asia/Ho_Chi_Minh): 2025-10-23 14:00–14:25
+ORGANIZER;CN=Recruiting:mailto:recruiting@company.example
+ATTENDEE;CN=Alex Nguyen (Head of Engineering);ROLE=REQ-PARTICIPANT:mailto
+ :alex.nguyen@company.example
+ATTENDEE;CN=Linh Pham;ROLE=REQ-PARTICIPANT:mailto:linh.pham@company.examp
+ le
+ATTENDEE;CN=Trang Nguyen;ROLE=REQ-PARTICIPANT:mailto:trang.nguyen@company
+ .example
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:8c9a72b9-38a3-4e6d-9735-88c06b750e06@company.example
+DTSTAMP:20251016T070809Z
+SUMMARY:Platform Governance Board
+DTSTART:20251023T061500Z
+DTEND:20251023T070000Z
+LOCATION:Hanoi - Conf A
+DESCRIPTION:Organizer: CTO Office <cto.office@company.example>\\nPrimary:
+  Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\\nAtten
+ dees: Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\, 
+ Thao Vo <thao.vo@company.example>\, Dat Bui <dat.bui@company.example>\, 
+ Huy Le <huy.le@company.example>\\nLocal Time (Asia/Ho_Chi_Minh): 2025-10
+ -23 13:15–14:00
+ORGANIZER;CN=CTO Office:mailto:cto.office@company.example
+ATTENDEE;CN=Alex Nguyen (Head of Engineering);ROLE=REQ-PARTICIPANT:mailto
+ :alex.nguyen@company.example
+ATTENDEE;CN=Thao Vo;ROLE=REQ-PARTICIPANT:mailto:thao.vo@company.example
+ATTENDEE;CN=Dat Bui;ROLE=REQ-PARTICIPANT:mailto:dat.bui@company.example
+ATTENDEE;CN=Huy Le;ROLE=REQ-PARTICIPANT:mailto:huy.le@company.example
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:a47d5ecd-dc63-4f29-afba-9e97b953345f@company.example
+DTSTAMP:20251016T070809Z
+SUMMARY:Architecture Deep Dive
+DTSTART:20251023T060000Z
+DTEND:20251023T071500Z
+LOCATION:Da Nang - Conf B
+DESCRIPTION:Organizer: Finance <finance@company.example>\\nPrimary: Alex 
+ Nguyen (Head of Engineering) <alex.nguyen@company.example>\\nAttendees: 
+ Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\, Linh P
+ ham <linh.pham@company.example>\, Huy Le <huy.le@company.example>\, Dat 
+ Bui <dat.bui@company.example>\, Minh Tran <minh.tran@company.example>\\n
+ Local Time (Asia/Ho_Chi_Minh): 2025-10-23 13:00–14:15
+ORGANIZER;CN=Finance:mailto:finance@company.example
+ATTENDEE;CN=Alex Nguyen (Head of Engineering);ROLE=REQ-PARTICIPANT:mailto
+ :alex.nguyen@company.example
+ATTENDEE;CN=Linh Pham;ROLE=REQ-PARTICIPANT:mailto:linh.pham@company.examp
+ le
+ATTENDEE;CN=Huy Le;ROLE=REQ-PARTICIPANT:mailto:huy.le@company.example
+ATTENDEE;CN=Dat Bui;ROLE=REQ-PARTICIPANT:mailto:dat.bui@company.example
+ATTENDEE;CN=Minh Tran;ROLE=REQ-PARTICIPANT:mailto:minh.tran@company.examp
+ le
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:599a8ecc-eaf8-4a57-94ba-2aa22e19e151@company.example
+DTSTAMP:20251016T070809Z
+SUMMARY:Product Alignment
+DTSTART:20251023T101500Z
+DTEND:20251023T110000Z
+LOCATION:HCMC - Floor 10 - War Room
+DESCRIPTION:Organizer: Product Ops <product.ops@company.example>\\nPrimar
+ y: Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\\nAtt
+ endees: Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\
+ , Thao Vo <thao.vo@company.example>\, Quyen Do <quyen.do@company.example
+ >\, Dat Bui <dat.bui@company.example>\\nLocal Time (Asia/Ho_Chi_Minh): 2
+ 025-10-23 17:15–18:00
+ORGANIZER;CN=Product Ops:mailto:product.ops@company.example
+ATTENDEE;CN=Alex Nguyen (Head of Engineering);ROLE=REQ-PARTICIPANT:mailto
+ :alex.nguyen@company.example
+ATTENDEE;CN=Thao Vo;ROLE=REQ-PARTICIPANT:mailto:thao.vo@company.example
+ATTENDEE;CN=Quyen Do;ROLE=REQ-PARTICIPANT:mailto:quyen.do@company.example
+ATTENDEE;CN=Dat Bui;ROLE=REQ-PARTICIPANT:mailto:dat.bui@company.example
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:9335fef0-2720-46e6-af53-e09c7676e622@company.example
+DTSTAMP:20251016T070809Z
+SUMMARY:Cross-Org Program Sync
+DTSTART:20251024T020000Z
+DTEND:20251024T031500Z
+LOCATION:Da Nang - Conf B
+DESCRIPTION:Organizer: Recruiting <recruiting@company.example>\\nPrimary:
+  Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\\nAtten
+ dees: Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\, 
+ Minh Tran <minh.tran@company.example>\, Bao Lam <bao.lam@company.example
+ >\, Thao Vo <thao.vo@company.example>\, Kiet Ho <kiet.ho@company.example
+ >\\nLocal Time (Asia/Ho_Chi_Minh): 2025-10-24 09:00–10:15
+ORGANIZER;CN=Recruiting:mailto:recruiting@company.example
+ATTENDEE;CN=Alex Nguyen (Head of Engineering);ROLE=REQ-PARTICIPANT:mailto
+ :alex.nguyen@company.example
+ATTENDEE;CN=Minh Tran;ROLE=REQ-PARTICIPANT:mailto:minh.tran@company.examp
+ le
+ATTENDEE;CN=Bao Lam;ROLE=REQ-PARTICIPANT:mailto:bao.lam@company.example
+ATTENDEE;CN=Thao Vo;ROLE=REQ-PARTICIPANT:mailto:thao.vo@company.example
+ATTENDEE;CN=Kiet Ho;ROLE=REQ-PARTICIPANT:mailto:kiet.ho@company.example
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:60289078-1a1a-48db-8fd7-e881b6bf3b9b@company.example
+DTSTAMP:20251016T070809Z
+SUMMARY:Cross-Org Program Sync
+DTSTART:20251024T061500Z
+DTEND:20251024T073000Z
+LOCATION:Hanoi - Conf A
+DESCRIPTION:Organizer: Recruiting <recruiting@company.example>\\nPrimary:
+  Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\\nAtten
+ dees: Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\, 
+ Trang Nguyen <trang.nguyen@company.example>\, Minh Tran <minh.tran@compa
+ ny.example>\, Linh Pham <linh.pham@company.example>\, Bao Lam <bao.lam@c
+ ompany.example>\, Thao Vo <thao.vo@company.example>\\nLocal Time (Asia/H
+ o_Chi_Minh): 2025-10-24 13:15–14:30
+ORGANIZER;CN=Recruiting:mailto:recruiting@company.example
+ATTENDEE;CN=Alex Nguyen (Head of Engineering);ROLE=REQ-PARTICIPANT:mailto
+ :alex.nguyen@company.example
+ATTENDEE;CN=Trang Nguyen;ROLE=REQ-PARTICIPANT:mailto:trang.nguyen@company
+ .example
+ATTENDEE;CN=Minh Tran;ROLE=REQ-PARTICIPANT:mailto:minh.tran@company.examp
+ le
+ATTENDEE;CN=Linh Pham;ROLE=REQ-PARTICIPANT:mailto:linh.pham@company.examp
+ le
+ATTENDEE;CN=Bao Lam;ROLE=REQ-PARTICIPANT:mailto:bao.lam@company.example
+ATTENDEE;CN=Thao Vo;ROLE=REQ-PARTICIPANT:mailto:thao.vo@company.example
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:1a11b302-8686-41b4-b71e-09e35b049eb8@company.example
+DTSTAMP:20251016T070809Z
+SUMMARY:Budget Planning
+DTSTART:20251024T023000Z
+DTEND:20251024T033000Z
+LOCATION:Teams
+DESCRIPTION:Organizer: Security Team <security@company.example>\\nPrimary
+ : Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\\nAtte
+ ndees: Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\,
+  Kiet Ho <kiet.ho@company.example>\, Huy Le <huy.le@company.example>\, M
+ inh Tran <minh.tran@company.example>\\nLocal Time (Asia/Ho_Chi_Minh): 20
+ 25-10-24 09:30–10:30
+ORGANIZER;CN=Security Team:mailto:security@company.example
+ATTENDEE;CN=Alex Nguyen (Head of Engineering);ROLE=REQ-PARTICIPANT:mailto
+ :alex.nguyen@company.example
+ATTENDEE;CN=Kiet Ho;ROLE=REQ-PARTICIPANT:mailto:kiet.ho@company.example
+ATTENDEE;CN=Huy Le;ROLE=REQ-PARTICIPANT:mailto:huy.le@company.example
+ATTENDEE;CN=Minh Tran;ROLE=REQ-PARTICIPANT:mailto:minh.tran@company.examp
+ le
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:46f62f53-daf2-46db-9117-a6cbf694995d@company.example
+DTSTAMP:20251016T070809Z
+SUMMARY:Service Readiness
+DTSTART:20251024T023000Z
+DTEND:20251024T030000Z
+LOCATION:Da Nang - Conf B
+DESCRIPTION:Organizer: SRE On-Call <sre.oncall@company.example>\\nPrimary
+ : Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\\nAtte
+ ndees: Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\,
+  Linh Pham <linh.pham@company.example>\, Thao Vo <thao.vo@company.exampl
+ e>\, Kiet Ho <kiet.ho@company.example>\\nLocal Time (Asia/Ho_Chi_Minh): 
+ 2025-10-24 09:30–10:00
+ORGANIZER;CN=SRE On-Call:mailto:sre.oncall@company.example
+ATTENDEE;CN=Alex Nguyen (Head of Engineering);ROLE=REQ-PARTICIPANT:mailto
+ :alex.nguyen@company.example
+ATTENDEE;CN=Linh Pham;ROLE=REQ-PARTICIPANT:mailto:linh.pham@company.examp
+ le
+ATTENDEE;CN=Thao Vo;ROLE=REQ-PARTICIPANT:mailto:thao.vo@company.example
+ATTENDEE;CN=Kiet Ho;ROLE=REQ-PARTICIPANT:mailto:kiet.ho@company.example
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:30cb6688-4587-492e-befc-28d5d56e43d1@company.example
+DTSTAMP:20251016T070809Z
+SUMMARY:Performance Calibration
+DTSTART:20251024T041500Z
+DTEND:20251024T054500Z
+LOCATION:HCMC - Floor 10 - War Room
+DESCRIPTION:Organizer: PMO <pmo@company.example>\\nPrimary: Alex Nguyen (
+ Head of Engineering) <alex.nguyen@company.example>\\nAttendees: Alex Ngu
+ yen (Head of Engineering) <alex.nguyen@company.example>\, Kiet Ho <kiet.
+ ho@company.example>\, Minh Tran <minh.tran@company.example>\, Huy Le <hu
+ y.le@company.example>\\nLocal Time (Asia/Ho_Chi_Minh): 2025-10-24 11:15–
+ 12:45
+ORGANIZER;CN=PMO:mailto:pmo@company.example
+ATTENDEE;CN=Alex Nguyen (Head of Engineering);ROLE=REQ-PARTICIPANT:mailto
+ :alex.nguyen@company.example
+ATTENDEE;CN=Kiet Ho;ROLE=REQ-PARTICIPANT:mailto:kiet.ho@company.example
+ATTENDEE;CN=Minh Tran;ROLE=REQ-PARTICIPANT:mailto:minh.tran@company.examp
+ le
+ATTENDEE;CN=Huy Le;ROLE=REQ-PARTICIPANT:mailto:huy.le@company.example
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:4d7e0a05-4ba6-493e-a081-a2c5953ab4fc@company.example
+DTSTAMP:20251016T070809Z
+SUMMARY:All-Hands Prep
+DTSTART:20251024T053000Z
+DTEND:20251024T060000Z
+LOCATION:Google Meet
+DESCRIPTION:Organizer: Finance <finance@company.example>\\nPrimary: Alex 
+ Nguyen (Head of Engineering) <alex.nguyen@company.example>\\nAttendees: 
+ Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\, Kiet H
+ o <kiet.ho@company.example>\, Minh Tran <minh.tran@company.example>\\nLo
+ cal Time (Asia/Ho_Chi_Minh): 2025-10-24 12:30–13:00
+ORGANIZER;CN=Finance:mailto:finance@company.example
+ATTENDEE;CN=Alex Nguyen (Head of Engineering);ROLE=REQ-PARTICIPANT:mailto
+ :alex.nguyen@company.example
+ATTENDEE;CN=Kiet Ho;ROLE=REQ-PARTICIPANT:mailto:kiet.ho@company.example
+ATTENDEE;CN=Minh Tran;ROLE=REQ-PARTICIPANT:mailto:minh.tran@company.examp
+ le
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:c3767069-0061-40bf-a727-d7e47b5ba5f5@company.example
+DTSTAMP:20251016T070809Z
+SUMMARY:Roadmap Prioritization
+DTSTART:20251024T054500Z
+DTEND:20251024T063000Z
+LOCATION:Teams
+DESCRIPTION:Organizer: Product Ops <product.ops@company.example>\\nPrimar
+ y: Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\\nAtt
+ endees: Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\
+ , Quyen Do <quyen.do@company.example>\, Minh Tran <minh.tran@company.exa
+ mple>\, Bao Lam <bao.lam@company.example>\\nLocal Time (Asia/Ho_Chi_Minh
+ ): 2025-10-24 12:45–13:30
+ORGANIZER;CN=Product Ops:mailto:product.ops@company.example
+ATTENDEE;CN=Alex Nguyen (Head of Engineering);ROLE=REQ-PARTICIPANT:mailto
+ :alex.nguyen@company.example
+ATTENDEE;CN=Quyen Do;ROLE=REQ-PARTICIPANT:mailto:quyen.do@company.example
+ATTENDEE;CN=Minh Tran;ROLE=REQ-PARTICIPANT:mailto:minh.tran@company.examp
+ le
+ATTENDEE;CN=Bao Lam;ROLE=REQ-PARTICIPANT:mailto:bao.lam@company.example
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:d5336116-f5f4-475e-a7a3-011d8c68d347@company.example
+DTSTAMP:20251016T070809Z
+SUMMARY:Architecture Deep Dive
+DTSTART:20251024T060000Z
+DTEND:20251024T073000Z
+LOCATION:Teams
+DESCRIPTION:Organizer: Product Ops <product.ops@company.example>\\nPrimar
+ y: Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\\nAtt
+ endees: Alex Nguyen (Head of Engineering) <alex.nguyen@company.example>\
+ , Trang Nguyen <trang.nguyen@company.example>\, Kiet Ho <kiet.ho@company
+ .example>\, Thao Vo <thao.vo@company.example>\, Minh Tran <minh.tran@com
+ pany.example>\\nLocal Time (Asia/Ho_Chi_Minh): 2025-10-24 13:00–14:30
+ORGANIZER;CN=Product Ops:mailto:product.ops@company.example
+ATTENDEE;CN=Alex Nguyen (Head of Engineering);ROLE=REQ-PARTICIPANT:mailto
+ :alex.nguyen@company.example
+ATTENDEE;CN=Trang Nguyen;ROLE=REQ-PARTICIPANT:mailto:trang.nguyen@company
+ .example
+ATTENDEE;CN=Kiet Ho;ROLE=REQ-PARTICIPANT:mailto:kiet.ho@company.example
+ATTENDEE;CN=Thao Vo;ROLE=REQ-PARTICIPANT:mailto:thao.vo@company.example
+ATTENDEE;CN=Minh Tran;ROLE=REQ-PARTICIPANT:mailto:minh.tran@company.examp
+ le
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

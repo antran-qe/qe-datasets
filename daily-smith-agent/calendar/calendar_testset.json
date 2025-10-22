@@ -1,0 +1,172 @@
+{
+  "calendars": [
+    {
+      "account_id": "alex.johnson@salescompany.com",
+      "domain": "sales",
+      "position": "Sales Manager",
+      "timezone": "Asia/Ho_Chi_Minh",
+      "events": [
+        {
+          "event_id": "sales_event_1",
+          "title": "Client Q4 Strategy Call",
+          "start_time": "2025-10-14T09:00:00",
+          "end_time": "2025-10-14T10:00:00",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "location": "Ho Chi Minh City Office",
+          "description": "Discuss Q4 strategy with key client."
+        },
+        {
+          "event_id": "sales_event_2",
+          "title": "Sales & Marketing Sync",
+          "start_time": "2025-10-14T09:30:00",
+          "end_time": "2025-10-14T11:00:00",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "location": "HCMC Conference Room 2",
+          "description": "Weekly sync between sales and marketing teams."
+        },
+        {
+          "event_id": "sales_event_3",
+          "title": "Flight to New York",
+          "start_time": "2025-10-15T22:00:00",
+          "end_time": "2025-10-15T10:00:00",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "location": "Tan Son Nhat Intl Airport",
+          "description": "Overnight flight to New York (arrive next day)."
+        },
+        {
+          "event_id": "sales_event_4",
+          "title": "Deep Work - Proposal Writing",
+          "start_time": "2025-10-14T14:00:00",
+          "end_time": "2025-10-14T17:00:00",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "location": "Home Office",
+          "description": "Focus time to draft new proposal."
+        },
+        {
+          "event_id": "sales_event_5",
+          "title": "Lunch Break",
+          "start_time": "2025-10-14T12:00:00",
+          "end_time": "2025-10-14T13:00:00",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "location": "Cafeteria",
+          "description": "Scheduled lunch break."
+        }
+      ]
+    },
+    {
+      "account_id": "maria.nguyen@marketingcorp.com",
+      "domain": "marketing",
+      "position": "Marketing Director",
+      "timezone": "America/New_York",
+      "events": [
+        {
+          "event_id": "marketing_event_1",
+          "title": "Marketing Team Standup",
+          "start_time": "2025-10-14T09:00:00",
+          "end_time": "2025-10-14T09:30:00",
+          "timezone": "America/New_York",
+          "location": "NYC HQ Conference Room A",
+          "description": "Daily standup with marketing team."
+        },
+        {
+          "event_id": "marketing_event_2",
+          "title": "CEO Update Meeting",
+          "start_time": "2025-10-14T09:15:00",
+          "end_time": "2025-10-14T10:00:00",
+          "timezone": "America/New_York",
+          "location": "Video Conference",
+          "description": "Quarterly update from CEO; invites cross-functional leads."
+        },
+        {
+          "event_id": "marketing_event_3",
+          "title": "Flight to London",
+          "start_time": "2025-10-15T18:00:00",
+          "end_time": "2025-10-16T06:00:00",
+          "timezone": "America/New_York",
+          "location": "JFK Airport",
+          "description": "Overnight flight to London for marketing conference."
+        },
+        {
+          "event_id": "marketing_event_4",
+          "title": "Marketing Conference Presentation",
+          "start_time": "2025-10-16T09:00:00",
+          "end_time": "2025-10-16T10:00:00",
+          "timezone": "Europe/London",
+          "location": "London Convention Centre",
+          "description": "Deliver keynote at marketing conference."
+        },
+        {
+          "event_id": "marketing_event_5",
+          "title": "Gym Session",
+          "start_time": "2025-10-14T18:00:00",
+          "end_time": "2025-10-14T19:00:00",
+          "timezone": "America/New_York",
+          "location": "Gym",
+          "description": "Evening workout."
+        }
+      ]
+    },
+    {
+      "account_id": "li.chen@itcorp.com",
+      "domain": "it_engineering",
+      "position": "DevOps Engineer",
+      "timezone": "Europe/London",
+      "events": [
+        {
+          "event_id": "it_event_1",
+          "title": "Incident Response Call",
+          "start_time": "2025-10-14T13:00:00",
+          "end_time": "2025-10-14T14:00:00",
+          "timezone": "Europe/London",
+          "location": "Online Zoom",
+          "description": "Discuss critical system outage with global team."
+        },
+        {
+          "event_id": "it_event_2",
+          "title": "Team Lunch",
+          "start_time": "2025-10-14T12:00:00",
+          "end_time": "2025-10-14T13:00:00",
+          "timezone": "Europe/London",
+          "location": "Canteen",
+          "description": "Lunch with team."
+        },
+        {
+          "event_id": "it_event_3",
+          "title": "Flight to Singapore",
+          "start_time": "2025-10-15T22:00:00",
+          "end_time": "2025-10-16T16:00:00",
+          "timezone": "Europe/London",
+          "location": "Heathrow Airport",
+          "description": "Overnight flight to Singapore for onsite server maintenance."
+        },
+        {
+          "event_id": "it_event_4",
+          "title": "Data Center Maintenance",
+          "start_time": "2025-10-17T09:00:00",
+          "end_time": "2025-10-17T12:00:00",
+          "timezone": "Asia/Singapore",
+          "location": "Singapore Data Center",
+          "description": "Perform hardware upgrades and patching."
+        },
+        {
+          "event_id": "it_event_5",
+          "title": "Project Kickoff Meeting",
+          "start_time": "2025-10-14T15:00:00",
+          "end_time": "2025-10-14T16:00:00",
+          "timezone": "Europe/London",
+          "location": "Room 101",
+          "description": "Discuss new project requirements."
+        },
+        {
+          "event_id": "it_event_6",
+          "title": "Vendor Demo",
+          "start_time": "2025-10-14T15:30:00",
+          "end_time": "2025-10-14T16:30:00",
+          "timezone": "Europe/London",
+          "location": "Online WebEx",
+          "description": "Demo from prospective vendor."
+        }
+      ]
+    }
+  ]
+}

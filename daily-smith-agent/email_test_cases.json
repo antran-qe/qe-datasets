@@ -1,0 +1,232 @@
+[
+  {
+    "id": "M1",
+    "description": "A government authority sends an urgent directive requiring immediate action regarding new tax compliance.",
+    "mail": {
+      "sender": {
+        "name": "General Department of Taxation",
+        "email": "alerts@gdt.gov.vn",
+        "position": "Government regulator",
+        "type": "Official"
+      },
+      "subject": "URGENT: New Tax Compliance Requirements",
+      "title_type": "Non ad/marketing",
+      "content_summary": "You must update your company’s tax reporting procedures immediately to comply with new regulations.",
+      "content_type": "Urgent action needed",
+      "recipients": {
+        "to": ["finance.lead@acmecorp.vn"],
+        "cc": [],
+        "bcc": []
+      },
+      "recipient_type": "To",
+      "expected_score": 100
+    }
+  },
+  {
+    "id": "M2",
+    "description": "The HR department instructs employees to immediately update their personal details for payroll processing.",
+    "mail": {
+      "sender": {
+        "name": "Mai Nguyen",
+        "email": "hr@acmecorp.vn",
+        "position": "HR Manager",
+        "type": "Internal company"
+      },
+      "subject": "Immediate action required: Update your personal details",
+      "title_type": "Non ad/marketing",
+      "content_summary": "Please log into the employee portal and update your bank details by end of day today.",
+      "content_type": "Urgent action needed",
+      "recipients": {
+        "to": ["alex.tran@acmecorp.vn"],
+        "cc": [],
+        "bcc": []
+      },
+      "recipient_type": "To",
+      "expected_score": 95
+    }
+  },
+  {
+    "id": "M3",
+    "description": "A project manager shares an urgent FYI about a critical bug fix for the ongoing project.",
+    "mail": {
+      "sender": {
+        "name": "Binh Pham",
+        "email": "binh.pham@acmecorp.vn",
+        "position": "Project Manager",
+        "type": "Internal company"
+      },
+      "subject": "Project Alpha: Critical bug fix deployment",
+      "title_type": "Non ad/marketing",
+      "content_summary": "Please be aware that a critical patch has been deployed; no action is needed now, but stay alert for updates.",
+      "content_type": "Urgent FYI",
+      "recipients": {
+        "to": ["development.team@acmecorp.vn"],
+        "cc": [],
+        "bcc": []
+      },
+      "recipient_type": "To",
+      "expected_score": 85
+    }
+  },
+  {
+    "id": "M4",
+    "description": "A supplier requests approval of a quotation for an upcoming order.",
+    "mail": {
+      "sender": {
+        "name": "Linh Hoang",
+        "email": "linh.hoang@supplies.vn",
+        "position": "Sales Representative",
+        "type": "Individual"
+      },
+      "subject": "Quotation #20345 awaiting your approval",
+      "title_type": "Non ad/marketing",
+      "content_summary": "Please review and approve the attached quotation for office supplies so we can process your order.",
+      "content_type": "Action needed",
+      "recipients": {
+        "to": ["procurement@acmecorp.vn"],
+        "cc": ["finance@acmecorp.vn"],
+        "bcc": []
+      },
+      "recipient_type": "To",
+      "expected_score": 70
+    }
+  },
+  {
+    "id": "M5",
+    "description": "The finance team shares the monthly sales report for colleagues’ reference; no action required.",
+    "mail": {
+      "sender": {
+        "name": "Finance Team",
+        "email": "finance@acmecorp.vn",
+        "position": "Finance Department",
+        "type": "Internal company"
+      },
+      "subject": "Monthly sales report – FYI",
+      "title_type": "Non ad/marketing",
+      "content_summary": "Attached is the sales report for September.  This is for your information only.",
+      "content_type": "FYI",
+      "recipients": {
+        "to": [],
+        "cc": ["marketing@acmecorp.vn", "sales@acmecorp.vn"],
+        "bcc": []
+      },
+      "recipient_type": "CC",
+      "expected_score": 65
+    }
+  },
+  {
+    "id": "M6",
+    "description": "A marketing automation system sends a promotional email about discounted training courses.",
+    "mail": {
+      "sender": {
+        "name": "Acme Training",
+        "email": "offers@training.acmecorp.vn",
+        "position": "Automated Marketing System",
+        "type": "Auto/System"
+      },
+      "subject": "Special promotion: 50% off leadership courses",
+      "title_type": "Ad/marketing",
+      "content_summary": "Limited‑time offer on our leadership development courses. Click here to enroll.",
+      "content_type": "Ad/marketing",
+      "recipients": {
+        "to": ["alex.tran@acmecorp.vn"],
+        "cc": [],
+        "bcc": []
+      },
+      "recipient_type": "To",
+      "expected_score": 15
+    }
+  },
+  {
+    "id": "M7",
+    "description": "An automated system sends a weekly newsletter about upcoming company events.",
+    "mail": {
+      "sender": {
+        "name": "Corporate Communications",
+        "email": "newsletter@acmecorp.vn",
+        "position": "Automated System",
+        "type": "Auto/System"
+      },
+      "subject": "Acme weekly newsletter",
+      "title_type": "Non ad/marketing",
+      "content_summary": "Highlights of upcoming events and employee spotlights.",
+      "content_type": "FYI",
+      "recipients": {
+        "to": [],
+        "cc": [],
+        "bcc": ["alex.tran@acmecorp.vn"]
+      },
+      "recipient_type": "BCC",
+      "expected_score": 40
+    }
+  },
+  {
+    "id": "M8",
+    "description": "The CEO announces a new corporate strategy initiative.  The message is for everyone’s awareness.",
+    "mail": {
+      "sender": {
+        "name": "Nguyen Thanh",
+        "email": "ceo@acmecorp.vn",
+        "position": "Chief Executive Officer",
+        "type": "Official"
+      },
+      "subject": "Important: Acme 2026 strategy roadmap",
+      "title_type": "Non ad/marketing",
+      "content_summary": "We are embarking on a new three‑year strategy. No immediate action is required, but stay tuned.",
+      "content_type": "Urgent FYI",
+      "recipients": {
+        "to": ["all@acmecorp.vn"],
+        "cc": [],
+        "bcc": []
+      },
+      "recipient_type": "To",
+      "expected_score": 90
+    }
+  },
+  {
+    "id": "M9",
+    "description": "A colleague invites you to a team lunch next week; no work action is needed.",
+    "mail": {
+      "sender": {
+        "name": "Quynh Le",
+        "email": "quynh.le@acmecorp.vn",
+        "position": "Software Engineer",
+        "type": "Internal company"
+      },
+      "subject": "Team lunch next Wednesday at noon",
+      "title_type": "Non ad/marketing",
+      "content_summary": "Let’s have lunch together next Wednesday at Pho 2000 after our sprint review.",
+      "content_type": "FYI",
+      "recipients": {
+        "to": [],
+        "cc": ["alex.tran@acmecorp.vn"],
+        "bcc": []
+      },
+      "recipient_type": "CC",
+      "expected_score": 65
+    }
+  },
+  {
+    "id": "M10",
+    "description": "A generic spam email promises a prize if you click a link.",
+    "mail": {
+      "sender": {
+        "name": "Prize Notification",
+        "email": "winner@spamoffers.com",
+        "position": "Unknown",
+        "type": "Auto/System"
+      },
+      "subject": "Congratulations! You’ve won a brand‑new phone",
+      "title_type": "Ad/marketing",
+      "content_summary": "Click here to claim your free smartphone in our sweepstakes.",
+      "content_type": "Ad/marketing",
+      "recipients": {
+        "to": ["alex.tran@acmecorp.vn"],
+        "cc": [],
+        "bcc": []
+      },
+      "recipient_type": "To",
+      "expected_score": 15
+    }
+  }
+]

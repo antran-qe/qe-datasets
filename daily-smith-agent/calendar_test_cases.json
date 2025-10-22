@@ -1,0 +1,239 @@
+[
+  {
+    "id": "E1",
+    "description": "A critical system outage has occurred and the on‑call team convenes an emergency meeting starting in 30 minutes.",
+    "meeting": {
+      "subject": "Emergency incident response for API outage",
+      "content": "A critical system outage has occurred and the on‑call team convenes an emergency meeting starting in 30 minutes.",
+      "context_type": "Urgent non‑recurring work related meeting",
+      "role_for_user": "Organizer",
+      "start_time": "2025-10-20T09:30:00+07:00",
+      "end_time": "2025-10-20T10:30:00+07:00",
+      "urgency_category": "< 2h",
+      "participants": [
+        "alex.tran@acmecorp.vn",
+        "oncall.team@acmecorp.vn"
+      ],
+      "expected_score": 100
+    }
+  },
+  {
+    "id": "E2",
+    "description": "A non‑recurring project meeting has been scheduled within the next hour to hand over tasks to a teammate. The user is required to attend.",
+    "meeting": {
+      "subject": "Project Beta hand‑off",
+      "content": "A non‑recurring project meeting has been scheduled within the next hour to hand over tasks to a teammate. The user is required to attend.",
+      "context_type": "Non‑recurring work related meeting",
+      "role_for_user": "Required attendee",
+      "start_time": "2025-10-20T10:15:00+07:00",
+      "end_time": "2025-10-20T11:00:00+07:00",
+      "urgency_category": "< 2h",
+      "participants": [
+        "beta.team@acmecorp.vn"
+      ],
+      "expected_score": 80
+    }
+  },
+  {
+    "id": "E3",
+    "description": "A department town‑hall is scheduled later in the morning. The user is organising it and it starts in three hours.",
+    "meeting": {
+      "subject": "Q4 Engineering department town‑hall",
+      "content": "A department town‑hall is scheduled later in the morning. The user is organising it and it starts in three hours.",
+      "context_type": "Important internal",
+      "role_for_user": "Organizer",
+      "start_time": "2025-10-20T11:00:00+07:00",
+      "end_time": "2025-10-20T12:00:00+07:00",
+      "urgency_category": "< 4h",
+      "participants": [
+        "engineering@acmecorp.vn"
+      ],
+      "expected_score": 72
+    }
+  },
+  {
+    "id": "E4",
+    "description": "The team’s optional weekly sync occurs tomorrow afternoon. The user is invited as an optional attendee.",
+    "meeting": {
+      "subject": "Weekly product catch‑up",
+      "content": "The team’s optional weekly sync occurs tomorrow afternoon. The user is invited as an optional attendee.",
+      "context_type": "Low important (default)",
+      "role_for_user": "Optional attendee",
+      "start_time": "2025-10-21T14:00:00+07:00",
+      "end_time": "2025-10-21T15:00:00+07:00",
+      "urgency_category": "The rest",
+      "participants": [
+        "product.team@acmecorp.vn"
+      ],
+      "expected_score": 25
+    }
+  },
+  {
+    "id": "E5",
+    "description": "A client requests an urgent non‑recurring meeting this afternoon. The user is invited as an optional attendee.",
+    "meeting": {
+      "subject": "Client X escalation call",
+      "content": "A client requests an urgent non‑recurring meeting this afternoon. The user is invited as an optional attendee.",
+      "context_type": "Urgent non‑recurring work related meeting",
+      "role_for_user": "Optional attendee",
+      "start_time": "2025-10-20T15:00:00+07:00",
+      "end_time": "2025-10-20T16:00:00+07:00",
+      "urgency_category": "< 4h",
+      "participants": [
+        "client.x@customer.vn",
+        "support@acmecorp.vn"
+      ],
+      "expected_score": 72
+    }
+  },
+  {
+    "id": "E6",
+    "description": "A non‑recurring work meeting to kick off a new project is scheduled for next week. The user must attend.",
+    "meeting": {
+      "subject": "Project Gamma kickoff",
+      "content": "A non‑recurring work meeting to kick off a new project is scheduled for next week. The user must attend.",
+      "context_type": "Non‑recurring work related meeting",
+      "role_for_user": "Required attendee",
+      "start_time": "2025-10-27T09:00:00+07:00",
+      "end_time": "2025-10-27T10:00:00+07:00",
+      "urgency_category": "The rest",
+      "participants": [
+        "gamma.team@acmecorp.vn"
+      ],
+      "expected_score": 65
+    }
+  },
+  {
+    "id": "E7",
+    "description": "An internal design review starts in 90 minutes. The user is invited as an optional attendee.",
+    "meeting": {
+      "subject": "Design review for new mobile app",
+      "content": "An internal design review starts in 90 minutes. The user is invited as an optional attendee.",
+      "context_type": "Important internal",
+      "role_for_user": "Optional attendee",
+      "start_time": "2025-10-20T11:30:00+07:00",
+      "end_time": "2025-10-20T12:30:00+07:00",
+      "urgency_category": "< 2h",
+      "participants": [
+        "mobile.dev@acmecorp.vn"
+      ],
+      "expected_score": 60
+    }
+  },
+  {
+    "id": "E8",
+    "description": "A low‑importance internal catch‑up is scheduled for later today. The user must attend.",
+    "meeting": {
+      "subject": "Budget alignment catch‑up",
+      "content": "A low‑importance internal catch‑up is scheduled for later today. The user must attend.",
+      "context_type": "Low important (default)",
+      "role_for_user": "Required attendee",
+      "start_time": "2025-10-20T16:00:00+07:00",
+      "end_time": "2025-10-20T16:30:00+07:00",
+      "urgency_category": "< 4h",
+      "participants": [
+        "finance@acmecorp.vn",
+        "planning@acmecorp.vn"
+      ],
+      "expected_score": 42
+    }
+  },
+  {
+    "id": "E9",
+    "description": "A late‑night emergency meeting has been scheduled due to a production issue. The user is organising it.",
+    "meeting": {
+      "subject": "Late‑night emergency fix for server crash",
+      "content": "A late‑night emergency meeting has been scheduled due to a production issue. The user is organising it.",
+      "context_type": "Urgent non‑recurring work related meeting",
+      "role_for_user": "Organizer",
+      "start_time": "2025-10-20T22:00:00+07:00",
+      "end_time": "2025-10-20T23:00:00+07:00",
+      "urgency_category": "The rest",
+      "participants": [
+        "ops@acmecorp.vn",
+        "database.admin@acmecorp.vn"
+      ],
+      "expected_score": 85
+    }
+  },
+  {
+    "id": "E10",
+    "description": "A recurring weekly sprint planning meeting scheduled for tomorrow. The user is required to attend every week.",
+    "meeting": {
+      "subject": "Weekly sprint planning",
+      "content": "A recurring weekly sprint planning meeting scheduled for tomorrow. The user is required to attend every week.",
+      "context_type": "Recurring event",
+      "role_for_user": "Required attendee",
+      "start_time": "2025-10-21T09:00:00+07:00",
+      "end_time": "2025-10-21T10:00:00+07:00",
+      "urgency_category": "The rest",
+      "participants": [
+        "development.team@acmecorp.vn"
+      ],
+      "recurrence_rule": {
+        "frequency": "weekly",
+        "interval": 1
+      },
+      "expected_score": 55
+    }
+  },
+  {
+    "id": "E11",
+    "description": "A monthly all‑hands meeting scheduled in two days. The user is organising the event every month.",
+    "meeting": {
+      "subject": "Monthly company all‑hands",
+      "content": "A monthly all‑hands meeting scheduled in two days. The user is organising the event every month.",
+      "context_type": "Recurring event",
+      "role_for_user": "Organizer",
+      "start_time": "2025-10-22T14:00:00+07:00",
+      "end_time": "2025-10-22T15:30:00+07:00",
+      "urgency_category": "The rest",
+      "participants": [
+        "all@acmecorp.vn"
+      ],
+      "recurrence_rule": {
+        "frequency": "monthly",
+        "interval": 1
+      },
+      "expected_score": 65
+    }
+  },
+  {
+    "id": "E12",
+    "description": "A recurring bi‑weekly 1‑on‑1 meeting with the user's manager scheduled next week. Attendance is optional.",
+    "meeting": {
+      "subject": "Bi‑weekly 1‑on‑1",
+      "content": "A recurring bi‑weekly 1‑on‑1 meeting with the user's manager scheduled next week. Attendance is optional.",
+      "context_type": "Recurring event",
+      "role_for_user": "Optional attendee",
+      "start_time": "2025-10-28T15:00:00+07:00",
+      "end_time": "2025-10-28T15:30:00+07:00",
+      "urgency_category": "The rest",
+      "participants": [
+        "manager@acmecorp.vn",
+        "alex.tran@acmecorp.vn"
+      ],
+      "recurrence_rule": {
+        "frequency": "biweekly",
+        "interval": 2
+      },
+      "expected_score": 25
+    }
+  },
+  {
+    "id": "E13",
+    "description": "The user is taking a 3-day vacation starting next Monday. This is a personal time off event with no work activities.",
+    "meeting": {
+      "subject": "Personal Time Off - Vacation",
+      "content": "",
+      "context_type": "Out of Office",
+      "role_for_user": "Organizer",
+      "start_time": "2025-10-27T00:00:00+07:00",
+      "end_time": "2025-10-29T23:59:59+07:00",
+      "urgency_category": "The rest",
+      "participants": [],
+      "event_type": "outOfOffice",
+      "expected_score": 70
+    }
+  }
+]
