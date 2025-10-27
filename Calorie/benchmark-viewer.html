@@ -650,7 +650,7 @@
         async function loadResultFiles() {
             try {
                 // Load baseline files
-                const baselineResponse = await fetch('../api-results/baseline/');
+                const baselineResponse = await fetch('./api-results/baseline/');
                 const baselineHtml = await baselineResponse.text();
                 const baselineParser = new DOMParser();
                 const baselineDoc = baselineParser.parseFromString(baselineHtml, 'text/html');
@@ -666,7 +666,7 @@
                 baselineFiles.sort().reverse();
 
                 // Load current files
-                const currentResponse = await fetch('../api-results/current/');
+                const currentResponse = await fetch('./api-results/current/');
                 const currentHtml = await currentResponse.text();
                 const currentParser = new DOMParser();
                 const currentDoc = currentParser.parseFromString(currentHtml, 'text/html');
@@ -703,7 +703,7 @@
         async function loadFile(filename) {
             if (!filename) return null;
             try {
-                const response = await fetch(`../api-results/${filename}`);
+                const response = await fetch(`./api-results/${filename}`);
                 return await response.json();
             } catch (error) {
                 console.error(`Error loading ${filename}:`, error);
@@ -726,12 +726,12 @@ cd src
 # Run baseline (production)
 node food-search-benchmark.js production food-search-input.json
 # Move results to baseline folder
-mv ../api-results/production-*.json ../api-results/baseline/
+mv ./api-results/production-*.json ./api-results/baseline/
 
 # Run current (staging)
 node food-search-benchmark.js staging food-search-input.json
 # Move results to current folder
-mv ../api-results/staging-*.json ../api-results/current/</pre>
+mv ./api-results/staging-*.json ./api-results/current/</pre>
                     </div>
                 `;
                 return;
