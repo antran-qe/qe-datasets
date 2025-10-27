@@ -1,0 +1,13 @@
+{
+  "generated": "2025-10-27T04:01:06.184Z",
+  "baseline": [
+    "baseline/production-result-26-10-2025-130205.json",
+    "baseline/production-result-26-10-2025-130116.json",
+    "baseline/production-result-26-10-2025-130020.json"
+  ],
+  "current": [
+    "current/staging-result-26-10-2025-130428.json",
+    "current/staging-result-26-10-2025-130343.json",
+    "current/staging-result-26-10-2025-130257.json"
+  ]
+}

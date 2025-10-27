@@ -649,7 +649,28 @@
         // Load available result files
         async function loadResultFiles() {
             try {
-                // Load baseline files
+                // Try to load from manifest file (for GitHub Pages)
+                try {
+                    const manifestResponse = await fetch('./api-results/manifest.json');
+                    if (manifestResponse.ok) {
+                        const manifest = await manifestResponse.json();
+                        baselineFiles = (manifest.baseline || []).sort().reverse();
+                        currentFiles = (manifest.current || []).sort().reverse();
+                        
+                        // Update file info
+                        const fileInfo = document.getElementById('fileInfo');
+                        if (fileInfo) {
+                            fileInfo.innerHTML = `Found <strong>${baselineFiles.length} baseline</strong> and <strong>${currentFiles.length} current</strong> results. Using latest 3 from each.`;
+                        }
+                        
+                        await autoCompareResults();
+                        return;
+                    }
+                } catch (manifestError) {
+                    console.log('No manifest.json found, trying directory listing...');
+                }
+                
+                // Fallback: Try directory listing (works on local dev server)
                 const baselineResponse = await fetch('./api-results/baseline/');
                 const baselineHtml = await baselineResponse.text();
                 const baselineParser = new DOMParser();

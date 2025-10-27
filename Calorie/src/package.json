@@ -11,7 +11,8 @@
     "test:prod": "node food-search-benchmark.js production food-search-input.json",
     "test:stg": "node food-search-benchmark.js staging food-search-input.json",
     "compare": "node compare-results.js",
-    "serve": "python3 -m http.server 8000"
+    "serve": "python3 -m http.server 8000",
+    "manifest": "node ../generate-manifest.js"
   },
   "keywords": [
     "benchmark",
