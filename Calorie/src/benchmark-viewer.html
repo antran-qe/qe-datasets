@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Search API Benchmark - Production vs Staging</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .file-selector-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .env-section {
+            padding: 15px;
+            background: #f9fafb;
+            border-radius: 8px;
+        }
+
+        .env-section h3 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .file-inputs {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        select {
+            padding: 8px 12px;
+            border: 2px solid #ddd;
+            border-radius: 6px;
+            font-size: 13px;
+            cursor: pointer;
+            background: white;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+        }
+
+        button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        thead {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        th {
+            text-align: left;
+            padding: 15px;
+            font-weight: 600;
+            color: white;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #e5e7eb;
+            font-size: 14px;
+            color: #333;
+        }
+
+        tbody tr:hover {
+            background: #f9fafb;
+        }
+
+        .section {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+
+        .metric-header {
+            font-weight: 600;
+            color: #666;
+        }
+
+        .prod-data {
+            background: #dbeafe;
+            color: #1e40af;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .stg-data {
+            background: #fef3c7;
+            color: #92400e;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .diff-positive {
+            color: #10b981;
+            font-weight: 600;
+        }
+
+        .diff-negative {
+            color: #ef4444;
+            font-weight: 600;
+        }
+
+        .diff-neutral {
+            color: #666;
+        }
+
+        .diff-acceptable {
+            color: #f59e0b;
+            font-style: italic;
+        }
+
+        .better {
+            background: #d1fae5;
+        }
+
+        .worse {
+            background: #fca5a5;
+        }
+        
+        .light-red {
+            background: #fee2e2;
+        }
+        
+        .lighter-red {
+            background: #fecaca;
+        }
+
+        .diff-value {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .diff-green {
+            color: #065f46;
+        }
+
+        .diff-light-red {
+            color: #991b1b;
+        }
+
+        .diff-lighter-red {
+            color: #991b1b;
+        }
+
+        .diff-red {
+            color: #7f1d1d;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+        }
+
+        /* Modal Styles */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            padding: 20px;
+        }
+
+        .modal {
+            background: white;
+            border-radius: 12px;
+            max-width: 700px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .modal-header {
+            padding: 24px;
+            border-bottom: 2px solid #e2e8f0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 12px 12px 0 0;
+            position: relative;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+        }
+
+        .modal-close:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: rotate(90deg);
+        }
+
+        .modal-title {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 4px;
+            padding-right: 40px;
+        }
+
+        .modal-subtitle {
+            font-size: 13px;
+            opacity: 0.9;
+        }
+
+        .modal-body {
+            padding: 24px;
+        }
+
+        .modal-footer {
+            padding: 16px 24px;
+            border-top: 1px solid #e2e8f0;
+            display: flex;
+            justify-content: flex-end;
+            gap: 8px;
+        }
+
+        .config-section {
+            margin-bottom: 24px;
+        }
+
+        .section-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 12px;
+        }
+
+        .config-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        }
+
+        .config-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .config-item.full {
+            grid-column: 1 / -1;
+        }
+
+        .config-label {
+            font-size: 12px;
+            font-weight: 600;
+            color: #4a5568;
+            margin-bottom: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+
+        .config-input {
+            padding: 10px 12px;
+            border: 1px solid #cbd5e0;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: all 0.2s;
+        }
+
+        .config-input:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .color-preview {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            border-radius: 4px;
+            border: 2px solid #e2e8f0;
+            margin-left: 8px;
+            vertical-align: middle;
+        }
+
+        .config-toolbar {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            z-index: 100;
+        }
+
+        .fab {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+            transition: all 0.3s;
+        }
+
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        .btn-secondary {
+            background: white;
+            color: #4a5568;
+            border: 1px solid #cbd5e0;
+        }
+
+        .btn-secondary:hover {
+            background: #f7fafc;
+            border-color: #a0aec0;
+        }
+
+        .btn-success {
+            background: #48bb78;
+            color: white;
+        }
+
+        .btn-success:hover {
+            background: #38a169;
+            transform: translateY(-1px);
+        }
+
+        .error-message {
+            background: #fee2e2;
+            color: #991b1b;
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 10px;
+        }
+
+        .round-label {
+            font-size: 11px;
+            color: #666;
+            display: block;
+        }
+
+        .avg-label {
+            font-size: 11px;
+            color: #333;
+            font-weight: 700;
+            display: block;
+        }
+
+        .query-name {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .info-text {
+            color: #666;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .stat-box {
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .stat-box-prod {
+            background: #dbeafe;
+        }
+
+        .stat-box-stg {
+            background: #fef3c7;
+        }
+
+        .stat-title {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .stat-value {
+            font-size: 24px;
+            font-weight: 700;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🍔 Food Search API Benchmark - Production vs Staging</h1>
+            <p class="info-text">Auto-loading latest 3 rounds from each environment</p>
+            <p id="fileInfo" style="margin-top: 10px; color: #666; font-size: 13px;">Loading results from <strong>api-results/</strong></p>
+            
+            <button onclick="refreshResults()" style="margin-top: 15px;">🔄 Refresh Results</button>
+        </div>
+
+        <div id="content" class="loading">
+            <p>Loading and comparing results automatically...</p>
+        </div>
+    </div>
+
+    <!-- Configuration Modal -->
+    <div id="configModal" class="modal-overlay hidden" onclick="if(event.target === this) closeConfigModal()">
+        <div class="modal" onclick="event.stopPropagation()">
+            <div class="modal-header">
+                <button class="modal-close" onclick="closeConfigModal()" title="Close">✕</button>
+                <div class="modal-title">⚙️ Performance Configuration</div>
+                <div class="modal-subtitle">Configure tolerance and color indicators</div>
+            </div>
+            <div class="modal-body">
+                    <div class="config-section">
+                        <div class="section-title">🎨 Performance Threshold Configuration</div>
+                        <p style="font-size: 13px; color: #666; margin-bottom: 12px;">
+                            Configure thresholds based on current - baseline difference:
+                        </p>
+                        <div class="config-grid">
+                            <div class="config-item">
+                                <label class="config-label">
+                                    🟢 Green (Good)
+                                    <span class="color-preview" style="background: #d1fae5;"></span>
+                                </label>
+                                <input type="number" id="greenThreshold" class="config-input" value="1000" min="0" step="100">
+                                <div style="font-size: 11px; color: #718096; margin-top: 4px;">
+                                    Difference ≤ this value (ms)
+                                </div>
+                            </div>
+                            
+                            <div class="config-item">
+                                <label class="config-label">
+                                    🟠 Light Red (Concern)
+                                    <span class="color-preview" style="background: #fee2e2;"></span>
+                                </label>
+                                <input type="number" id="lightRedThreshold" class="config-input" value="2000" min="0" step="100">
+                                <div style="font-size: 11px; color: #718096; margin-top: 4px;">
+                                    Green to this value (ms)
+                                </div>
+                            </div>
+                        
+                        <div class="config-item">
+                            <label class="config-label">
+                                🔴 Lighter Red (Alert)
+                                <span class="color-preview" style="background: #fecaca;"></span>
+                            </label>
+                            <input type="number" id="lighterRedThreshold" class="config-input" value="3000" min="0" step="100">
+                            <div style="font-size: 11px; color: #718096; margin-top: 4px;">
+                                Light Red to this value (ms)
+                            </div>
+                        </div>
+                        
+                        <div class="config-item">
+                            <label class="config-label">
+                                ⛔ Red (Critical)
+                                <span class="color-preview" style="background: #fca5a5;"></span>
+                            </label>
+                            <input type="text" class="config-input" value="> Lighter Red Threshold" readonly style="background: #f9fafb;">
+                            <div style="font-size: 11px; color: #718096; margin-top: 4px;">
+                                Difference > Lighter Red (ms)
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 16px; padding: 12px; background: #eef2ff; border-radius: 8px; border-left: 4px solid #667eea;">
+                        <p style="font-size: 12px; color: #4c51bf; line-height: 1.5;">
+                            <strong>📝 Example:</strong> If current is 1500ms slower than baseline, 
+                            it will show <strong style="color: #991b1b;">+1500ms (+XX%)</strong> in light red.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" onclick="closeConfigModal()">Cancel</button>
+                <button class="btn btn-success" onclick="saveConfig()">💾 Save & Apply</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Action Button -->
+    <div class="config-toolbar">
+        <button class="fab" onclick="openConfigModal()" title="Configure Performance Indicators">⚙️</button>
+    </div>
+
+    <script>
+        let baselineFiles = [];
+        let currentFiles = [];
+        
+        // Configuration state
+        let config = {
+            greenThreshold: 1000,
+            lightRedThreshold: 2000,
+            lighterRedThreshold: 3000
+        };
+
+        // Load config from localStorage
+        function loadConfigFromStorage() {
+            const saved = localStorage.getItem('benchmarkConfig');
+            if (saved) {
+                try {
+                    config = JSON.parse(saved);
+                } catch (e) {
+                    console.error('Failed to load config:', e);
+                }
+            }
+            // Update UI if modal exists
+            const greenInput = document.getElementById('greenThreshold');
+            const lightRedInput = document.getElementById('lightRedThreshold');
+            const lighterRedInput = document.getElementById('lighterRedThreshold');
+            
+            if (greenInput) greenInput.value = config.greenThreshold;
+            if (lightRedInput) lightRedInput.value = config.lightRedThreshold;
+            if (lighterRedInput) lighterRedInput.value = config.lighterRedThreshold;
+        }
+
+        // Save config to localStorage
+        function saveConfigToStorage() {
+            localStorage.setItem('benchmarkConfig', JSON.stringify(config));
+        }
+
+        // Open configuration modal
+        function openConfigModal() {
+            document.getElementById('configModal').classList.remove('hidden');
+            loadConfigFromStorage();
+        }
+
+        // Close configuration modal
+        function closeConfigModal() {
+            document.getElementById('configModal').classList.add('hidden');
+        }
+
+        // Save configuration and refresh
+        function saveConfig() {
+            const greenInput = document.getElementById('greenThreshold');
+            const lightRedInput = document.getElementById('lightRedThreshold');
+            const lighterRedInput = document.getElementById('lighterRedThreshold');
+            
+            config.greenThreshold = parseFloat(greenInput.value);
+            config.lightRedThreshold = parseFloat(lightRedInput.value);
+            config.lighterRedThreshold = parseFloat(lighterRedInput.value);
+            
+            saveConfigToStorage();
+            closeConfigModal();
+            
+            // Refresh results with new config
+            refreshResults();
+        }
+
+        // Round to 1 decimal place
+        function round1(value) {
+            return Math.round(value * 10) / 10;
+        }
+
+        // Load available result files
+        async function loadResultFiles() {
+            try {
+                // Load baseline files
+                const baselineResponse = await fetch('../api-results/baseline/');
+                const baselineHtml = await baselineResponse.text();
+                const baselineParser = new DOMParser();
+                const baselineDoc = baselineParser.parseFromString(baselineHtml, 'text/html');
+                const baselineLinks = baselineDoc.querySelectorAll('a');
+                
+                baselineFiles = [];
+                baselineLinks.forEach(link => {
+                    const href = link.getAttribute('href');
+                    if (href && href.endsWith('.json')) {
+                        baselineFiles.push('baseline/' + href);
+                    }
+                });
+                baselineFiles.sort().reverse();
+
+                // Load current files
+                const currentResponse = await fetch('../api-results/current/');
+                const currentHtml = await currentResponse.text();
+                const currentParser = new DOMParser();
+                const currentDoc = currentParser.parseFromString(currentHtml, 'text/html');
+                const currentLinks = currentDoc.querySelectorAll('a');
+                
+                currentFiles = [];
+                currentLinks.forEach(link => {
+                    const href = link.getAttribute('href');
+                    if (href && href.endsWith('.json')) {
+                        currentFiles.push('current/' + href);
+                    }
+                });
+                currentFiles.sort().reverse();
+
+                // Update file info
+                const fileInfo = document.getElementById('fileInfo');
+                if (fileInfo) {
+                    fileInfo.innerHTML = `Found <strong>${baselineFiles.length} baseline</strong> and <strong>${currentFiles.length} current</strong> results. Using latest 3 from each.`;
+                }
+
+                // Auto-compare with latest 3 files
+                await autoCompareResults();
+            } catch (error) {
+                console.error('Error loading result files:', error);
+                document.getElementById('content').innerHTML = `
+                    <div class="error-message">
+                        <strong>Error loading results:</strong> ${error.message}<br>
+                        Make sure the server is running from the Calorie directory and api-results/baseline/ and api-results/current/ folders exist.
+                    </div>
+                `;
+            }
+        }
+
+        async function loadFile(filename) {
+            if (!filename) return null;
+            try {
+                const response = await fetch(`../api-results/${filename}`);
+                return await response.json();
+            } catch (error) {
+                console.error(`Error loading ${filename}:`, error);
+                return null;
+            }
+        }
+
+        async function autoCompareResults() {
+            // Get latest 3 files from each environment
+            const baselineFilesToLoad = baselineFiles.slice(0, 3);
+            const currentFilesToLoad = currentFiles.slice(0, 3);
+
+            if (baselineFilesToLoad.length === 0 && currentFilesToLoad.length === 0) {
+                document.getElementById('content').innerHTML = `
+                    <div class="loading">
+                        <p>No result files found in api-results/baseline/ or api-results/current/ folders.</p>
+                        <p style="margin-top: 10px;">Run benchmarks first:</p>
+                        <pre style="background: #f9fafb; padding: 15px; border-radius: 6px; margin-top: 10px; text-align: left; max-width: 600px; margin-left: auto; margin-right: auto;">
+cd src
+# Run baseline (production)
+node food-search-benchmark.js production food-search-input.json
+# Move results to baseline folder
+mv ../api-results/production-*.json ../api-results/baseline/
+
+# Run current (staging)
+node food-search-benchmark.js staging food-search-input.json
+# Move results to current folder
+mv ../api-results/staging-*.json ../api-results/current/</pre>
+                    </div>
+                `;
+                return;
+            }
+
+            if (baselineFilesToLoad.length === 0) {
+                document.getElementById('content').innerHTML = `
+                    <div class="error-message">
+                        No baseline result files found. Please run baseline benchmarks first.
+                    </div>
+                `;
+                return;
+            }
+
+            if (currentFilesToLoad.length === 0) {
+                document.getElementById('content').innerHTML = `
+                    <div class="error-message">
+                        No current result files found. Please run current benchmarks first.
+                    </div>
+                `;
+                return;
+            }
+
+            document.getElementById('content').innerHTML = '<div class="loading"><p>Loading and comparing results...</p></div>';
+
+            const baselineData = await Promise.all(baselineFilesToLoad.map(f => loadFile(f)));
+            const currentData = await Promise.all(currentFilesToLoad.map(f => loadFile(f)));
+
+            const baselineDataFiltered = baselineData.filter(d => d !== null);
+            const currentDataFiltered = currentData.filter(d => d !== null);
+
+            displayComparison(baselineDataFiltered, currentDataFiltered, baselineFilesToLoad, currentFilesToLoad);
+        }
+
+        async function refreshResults() {
+            document.getElementById('content').innerHTML = '<div class="loading"><p>Refreshing...</p></div>';
+            await loadResultFiles();
+        }
+
+        function calculateAverage(dataArray, field) {
+            if (dataArray.length === 0) return 0;
+            const sum = dataArray.reduce((acc, d) => acc + (d.statistics[field] || 0), 0);
+            return round1(sum / dataArray.length);
+        }
+
+        // Determine if difference is significant and get color category
+        function getDifferenceStatus(diff) {
+            if (diff <= config.greenThreshold) {
+                return 'green';
+            }
+            
+            if (diff <= config.lightRedThreshold) {
+                return 'light-red';
+            }
+            
+            if (diff <= config.lighterRedThreshold) {
+                return 'lighter-red';
+            }
+            
+            return 'red';
+        }
+
+        // Get badge HTML for difference
+        function getDiffBadge(diff, prodAvg) {
+            const percentage = prodAvg > 0 ? round1((diff / prodAvg) * 100) : 0;
+            const sign = diff > 0 ? '+' : '';
+            
+            let colorClass = '';
+            const status = getDifferenceStatus(Math.abs(diff));
+            
+            if (status === 'green') {
+                colorClass = 'diff-green';
+            } else if (status === 'light-red') {
+                colorClass = 'diff-light-red';
+            } else if (status === 'lighter-red') {
+                colorClass = 'diff-lighter-red';
+            } else {
+                colorClass = 'diff-red';
+            }
+            
+            return `<span class="diff-value ${colorClass}">${sign}${diff}ms (${sign}${percentage}%)</span>`;
+        }
+
+        function displayComparison(baselineData, currentData, baselineFiles, currentFiles) {
+            // Summary Statistics
+            const baselineAvgTime = calculateAverage(baselineData, 'avg_response_time_ms');
+            const currentAvgTime = calculateAverage(currentData, 'avg_response_time_ms');
+            const timeDiff = round1(currentAvgTime - baselineAvgTime);
+            const timePercent = baselineAvgTime > 0 ? round1((timeDiff / baselineAvgTime) * 100) : 0;
+
+            const diffStatus = getDifferenceStatus(Math.abs(timeDiff));
+            let diffBoxColor = '#fca5a5'; // red (critical)
+            if (diffStatus === 'green') diffBoxColor = '#d1fae5';
+            else if (diffStatus === 'light-red') diffBoxColor = '#fee2e2';
+            else if (diffStatus === 'lighter-red') diffBoxColor = '#fecaca';
+
+            let html = `
+                <div class="section">
+                    <h2>📊 Summary Statistics</h2>
+                    <div class="stat-grid">
+                        <div class="stat-box stat-box-prod">
+                            <div class="stat-title">Baseline Avg</div>
+                            <div class="stat-value">${baselineAvgTime}ms</div>
+                        </div>
+                        <div class="stat-box stat-box-stg">
+                            <div class="stat-title">Current Avg</div>
+                            <div class="stat-value">${currentAvgTime}ms</div>
+                        </div>
+                        <div class="stat-box" style="background: ${diffBoxColor}">
+                            <div class="stat-title">Difference</div>
+                            <div class="stat-value">
+                                ${getDiffBadge(timeDiff, baselineAvgTime)}
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Metric</th>
+                                <th colspan="4">Baseline</th>
+                                <th colspan="4">Current</th>
+                                <th>Difference</th>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <th>R1</th>
+                                <th>R2</th>
+                                <th>R3</th>
+                                <th>Avg</th>
+                                <th>R1</th>
+                                <th>R2</th>
+                                <th>R3</th>
+                                <th>Avg</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+            `;
+
+            // Metrics to compare
+            const metrics = [
+                { label: 'Avg Response Time (ms)', field: 'avg_response_time_ms', lowerIsBetter: true },
+                { label: 'Min Response Time (ms)', field: 'min_response_time_ms', lowerIsBetter: true },
+                { label: 'Max Response Time (ms)', field: 'max_response_time_ms', lowerIsBetter: true },
+                { label: 'Median Response Time (ms)', field: 'median_response_time_ms', lowerIsBetter: true }
+            ];
+
+            metrics.forEach(metric => {
+                const baselineVals = baselineData.map(d => d.statistics[metric.field] || 0);
+                const currentVals = currentData.map(d => d.statistics[metric.field] || 0);
+                const baselineAvg = baselineVals.length > 0 ? round1(baselineVals.reduce((a,b) => a+b, 0) / baselineVals.length) : '-';
+                const currentAvg = currentVals.length > 0 ? round1(currentVals.reduce((a,b) => a+b, 0) / currentVals.length) : '-';
+                
+                const diff = (baselineAvg !== '-' && currentAvg !== '-') ? round1(parseFloat(currentAvg) - parseFloat(baselineAvg)) : 0;
+                
+                let winnerCell = '-';
+                let winnerClass = '';
+                
+                if (baselineAvg !== '-' && currentAvg !== '-') {
+                    if (metric.field.includes('time')) {
+                        const status = getDifferenceStatus(Math.abs(diff));
+                        if (status === 'green') {
+                            winnerClass = 'better';
+                        } else if (status === 'light-red') {
+                            winnerClass = 'light-red';
+                        } else if (status === 'lighter-red') {
+                            winnerClass = 'lighter-red';
+                        } else {
+                            winnerClass = 'worse';
+                        }
+                        winnerCell = getDiffBadge(diff, parseFloat(baselineAvg));
+                    } else {
+                        // For non-time metrics, just show which is better
+                        winnerCell = metric.lowerIsBetter 
+                            ? (parseFloat(baselineAvg) < parseFloat(currentAvg) ? '🔵 Baseline' : '🟡 Current')
+                            : (parseFloat(baselineAvg) > parseFloat(currentAvg) ? '🔵 Baseline' : '🟡 Current');
+                    }
+                }
+
+                html += `
+                    <tr>
+                        <td class="metric-header">${metric.label}</td>
+                        <td class="prod-data">${baselineVals[0] !== undefined ? baselineVals[0] : '-'}</td>
+                        <td class="prod-data">${baselineVals[1] !== undefined ? baselineVals[1] : '-'}</td>
+                        <td class="prod-data">${baselineVals[2] !== undefined ? baselineVals[2] : '-'}</td>
+                        <td class="prod-data" style="font-weight: 700;">${baselineAvg}</td>
+                        <td class="stg-data">${currentVals[0] !== undefined ? currentVals[0] : '-'}</td>
+                        <td class="stg-data">${currentVals[1] !== undefined ? currentVals[1] : '-'}</td>
+                        <td class="stg-data">${currentVals[2] !== undefined ? currentVals[2] : '-'}</td>
+                        <td class="stg-data" style="font-weight: 700;">${currentAvg}</td>
+                        <td class="${winnerClass}" style="text-align: center; font-weight: 600;">${winnerCell}</td>
+                    </tr>
+                `;
+            });
+
+            html += `
+                        </tbody>
+                    </table>
+                </div>
+            `;
+
+            // Detailed Query Comparison
+            html += `
+                <div class="section">
+                    <h2>🔍 Detailed Query Comparison</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Query</th>
+                                <th colspan="4">Baseline Response Time (ms)</th>
+                                <th colspan="4">Current Response Time (ms)</th>
+                                <th>Diff</th>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <th>R1</th>
+                                <th>R2</th>
+                                <th>R3</th>
+                                <th>Avg</th>
+                                <th>R1</th>
+                                <th>R2</th>
+                                <th>R3</th>
+                                <th>Avg</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+            `;
+
+            // Get all unique queries
+            const queries = new Set();
+            [...baselineData, ...currentData].forEach(d => {
+                if (d && d.results) {
+                    d.results.forEach(r => queries.add(r.search_description));
+                }
+            });
+
+            Array.from(queries).forEach(query => {
+                const baselineTimes = baselineData.map(d => {
+                    const result = d.results.find(r => r.search_description === query);
+                    return result ? result.response_time_ms : null;
+                });
+                
+                const currentTimes = currentData.map(d => {
+                    const result = d.results.find(r => r.search_description === query);
+                    return result ? result.response_time_ms : null;
+                });
+
+                const baselineValidTimes = baselineTimes.filter(t => t !== null);
+                const currentValidTimes = currentTimes.filter(t => t !== null);
+                
+                const baselineAvg = baselineValidTimes.length > 0 
+                    ? round1(baselineValidTimes.reduce((a,b) => a+b, 0) / baselineValidTimes.length)
+                    : '-';
+                const currentAvg = currentValidTimes.length > 0 
+                    ? round1(currentValidTimes.reduce((a,b) => a+b, 0) / currentValidTimes.length)
+                    : '-';
+
+                const diff = (baselineAvg !== '-' && currentAvg !== '-') 
+                    ? round1(parseFloat(currentAvg) - parseFloat(baselineAvg))
+                    : '-';
+                
+                let diffClass = 'diff-neutral';
+                let rowClass = '';
+                let diffBadge = '';
+                
+                if (diff !== '-') {
+                    const status = getDifferenceStatus(Math.abs(diff));
+                    diffBadge = getDiffBadge(diff, parseFloat(baselineAvg));
+                    
+                    if (status === 'green') {
+                        diffClass = 'diff-positive';
+                        rowClass = 'better';
+                    } else if (status === 'light-red') {
+                        diffClass = 'diff-negative';
+                        rowClass = 'light-red';
+                    } else if (status === 'lighter-red') {
+                        diffClass = 'diff-negative';
+                        rowClass = 'lighter-red';
+                    } else {
+                        diffClass = 'diff-negative';
+                        rowClass = 'worse';
+                    }
+                }
+
+                html += `
+                    <tr class="${rowClass}">
+                        <td class="query-name">${query}</td>
+                        <td class="prod-data">${baselineTimes[0] !== null ? round1(baselineTimes[0]) : '-'}</td>
+                        <td class="prod-data">${baselineTimes[1] !== null ? round1(baselineTimes[1]) : '-'}</td>
+                        <td class="prod-data">${baselineTimes[2] !== null ? round1(baselineTimes[2]) : '-'}</td>
+                        <td class="prod-data" style="font-weight: 700;">${baselineAvg}</td>
+                        <td class="stg-data">${currentTimes[0] !== null ? round1(currentTimes[0]) : '-'}</td>
+                        <td class="stg-data">${currentTimes[1] !== null ? round1(currentTimes[1]) : '-'}</td>
+                        <td class="stg-data">${currentTimes[2] !== null ? round1(currentTimes[2]) : '-'}</td>
+                        <td class="stg-data" style="font-weight: 700;">${currentAvg}</td>
+                        <td class="${diffClass}" style="text-align: center; font-weight: 700;">
+                            ${diffBadge}
+                        </td>
+                    </tr>
+                `;
+            });
+
+            html += `
+                        </tbody>
+                    </table>
+                    <div style="margin-top: 20px; padding: 15px; background: #f9fafb; border-radius: 8px;">
+                        <h3 style="font-size: 14px; margin-bottom: 10px; color: #333;">📖 Legend:</h3>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; font-size: 13px;">
+                            <div>
+                                <span style="display: inline-block; width: 12px; height: 12px; background: #d1fae5; border-radius: 2px; margin-right: 5px;"></span>
+                                <strong>Green:</strong> ≤${config.greenThreshold}ms
+                            </div>
+                            <div>
+                                <span style="display: inline-block; width: 12px; height: 12px; background: #fee2e2; border-radius: 2px; margin-right: 5px;"></span>
+                                <strong>Light Red:</strong> ${config.greenThreshold}-${config.lightRedThreshold}ms
+                            </div>
+                            <div>
+                                <span style="display: inline-block; width: 12px; height: 12px; background: #fecaca; border-radius: 2px; margin-right: 5px;"></span>
+                                <strong>Lighter Red:</strong> ${config.lightRedThreshold}-${config.lighterRedThreshold}ms
+                            </div>
+                            <div>
+                                <span style="display: inline-block; width: 12px; height: 12px; background: #fca5a5; border-radius: 2px; margin-right: 5px;"></span>
+                                <strong>Red:</strong> >${config.lighterRedThreshold}ms
+                            </div>
+                        </div>
+                        <div style="margin-top: 12px; padding: 10px; background: white; border-radius: 6px; border-left: 3px solid #667eea;">
+                            <div style="font-size: 12px; color: #4a5568;">
+                                💡 <strong>Tip:</strong> Click the <strong>⚙️</strong> button (bottom-right) to customize these thresholds.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            document.getElementById('content').innerHTML = html;
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            loadConfigFromStorage();
+            loadResultFiles();
+        });
+    </script>
+</body>
+</html>

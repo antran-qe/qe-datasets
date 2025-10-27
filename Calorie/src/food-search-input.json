@@ -1,0 +1,38 @@
+{
+  "description": "Test data for food search API benchmark - includes exact names, partial matches, and invalid queries",
+  "food_queries": [
+    "Cheese, Cream, Ice Cream & Yogurts",
+    "Apple",
+    "Chicken Breast",
+    "Pizza",
+    "Fats, Condiments, Sauces, Dressings",
+    "Salad",
+    "Grains & Flour, Rice & Pasta",
+    "Rice",
+    "Beverages (Sports, EnerY & Meal Shakes, Soda, Coffee, Tea)",
+    "Choco",
+    "Creamy Ham Casserole",
+    "Broil a Perfect Steak",
+    "Breads, Bagels, Rolls, Crackers, Cookies",
+    "Bana",
+    "xyzInvalidFood123",
+    "Rice",
+    "Breakfast Cereal Popsicles",
+    "!@#$%^&*()",
+    "Fast foods, hamburger",
+    "azazazaz"
+  ],
+  "notes": {
+    "1": "Cheese, Cream, Ice Cream & Yogurts - Exact category name",
+    "2": "Apple - Common exact food name",
+    "3": "Chicken Breast - Specific food item",
+    "4": "Pizza - Generic food name",
+    "5": "Salad - Generic food category",
+    "6": "Rice - Simple food name",
+    "7": "Choco - Partial match for chocolate",
+    "8": "Bana - Partial match for banana",
+    "9": "xyzInvalidFood123 - Invalid food name",
+    "10": "!@#$%^&*() - Special characters (invalid)"
+  }
+}
+

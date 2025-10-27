@@ -1,0 +1,26 @@
+{
+  "name": "food-search-benchmark",
+  "version": "1.0.0",
+  "description": "API performance benchmark tool for food search endpoints",
+  "main": "food-search-benchmark.js",
+  "bin": {
+    "benchmark": "./benchmark-cli.js"
+  },
+  "scripts": {
+    "start": "node benchmark-cli.js",
+    "test:prod": "node food-search-benchmark.js production food-search-input.json",
+    "test:stg": "node food-search-benchmark.js staging food-search-input.json",
+    "compare": "node compare-results.js",
+    "serve": "python3 -m http.server 8000"
+  },
+  "keywords": [
+    "benchmark",
+    "api",
+    "performance",
+    "food",
+    "search"
+  ],
+  "author": "",
+  "license": "MIT"
+}
+
