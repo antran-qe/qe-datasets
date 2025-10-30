@@ -1,0 +1,198 @@
+{
+  "metadata": {
+    "environment": "production",
+    "test_date": "2025-10-30T08:20:59.468Z",
+    "total_queries": 20
+  },
+  "statistics": {
+    "total_requests": 20,
+    "successful_requests": 20,
+    "failed_requests": 0,
+    "avg_response_time_ms": 1069.75,
+    "min_response_time_ms": 907,
+    "max_response_time_ms": 1972,
+    "median_response_time_ms": 1027
+  },
+  "results": [
+    {
+      "search_description": "Cheese, Cream, Ice Cream & Yogurts",
+      "response_time_ms": 1972,
+      "status_code": 200,
+      "total_search_results": 30,
+      "success": true,
+      "timestamp": "2025-10-30T08:20:19.933Z",
+      "environment": "production"
+    },
+    {
+      "search_description": "Apple",
+      "response_time_ms": 1027,
+      "status_code": 200,
+      "total_search_results": 30,
+      "success": true,
+      "timestamp": "2025-10-30T08:20:21.967Z",
+      "environment": "production"
+    },
+    {
+      "search_description": "Chicken Breast",
+      "response_time_ms": 941,
+      "status_code": 200,
+      "total_search_results": 30,
+      "success": true,
+      "timestamp": "2025-10-30T08:20:23.920Z",
+      "environment": "production"
+    },
+    {
+      "search_description": "Pizza",
+      "response_time_ms": 1025,
+      "status_code": 200,
+      "total_search_results": 30,
+      "success": true,
+      "timestamp": "2025-10-30T08:20:25.952Z",
+      "environment": "production"
+    },
+    {
+      "search_description": "Fats, Condiments, Sauces, Dressings",
+      "response_time_ms": 1087,
+      "status_code": 200,
+      "total_search_results": 30,
+      "success": true,
+      "timestamp": "2025-10-30T08:20:28.045Z",
+      "environment": "production"
+    },
+    {
+      "search_description": "Salad",
+      "response_time_ms": 959,
+      "status_code": 200,
+      "total_search_results": 30,
+      "success": true,
+      "timestamp": "2025-10-30T08:20:30.009Z",
+      "environment": "production"
+    },
+    {
+      "search_description": "Grains & Flour, Rice & Pasta",
+      "response_time_ms": 969,
+      "status_code": 200,
+      "total_search_results": 30,
+      "success": true,
+      "timestamp": "2025-10-30T08:20:31.995Z",
+      "environment": "production"
+    },
+    {
+      "search_description": "Rice",
+      "response_time_ms": 1016,
+      "status_code": 200,
+      "total_search_results": 30,
+      "success": true,
+      "timestamp": "2025-10-30T08:20:34.015Z",
+      "environment": "production"
+    },
+    {
+      "search_description": "Beverages (Sports, EnerY & Meal Shakes, Soda, Coffee, Tea)",
+      "response_time_ms": 936,
+      "status_code": 200,
+      "total_search_results": 30,
+      "success": true,
+      "timestamp": "2025-10-30T08:20:35.955Z",
+      "environment": "production"
+    },
+    {
+      "search_description": "Choco",
+      "response_time_ms": 1043,
+      "status_code": 200,
+      "total_search_results": 30,
+      "success": true,
+      "timestamp": "2025-10-30T08:20:38.002Z",
+      "environment": "production"
+    },
+    {
+      "search_description": "Creamy Ham Casserole",
+      "response_time_ms": 1093,
+      "status_code": 200,
+      "total_search_results": 30,
+      "success": true,
+      "timestamp": "2025-10-30T08:20:40.102Z",
+      "environment": "production"
+    },
+    {
+      "search_description": "Broil a Perfect Steak",
+      "response_time_ms": 1090,
+      "status_code": 200,
+      "total_search_results": 30,
+      "success": true,
+      "timestamp": "2025-10-30T08:20:42.197Z",
+      "environment": "production"
+    },
+    {
+      "search_description": "Breads, Bagels, Rolls, Crackers, Cookies",
+      "response_time_ms": 1108,
+      "status_code": 200,
+      "total_search_results": 30,
+      "success": true,
+      "timestamp": "2025-10-30T08:20:44.309Z",
+      "environment": "production"
+    },
+    {
+      "search_description": "Bana",
+      "response_time_ms": 975,
+      "status_code": 200,
+      "total_search_results": 30,
+      "success": true,
+      "timestamp": "2025-10-30T08:20:46.287Z",
+      "environment": "production"
+    },
+    {
+      "search_description": "xyzInvalidFood123",
+      "response_time_ms": 1024,
+      "status_code": 200,
+      "total_search_results": 30,
+      "success": true,
+      "timestamp": "2025-10-30T08:20:48.314Z",
+      "environment": "production"
+    },
+    {
+      "search_description": "Rice",
+      "response_time_ms": 907,
+      "status_code": 200,
+      "total_search_results": 30,
+      "success": true,
+      "timestamp": "2025-10-30T08:20:50.223Z",
+      "environment": "production"
+    },
+    {
+      "search_description": "Breakfast Cereal Popsicles",
+      "response_time_ms": 1073,
+      "status_code": 200,
+      "total_search_results": 30,
+      "success": true,
+      "timestamp": "2025-10-30T08:20:52.303Z",
+      "environment": "production"
+    },
+    {
+      "search_description": "!@#$%^&*()",
+      "response_time_ms": 979,
+      "status_code": 200,
+      "total_search_results": 30,
+      "success": true,
+      "timestamp": "2025-10-30T08:20:54.286Z",
+      "environment": "production"
+    },
+    {
+      "search_description": "Fast foods, hamburger",
+      "response_time_ms": 1063,
+      "status_code": 200,
+      "total_search_results": 30,
+      "success": true,
+      "timestamp": "2025-10-30T08:20:56.356Z",
+      "environment": "production"
+    },
+    {
+      "search_description": "azazazaz",
+      "response_time_ms": 1108,
+      "status_code": 200,
+      "total_search_results": 30,
+      "success": true,
+      "timestamp": "2025-10-30T08:20:58.466Z",
+      "environment": "production"
+    }
+  ]
+}
