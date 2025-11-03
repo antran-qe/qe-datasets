@@ -1,198 +1,198 @@
 {
   "metadata": {
-    "environment": "production",
-    "test_date": "2025-10-30T08:20:59.468Z",
+    "environment": "staging",
+    "test_date": "2025-11-03T04:04:04.756Z",
     "total_queries": 20
   },
   "statistics": {
     "total_requests": 20,
     "successful_requests": 20,
     "failed_requests": 0,
-    "avg_response_time_ms": 1069.75,
-    "min_response_time_ms": 907,
-    "max_response_time_ms": 1972,
-    "median_response_time_ms": 1027
+    "avg_response_time_ms": 746.95,
+    "min_response_time_ms": 672,
+    "max_response_time_ms": 836,
+    "median_response_time_ms": 750
   },
   "results": [
     {
       "search_description": "Cheese, Cream, Ice Cream & Yogurts",
-      "response_time_ms": 1972,
+      "response_time_ms": 836,
       "status_code": 200,
       "total_search_results": 30,
       "success": true,
-      "timestamp": "2025-10-30T08:20:19.933Z",
-      "environment": "production"
+      "timestamp": "2025-11-03T04:03:30.509Z",
+      "environment": "staging"
     },
     {
       "search_description": "Apple",
-      "response_time_ms": 1027,
+      "response_time_ms": 792,
       "status_code": 200,
       "total_search_results": 30,
       "success": true,
-      "timestamp": "2025-10-30T08:20:21.967Z",
-      "environment": "production"
+      "timestamp": "2025-11-03T04:03:32.354Z",
+      "environment": "staging"
     },
     {
       "search_description": "Chicken Breast",
-      "response_time_ms": 941,
+      "response_time_ms": 801,
       "status_code": 200,
       "total_search_results": 30,
       "success": true,
-      "timestamp": "2025-10-30T08:20:23.920Z",
-      "environment": "production"
+      "timestamp": "2025-11-03T04:03:34.159Z",
+      "environment": "staging"
     },
     {
       "search_description": "Pizza",
-      "response_time_ms": 1025,
+      "response_time_ms": 774,
       "status_code": 200,
       "total_search_results": 30,
       "success": true,
-      "timestamp": "2025-10-30T08:20:25.952Z",
-      "environment": "production"
+      "timestamp": "2025-11-03T04:03:35.939Z",
+      "environment": "staging"
     },
     {
       "search_description": "Fats, Condiments, Sauces, Dressings",
-      "response_time_ms": 1087,
+      "response_time_ms": 707,
       "status_code": 200,
       "total_search_results": 30,
       "success": true,
-      "timestamp": "2025-10-30T08:20:28.045Z",
-      "environment": "production"
+      "timestamp": "2025-11-03T04:03:37.658Z",
+      "environment": "staging"
     },
     {
       "search_description": "Salad",
-      "response_time_ms": 959,
+      "response_time_ms": 804,
       "status_code": 200,
       "total_search_results": 30,
       "success": true,
-      "timestamp": "2025-10-30T08:20:30.009Z",
-      "environment": "production"
+      "timestamp": "2025-11-03T04:03:39.464Z",
+      "environment": "staging"
     },
     {
       "search_description": "Grains & Flour, Rice & Pasta",
-      "response_time_ms": 969,
+      "response_time_ms": 735,
       "status_code": 200,
       "total_search_results": 30,
       "success": true,
-      "timestamp": "2025-10-30T08:20:31.995Z",
-      "environment": "production"
+      "timestamp": "2025-11-03T04:03:41.201Z",
+      "environment": "staging"
     },
     {
       "search_description": "Rice",
-      "response_time_ms": 1016,
+      "response_time_ms": 750,
       "status_code": 200,
       "total_search_results": 30,
       "success": true,
-      "timestamp": "2025-10-30T08:20:34.015Z",
-      "environment": "production"
+      "timestamp": "2025-11-03T04:03:42.954Z",
+      "environment": "staging"
     },
     {
       "search_description": "Beverages (Sports, EnerY & Meal Shakes, Soda, Coffee, Tea)",
-      "response_time_ms": 936,
+      "response_time_ms": 690,
       "status_code": 200,
       "total_search_results": 30,
       "success": true,
-      "timestamp": "2025-10-30T08:20:35.955Z",
-      "environment": "production"
+      "timestamp": "2025-11-03T04:03:44.649Z",
+      "environment": "staging"
     },
     {
       "search_description": "Choco",
-      "response_time_ms": 1043,
+      "response_time_ms": 723,
       "status_code": 200,
       "total_search_results": 30,
       "success": true,
-      "timestamp": "2025-10-30T08:20:38.002Z",
-      "environment": "production"
+      "timestamp": "2025-11-03T04:03:46.376Z",
+      "environment": "staging"
     },
     {
       "search_description": "Creamy Ham Casserole",
-      "response_time_ms": 1093,
+      "response_time_ms": 687,
       "status_code": 200,
       "total_search_results": 30,
       "success": true,
-      "timestamp": "2025-10-30T08:20:40.102Z",
-      "environment": "production"
+      "timestamp": "2025-11-03T04:03:48.071Z",
+      "environment": "staging"
     },
     {
       "search_description": "Broil a Perfect Steak",
-      "response_time_ms": 1090,
+      "response_time_ms": 784,
       "status_code": 200,
       "total_search_results": 30,
       "success": true,
-      "timestamp": "2025-10-30T08:20:42.197Z",
-      "environment": "production"
+      "timestamp": "2025-11-03T04:03:49.861Z",
+      "environment": "staging"
     },
     {
       "search_description": "Breads, Bagels, Rolls, Crackers, Cookies",
-      "response_time_ms": 1108,
+      "response_time_ms": 713,
       "status_code": 200,
       "total_search_results": 30,
       "success": true,
-      "timestamp": "2025-10-30T08:20:44.309Z",
-      "environment": "production"
+      "timestamp": "2025-11-03T04:03:51.580Z",
+      "environment": "staging"
     },
     {
       "search_description": "Bana",
-      "response_time_ms": 975,
+      "response_time_ms": 780,
       "status_code": 200,
       "total_search_results": 30,
       "success": true,
-      "timestamp": "2025-10-30T08:20:46.287Z",
-      "environment": "production"
+      "timestamp": "2025-11-03T04:03:53.365Z",
+      "environment": "staging"
     },
     {
       "search_description": "xyzInvalidFood123",
-      "response_time_ms": 1024,
+      "response_time_ms": 792,
       "status_code": 200,
       "total_search_results": 30,
       "success": true,
-      "timestamp": "2025-10-30T08:20:48.314Z",
-      "environment": "production"
+      "timestamp": "2025-11-03T04:03:55.161Z",
+      "environment": "staging"
     },
     {
       "search_description": "Rice",
-      "response_time_ms": 907,
+      "response_time_ms": 705,
       "status_code": 200,
       "total_search_results": 30,
       "success": true,
-      "timestamp": "2025-10-30T08:20:50.223Z",
-      "environment": "production"
+      "timestamp": "2025-11-03T04:03:56.870Z",
+      "environment": "staging"
     },
     {
       "search_description": "Breakfast Cereal Popsicles",
-      "response_time_ms": 1073,
+      "response_time_ms": 709,
       "status_code": 200,
       "total_search_results": 30,
       "success": true,
-      "timestamp": "2025-10-30T08:20:52.303Z",
-      "environment": "production"
+      "timestamp": "2025-11-03T04:03:58.585Z",
+      "environment": "staging"
     },
     {
       "search_description": "!@#$%^&*()",
-      "response_time_ms": 979,
+      "response_time_ms": 783,
       "status_code": 200,
       "total_search_results": 30,
       "success": true,
-      "timestamp": "2025-10-30T08:20:54.286Z",
-      "environment": "production"
+      "timestamp": "2025-11-03T04:04:00.372Z",
+      "environment": "staging"
     },
     {
       "search_description": "Fast foods, hamburger",
-      "response_time_ms": 1063,
+      "response_time_ms": 702,
       "status_code": 200,
       "total_search_results": 30,
       "success": true,
-      "timestamp": "2025-10-30T08:20:56.356Z",
-      "environment": "production"
+      "timestamp": "2025-11-03T04:04:02.079Z",
+      "environment": "staging"
     },
     {
       "search_description": "azazazaz",
-      "response_time_ms": 1108,
+      "response_time_ms": 672,
       "status_code": 200,
       "total_search_results": 30,
       "success": true,
-      "timestamp": "2025-10-30T08:20:58.466Z",
-      "environment": "production"
+      "timestamp": "2025-11-03T04:04:03.754Z",
+      "environment": "staging"
     }
   ]
 }
