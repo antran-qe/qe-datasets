@@ -654,8 +654,8 @@
                     const manifestResponse = await fetch('./api-results/manifest.json');
                     if (manifestResponse.ok) {
                         const manifest = await manifestResponse.json();
-                        baselineFiles = (manifest.baseline || []).sort().reverse();
-                        currentFiles = (manifest.current || []).sort().reverse();
+                        baselineFiles = (manifest.baseline || []).sort();
+                        currentFiles = (manifest.current || []).sort();
                         
                         // Update file info
                         const fileInfo = document.getElementById('fileInfo');
